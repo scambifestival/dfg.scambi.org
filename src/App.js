@@ -9,6 +9,7 @@ import MiniVents from './minivents-page/MiniVents';
 import Labs from './labs-page/Labs';
 import FAQ from './faq-page/FAQ';
 import FilmContest from './filmcontest-page/FilmContest';
+import "monday-ui-react-core/dist/main.css"
 
 function App() {
   return (

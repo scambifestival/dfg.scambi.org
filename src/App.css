@@ -1,5 +1,15 @@
 .App {
   text-align: center;
+  --primary-color: #69088D;
+  --primary-hover-color: #4E0968;
+  --primary-selected-color: #EDBBFF;
+  --positive-color: #258750;
+  --positive-color-hover: #007038;
+  --positive-color-selected: #BBDBC9;
+  --negative-color:#D83A52;
+  --negative-color-hover:#B63546;
+  --negative-color-selected:#F4C3CB;
+  --primary-color-yellow: #FFD166;
 }
 
 .App-logo {
