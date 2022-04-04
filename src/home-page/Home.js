@@ -1,15 +1,19 @@
-import React, { Component } from 'react';
-import UserTest from './UserTest';
-import NLSubscribe from './NLSubscribe';
+import React, { Component } from "react";
+import UserTest from "./UserTest";
+import NLSubscribe from "./NLSubscribe";
+// import BlogCard from "../blog-page/BlogCard";
 
 class Home extends Component {
-    render() {
-        return <div>
-            <div>Home</div>
-            <UserTest />
-            <NLSubscribe />
-        </div>
-    }
+  render() {
+    return (
+      <div>
+        <div>Home</div>
+        <UserTest />
+        <NLSubscribe />
+        {/* <BlogCard /> */}
+      </div>
+    );
+  }
 }
 
 export default Home;
