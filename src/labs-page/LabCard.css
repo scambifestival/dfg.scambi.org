@@ -111,7 +111,7 @@
 
 .readmore {
   /* Read more */
-
+  cursor: pointer;
   position: static;
   width: 90px;
   height: 22px;
