@@ -1,55 +1,207 @@
 .main-container {
-  padding-left: 100px;
-  padding-top: 35px;
-  filter: drop-shadow(0px 15px 50px rgba(0, 0, 0, 0.3));
+  /* Lab card */
+
+  position: static;
+  width: 1440px;
+  height: 1012px;
+  left: 0px;
+  top: 119px;
+
+  background: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 50px 0px;
 }
 .left-container {
-  background-color: #ffffff;
-  width: 45rem;
-  height: 16rem;
-  border-radius: 32px 32px 32px 32px;
-  padding-left: 20px;
-  padding-bottom: 60px;
+  /* Lab card */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+
+  position: absolute;
+  width: 640px;
+  height: 306px;
+  left: 70px;
+  top: 64px;
+
+  background: #ffffff;
+  /* Large Elements */
+
+  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.3);
+  border-radius: 32px;
+}
+.image-container {
+  /* Image */
+
+  position: static;
+  width: 282px;
+  height: 258px;
+  left: 334px;
+  top: 24px;
+
+  background: url(../images/labcard.png);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+
+.text-container {
+  /* Text */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 24px 0px 0px;
+
+  position: static;
+  width: 310px;
+  height: 258px;
+  left: 24px;
+  top: 24px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  margin: 0px 0px;
+}
+.link-container {
+  /* Link
+
+  ➡️ Link is an actionable text component with connection to another web pages.
+  */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 114px;
+  height: 22px;
+  left: 0px;
+  top: 236px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 16px 0px;
+  white-space: nowrap;
+}
+
+.readmore {
+  /* Read more */
+
+  position: static;
+  width: 90px;
+  height: 22px;
+  left: 0px;
+  top: 0px;
+
+  /* Link, Regular, 14px */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 1.5px;
+
+  /* Main UI Colors/Primary/Purple */
+
+  color: #69088d;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 4px;
 }
 .title {
+  /* Title */
+
   position: static;
+  width: 286px;
+  left: calc(50% - 286px / 2 - 12px);
+  top: 0%;
+  bottom: 86.05%;
+
+  /* Subtitle 1, Semi Bold, 24px */
+
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  line-height: 45px;
-  padding-top: 10px;
+  line-height: 36px;
   /* identical to box height */
 
   display: flex;
   align-items: center;
 
   color: #000000;
-}
 
-.image-container {
-  float: right;
-  width: 350px;
-  margin-top: -30px;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 16px 0px;
 }
 
 .lower-subtitle {
-  /* width: 477px;
-    height: 50px; */
+  /* Description */
+
+  position: static;
+  width: 286px;
+  height: 168px;
+  left: 0px;
+  top: 52px;
+
+  /* Body, Regular, 16px */
+
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 580;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  width: 300px;
   /* or 150% */
 
-  color: #000000;
-}
+  display: flex;
+  align-items: center;
 
-.read-more-link {
-  color: #69088d;
-  letter-spacing: 1px;
-  cursor: pointer;
-  line-height: 50px;
+  color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 16px 0px;
 }
