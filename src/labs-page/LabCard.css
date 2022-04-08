@@ -1,9 +1,10 @@
 .main-container {
   padding-left: 100px;
   padding-top: 35px;
+  filter: drop-shadow(0px 15px 50px rgba(0, 0, 0, 0.3));
 }
 .left-container {
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   width: 45rem;
   height: 16rem;
   border-radius: 32px 32px 32px 32px;
