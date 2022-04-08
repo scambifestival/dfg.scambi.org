@@ -1,4 +1,4 @@
-.main-container {
+.lab-main-container {
   /* Lab card */
 
   position: static;
@@ -16,7 +16,7 @@
   flex-grow: 0;
   margin: 50px 0px;
 }
-.left-container {
+.lab-left-container {
   /* Lab card */
 
   /* Auto layout */
@@ -38,7 +38,7 @@
   box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.3);
   border-radius: 32px;
 }
-.image-container {
+.lab-image-container {
   /* Image */
 
   position: static;
@@ -57,7 +57,7 @@
   margin: 0px 0px;
 }
 
-.text-container {
+.lab-text-container {
   /* Text */
 
   /* Auto layout */
@@ -81,7 +81,7 @@
   flex-grow: 1;
   margin: 0px 0px;
 }
-.link-container {
+.lab-link-container {
   /* Link
 
   ➡️ Link is an actionable text component with connection to another web pages.
@@ -109,7 +109,7 @@
   white-space: nowrap;
 }
 
-.readmore {
+.lab-readmore {
   /* Read more */
   cursor: pointer;
   position: static;
@@ -142,7 +142,7 @@
   flex-grow: 0;
   margin: 0px 4px;
 }
-.title {
+.lab-title {
   /* Title */
 
   position: static;
@@ -174,7 +174,7 @@
   margin: 16px 0px;
 }
 
-.lower-subtitle {
+.lab-lower-subtitle {
   /* Description */
 
   position: static;
@@ -194,7 +194,7 @@
 
   display: flex;
   align-items: center;
-
+  text-align: left;
   color: #000000;
 
   /* Inside auto layout */

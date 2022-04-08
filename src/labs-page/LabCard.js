@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Stroke from "../images/Stroke.png";
 import "./LabCard.css";
 
 class LabCard extends Component {
@@ -12,17 +11,17 @@ class LabCard extends Component {
   };
   render() {
     return (
-      <div className="main-container">
-        <div className="left-container">
-          <div className="image-container"></div>
-          <div className="text-container">
-            <div className="link-container">
-              <div className="readmore">
+      <div className="lab-main-container">
+        <div className="lab-left-container">
+          <div className="lab-image-container"></div>
+          <div className="lab-text-container">
+            <div className="lab-link-container">
+              <div className="lab-readmore">
                 <a>Read more &#10140;</a>
               </div>
             </div>
-            <div className="title">{this.state.lab_datas.title}</div>
-            <div className="lower-subtitle">
+            <div className="lab-title">{this.state.lab_datas.title}</div>
+            <div className="lab-lower-subtitle">
               {this.state.lab_datas.description}
             </div>
           </div>
