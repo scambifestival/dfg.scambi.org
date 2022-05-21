@@ -140,7 +140,6 @@
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 0px 8px;
 }
 
 .blog-title {
@@ -192,6 +191,7 @@
 
   display: flex;
   align-items: center;
+  text-align: left;
 
   /* Placeholder text, active */
 
