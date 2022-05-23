@@ -10,6 +10,7 @@ import Labs from "./labs-page/Labs";
 import FAQ from "./faq-page/FAQ";
 import FilmContest from "./filmcontest-page/FilmContest";
 import Pinoli from "./pinoli-card/Pinoli";
+import Teams from "./teams-page/Teams";
 import "monday-ui-react-core/dist/main.css";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="minivents" element={<MiniVents />} />
         <Route path="labs" element={<Labs />} />
         <Route path="pinoli" element={<Pinoli />} />
+        <Route path="teams" element={<Teams />} />
         <Route path="faq" element={<FAQ />} />
         <Route path="careers" element={<Careers />} />
         <Route path="filmcontest" element={<FilmContest />} />
@@ -34,6 +36,7 @@ function App() {
       <MiniVents />
       <Labs />
       <Pinoli />
+      <Teams />
       <FAQ />
       <Careers />
       <FilmContest /> */}

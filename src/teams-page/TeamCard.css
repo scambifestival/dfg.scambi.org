@@ -1,0 +1,374 @@
+.teamcards-main {
+  background: #e5e5e5;
+}
+.team-main-container {
+  /* Team Card */
+
+  position: relative;
+  width: 1440px;
+  height: 1074px;
+}
+.team-right-container {
+  /* Team Name Card */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+  gap: 20px;
+
+  position: absolute;
+  width: 324px;
+  height: 445px;
+  left: 930px;
+  top: 119px;
+
+  /* Greyscale palette / White */
+  background: #ffffff;
+  /* Medium Elements */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 32px;
+}
+
+.teamright-image-container {
+  /* aps-oltre 1 */
+
+  width: 200px;
+  height: 200px;
+
+  background: url(../images/aps-oltre.png);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.teamright-frame {
+  /* Frame 1261152396 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+
+  width: 304px;
+  height: 165px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.chameleons {
+  /* Chameleons */
+
+  width: 148px;
+  height: 38px;
+
+  /* H3 Headline, Regular, 32px */
+  font-family: "Londrina Solid";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.25px;
+
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.leaders {
+  /* Leaders */
+
+  width: 72px;
+  height: 27px;
+
+  /* Subtitle 2, Semi Bold, 18px */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.team-lower-subtitle {
+  width: 304px;
+  height: 48px;
+
+  /* Body, Regular, 16px */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+.team-link-container {
+  /* Link
+
+➡️ Link is an actionable text component with connection to another web pages.
+*/
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+
+  width: 206px;
+  height: 22px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.team-readmore {
+  /* Read more */
+  cursor: pointer;
+  width: 182px;
+  height: 22px;
+
+  /* Link, Regular, 14px */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+  display: flex;
+  align-items: center;
+  letter-spacing: 1.5px;
+
+  /* Main UI Colors/Primary/Purple */
+  color: #69088d;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.team-right-icon {
+  /* Icon */
+
+  width: 20px;
+  height: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.team-icon-rectangle {
+  /* Rectangle 400 (Stroke) */
+
+  position: absolute;
+  width: 11.5px;
+  height: 11.5px;
+  left: 1.94px;
+  top: 10.07px;
+
+  /* Main UI Colors/Primary/Purple */
+  background: #69088d;
+  transform: rotate(-45deg);
+}
+.team-left-container {
+  /* Team Card */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 76px 122px;
+  gap: 205px;
+
+  position: absolute;
+  width: 624px;
+  height: 778px;
+  left: 0px;
+  top: 119px;
+
+  background: #ffffff;
+}
+.teamleft-card {
+  /* Team Member Card Component */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+
+  width: 380px;
+  height: 655px;
+
+  background: #ffffff;
+  /* Medium Elements */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 32px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.teamleft-v3card {
+  /* Team Card V3 Component */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 5px 20px;
+
+  width: 340px;
+  height: 615px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.teamleft-blob {
+  /* blobyellow 3 */
+
+  width: 330px;
+  height: 337px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.teamleft-unsplash {
+  /* unsplash:k9XZPpPHDho */
+
+  position: absolute;
+  left: 232.8px;
+  right: 419px;
+  top: 14%;
+  bottom: 57.9%;
+
+  background: url(../images/unsplash.jpg);
+  /* Color coding / Yellow */
+}
+.teamleft-frame {
+  /* Frame 1261151653 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 15px;
+
+  width: 330px;
+  height: 258px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.teamleft-frame-title {
+  /* Jane Doe */
+  width: 111px;
+  height: 38px;
+
+  /* H3 Headline, Regular, 32px */
+  font-family: "Londrina Solid";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 38px;
+  /* identical to box height */
+  letter-spacing: 0.25px;
+
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.teamleft-frame-subtitle {
+  /* Design Lead - Peacocks */
+
+  width: 330px;
+  height: 22px;
+
+  /* UI TEXT UPPERCASE, REGULAR, 14 PX */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.teamleft-frame-description {
+  width: 330px;
+  height: 168px;
+
+  /* Body, Regular, 16px */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  text-align: left;
+
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
