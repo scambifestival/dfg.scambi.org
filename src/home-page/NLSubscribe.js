@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import './NLSubscribe.scss';
 import SubscribeImage from '../images/SubscribeImage.png';
-import {TextField, Button} from 'monday-ui-react-core';
-import Grid from '@mui/material/Grid';
-// import Item from '@mui/material/Item';
 
 class NLSubscribe extends Component {
     render() {
