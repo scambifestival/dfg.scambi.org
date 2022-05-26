@@ -1,0 +1,177 @@
+.lastyear-background {
+  /* Homepage - High Fidelity */
+
+  position: relative;
+  width: 1680px;
+  height: 7411px;
+
+  /* Gradient background */
+  background: linear-gradient(90deg, #e9afff 0%, #ffedc4 98.65%);
+}
+.lastyear-main {
+  /* Photo Gallery */
+
+  position: absolute;
+  width: 1328px;
+  height: 641px;
+  left: 76px;
+  top: 1784px;
+}
+.lastyear-text {
+  /* Last year at Scambi */
+
+  position: absolute;
+  width: 492px;
+  height: 76px;
+  left: 405.46px;
+  top: 0px;
+
+  /* H2 Headline, Light, 64px */
+  font-family: "Londrina Solid";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 76px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Placeholder text, active */
+  color: #323338;
+}
+.rectangle34 {
+  /* Rectangle 34 */
+
+  position: absolute;
+  width: 207.73px;
+  height: 186px;
+  left: 1103.17px;
+  top: 103px;
+
+  background: url(../images/lastYearScambi/Rectangle34.png);
+  /* Medium Elements */
+  filter: drop-shadow(0px 6px 20px rgba(0, 0, 0, 0.2));
+  border-radius: 16px;
+  padding: 16px;
+}
+.rectangle35 {
+  /* Rectangle 35 */
+
+  position: absolute;
+  width: 202.69px;
+  height: 311px;
+  left: 1108.22px;
+  top: 314px;
+
+  background: url(../images/lastYearScambi/Rectangle35.png);
+  /* Medium Elements */
+  filter: drop-shadow(0px 6px 20px rgba(0, 0, 0, 0.2));
+  border-radius: 16px;
+  padding: 16px;
+}
+.rectangle26 {
+  /* Rectangle 26 */
+
+  position: absolute;
+  width: 228.9px;
+  height: 245px;
+  left: 0px;
+  top: 103px;
+
+  background: url(../images/lastYearScambi/Rectangle26.png);
+  /* Medium Elements */
+  filter: drop-shadow(0px 6px 20px rgba(0, 0, 0, 0.2));
+  border-radius: 16px;
+  padding: 16px;
+}
+.rectangle33 {
+  /* Rectangle 33 */
+
+  position: absolute;
+  width: 330.75px;
+  height: 208px;
+  left: 752.26px;
+  top: 417px;
+
+  background: url(../images/lastYearScambi/Rectangle33.png);
+  /* Medium Elements */
+  filter: drop-shadow(0px 6px 20px rgba(0, 0, 0, 0.2));
+  border-radius: 16px;
+  padding: 16px;
+}
+.rectangle31 {
+  /* Rectangle 31 */
+
+  position: absolute;
+  width: 220.84px;
+  height: 145px;
+  left: 501.17px;
+  top: 103px;
+
+  background: url(../images/lastYearScambi/Rectangle31.png);
+  /* Medium Elements */
+  filter: drop-shadow(0px 6px 20px rgba(0, 0, 0, 0.2));
+  border-radius: 16px;
+  padding: 16px;
+}
+.rectangle28 {
+  /* Rectangle 28 */
+
+  position: absolute;
+  width: 221.84px;
+  height: 247px;
+  left: 254.11px;
+  top: 103px;
+
+  background: url(../images/lastYearScambi/Rectangle28.png);
+  /* Medium Elements */
+  filter: drop-shadow(0px 6px 20px rgba(0, 0, 0, 0.2));
+  border-radius: 16px;
+  padding: 16px;
+}
+.rectangle32 {
+  /* Rectangle 32 */
+
+  position: absolute;
+  width: 330.75px;
+  height: 290px;
+  left: 747.21px;
+  top: 103px;
+
+  background: url(../images/lastYearScambi/Rectangle32.png);
+  /* Medium Elements */
+  filter: drop-shadow(0px 6px 20px rgba(0, 0, 0, 0.2));
+  border-radius: 16px;
+  padding: 16px;
+}
+.rectangle30 {
+  /* Rectangle 30 */
+
+  position: absolute;
+  width: 220.84px;
+  height: 353px;
+  left: 506.21px;
+  top: 272px;
+
+  background: url(../images/lastYearScambi/Rectangle30.png);
+  /* Medium Elements */
+  filter: drop-shadow(0px 6px 20px rgba(0, 0, 0, 0.2));
+  border-radius: 16px;
+  padding: 16px;
+}
+.rectangle29 {
+  /* Rectangle 29 */
+
+  position: absolute;
+  width: 479.99px;
+  height: 251px;
+  left: 1.01px;
+  top: 374px;
+
+  background: url(../images/lastYearScambi/Rectangle29.png);
+  /* Medium Elements */
+  filter: drop-shadow(0px 6px 20px rgba(0, 0, 0, 0.2));
+  border-radius: 16px;
+  padding: 16px;
+}
