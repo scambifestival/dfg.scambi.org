@@ -1,0 +1,459 @@
+.outside-conatiner {
+  width: 1440px;
+  height: 586px;
+
+  background: #ffffff;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+
+  position: absolute;
+  width: 1299px;
+  height: 451.9px;
+  left: 71px;
+  top: 60px;
+}
+
+.title {
+  width: 421px;
+  height: 76px;
+
+  /* H2 Headline, Light, 64px */
+
+  font-family: "Londrina Solid";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 76px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Placeholder text, active */
+
+  color: #323338;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 21px;
+
+  width: 1299px;
+  height: 335.9px;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  gap: 10px;
+
+  width: 419px;
+  height: 335.9px;
+
+  background: #eebdad;
+  /* Medium Elements */
+
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+}
+
+.left-outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+
+  width: 355px;
+  height: 271.9px;
+}
+
+.left-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+
+  width: 355px;
+  height: 205.9px;
+}
+
+.left-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 13px;
+
+  width: 355px;
+  height: 98px;
+}
+
+.volunteer {
+  width: 327px;
+  height: 37px;
+
+  /* Subtitle 1, Semi Bold, 24px */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+
+  /* Greyscale palette/Dark */
+
+  color: #323338;
+}
+
+.volunteer-content {
+  width: 355px;
+  height: 48px;
+
+  /* Body, Regular, 16px */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Greyscale palette/Dark */
+
+  color: #323338;
+}
+
+.hand-image {
+  width: 32px;
+  height: 87.9px;
+
+  /* background: url(Elechand icon.png); */
+}
+
+.volunteer-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 40px;
+  gap: 8px;
+
+  width: 160px;
+  height: 46px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+}
+
+.volunteer-label {
+  width: 80px;
+  height: 22px;
+
+  /* Button Text, Semi bold, 16px */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #323338;
+}
+
+.middle-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  gap: 10px;
+
+  width: 419px;
+  height: 335.9px;
+
+  background: #edbbff;
+  /* Medium Elements */
+
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+}
+
+.middle-outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+
+  width: 355px;
+  height: 262.52px;
+}
+
+.middle-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+
+  width: 355px;
+  height: 196.52px;
+}
+
+.middle-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 13px;
+
+  width: 355px;
+  height: 98px;
+}
+
+.join {
+  width: 327px;
+  height: 37px;
+
+  /* Subtitle 1, Semi Bold, 24px */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+
+  /* Greyscale palette/Dark */
+
+  color: #323338;
+}
+
+.join-content {
+  width: 355px;
+  height: 48px;
+
+  /* Body, Regular, 16px */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Greyscale palette/Dark */
+
+  color: #323338;
+}
+
+.meetinghand-image {
+  width: 64px;
+  height: 78.52px;
+
+  /* background: url(Alien meeting icon.png); */
+}
+
+.tickets-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 40px;
+  gap: 8px;
+
+  width: 167px;
+  height: 46px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+}
+
+.tickets-label {
+  width: 87px;
+  height: 22px;
+
+  /* Button Text, Semi bold, 16px */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #323338;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  gap: 10px;
+
+  width: 419px;
+  height: 335.9px;
+
+  background: #aab4d6;
+  /* Medium Elements */
+
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+}
+
+.right-outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+
+  width: 355px;
+  height: 263px;
+}
+
+.right-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+
+  width: 355px;
+  height: 197px;
+}
+
+.right-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 13px;
+
+  width: 355px;
+  height: 98px;
+}
+
+.donate {
+  width: 327px;
+  height: 37px;
+
+  /* Subtitle 1, Semi Bold, 24px */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+
+  /* Greyscale palette/Dark */
+
+  color: #323338;
+}
+
+.donate-content {
+  width: 355px;
+  height: 48px;
+
+  /* Body, Regular, 16px */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Greyscale palette/Dark */
+
+  color: #323338;
+}
+
+.hearty-image {
+  width: 42px;
+  height: 79px;
+
+  /* background: url(Hearty icon.png); */
+}
+
+.donate-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 40px;
+  gap: 8px;
+
+  width: 140px;
+  height: 46px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+}
+
+.donate-label {
+  width: 60px;
+  height: 22px;
+
+  /* Button Text, Semi bold, 16px */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #323338;
+}
