@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import UserTest from "./UserTest";
-import SupportUs from "..//supportus-page/SupportUs";
+import SupportUs from "./SupportUs";
 
 class Home extends Component {
   render() {
