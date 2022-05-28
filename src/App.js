@@ -12,6 +12,7 @@ import FilmContest from "./filmcontest-page/FilmContest";
 import Pinoli from "./pinoli-card/Pinoli";
 import Teams from "./teams-page/Teams";
 import LastyearScambi from "./lastyear-page/LastyearScambi";
+import Footers from "./footer/Footers";
 import "monday-ui-react-core/dist/main.css";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="faq" element={<FAQ />} />
         <Route path="careers" element={<Careers />} />
         <Route path="filmcontest" element={<FilmContest />} />
+        <Route path="footers" element={<Footers />} />
       </Routes>
       {/* <Home />
       <Contact />

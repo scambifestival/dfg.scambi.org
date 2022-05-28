@@ -1,0 +1,388 @@
+.footer-background {
+  /* Homepage - High Fidelity */
+
+  position: relative;
+  width: 1680px;
+  height: 7411px;
+
+  /* Gradient background */
+  background: linear-gradient(90deg, #e9afff 0%, #ffedc4 98.65%);
+}
+.footer-main {
+  /* Footer */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 1680px;
+  height: 604px;
+  left: 0px;
+  bottom: 0px;
+
+  background: #ffffff;
+  /* Large Elements */
+  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.3);
+  border-radius: 50px 50px 0px 0px;
+}
+.footer-top {
+  /* Logo + CTA */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px 0px 70px;
+  gap: 67px;
+
+  width: 1440px;
+  height: 136px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.footer-logo {
+  /* Scambi */
+
+  width: 177px;
+  height: 76px;
+
+  /* H2 Headline, Light, 64px */
+  font-family: "Londrina Solid";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 76px;
+  /* identical to box height */
+
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.footer-cta {
+  /* CTA */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 6px;
+
+  width: 371px;
+  height: 66px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.footer-cta-text {
+  /* Text */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+
+  width: 175px;
+  height: 47px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.cta-text {
+  /* Ready to join us? */
+
+  width: 155px;
+  height: 27px;
+
+  /* Subtitle 2, Semi Bold, 18px */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.footer-cta-button {
+  /* Button */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+
+  width: 190px;
+  height: 90px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  cursor: pointer;
+}
+.cta-button {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 40px;
+  gap: 8px;
+
+  width: 170px;
+  height: 46px;
+
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 69.78%
+    ),
+    #69088d;
+  /* Button/Primary/Dropshadow */
+  box-shadow: 0px 4px 3px rgba(47, 4, 63, 0.7);
+  border-radius: 16px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.cta-button-text {
+  /* ✍️Label */
+
+  width: 90px;
+  height: 22px;
+
+  /* Button Text, Semi bold, 16px */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Light/--text-color-on-primary */
+  color: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.footer-middle {
+  /* Newsletter + Links */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 0px 0px 70px;
+  gap: 199px;
+
+  width: 1440px;
+  height: 358px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.footer-middle-left {
+  /* Newsletter */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 210px;
+
+  width: 395px;
+  height: 358px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.subscribe-blob {
+  /* Subscribe Blob */
+
+  width: 463.16px;
+  height: 419.71px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.subscribe-frame1 {
+  /* Frame 1261152275 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  gap: 16px;
+
+  position: absolute;
+  width: 337px;
+  height: 153px;
+  left: 40px;
+  top: 79.29px;
+}
+
+.frame1-text {
+  /* Subscribe to our Newsletter! */
+  padding: 10px;
+  width: 267px;
+  height: 27px;
+
+  /* Subtitle 2, Semi Bold, 18px */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Main UI Colors/Primary/Purple */
+  color: #69088d;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.frame1-inputfield {
+  box-sizing: border-box;
+
+  width: 300px;
+  height: 48px;
+
+  /* Greyscale palette / White */
+  background: #ffffff;
+  /* Main UI Colors/Selected/Purple */
+  border: 1px solid #edbbff;
+  border-radius: 4px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.frame1-placeholder {
+  /* Placeholder text her */
+
+  position: absolute;
+  padding-left: 110px;
+  padding-top: 140px;
+  width: 130px;
+  height: 24px;
+  left: 15px;
+  top: 12px;
+  /* Body, Regular, 16px */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* Placeholder text, regular */
+  color: #676879;
+}
+.frame1-icons {
+  position: absolute;
+  visibility: hidden;
+  left: 84%;
+  right: 5.33%;
+  top: 0%;
+  bottom: 33.33%;
+}
+.frame1-button {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 40px;
+  gap: 8px;
+
+  width: 162px;
+  height: 46px;
+
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 69.78%
+    ),
+    #69088d;
+  /* Button/Primary/Dropshadow */
+  box-shadow: 0px 4px 3px rgba(47, 4, 63, 0.7);
+  border-radius: 16px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+.frame1-button-text {
+  /* ✍️Label */
+
+  width: 82px;
+  height: 22px;
+
+  /* Button Text, Semi bold, 16px */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Light/--text-color-on-primary */
+  color: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
