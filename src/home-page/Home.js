@@ -1,18 +1,18 @@
 import './Home.scss';
 import React, { Component } from 'react';
-import UserTest from './UserTest';
 import NLSubscribe from './NLSubscribe';
+import Purpose from './Purpose';
 import NavbarGlobal from '../global-components/NavbarGlobal';
 
 class Home extends Component {
     render() {
-        return <div className='mainhome-container'>
+        return <div>
             <NavbarGlobal/>
-            <div>Home</div>
-            <UserTest />
-            <div>
+            <div className='mainhome-container'>
+                <Purpose />
                 <NLSubscribe />
             </div>
+            
         </div>
     }
 }
