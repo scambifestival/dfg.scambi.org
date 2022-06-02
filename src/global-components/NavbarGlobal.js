@@ -24,7 +24,7 @@ class NavbarGlobal extends Component {
                             </NavDropdown>
                             <Nav.Link href="/blog" id="navbar-link">Blog</Nav.Link>
                             <Nav.Link href="/faq" id="navbar-link">FAQ</Nav.Link>
-                            <Nav.Link href="/rsvp" className='rsvp-button' id="navbar-link">RSVP</Nav.Link>
+                            <a href="/rsvp" className='rsvp-button'>RSVP</a>
                         <NavDropdown title="Language" id="basic-nav-dropdown" className="justify-content-end">
                                 <NavDropdown.Item href="">English</NavDropdown.Item>
                                 <NavDropdown.Item href="">Italian</NavDropdown.Item>

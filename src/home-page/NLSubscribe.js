@@ -5,18 +5,18 @@ import SubscribeImage from '../images/SubscribeImage.png';
 class NLSubscribe extends Component {
     render() {
         return <div>
-            <div className='main-container'>
-                <div className='left-container'>
-                    <img className="left-image" src={SubscribeImage} />
+            <div className='nls-main-container'>
+                <div className='nls-left-container'>
+                    <img className="nls-left-image" src={SubscribeImage} />
                 </div>
-                <div className='right-container'> 
-                    <div className='inner-container'>
-                            <div className='upper-subtitle'>exchanges of letters, our newsletter</div>
-                            <div className='title'>Scambi Epistolari</div>
-                            <div className='lower-subtitle'>Join the conversation - sign up now to receive updates on Scambi activities.</div>
-                            <div className='email-fields'>
-                                <input className='text-field' type="text" placeholder="Email" />
-                                <button className='submit-button'>Submit</button>
+                <div className='nls-right-container'> 
+                    <div className='nls-inner-container'>
+                            <div className='nls-upper-subtitle'>exchanges of letters, our newsletter</div>
+                            <div className='nls-title'>Scambi Epistolari</div>
+                            <div className='nls-lower-subtitle'>Join the conversation - sign up now to receive updates on Scambi activities.</div>
+                            <div className='nls-email-fields'>
+                                <input className='nls-text-field' type="text" placeholder="Email" />
+                                <button className='nls-submit-button'>Submit</button>
                             </div>
                         </div>
                     </div>
