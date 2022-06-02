@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import UserTest from "./UserTest";
 import NLSubscribe from "./NLSubscribe";
-import BlogCard from "./BlogCard";
+import BlogCard from "../blog-page/BlogCard";
 
 class Home extends Component {
   render() {
