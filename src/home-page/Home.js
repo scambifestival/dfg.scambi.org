@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import UserTest from "./UserTest";
-import Family from "./family";
+import Family from "..family-page/family";
 
 class Home extends Component {
   render() {
