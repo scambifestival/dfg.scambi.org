@@ -23,7 +23,7 @@ class Family extends Component {
               <div className="left-label">Learn about our team</div>
             </div>
             <div className="right-button">
-              <div className="right-label">Join our Scambi Family</div>
+              <div className="right-label">Volunteer with us</div>
             </div>
           </div>
         </div>
