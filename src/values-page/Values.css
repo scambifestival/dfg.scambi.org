@@ -1,0 +1,367 @@
+.main-container {
+  display: flex;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.manifesto-label {
+  position: absolute;
+  width: 335px;
+  height: 76px;
+  left: 482.5px;
+  top: 0px;
+
+  /* H2 Headline, Light, 64px */
+
+  font-family: "Londrina Solid";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 76px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* Placeholder text, active */
+
+  color: #323338;
+}
+
+.manifesto-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+
+  position: absolute;
+  width: 1300px;
+  height: 340px;
+  left: 0px;
+  top: 117px;
+}
+
+.workshop-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+
+  width: 310px;
+  height: 292px;
+
+  /* Card Gradient */
+
+  background: linear-gradient(102.88deg, #ffecc0 0%, #ffb0c4 100%);
+  /* Large Elements */
+
+  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.3);
+  border-radius: 32px;
+}
+
+.workshop-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 24px 0px 0px;
+  gap: 16px;
+
+  width: 262px;
+  height: 244px;
+}
+
+.workshop-title {
+  width: 238px;
+  height: 36px;
+
+  /* Subtitle 1, Semi Bold, 24px */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.workshop-description {
+  width: 238px;
+  height: 192px;
+
+  /* Body, Regular, 16px */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.paneuretic-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+
+  width: 310px;
+  height: 340px;
+
+  /* Color coding/Off-white */
+
+  background: #fbfbfb;
+  /* Large Elements */
+
+  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.3);
+  border-radius: 32px;
+}
+
+.paneuretic-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 24px 0px 0px;
+  gap: 16px;
+
+  width: 262px;
+  height: 292px;
+}
+
+.paneuretic-title {
+  width: 238px;
+  height: 36px;
+
+  /* Subtitle 1, Semi Bold, 24px */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.paneuretic-description {
+  width: 238px;
+  height: 240px;
+
+  /* Body, Regular, 16px */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.accessibility-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+
+  width: 310px;
+  height: 220px;
+
+  /* Card Gradient */
+
+  background: linear-gradient(102.88deg, #ffecc0 0%, #ffb0c4 100%);
+  /* Large Elements */
+
+  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.3);
+  border-radius: 32px;
+}
+
+.accessibility-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 24px 0px 0px;
+  gap: 16px;
+
+  width: 262px;
+  height: 172px;
+}
+
+.accessibility-title {
+  width: 238px;
+  height: 36px;
+
+  /* Subtitle 1, Semi Bold, 24px */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.accessibility-description {
+  width: 238px;
+  height: 120px;
+
+  /* Body, Regular, 16px */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.lapigna-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+
+  width: 310px;
+  height: 268px;
+
+  /* Color coding/Off-white */
+
+  background: #fbfbfb;
+  /* Large Elements */
+
+  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.3);
+  border-radius: 32px;
+}
+
+.lapigna-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 24px 0px 0px;
+  gap: 16px;
+
+  width: 262px;
+  height: 220px;
+}
+
+.lapigna-title {
+  width: 238px;
+  height: 36px;
+
+  /* Subtitle 1, Semi Bold, 24px */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.lapigna-description {
+  width: 238px;
+  height: 168px;
+
+  /* Body, Regular, 16px */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.manifesto-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+
+  position: absolute;
+  width: 237px;
+  height: 46px;
+  left: 531.5px;
+  top: 550px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 40px;
+  gap: 8px;
+
+  width: 237px;
+  height: 46px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+}
+
+.button-label {
+  width: 157px;
+  height: 22px;
+
+  /* Button Text, Semi bold, 16px */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #323338;
+}
