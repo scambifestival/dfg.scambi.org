@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import './NLSubscribe.scss';
 import SubscribeImage from '../images/SubscribeImage.png';
 
+
+/**
+ * 
+ * 
+ */
 class NLSubscribe extends Component {
     render() {
         return <div>

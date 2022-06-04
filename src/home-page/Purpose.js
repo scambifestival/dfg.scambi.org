@@ -4,6 +4,9 @@ import './Purpose.scss';
 class Purpose extends Component {
     render() {
         return <div>
+            {/* bold communication and meeting */}
+            {/* spacing in navbar */}
+            {/* add support to navbar */}
             <div className='statement-container'>
             Our purpose is to recover the value of communication and meeting, often forgotten or 
             hidden behind a two-dimentional screen. Scambi, instead, is a universe of 
