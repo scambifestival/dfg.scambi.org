@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import UserTest from "./UserTest";
-import NLSubscribe from "./NLSubscribe";
-import BlogCard from "../blog-page/BlogCard";
+import BlogCard from "../blog-page/Blog";
 
 class Home extends Component {
   render() {
@@ -9,7 +8,6 @@ class Home extends Component {
       <div>
         <div>Home</div>
         <UserTest />
-        {/* <NLSubscribe /> */}
         <BlogCard />
       </div>
     );

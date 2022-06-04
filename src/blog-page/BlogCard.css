@@ -1,5 +1,38 @@
 .main-container {
   display: flex;
+  flex-wrap: wrap;
+  width: 1304px;
+  height: 759px;
+  left: 64px;
+  bottom: 2871px;
+}
+
+.title {
+  position: absolute;
+  width: 589px;
+  height: 76px;
+  left: 0px;
+  top: 0px;
+
+  /* H2 Headline, Light, 64px */
+
+  font-family: "Londrina Solid";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 76px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* Placeholder text, active */
+
+  color: #323338;
+}
+
+.left-container {
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
@@ -7,31 +40,70 @@
   position: absolute;
   width: 420px;
   height: 638px;
-  left: 70px;
-  top: 36px;
+  left: 0px;
+  top: 121px;
 
   /* Large Elements */
 
   filter: drop-shadow(0px 15px 50px rgba(0, 0, 0, 0.3));
 }
 
-.top-container {
-  position: static;
+.middle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 420px;
+  height: 638px;
+  left: 442px;
+  top: 121px;
+
+  /* Large Elements */
+
+  filter: drop-shadow(0px 15px 50px rgba(0, 0, 0, 0.3));
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 420px;
+  height: 638px;
+  left: 884px;
+  top: 121px;
+
+  /* Large Elements */
+
+  filter: drop-shadow(0px 15px 50px rgba(0, 0, 0, 0.3));
+}
+
+.left-photo {
   width: 420px;
   height: 316px;
-  left: 0px;
-  top: 0px;
 
-  background: url(../images/BlogCard.png);
+  background: url(../images/cinema.png);
   border-radius: 16px 16px 0px 0px;
+}
 
-  /* Inside auto layout */
+.middle-photo {
+  width: 420px;
+  height: 316px;
 
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 0px 0px;
+  background: url(../images/capture22.png);
+  border-radius: 16px 16px 0px 0px;
+}
+
+.right-photo {
+  width: 420px;
+  height: 316px;
+
+  background: url(../images/capture1.png);
+  border-radius: 16px 16px 0px 0px;
 }
 
 .bottom-container {
@@ -103,20 +175,13 @@
   /* Placeholder text, active */
 
   color: #323338;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 1;
-  margin: 0px 8px;
 }
 
 .date {
   position: static;
-  width: 117px;
+  width: 190px;
   height: 22px;
-  left: 255px;
+  left: 250px;
   top: 0px;
 
   /* Ui text, Regular, 14px */
@@ -134,12 +199,6 @@
   /* Placeholder text, active */
 
   color: #323338;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 .blog-title {
@@ -159,7 +218,7 @@
   /* identical to box height */
 
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 
   /* Placeholder text, active */
 
