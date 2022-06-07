@@ -1,0 +1,177 @@
+.main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 268px;
+}
+
+.sponsor-photo {
+  width: 454px;
+  height: 489px;
+
+  background: url(../images/sponsors.png);
+  /* Small Elements */
+
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.200691));
+}
+
+.partners-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 38px;
+
+  width: 532px;
+  height: 276px;
+}
+
+.partners-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+
+  width: 532px;
+  height: 192px;
+}
+
+.title {
+  width: 325px;
+  height: 76px;
+
+  /* H2 Headline, Light, 64px */
+
+  font-family: "Londrina Solid";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 76px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* Greyscale palette/Dark */
+
+  color: #323338;
+}
+
+.description {
+  width: 532px;
+  height: 96px;
+
+  /* Body, Regular, 16px */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 38px;
+
+  width: 490px;
+  height: 46px;
+}
+
+.left-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 40px;
+  gap: 8px;
+
+  width: 226px;
+  height: 46px;
+
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 69.78%
+    ),
+    #69088d;
+  /* Button/Primary/Dropshadow */
+
+  box-shadow: 0px 4px 3px rgba(47, 4, 63, 0.7);
+  border-radius: 16px;
+}
+
+.left-text {
+  width: 122px;
+  height: 22px;
+
+  /* Button Text, Semi bold, 16px */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Light/--text-color-on-primary */
+
+  color: #ffffff;
+}
+
+.right-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 40px;
+  gap: 8px;
+
+  width: 226px;
+  height: 46px;
+
+  /* Main UI Colors/Primary/Purple */
+
+  border: 2px solid #69088d;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 16px;
+}
+
+.right-text {
+  width: 146px;
+  height: 22px;
+
+  /* Button Text, Semi bold, 16px */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Light/--primary-text-color */
+
+  color: #323338;
+}
