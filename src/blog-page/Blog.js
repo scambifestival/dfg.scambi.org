@@ -4,8 +4,8 @@ import "./BlogCard.css";
 class BlogCard extends Component {
   render() {
     return (
-      <div className="main-container">
-        <div className="title">The latest from our blog</div>
+      <div className="blog-container">
+        <div className="blogmain-title">The latest from our blog</div>
         <div className="left-container">
           <div className="left-photo"></div>
           <div className="bottom-container">

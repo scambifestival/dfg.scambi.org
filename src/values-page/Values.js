@@ -4,7 +4,7 @@ import "./Values.css";
 class Values extends Component {
   render() {
     return (
-      <div className="main-container">
+      <div className="values-container">
         <div className="manifesto-label">Our Manifesto</div>
         <div className="manifesto-cards">
           <div className="workshop-card">
@@ -52,8 +52,8 @@ class Values extends Component {
           </div>
         </div>
         <div className="manifesto-button">
-          <div className="button-container">
-            <div className="button-label">Read the Manifesto</div>
+          <div className="manifestobutton-container">
+            <div className="manifestobutton-label">Read the Manifesto</div>
           </div>
         </div>
       </div>

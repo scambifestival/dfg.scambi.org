@@ -1,42 +1,54 @@
-.main-container {
+.family-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 0px;
   gap: 104px;
 
   position: absolute;
-  width: 100%;
+  width: 1300px;
   height: 492px;
-  left: 82px;
-  top: 0px;
+  left: 70px;
+  bottom: 5221px;
 }
 
-.left-container {
+.familyleft-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 38px;
 
-  width: 566px;
-  height: 420px;
+  width: 532px;
+  height: 468px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .text-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  text-align: left;
   padding: 0px;
   gap: 20px;
 
   width: 532px;
-  height: 336px;
+  height: 384px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-.title {
+.family-title {
   width: 346px;
   height: 76px;
 
@@ -55,11 +67,17 @@
   /* Greyscale palette/Dark */
 
   color: #323338;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-.content {
+.family-content {
   width: 532px;
-  height: 240px;
+  height: 288px;
 
   /* Body, Regular, 16px */
 
@@ -74,17 +92,29 @@
   align-items: center;
 
   color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
-.button-container {
+.familybutton-container {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
   gap: 38px;
 
-  width: 517px;
+  width: 222px;
   height: 46px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .left-button {
@@ -95,48 +125,7 @@
   padding: 12px 40px;
   gap: 8px;
 
-  width: 257px;
-  height: 46px;
-
-  background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.2) 0%,
-      rgba(255, 255, 255, 0) 69.78%
-    ),
-    #69088d;
-  /* Button/Primary/Dropshadow */
-
-  box-shadow: 0px 4px 3px rgba(47, 4, 63, 0.7);
-  border-radius: 16px;
-}
-
-.left-label {
-  width: 177px;
-  height: 22px;
-
-  /* Button Text, Semi bold, 16px */
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  /* identical to box height, or 138% */
-
-  /* Light/--text-color-on-primary */
-
-  color: #ffffff;
-}
-
-.right-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 40px;
-  gap: 8px;
-
-  width: 271px;
+  width: 222px;
   height: 46px;
 
   /* Main UI Colors/Primary/Purple */
@@ -144,10 +133,16 @@
   border: 2px solid #69088d;
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
   border-radius: 16px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
-.right-label {
-  width: 191px;
+.left-label {
+  width: 142px;
   height: 22px;
 
   /* Button Text, Semi bold, 16px */
@@ -159,19 +154,35 @@
   line-height: 22px;
   /* identical to box height, or 138% */
 
+  display: flex;
+  align-items: center;
+  text-align: center;
+
   /* Light/--primary-text-color */
 
   color: #323338;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
-.right-container {
-  flex-flow: column;
+.familyright-container {
   width: 645px;
   height: 492px;
 
   background: url(../images/7.png);
+  background-size: 100%;
   /* Large Elements */
 
   filter: drop-shadow(0px 15px 50px rgba(0, 0, 0, 0.3));
   border-radius: 16px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }

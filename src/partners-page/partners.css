@@ -1,11 +1,16 @@
-.main-container {
+.partners-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 0px;
   gap: 268px;
+
+  position: absolute;
+  width: 1300px;
+  height: 489px;
+  left: 70px;
+  bottom: 1521px;
 }
 
 .sponsor-photo {
@@ -40,7 +45,7 @@
   height: 192px;
 }
 
-.title {
+.partners-title {
   width: 325px;
   height: 76px;
 
@@ -55,13 +60,14 @@
 
   display: flex;
   align-items: center;
+  text-align: left;
 
   /* Greyscale palette/Dark */
 
   color: #323338;
 }
 
-.description {
+.partners-description {
   width: 532px;
   height: 96px;
 
@@ -76,11 +82,12 @@
 
   display: flex;
   align-items: center;
+  text-align: left;
 
   color: #000000;
 }
 
-.button-container {
+.partnerbutton-container {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -91,7 +98,7 @@
   height: 46px;
 }
 
-.left-button {
+.partnerleft-button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -136,7 +143,7 @@
   color: #ffffff;
 }
 
-.right-button {
+.partnerright-button {
   display: flex;
   flex-direction: row;
   justify-content: center;

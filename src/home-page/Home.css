@@ -1,0 +1,9 @@
+.mainhome-container {
+  position: relative;
+  width: 100%;
+  height: 9892px;
+
+  /* Gradient background */
+
+  background: linear-gradient(90deg, #e9afff 0%, #ffedc4 98.65%);
+}

@@ -1,13 +1,12 @@
-.main-container {
-  display: flex;
-  flex-wrap: wrap;
+.blog-container {
+  position: absolute;
   width: 1304px;
   height: 759px;
   left: 64px;
   bottom: 2871px;
 }
 
-.title {
+.blogmain-title {
   position: absolute;
   width: 589px;
   height: 76px;

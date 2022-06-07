@@ -4,11 +4,11 @@ import "./Family.css";
 class Family extends Component {
   render() {
     return (
-      <div className="main-container">
-        <div className="left-container">
+      <div className="family-container">
+        <div className="familyleft-container">
           <div className="text-container">
-            <div className="title">Scambi Family</div>
-            <div className="content">
+            <div className="family-title">Scambi Family</div>
+            <div className="family-content">
               We are a group of under 25s coming from every corner of Europe.
               After lots of videocalls, thousand doubts and just as many ideas,
               our team has become a family. We are proud of our diversity and
@@ -18,16 +18,13 @@ class Family extends Component {
               about us following the link below
             </div>
           </div>
-          <div className="button-container">
+          <div className="familybutton-container">
             <div className="left-button">
-              <div className="left-label">Learn about our team</div>
-            </div>
-            <div className="right-button">
-              <div className="right-label">Volunteer with us</div>
+              <div className="left-label">Volunteer with Us</div>
             </div>
           </div>
         </div>
-        <div className="right-container"></div>
+        <div className="familyright-container"></div>
       </div>
     );
   }
