@@ -8,9 +8,11 @@ class Purpose extends Component {
             {/* spacing in navbar */}
             {/* add support to navbar */}
             <div className='statement-container'>
-            Our purpose is to recover the value of communication and meeting, often forgotten or 
-            hidden behind a two-dimentional screen. Scambi, instead, is a universe of 
-            many dimensions, where distant “planets” have the possibility to interact.
+                <div>
+                    Our purpose is to recover the value of <b>communication</b> and <b>meeting</b>, often forgotten or 
+                    hidden behind a two-dimentional screen. Scambi, instead, is a universe of 
+                    many dimensions, where distant “planets” have the possibility to interact.
+                </div>
             </div>
         </div>
     }
