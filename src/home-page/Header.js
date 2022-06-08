@@ -3,6 +3,12 @@ import './Header.scss';
 import ReactPlayer from 'react-player'
 
 class Header extends Component {
+    calcWidth(){
+        let width = `"${window.innerWidth}px"`
+        console.log(width)
+        return "1000px"
+    }
+
     render() {
         return <div>
             {/* bold communication and meeting */}
@@ -19,7 +25,7 @@ class Header extends Component {
                 </div>
             </div>
             <div className="header-video">
-                <ReactPlayer url='https://vimeo.com/658183199' />
+                <ReactPlayer width='100%' height='100%' url='https://vimeo.com/658183199' />
             </div>
         </div>
     }

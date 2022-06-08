@@ -6,6 +6,7 @@
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
+    flex-wrap: wrap;
     .header-left-container{
         .header-title{
             font-family: 'Londrina Solid';
@@ -46,4 +47,7 @@
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    height: 600px;
+    padding-right: 5%;
+    padding-left: 5%;
 }
