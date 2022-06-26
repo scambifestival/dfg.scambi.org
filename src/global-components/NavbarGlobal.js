@@ -22,9 +22,14 @@ class NavbarGlobal extends Component {
                                 <NavDropdown.Item href="/filmcontest">Film Contest</NavDropdown.Item>
                                 <NavDropdown.Item href="/minivents">Minivents</NavDropdown.Item>
                             </NavDropdown>
+                            <NavDropdown title="Support" id="basic-nav-dropdown">
+                                <NavDropdown.Item href="/donate">Donate</NavDropdown.Item>
+                                <NavDropdown.Item href="/volunteer">Volunteer</NavDropdown.Item>
+                                <NavDropdown.Item href="/join-team">Join Team</NavDropdown.Item>
+                            </NavDropdown>
                             <Nav.Link href="/blog" id="navbar-link">Blog</Nav.Link>
                             <Nav.Link href="/faq" id="navbar-link">FAQ</Nav.Link>
-                            <Nav.Link href="/rsvp" className='rsvp-button' id="navbar-link">RSVP</Nav.Link>
+                            <a href="/rsvp" className='rsvp-button'>Attend</a>
                         <NavDropdown title="Language" id="basic-nav-dropdown" className="justify-content-end">
                                 <NavDropdown.Item href="">English</NavDropdown.Item>
                                 <NavDropdown.Item href="">Italian</NavDropdown.Item>

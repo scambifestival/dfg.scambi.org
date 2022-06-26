@@ -1,6 +1,5 @@
 .statement-container{
         font-family: 'Poppins';
-        font-style: normal;
         font-weight: 400;
         font-size: 32px;
         line-height: 38px;
@@ -8,7 +7,8 @@
         align-items: center;
         letter-spacing: 0.25px;
         color: #323338;
-        
+        background-color: #FFFFFF;
+        padding: 5%;
 }
 
 @media (min-width: 775px){
@@ -22,6 +22,4 @@
         text-align: center;
         color: #323338;
     }
-
-    
 }
