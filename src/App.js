@@ -16,24 +16,24 @@ import Footers from "./footer/Footers";
 import "monday-ui-react-core/dist/main.css";
 
 function App() {
-  return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="blog" element={<Blog />} />
-        <Route path="minivents" element={<MiniVents />} />
-        <Route path="labs" element={<Labs />} />
-        <Route path="pinoli" element={<Pinoli />} />
-        <Route path="teams" element={<Teams />} />
-        <Route path="lastyear" element={<LastyearScambi />} />
-        <Route path="faq" element={<FAQ />} />
-        <Route path="careers" element={<Careers />} />
-        <Route path="filmcontest" element={<FilmContest />} />
-        <Route path="footers" element={<Footers />} />
-      </Routes>
-      {/* <Home />
+	return (
+		<div className="App">
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="about" element={<About />} />
+				<Route path="contact" element={<Contact />} />
+				<Route path="blog" element={<Blog />} />
+				<Route path="minivents" element={<MiniVents />} />
+				<Route path="labs" element={<Labs />} />
+				<Route path="pinoli" element={<Pinoli />} />
+				<Route path="teams" element={<Teams />} />
+				<Route path="lastyear" element={<LastyearScambi />} />
+				<Route path="faq" element={<FAQ />} />
+				<Route path="careers" element={<Careers />} />
+				<Route path="filmcontest" element={<FilmContest />} />
+				<Route path="footers" element={<Footers />} />
+			</Routes>
+			{/* <Home />
       <Contact />
       <About />
       <Blog />
@@ -44,8 +44,9 @@ function App() {
       <FAQ />
       <Careers />
       <FilmContest /> */}
-    </div>
-  );
+			<Footers />
+		</div>
+	);
 }
 
 export default App;
