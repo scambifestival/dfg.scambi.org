@@ -13,6 +13,7 @@ import {
 	rec10,
 } from '../assets/lab/gallery/index';
 import Card from '../components/card';
+import { Link, Outlet } from 'react-router-dom';
 
 function Labs() {
 	const dummyData = [
@@ -142,7 +143,7 @@ function Labs() {
 									<div className='text-left'>
 										<h1 className='text-lg font-semibold mb-5'>{el.title}</h1>
 										<p className='mb-10'>{el.description}</p>
-										<p>Read more</p>
+										<Link to={`/labs/${index}`}>Read more</Link>
 									</div>
 									<img src='https://picsum.photos/200' />
 								</div>
