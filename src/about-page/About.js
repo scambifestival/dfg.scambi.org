@@ -3,6 +3,8 @@ import "./About.css";
 import AboutExampleWorkshop from "./AboutExampleWorkshop";
 import AboutHeader from "./AboutHeader";
 import AboutWorkshopExplanation from "./AboutWorkshopExplanation";
+import AboutQuote from "./AboutQuote";
+import AboutOurTeam from "./AboutOurTeam";
 
 class About extends Component {
 	render() {
@@ -11,6 +13,8 @@ class About extends Component {
 				<AboutHeader />
 				<AboutWorkshopExplanation />
 				<AboutExampleWorkshop />
+				<AboutQuote />
+				<AboutOurTeam />
 			</div>
 		);
 	}
