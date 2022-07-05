@@ -197,6 +197,7 @@
 	width: 40%;
 	display: inline-block;
 	vertical-align: middle;
+	color: white;
 }
 
 .aboutScambiOurTeam-container {
@@ -231,4 +232,8 @@
 	margin-top: 80px;
 	margin-left: 60px;
 	text-align: left;
+}
+
+.white-background {
+	background-color: white !important;
 }
