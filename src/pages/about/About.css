@@ -228,12 +228,28 @@
 }
 
 .flex-text {
-	width: 50%;
-	margin-top: 80px;
-	margin-left: 60px;
+	width: 80%;
 	text-align: left;
 }
 
 .white-background {
 	background-color: white !important;
+}
+
+.secondTextHeader {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.oneSide {
+	width: 50%;
+}
+
+.borderImg {
+	border-radius: 16px;
+}
+
+.ourTeamEl {
+	justify-content: center;
+	margin: auto;
 }
