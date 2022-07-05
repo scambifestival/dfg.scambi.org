@@ -117,7 +117,7 @@
 	right: 20px;
 	width: 250px;
 	height: 60px;
-	left: 0;
+	left: 50%;
 	/* Inside auto layout */
 	flex: none;
 	order: 1;
@@ -223,5 +223,12 @@
 
 .aboutOurTeam-smallText {
 	margin-left: 30px;
+	text-align: left;
+}
+
+.flex-text {
+	width: 50%;
+	margin-top: 80px;
+	margin-left: 60px;
 	text-align: left;
 }
