@@ -1,3 +1,5 @@
+// Source:
+// https://medium.com/codeptivesolutions/want-to-check-node-version-before-project-get-executed-using-script-47cd32c2f1fe
 const result = process.versions;
 if (result && result.node) {
 	if (parseInt(result.node) >= 8) {
