@@ -1,3 +1,70 @@
 body{
 	background: linear-gradient(90deg, #e9afff 0%, #ffedc4 98.65%);
 }
+
+body {
+	background: linear-gradient(90deg, #e9afff 0%, #ffedc4 98.65%);
+}
+
+* {
+	font-family: "Poppins";
+	font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: "Londrina Solid";
+}
+
+h1 {
+	font-size: 102px;
+}
+
+h2 {
+	font-size: 64px;
+}
+
+h3 {
+	font-size: 32px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+button {
+	font-family: "Poppins";
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.yellow-pink-gradient {
+	background: linear-gradient(90deg, #ffecc0 0%, #ffb0c4 50%);
+}
+
+.yellow {
+	background-color: #ffd166;
+}
+
+.orange {
+	background: #eebdad;
+}
+
+.purple {
+	background: #69088d;
+}
+
+.purple-outline {
+	border-color: #69088d;
+	background-color: transparent;
+}
+
+.light-purple {
+	background: #edbbff;
+}
+
+.blue {
+	background: #aab4d6;
+}
