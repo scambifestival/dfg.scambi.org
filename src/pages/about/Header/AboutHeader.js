@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import AboutHeaderText from "./AboutHeaderText";
-import Flex from "../../components/Flex/Flex";
-import "../../components/Flex/Flex.css";
-import aboutHearPic from "./../../assets/about/aboutHeader.png";
+import AboutHeaderText from "../Header/AboutHeaderText";
+import Flex from "../../../components/Flex/Flex";
+import "../../../components/Flex/Flex.css";
+import aboutHearPic from "./../../../assets/about/aboutHeader.png";
 
 class AboutHeader extends Component {
 	render() {
