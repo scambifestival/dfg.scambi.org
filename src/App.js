@@ -12,7 +12,7 @@ import FAQ from "./pages/faq/FAQ";
 import FilmContest from "./pages/filmcontest/FilmContest";
 import "monday-ui-react-core/dist/main.css";
 import LabInfo from "./pages/labs/LabInfo";
-
+import Footers from "./pages/footer/Footers";
 function App() {
 	return (
 		<div className="App">
@@ -30,6 +30,7 @@ function App() {
 				<Route path="careers" element={<Careers />} />
 				<Route path="filmcontest" element={<FilmContest />} />
 			</Routes>
+			<Footers />
 			{/* <Home />
       <Contact />
       <About />

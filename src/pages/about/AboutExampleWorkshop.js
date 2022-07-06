@@ -9,6 +9,7 @@ class AboutExampleWorkshop extends Component {
 			<div className="aboutExampleWorkshop-container">
 				<div className="aboutExampleWorkshop-text">
 					<h2>Workshops we held in Scambi 2021, "Meeting"</h2>
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
 				</div>
 				<div className="exmapleImages">
 					<div className="example1">
