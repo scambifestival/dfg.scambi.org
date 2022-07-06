@@ -5,6 +5,7 @@ import AboutHeader from "./Header/AboutHeader";
 import AboutWorkshopExplanation from "./WorkShopExplanation/AboutWorkshopExplanation";
 import AboutQuote from "./AboutQuote";
 import AboutOurTeam from "./OurTeam/AboutOurTeam";
+import NLSubscribe from "./../home/NLSubscribe";
 
 class About extends Component {
 	render() {
@@ -15,6 +16,7 @@ class About extends Component {
 				<AboutExampleWorkshop />
 				<AboutQuote />
 				<AboutOurTeam />
+				<NLSubscribe />
 			</div>
 		);
 	}
