@@ -35,6 +35,10 @@ button {
 	font-size: 16px;
 }
 
+.shadow {
+	filter: drop-shadow(0, 15, 50, #4d000000);
+}
+
 .yellow-pink-gradient {
 	background: linear-gradient(90deg, #ffecc0 0%, #ffb0c4 50%);
 }
