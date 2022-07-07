@@ -1,5 +1,5 @@
 import React from "react";
-import "./../FooterNew.css";
+import "./../Footer.css";
 
 const FooterTop = () => {
 	return (
@@ -12,7 +12,7 @@ const FooterTop = () => {
 					<h6 className="readyToJoin">Ready to join us?</h6>
 				</div>
 				<div className="topRight2 w-1/5">
-					<button className="attendBtn w-36 h-12">ATTEND</button>
+					<button className="w-36 h-12 purpledBtn">ATTEND</button>
 				</div>
 			</div>
 		</div>
