@@ -3,11 +3,11 @@ import "./../FooterNew.css";
 
 const FooterBottom = () => {
 	return (
-		<div className="footerBottom">
-			<div className="BottomLeft">
+		<div className="footerBottom flex">
+			<div className="BottomLeft w-4/12">
 				<p>Privacy Policy</p>
 			</div>
-			<div className="bottomMidle">
+			<div className="bottomMidle w-4/12">
 				<i class="fa fa-twitter icon fa-lg" aria-hidden="true"></i>
 				<i class="fa fa-facebook-official icon fa-lg" aria-hidden="true"></i>
 				<i class="fa fa-instagram icon fa-lg" aria-hidden="true"></i>
@@ -16,7 +16,7 @@ const FooterBottom = () => {
 				<i class="fa fa-mastodon icon fa-lg" aria-hidden="true"></i>
 				<i class="fa fa-chevron-circle-up icon fa-lg" aria-hidden="true"></i>
 			</div>
-			<div className="bottomRight">
+			<div className="bottomRight w-4/12">
 				<i class="fa fa-chevron-circle-up fa-3x icon" aria-hidden="true"></i>
 			</div>
 		</div>

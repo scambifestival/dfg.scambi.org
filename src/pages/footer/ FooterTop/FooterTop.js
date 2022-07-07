@@ -3,13 +3,17 @@ import "./../FooterNew.css";
 
 const FooterTop = () => {
 	return (
-		<div className="footerTop">
-			<div className="TopLeft">
-				<h1>Scambi</h1>
+		<div className="footerTop flex">
+			<div className="topLeft w-1/5">
+				<h2 className="headText">Scambi</h2>
 			</div>
-			<div className="TopRight">
-				<h6>Ready to join us?</h6>
-				<button>ATTEND</button>
+			<div className="topRight flex p-14">
+				<div className="topRigh1t w-2/3 p-3">
+					<h6 className="readyToJoin">Ready to join us?</h6>
+				</div>
+				<div className="topRight2 w-1/5">
+					<button className="attendBtn w-36 h-12">ATTEND</button>
+				</div>
 			</div>
 		</div>
 	);

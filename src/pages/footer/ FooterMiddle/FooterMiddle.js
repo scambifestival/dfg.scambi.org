@@ -3,8 +3,8 @@ import "./../FooterNew.css";
 
 const FooterMiddle = () => {
 	return (
-		<div className="footerMiddle">
-			<div className="middleLeft">
+		<div className="footerMiddle flex">
+			<div className="middleLeft w-2/5">
 				<div className="blobFooter">
 					<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
 						<path
@@ -13,30 +13,38 @@ const FooterMiddle = () => {
 							transform="translate(100 100)"
 						/>
 					</svg>
-					<div className="contentsBlob">
-						<div className="">Subscribe to our Newsletter! </div>
-						<input type="text" placeholder="Enter your email" />
-						<div className="t">Subscribe</div>
+					<div className="contentsBlob flex flex-col">
+						<div className="subscribeNews mb-2">
+							Subscribe to our Newsletter!{" "}
+						</div>
+						<input
+							class=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+							placeholder="Enter your email"
+							type="text"
+						/>
+						<button className="purpledBtn w-36 h-12 mt-3 ml-8">
+							Subscribe
+						</button>
 					</div>
 				</div>
 			</div>{" "}
-			<div className="middleRight">
-				<div className="menus1">
-					<p>About</p>
-					<p>Team</p>
-					<p>Manifesto</p>
-					<p>Accessibility</p>
+			<div className="middleRight w-3/5">
+				<div className="menus1 w-2/4 p-8 mt-8">
+					<p className="mt-8">About</p>
+					<p className="mt-8">Team</p>
+					<p className="mt-8">Manifesto</p>
+					<p className="mt-8">Accessibility</p>
 				</div>
-				<div className="menus2">
-					<p>Labs</p>
-					<p>Pinolis</p>
-					<p>Dissolvenze</p>
-					<p>Ideas</p>
+				<div className="menus2 w-2/4 p-8 mt-8">
+					<p className="mt-8">Labs</p>
+					<p className="mt-8">Pinolis</p>
+					<p className="mt-8">Dissolvenze</p>
+					<p className="mt-8">Ideas</p>
 				</div>
-				<div className="menus2">
-					<p>Donate</p>
-					<p>Volunteer</p>
-					<p>Join Team</p>
+				<div className="menus2 w-2/4 p-8 mt-8">
+					<p className="mt-8">Donate</p>
+					<p className="mt-8">Volunteer</p>
+					<p className="mt-8">Join Team</p>
 				</div>
 			</div>
 		</div>
