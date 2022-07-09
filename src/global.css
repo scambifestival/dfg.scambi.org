@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body{
 	background: linear-gradient(90deg, #e9afff 0%, #ffedc4 98.65%);
 }
@@ -33,14 +37,17 @@ button {
 	font-family: "Poppins";
 	font-weight: 600;
 	font-size: 16px;
+	line-height: 22px;
+
+	padding: .85em 3em;
 }
 
 .shadow {
-	filter: drop-shadow(0, 15, 50, #4d000000);
+	filter: drop-shadow(0, 15px, 50px, #4d000000);
 }
 
 .yellow-pink-gradient {
-	background: linear-gradient(90deg, #ffecc0 0%, #ffb0c4 50%);
+	background: linear-gradient(110deg, #ffecc0 15%, #ffb0c4 60%);
 }
 
 .yellow {
@@ -48,22 +55,23 @@ button {
 }
 
 .orange {
-	background: #eebdad;
+	background-color: #eebdad;
 }
 
 .purple {
-	background: #69088d;
+	background-color: #69088d;
 }
 
 .purple-outline {
+	border-width: 3px;
 	border-color: #69088d;
 	background-color: transparent;
 }
 
 .light-purple {
-	background: #edbbff;
+	background-color: #edbbff;
 }
 
 .blue {
-	background: #aab4d6;
+	background-color: #aab4d6;
 }
