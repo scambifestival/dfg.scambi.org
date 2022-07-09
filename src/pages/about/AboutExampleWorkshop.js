@@ -12,8 +12,7 @@ class AboutExampleWorkshop extends Component {
 						Workshops we held in Scambi 2021, "Meeting"
 					</h2>
 					<i
-						class="fa fa-angle-right fa-3x pt-8"
-						className="rightArrow"
+						className="fa fa-angle-right fa-3x pt-8 rightArrow"
 						aria-hidden="true"></i>
 				</div>
 				<div className="exmapleImages">
@@ -36,7 +35,7 @@ class AboutExampleWorkshop extends Component {
 								width="100%"
 								height="100%"
 								preserveAspectRatio="xMidYMid slice"
-								clip-path="url(#clip01)"
+								clipPath="url(#clip01)"
 							/>
 						</svg>
 						<p>Street Art</p>
@@ -56,7 +55,7 @@ class AboutExampleWorkshop extends Component {
 								width="100%"
 								height="100%"
 								preserveAspectRatio="xMidYMid slice"
-								clip-path="url(#clip02)"
+								clipPath="url(#clip02)"
 							/>
 						</svg>
 						<p>Rifugiato per un giorno</p>
@@ -76,7 +75,7 @@ class AboutExampleWorkshop extends Component {
 								width="100%"
 								height="100%"
 								preserveAspectRatio="xMidYMid slice"
-								clip-path="url(#clip03)"
+								clipPath="url(#clip03)"
 							/>
 						</svg>
 						<p>Scambi Sounds Lab</p>

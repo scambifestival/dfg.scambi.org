@@ -21,10 +21,6 @@
 	color: #69008d;
 }
 
-input:focus {
-	border-color: #7b61ff !important;
-}
-
 .contentsBlob {
 	position: absolute;
 	z-index: 3;

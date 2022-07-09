@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./../Footer.css";
-
+import EmailValidation from "../../../components/emailValidation/EmailValidation";
 const FooterMiddle = () => {
 	return (
 		<div className="footerMiddle flex">
@@ -17,17 +17,10 @@ const FooterMiddle = () => {
 						<div className="subscribeNews mb-2">
 							Subscribe to our Newsletter!{" "}
 						</div>
-						<input
-							class=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none"
-							placeholder="Enter your email"
-							type="text"
-						/>
-						<button className="purpledBtn w-36 h-12 mt-3 ml-8">
-							Subscribe
-						</button>
+						<EmailValidation />
 					</div>
 				</div>
-			</div>{" "}
+			</div>
 			<div className="middleRight w-3/5">
 				<div className="menus1 w-2/4 p-8 mt-8">
 					<p className="mt-8">About</p>
