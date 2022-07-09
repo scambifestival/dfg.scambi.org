@@ -7,9 +7,14 @@ class AboutExampleWorkshop extends Component {
 	render() {
 		return (
 			<div className="aboutExampleWorkshop-container">
-				<div className="aboutExampleWorkshop-text">
-					<h2>Workshops we held in Scambi 2021, "Meeting"</h2>
-					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				<div className="aboutExampleWorkshop-text flex">
+					<h2 className="pt-10 text-xl">
+						Workshops we held in Scambi 2021, "Meeting"
+					</h2>
+					<i
+						class="fa fa-angle-right fa-3x pt-8"
+						className="rightArrow"
+						aria-hidden="true"></i>
 				</div>
 				<div className="exmapleImages">
 					<div className="example1">
@@ -21,7 +26,11 @@ class AboutExampleWorkshop extends Component {
 								/>
 							</clipPath>
 						</svg>
-						<svg width="35rem" height="35rem" viewBox="0 0 300 300">
+						<svg
+							width="35rem"
+							height="35rem"
+							viewBox="-10 0 300 300"
+							style={{ objectFit: "cover" }}>
 							<image
 								xlinkHref={pic2}
 								width="100%"

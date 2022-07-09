@@ -85,7 +85,6 @@
 .scambiExplanation-text {
 	font-size: 32px;
 	text-align: left;
-
 	font-family: "Londrina Solid";
 	margin-bottom: 30px;
 }
@@ -162,6 +161,7 @@
 .aboutExampleWorkshop-text {
 	text-align: left;
 	margin-left: 30px;
+	position: relative;
 }
 
 .exmapleImages {
@@ -172,6 +172,13 @@
 	padding: 0;
 	width: 33%;
 	margin: 0;
+}
+
+.rightArrow {
+	color: #69008d;
+	position: relative;
+	right: 0;
+	top: 100px;
 }
 
 .example2 {
