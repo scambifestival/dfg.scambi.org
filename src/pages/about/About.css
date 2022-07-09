@@ -169,18 +169,25 @@
 }
 
 .example1 {
-	padding: 100px;
+	padding: 0;
 	width: 33%;
+	margin: 0;
 }
 
 .example2 {
-	padding: 100px;
+	padding: 0;
 	width: 33%;
+	margin: 0;
 }
 
 .example3 {
-	padding: 100px;
+	padding: 0;
 	width: 33%;
+	margin: 0;
+}
+img {
+	margin: 0;
+	padding: 0;
 }
 
 .aboutScambiQuote-container {

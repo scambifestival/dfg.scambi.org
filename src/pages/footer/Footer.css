@@ -105,11 +105,19 @@
 	.blobFooter {
 		background-color: red;
 	}
+	svg {
+		width: 100%;
+		height: auto;
+	}
 }
 
 @media only screen and (max-width: 540px) {
 	.blobFooter {
 		background-color: red;
+	}
+	svg {
+		width: 100%;
+		height: auto;
 	}
 }
 
@@ -117,10 +125,18 @@
 	.blobFooter {
 		background-color: red;
 	}
+	svg {
+		width: 100%;
+		height: auto;
+	}
 }
 
 @media only screen and (max-width: 912px) {
 	.blobFooter {
 		background-color: red;
+	}
+	svg {
+		width: 100%;
+		height: auto;
 	}
 }
