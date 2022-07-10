@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
 	background: linear-gradient(90deg, #e9afff 0%, #ffedc4 98.65%);
 }
 * {
-	font-family: "Poppins";
+	font-family: 'Poppins';
 	font-size: 16px;
 }
 
@@ -14,7 +14,7 @@ h1,
 h2,
 h3,
 h4 {
-	font-family: "Londrina Solid";
+	font-family: 'Londrina Solid';
 }
 
 h1 {
@@ -34,12 +34,11 @@ h4 {
 }
 
 button {
-	font-family: "Poppins";
+	font-family: 'Poppins';
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 22px;
-
-	padding: .85em 3em;
+	padding: 0.85em 3em;
 }
 
 .shadow {
@@ -76,4 +75,76 @@ button {
 
 .blue {
 	background-color: #aab4d6;
+}
+
+/* TailwindCSS style components */
+
+@layer components {
+	.btn-primary {
+		@apply text-white;
+	}
+
+	.btn-primary.regular {
+		@apply bg-gradient-to-b from-fuchsia-800 to-transparent;
+	}
+
+	.btn-primary.regular,
+	.btn-primary:hover,
+	.btn-secondary:hover {
+		@apply bg-purple-250;
+	}
+
+	.btn-primary:active {
+		@apply bg-purple-650;
+	}
+
+	.btn-secondary {
+		@apply shadow-lg;
+	}
+
+	.btn-secondary.regular {
+		@apply outline-purple-250 border-3 bg-transparent;
+	}
+
+	.btn-secondary:hover {
+		@apply outline-purple-650 border-3;
+	}
+
+	.btn-secondary:active {
+		@apply bg-purple-900 text-white border-3 border-purple-900;
+	}
+
+	.btn-primary,
+	.btn-light {
+		@apply shadow-3xl;
+	}
+
+	.btn-light.regular {
+		@apply bg-white;
+	}
+
+	.btn-light:hover {
+		@apply bg-gray-50;
+	}
+
+	.btn-light:active {
+		@apply bg-gray-200;
+	}
+
+	.btn-action {
+		@apply shadow-yellow-3xl;
+	}
+
+	.btn-action.regular {
+		@apply bg-gradient-to-b from-yellow-200 to-transparent;
+	}
+
+	.btn-action.regular,
+	.btn-action:hover {
+		@apply bg-yellow-450;
+	}
+
+	.btn-action:active {
+		@apply bg-yellow-400;
+	}
 }
