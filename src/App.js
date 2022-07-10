@@ -12,23 +12,26 @@ import FAQ from "./pages/faq/FAQ";
 import FilmContest from "./pages/filmcontest/FilmContest";
 import "monday-ui-react-core/dist/main.css";
 import LabInfo from "./pages/labs/LabInfo";
+import PageLayout from './PageLayout';
 
 function App() {
 	return (
 		<div className="App">
 			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="about" element={<About />} />
-				<Route path="contact" element={<Contact />} />
-				<Route path="blog" element={<Blog />} />
-				<Route path="minivents" element={<MiniVents />} />
-				<Route path="labs">
-					<Route index element={<Labs />} />
-					<Route path=":labId" element={<LabInfo />} />
+				<Route path="/" element={<PageLayout/>}>
+					<Route path="/" element={<Home />} />
+					<Route path="about" element={<About />} />
+					<Route path="contact" element={<Contact />} />
+					<Route path="blog" element={<Blog />} />
+					<Route path="minivents" element={<MiniVents />} />
+					<Route path="labs">
+						<Route index element={<Labs />} />
+						<Route path=":labId" element={<LabInfo />} />
+					</Route>
+					<Route path="faq" element={<FAQ />} />
+					<Route path="careers" element={<Careers />} />
+					<Route path="filmcontest" element={<FilmContest />} />
 				</Route>
-				<Route path="faq" element={<FAQ />} />
-				<Route path="careers" element={<Careers />} />
-				<Route path="filmcontest" element={<FilmContest />} />
 			</Routes>
 			{/* <Home />
       <Contact />
