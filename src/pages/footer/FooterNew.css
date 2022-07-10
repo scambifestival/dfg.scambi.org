@@ -1,0 +1,48 @@
+.footerTop .footerMiddle .footerBottom {
+	display: flex;
+	padding: 400px;
+	margin: 200px;
+	background-color: red;
+}
+
+.blobFooter {
+	width: 500px;
+	height: 500px;
+}
+
+.footer {
+	background-color: white;
+	margin-top: 100px;
+	border-radius: 30px;
+}
+
+.middleRight {
+	display: flex;
+	width: 50%;
+}
+
+.middleLeft {
+	width: 50%;
+}
+
+.topRight {
+	background-color: red;
+}
+
+.icon {
+	padding: 5px;
+	margin-bottom: 20px;
+	color: #69008d;
+}
+
+.contentsBlob {
+	position: absolute;
+	z-index: 3;
+	top: 200px;
+	left: 150px;
+}
+
+.blobFooter {
+	position: relative;
+	z-index: 1;
+}
