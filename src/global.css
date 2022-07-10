@@ -88,13 +88,12 @@ button {
 		@apply bg-gradient-to-b from-fuchsia-800 to-transparent;
 	}
 
-	.btn-primary.regular,
-	.btn-primary:hover,
-	.btn-secondary:hover {
+	.btn-primary.regular:hover,
+	.btn-secondary.regular:hover {
 		@apply bg-purple-250;
 	}
 
-	.btn-primary:active {
+	.btn-primary.regular:active {
 		@apply bg-purple-650;
 	}
 
@@ -106,11 +105,11 @@ button {
 		@apply outline-purple-250 border-3 bg-transparent;
 	}
 
-	.btn-secondary:hover {
+	.btn-secondary.regular:hover {
 		@apply outline-purple-650 border-3;
 	}
 
-	.btn-secondary:active {
+	.btn-secondary.regular:active {
 		@apply bg-purple-900 text-white border-3 border-purple-900;
 	}
 
@@ -123,11 +122,11 @@ button {
 		@apply bg-white;
 	}
 
-	.btn-light:hover {
+	.btn-light.regular:hover {
 		@apply bg-gray-50;
 	}
 
-	.btn-light:active {
+	.btn-light.regular:active {
 		@apply bg-gray-200;
 	}
 
@@ -140,11 +139,11 @@ button {
 	}
 
 	.btn-action.regular,
-	.btn-action:hover {
+	.btn-action.regular:hover {
 		@apply bg-yellow-450;
 	}
 
-	.btn-action:active {
+	.btn-action.regular:active {
 		@apply bg-yellow-400;
 	}
 }
