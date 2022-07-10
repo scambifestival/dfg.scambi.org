@@ -62,10 +62,12 @@ button {
 	background-color: #69088d;
 }
 
+.dark-purple {
+	background-color: #4e0968;
+}
+
 .purple-outline {
-	border-width: 3px;
 	border-color: #69088d;
-	background-color: transparent;
 }
 
 .light-purple {
