@@ -44,10 +44,10 @@ export default function Lab() {
 		<div className='pt-10 px-10'>
 			<Flex classes='items-center'>
 				<div className='text-left'>
-					<h1 className='text-8xl font-semibold mb-3'>Labs</h1>
-					<h2 className='italic mb-10'>
+					<h1 className='font-semibold mb-3'>Labs</h1>
+					<p className='italic mb-10'>
 						Scambi’s workshops are the place where the exchange becomes reality.
-					</h2>
+					</p>
 					<p className='mb-5'>
 						Participants are involved in{' '}
 						<span className='font-bold italic'>paneuretic</span> experiences and

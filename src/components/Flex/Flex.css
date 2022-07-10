@@ -1,7 +1,5 @@
 .flex-container {
 	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
 	height: 600px;
 	width: 100%;
 	padding: 70px;
