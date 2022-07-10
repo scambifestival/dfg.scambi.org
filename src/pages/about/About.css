@@ -1,21 +1,9 @@
-.aboutScambiHeader-container {
-	display: inline-flex;
-	background: linear-gradient(90deg, #e9afff 0%, #ffedc4 98.65%);
-	height: 500px;
-	padding-top: 40px;
-	/* Subtitle 2, Semi Bold, 18px */
-	font-family: "Poppins";
-	font-style: normal;
-	font-size: 18px;
-}
 .left-aboutScambi {
-	width: 50%;
 	height: 100%;
 	text-align: left;
 	margin-left: 40px;
 }
 .right-aboutScambi {
-	width: 50%;
 	height: 100%;
 }
 
@@ -242,7 +230,6 @@ img {
 }
 
 .flex-text {
-	width: 80%;
 	text-align: left;
 }
 
@@ -253,10 +240,6 @@ img {
 .secondTextHeader {
 	margin-top: 20px;
 	margin-bottom: 20px;
-}
-
-.oneSide {
-	width: 50%;
 }
 
 .borderImg {

@@ -3,9 +3,9 @@ import "./../About.css";
 
 const AboutHeaderText = (props) => {
 	return (
-		<div className="oneSide">
+		<div className="md:w-1/2 lg:w-1/2">
 			<div className="flex-text">
-				<h1 className="scambi-text">About Scambi</h1>
+				<h1 className="scambi-text ">About Scambi</h1>
 				<p>
 					Scambi, mearninig "exchange" in Italian, is the festival of
 					interactive workshop organized in Pigna, the old town of Sanremo
