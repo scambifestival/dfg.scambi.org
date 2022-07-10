@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './button.css';
 
 const styles = {
     "primary": {
