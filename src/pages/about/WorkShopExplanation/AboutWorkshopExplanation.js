@@ -9,7 +9,7 @@ class AboutWorkshopExplanation extends Component {
 		return (
 			<div className="white-background">
 				<Flex>
-					<div className="oneSide">
+					<div className="lg:w-1/2 md:w-1/2">
 						<img
 							src={workshopPic}
 							className="borderImg"
@@ -17,7 +17,10 @@ class AboutWorkshopExplanation extends Component {
 							height="400px"
 						/>
 					</div>
-					<AboutWorkShopText style={{ backgroundColor: "white" }} />
+					<AboutWorkShopText
+						style={{ backgroundColor: "white" }}
+						className="lg:w-1/2 md:w-1/2"
+					/>
 				</Flex>
 			</div>
 		);

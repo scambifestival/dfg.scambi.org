@@ -26,9 +26,9 @@ class AboutExampleWorkshop extends Component {
 							</clipPath>
 						</svg>
 						<svg
-							width="35rem"
-							height="35rem"
-							viewBox="-10 0 300 300"
+							width="27rem"
+							height="27rem"
+							viewBox="-10 0 250 250"
 							style={{ objectFit: "cover" }}>
 							<image
 								xlinkHref={pic2}
@@ -49,7 +49,7 @@ class AboutExampleWorkshop extends Component {
 								/>
 							</clipPath>
 						</svg>
-						<svg width="35rem" height="35rem" viewBox="0 0 300 300">
+						<svg width="27rem" height="27rem" viewBox="0 0 250 250">
 							<image
 								xlinkHref={pic2}
 								width="100%"
@@ -69,7 +69,7 @@ class AboutExampleWorkshop extends Component {
 								/>
 							</clipPath>
 						</svg>
-						<svg width="35rem" height="35rem" viewBox="0 0 300 300">
+						<svg width="27rem" height="27rem" viewBox="0 0 250 250">
 							<image
 								xlinkHref={pic3}
 								width="100%"

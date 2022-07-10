@@ -11,6 +11,7 @@ class FormComponent extends React.Component {
 		this.state = emailState;
 		this.onChange = this.onChange.bind(this);
 	}
+
 	onChange(e) {
 		this.setState({
 			email: e.target.value
@@ -23,6 +24,7 @@ class FormComponent extends React.Component {
 			this.setState({
 				error: "Email is not valid!"
 			});
+
 			return false;
 		}
 		return true;
@@ -33,22 +35,26 @@ class FormComponent extends React.Component {
 			this.setState(emailState);
 		}
 	}
+
 	render() {
 		return (
 			<div>
 				<div className="mb-3 flex flex-col">
 					<input
-						type="email"
+						type="text"
 						id="email"
 						aria-describedby="helper-text-explanation"
-						className=""
-						style={{
-							borderColor: this.state.error && "red"
-						}}
 						placeholder="Enter your email"
 						value={this.state.email}
 						onChange={this.onChange}
+						className={
+							"focus:outline-none focus:ring focus:ring-violet-800 w-38 h-12 rounded-md " +
+							(this.state.error == "Email is not valid!"
+								? " outline-none ring ring-red-500"
+								: "")
+						}
 					/>
+
 					<span className="incorrectText">{this.state.error}</span>
 				</div>
 				<div>

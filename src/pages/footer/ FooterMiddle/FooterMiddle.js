@@ -3,8 +3,8 @@ import "./../Footer.css";
 import EmailValidation from "../../../components/emailValidation/EmailValidation";
 const FooterMiddle = () => {
 	return (
-		<div className="footerMiddle flex">
-			<div className="middleLeft w-2/5">
+		<div className="footerMiddle w-full h-fit flex flex-col flex-container md:flex-row md:space-x-4 md:space-y-0">
+			<div className="md:w-1/2 lg:w-1/2 inline-flex items-center justify-center h-screen sm:h-36">
 				<div className="blobFooter">
 					<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
 						<path
@@ -21,7 +21,7 @@ const FooterMiddle = () => {
 					</div>
 				</div>
 			</div>
-			<div className="middleRight w-3/5">
+			<div className="md:w-1/2 lg:w-1/2 inline-flex items-center justify-center h-screen sm:h-36">
 				<div className="menus1 w-2/4 p-8 mt-8">
 					<p className="mt-8">About</p>
 					<p className="mt-8">Team</p>

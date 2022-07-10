@@ -72,6 +72,7 @@
 
 .purpleText {
 	color: #69088d;
+	font-weight: bold !important;
 }
 
 .scambi-workExplanation-text {
@@ -128,10 +129,9 @@
 }
 
 .aboutExampleWorkshop-container {
-	background: linear-gradient(90deg, #e9afff 0%, #ffedc4 98.65%);
-	font-family: "Londrina Solid";
 	padding: 20px;
 	height: 700px;
+	position: relative;
 }
 
 .aboutExampleWorkshop-text {
@@ -152,9 +152,9 @@
 
 .rightArrow {
 	color: #69008d;
-	position: relative;
+	position: absolute;
 	right: 0;
-	top: 100px;
+	top: 1px;
 }
 
 .example2 {
@@ -168,23 +168,15 @@
 	width: 33%;
 	margin: 0;
 }
+
 img {
 	margin: 0;
 	padding: 0;
 }
 
-.aboutScambiQuote-container {
-	background-url: "";
-	height: 700px;
-	font-family: "Londrina Solid";
-}
-
 .aboutQuoteText {
 	padding: 100px 0;
 	text-align: center;
-	font-size: 64px;
-	display: inline-block;
-	vertical-align: middle;
 	color: white;
 }
 
