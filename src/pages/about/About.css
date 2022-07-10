@@ -1,17 +1,10 @@
 .left-aboutScambi {
-	height: 100%;
 	text-align: left;
 	margin-left: 40px;
 }
-.right-aboutScambi {
-	height: 100%;
-}
 
 .scambi-text {
-	/* H2 Headline, Light, 64px */
-	font-family: "Londrina Solid";
 	text-align: left;
-	font-size: 64px;
 }
 
 .attendButton {
@@ -84,11 +77,6 @@
 .scambi-workExplanation-text {
 	text-align: left;
 	margin-bottom: 20px;
-}
-
-.right-aboutScambi-workExplanation {
-	width: 500px;
-	position: relative;
 }
 
 .exploreWorkshopButton {
@@ -192,35 +180,20 @@ img {
 }
 
 .aboutQuoteText {
-	font-family: "Londrina Solid";
 	padding: 100px 0;
 	text-align: center;
 	font-size: 64px;
-	width: 40%;
 	display: inline-block;
 	vertical-align: middle;
 	color: white;
 }
 
 .aboutScambiOurTeam-container {
-	background: linear-gradient(90deg, #e9afff 0%, #ffedc4 98.65%);
 	padding: 20px;
-	height: 700px;
-	display: flex;
-}
-
-.aboutOurTeamText {
-	width: 50%;
-}
-
-.boutOurTeamImage {
-	width: 50%;
 }
 
 .textOurTeam {
-	font-family: "Londrina Solid";
 	text-align: left;
-	font-size: 64px;
 	margin-left: 30px;
 }
 
