@@ -1,12 +1,13 @@
 import "./EmailValidation.css";
 
 import React from "react";
+
 const emailState = {
 	email: "",
 	error: ""
 };
 class FormComponent extends React.Component {
-	constructor() {
+	constructor(props) {
 		super();
 		this.state = emailState;
 		this.onChange = this.onChange.bind(this);
@@ -56,15 +57,9 @@ class FormComponent extends React.Component {
 					/>
 
 					<span className="incorrectText">{this.state.error}</span>
+					<button onClick={() => this.onSubmit()}>Submit</button>
 				</div>
-				<div>
-					<button
-						type="submit"
-						className="purpledBtn w-36 h-12 mt-3 ml-8"
-						onClick={() => this.onSubmit()}>
-						Submit
-					</button>
-				</div>
+				<div></div>
 			</div>
 		);
 	}
