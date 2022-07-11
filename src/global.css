@@ -80,7 +80,7 @@ button {
 /* TailwindCSS style components */
 
 @layer components {
-	.btn-primary {
+	.btn-primary.regular {
 		@apply text-white;
 	}
 
@@ -93,28 +93,29 @@ button {
 		@apply bg-purple-250;
 	}
 
-	.btn-primary.regular:active {
+	.btn-primary.regular,
+	.btn-primary:active {
 		@apply bg-purple-650;
 	}
 
-	.btn-secondary {
+	.btn-secondary.regular {
 		@apply shadow-lg;
 	}
 
 	.btn-secondary.regular {
-		@apply outline-purple-250 border-3 bg-transparent;
+		@apply border-purple-250 border-3 bg-transparent;
 	}
 
 	.btn-secondary.regular:hover {
-		@apply outline-purple-650 border-3;
+		@apply border-purple-650 border-3;
 	}
 
 	.btn-secondary.regular:active {
 		@apply bg-purple-900 text-white border-3 border-purple-900;
 	}
 
-	.btn-primary,
-	.btn-light {
+	.btn-primary.regular,
+	.btn-light.regular {
 		@apply shadow-3xl;
 	}
 
@@ -130,7 +131,7 @@ button {
 		@apply bg-gray-200;
 	}
 
-	.btn-action {
+	.btn-action.regular {
 		@apply shadow-yellow-3xl;
 	}
 
