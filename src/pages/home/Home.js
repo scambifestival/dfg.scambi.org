@@ -5,7 +5,6 @@ export default function Home() {
 	return (
 		<div>
 			<p>Home</p>
-			<Button styleType='secondary'>Hi</Button>
 		</div>
 	);
 }
