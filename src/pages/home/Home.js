@@ -1,6 +1,5 @@
-import UserTest from './UserTest';
-import NLSubscribe from './NLSubscribe';
-import Button from '../../components/button';
+/*import UserTest from './UserTest';
+import NLSubscribe from './NLSubscribe';*/
 
 export default function Home() {
 	return (
