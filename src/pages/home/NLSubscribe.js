@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './NLSubscribe.css';
-import SubscribeImage from '../../assets/subscribe/SubscribeImage.png';
+//import SubscribeImage from '../../assets/subscribe/SubscribeImage.png';
 //import { TextField, Button } from "monday-ui-react-core";
 
 class NLSubscribe extends Component {

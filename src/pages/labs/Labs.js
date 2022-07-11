@@ -57,7 +57,7 @@ export default function Labs() {
 						Get Tickets
 					</button>
 				</div>
-				<img src={labVid} />
+				<img src={labVid} alt='' />
 			</Flex>
 			<Flex classes='items-center justify-around'>
 				<img className='w-[436px] h-[425px]' src={lab} alt='' />
