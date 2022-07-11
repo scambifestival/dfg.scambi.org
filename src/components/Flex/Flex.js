@@ -1,9 +1,11 @@
-import React from 'react';
-import './Flex.css';
+import React from "react";
+import "./Flex.css";
 
-const Flex = (props) => {
+const Flex = ({children, classes = "", reverse = false}) => {
 	return (
-		<div className={`flex-container ${props.classes}`}>{props.children}</div>
+		<div className={`w-full h-fit flex flex-container md:space-x-4 md:space-y-0 ${reverse ? "flex-row-reverse" : "flex-row"} ${classes}`}>
+			{children}
+		</div>
 	);
 };
 
