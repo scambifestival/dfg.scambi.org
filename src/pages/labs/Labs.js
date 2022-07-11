@@ -17,7 +17,7 @@ import Flex from '../../components/Flex/Flex';
 import { Link, Outlet } from 'react-router-dom';
 import LabCard from './components/card';
 
-export default function Lab() {
+export default function Labs() {
 	const dummyData = [
 		{
 			title: 'Lorem Ipsum',

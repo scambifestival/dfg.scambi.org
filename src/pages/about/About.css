@@ -4,7 +4,7 @@
 	height: 500px;
 	padding-top: 40px;
 	/* Subtitle 2, Semi Bold, 18px */
-	font-family: "Poppins";
+	font-family: 'Poppins';
 	font-style: normal;
 	font-size: 18px;
 }
@@ -21,7 +21,7 @@
 
 .scambi-text {
 	/* H2 Headline, Light, 64px */
-	font-family: "Londrina Solid";
+	font-family: 'Londrina Solid';
 	text-align: left;
 	font-size: 64px;
 }
@@ -33,7 +33,6 @@
 	justify-content: center;
 	align-items: center;
 	padding: 30px 40px;
-	gap: 8px;
 	margin-top: 1vh;
 	width: 162px;
 	height: 46px;
@@ -49,7 +48,7 @@
 	flex-grow: 0;
 	background-color: white;
 	/* Button Text, Semi bold, 16px */
-	font-family: "Poppins";
+	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 16px;
@@ -86,7 +85,7 @@
 	font-size: 32px;
 	text-align: left;
 
-	font-family: "Londrina Solid";
+	font-family: 'Londrina Solid';
 	margin-bottom: 30px;
 }
 
@@ -113,7 +112,6 @@
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 10px;
-	gap: 10px;
 	right: 20px;
 	width: 250px;
 	height: 60px;
@@ -132,7 +130,6 @@
 	justify-content: center;
 	align-items: center;
 	padding: 12px 40px;
-	gap: 8px;
 	background: linear-gradient(
 			180deg,
 			rgba(255, 255, 255, 0.2) 0%,
@@ -154,7 +151,7 @@
 
 .aboutExampleWorkshop-container {
 	background: linear-gradient(90deg, #e9afff 0%, #ffedc4 98.65%);
-	font-family: "Londrina Solid";
+	font-family: 'Londrina Solid';
 	padding: 20px;
 	height: 700px;
 }
@@ -184,13 +181,12 @@
 }
 
 .aboutScambiQuote-container {
-	background-url: "";
 	height: 700px;
-	font-family: "Londrina Solid";
+	font-family: 'Londrina Solid';
 }
 
 .aboutQuoteText {
-	font-family: "Londrina Solid";
+	font-family: 'Londrina Solid';
 	padding: 100px 0;
 	text-align: center;
 	font-size: 64px;
@@ -216,7 +212,7 @@
 }
 
 .textOurTeam {
-	font-family: "Londrina Solid";
+	font-family: 'Londrina Solid';
 	text-align: left;
 	font-size: 64px;
 	margin-left: 30px;
