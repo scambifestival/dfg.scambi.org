@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import AboutHeaderText from "../Header/AboutHeaderText";
-import Flex from "../../../components/Flex/Flex";
-import "../../../components/Flex/Flex.css";
-import aboutHearPic from "./../../../assets/about/aboutHeader.png";
+import React, { Component } from 'react';
+import AboutHeaderText from '../Header/AboutHeaderText';
+import Flex from '../../../components/Flex/Flex';
+import '../../../components/Flex/Flex.css';
+import aboutHearPic from './../../../assets/about/aboutHeader.png';
 
 class AboutHeader extends Component {
 	render() {
@@ -15,6 +15,7 @@ class AboutHeader extends Component {
 						width="600rem"
 						height="600rem"
 						className="md:mt-16"
+            alt=""
 					/>
 				</div>
 			</Flex>

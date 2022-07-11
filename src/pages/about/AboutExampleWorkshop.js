@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import "./About.css";
-import pic2 from "./../../assets/lab/gallery/rec1.png";
-import pic3 from "./../../assets/lab/gallery/rec10.png";
+import React, { Component } from 'react';
+import './About.css';
+import pic2 from './../../assets/lab/gallery/rec1.png';
+import pic3 from './../../assets/lab/gallery/rec10.png';
 
 class AboutExampleWorkshop extends Component {
 	render() {

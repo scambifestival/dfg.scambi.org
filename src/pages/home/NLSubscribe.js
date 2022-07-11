@@ -7,15 +7,15 @@ import EmailValidation from "./../../components/emailValidation/EmailValidation"
 class NLSubscribe extends Component {
 	render() {
 		return (
-			<div className="main-container">
-				<div className="left-container">{"<img src={SubscribeImage} /> "}</div>
-				<div className="right-container">
-					<div className="inner-container">
-						<div className="upper-subtitle">
+			<div className='main-container'>
+				<div className='left-container'>{'<img src={SubscribeImage} /> '}</div>
+				<div className='right-container'>
+					<div className='inner-container'>
+						<div className='upper-subtitle'>
 							exchanges of letters, our newsletter
 						</div>
-						<div className="title">Scambi Epistolari</div>
-						<div className="lower-subtitle">
+						<div className='title'>Scambi Epistolari</div>
+						<div className='lower-subtitle'>
 							Join the conversation - sign up now to receive updates on Scambi
 							activities.
 						</div>
