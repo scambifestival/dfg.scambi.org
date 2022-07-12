@@ -8,14 +8,9 @@ class AboutOurTeam extends Component {
 	render() {
 		return (
 			<Flex>
-				<AboutTeamText className="lg:w-1/2 md:w-1/2" />
+				<AboutTeamText className="lg:w-1/2 md:mt-12 md:w-1/2" />
 				<div>
-					<img
-						src={ourTeampic}
-						width="600px"
-						height="200px"
-						className="md:mt-16"
-					/>
+					<img src={ourTeampic} width="600px" height="200px" />
 				</div>
 			</Flex>
 		);
