@@ -6,8 +6,8 @@ import pic3 from "./../../assets/lab/gallery/rec10.png";
 class AboutExampleWorkshop extends Component {
 	render() {
 		return (
-			<div className="aboutExampleWorkshop-container">
-				<div className="aboutExampleWorkshop-text flex">
+			<div className="aboutExampleWorkshop-container h-fit">
+				<div className="aboutExampleWorkshop-text">
 					<h2 className="pt-10 text-xl">
 						Workshops we held in Scambi 2021, "Meeting"
 					</h2>
@@ -15,7 +15,7 @@ class AboutExampleWorkshop extends Component {
 						className="fa fa-angle-right fa-3x pt-8 rightArrow"
 						aria-hidden="true"></i>
 				</div>
-				<div className="exmapleImages">
+				<div className="exmapleImages flex flex-wrap">
 					<div className="example1">
 						<svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
 							<clipPath id="clip01">
@@ -31,7 +31,7 @@ class AboutExampleWorkshop extends Component {
 							viewBox="-10 0 250 250"
 							style={{ objectFit: "cover" }}>
 							<image
-								xlinkHref={pic2}
+								xlinkHref="https://images.tommi.space/i?/uploads/j/b/u/jbuqxznr00//2021/08/29/20210829191758-06bb5082-me.jpg"
 								width="100%"
 								height="100%"
 								preserveAspectRatio="xMidYMid slice"

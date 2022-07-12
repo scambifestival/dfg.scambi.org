@@ -1,6 +1,8 @@
 .blobFooter {
 	width: 500px;
 	height: 500px;
+	position: relative;
+	z-index: 1;
 }
 
 .footer {
@@ -19,13 +21,10 @@
 .contentsBlob {
 	position: absolute;
 	z-index: 3;
-	top: 180px;
-	left: 150px;
-}
-
-.blobFooter {
-	position: relative;
-	z-index: 1;
+	top: 68%;
+	left: 50%;
+	margin: auto;
+	transform: translate(-50%, -50%);
 }
 
 .headText {
@@ -82,4 +81,295 @@
 
 	/* Main UI Colors/Primary/Purple */
 	color: #69088d;
+}
+
+.attendButton {
+	/* Auto layout */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 40px;
+	gap: 8px;
+	margin-top: 1vh;
+	width: 162px;
+	height: 46px;
+
+	/* Button/Primary/Dropshadow */
+	box-shadow: 0px 4px 3px rgba(47, 4, 63, 0.7);
+	border-radius: 16px;
+	outline: none;
+	border: 0;
+	/* Inside auto layout */
+	flex: none;
+	order: 2;
+	flex-grow: 0;
+	background-color: white;
+	/* Button Text, Semi bold, 16px */
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	/* identical to box height, or 138% */
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	/* Light/--text-color-on-primary */
+	color: black;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+
+.galaxy {
+	display: none;
+}
+
+@media (min-width: 1400px) {
+	.blobFooter1 {
+		margin-top: 100px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.blobFooter1 {
+		margin-top: 100px;
+	}
+}
+
+@media (max-width: 1100px) {
+	.middleLeft {
+		height: 300px !important;
+		margin-bottom: 200px;
+	}
+
+	.blobFooter1 {
+		margin-top: 200px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.blobFooter1 {
+		width: 600px;
+		margin-left: -100px;
+		margin-top: 0;
+	}
+
+	.middleLeft {
+		margin-top: 0px;
+		height: 300px !important;
+		margin-bottom: 200px;
+	}
+
+	.contentsBlob {
+		position: absolute;
+		top: 60%;
+		left: 40%;
+		margin: auto;
+		transform: translate(-50%, -50%);
+	}
+
+	input {
+		width: 350px;
+	}
+}
+
+@media (max-width: 900px) {
+	.middleLeft {
+		margin-top: 0px;
+		height: 300px !important;
+		margin-bottom: 200px;
+	}
+
+	.middleRight {
+		height: 200px !important;
+	}
+
+	.contentsBlob {
+		margin-top: 170px;
+		margin-left: -50px;
+	}
+
+	.blobFooter1 {
+		width: 600px;
+		margin-left: -100px;
+	}
+
+	.footerMiddle {
+		padding-top: 0;
+	}
+	.blobFooter {
+		margin-bottom: 200px;
+	}
+}
+
+@media (max-width: 600px) {
+	.headText {
+		display: none;
+	}
+
+	.middleLeft {
+		margin-top: 300px;
+		height: 300px !important;
+	}
+
+	.blobFooter {
+		margin-bottom: 100px;
+		margin-left: 60px;
+	}
+
+	.middleRight {
+		height: 200px !important;
+	}
+
+	.bottomRight {
+		display: none;
+	}
+
+	.footerBottom {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+	}
+
+	.bottomMiddle {
+		width: 200px !important;
+	}
+
+	.contentsBlob {
+		position: absolute;
+		top: 55%;
+		left: 40%;
+		margin: auto;
+		transform: translate(-50%, -50%);
+	}
+}
+
+@media (max-width: 500px) {
+	.blob {
+		left: 0;
+		padding: 0;
+		padding: 0;
+		margin-top: 250px;
+	}
+
+	.subscribeNews {
+		margin-left: -30px;
+		font-size: x-small;
+	}
+
+	.blobFooter1 {
+		width: 450px;
+	}
+
+	.bottomRight {
+		display: none;
+	}
+
+	.contentsBlob {
+		position: absolute;
+		top: 45%;
+		left: 40%;
+		margin: auto;
+		transform: translate(-50%, -50%);
+	}
+
+	input {
+		width: 240px;
+	}
+}
+
+@media (max-width: 400px) {
+	.blob {
+		width: 300px;
+		padding: 0;
+	}
+
+	.blobFooter1 {
+		width: 400px;
+		margin-top: 0;
+	}
+
+	.bottomRight {
+		display: none;
+	}
+
+	.blobFooter {
+		margin: 0;
+		margin-bottom: 100px;
+		height: 100px;
+	}
+
+	.contentsBlob {
+		position: absolute;
+		top: 190%;
+		left: 37%;
+		margin: auto;
+		transform: translate(-50%, -50%);
+	}
+
+	input {
+		width: 200px;
+	}
+}
+
+@media (max-width: 300px) {
+	.blob {
+		left: 0;
+		padding: 0;
+		width: 300px;
+		padding: 0;
+		margin-top: 100px;
+	}
+
+	.blobFooter1 {
+		width: 300px;
+		display: inline-block;
+		margin-left: -160px;
+		vertical-align: middle;
+	}
+
+	.blobFooter {
+		margin: 0;
+	}
+
+	.middleRight {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.menus1 {
+		position: absolute;
+		left: 0;
+		margin-top: 0;
+	}
+
+	.menus2 {
+		position: absolute;
+		right: 0;
+		margin-top: 0;
+	}
+	.menus3 {
+		display: none;
+	}
+
+	.galaxy {
+		display: block;
+	}
+
+	.contentsBlob {
+		position: absolute;
+		top: 160%;
+		left: 30%;
+		margin: auto;
+		transform: translate(-50%, -50%);
+	}
+
+	input {
+		width: 160px;
+	}
 }

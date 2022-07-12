@@ -7,7 +7,7 @@ const emailState = {
 	error: ""
 };
 class FormComponent extends React.Component {
-	constructor(props) {
+	constructor() {
 		super();
 		this.state = emailState;
 		this.onChange = this.onChange.bind(this);

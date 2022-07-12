@@ -141,12 +141,18 @@
 }
 
 .exmapleImages {
+	max-width: 1000px;
+	margin: auto;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .example1 {
+	flex: 1;
+	box-sizing: border-box;
 	padding: 0;
-	width: 33%;
+	width: 20rem;
 	margin: 0;
 }
 
@@ -159,14 +165,18 @@
 
 .example2 {
 	padding: 0;
-	width: 33%;
 	margin: 0;
+	flex: 1;
+	width: 20rem;
+	box-sizing: border-box;
 }
 
 .example3 {
 	padding: 0;
-	width: 33%;
 	margin: 0;
+	flex: 1;
+	width: 20rem;
+	box-sizing: border-box;
 }
 
 img {

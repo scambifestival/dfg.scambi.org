@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./NLSubscribe.css";
 import SubscribeImage from "../../assets/subscribe/SubscribeImage.png";
-import { TextField, Button } from "monday-ui-react-core";
+import { TextField } from "monday-ui-react-core";
 import EmailValidation from "./../../components/emailValidation/EmailValidation";
 
 class NLSubscribe extends Component {
@@ -21,7 +21,9 @@ class NLSubscribe extends Component {
 						</div>
 						<div className="email-fields">
 							<EmailValidation className="submit-button" />
-							<button className="submit-button">Submit</button>
+							<button className="submit-button" onClick={() => this.onSubmit()}>
+								Submit
+							</button>
 						</div>
 					</div>
 				</div>
