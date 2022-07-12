@@ -36,6 +36,7 @@ class AboutExampleWorkshop extends Component {
 								height="100%"
 								preserveAspectRatio="xMidYMid slice"
 								clipPath="url(#clip01)"
+								alt=""
 							/>
 						</svg>
 						<p>Street Art</p>
@@ -56,6 +57,7 @@ class AboutExampleWorkshop extends Component {
 								height="100%"
 								preserveAspectRatio="xMidYMid slice"
 								clipPath="url(#clip02)"
+								alt=""
 							/>
 						</svg>
 						<p>Rifugiato per un giorno</p>
@@ -76,6 +78,7 @@ class AboutExampleWorkshop extends Component {
 								height="100%"
 								preserveAspectRatio="xMidYMid slice"
 								clipPath="url(#clip03)"
+								alt=""
 							/>
 						</svg>
 						<p>Scambi Sounds Lab</p>

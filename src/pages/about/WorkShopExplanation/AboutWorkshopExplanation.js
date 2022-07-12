@@ -15,6 +15,7 @@ class AboutWorkshopExplanation extends Component {
 							className="borderImg"
 							width="400px"
 							height="400px"
+							alt=""
 						/>
 					</div>
 					<AboutWorkShopText

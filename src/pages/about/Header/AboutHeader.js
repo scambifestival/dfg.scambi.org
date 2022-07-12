@@ -14,6 +14,7 @@ class AboutHeader extends Component {
 						src={aboutHearPic}
 						width="600rem"
 						height="600rem"
+						alt=""
 						className="md:mt-16"
 					/>
 				</div>
