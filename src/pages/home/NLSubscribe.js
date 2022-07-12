@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import './NLSubscribe.css';
-//import SubscribeImage from '../../assets/subscribe/SubscribeImage.png';
-//import { TextField, Button } from "monday-ui-react-core";
+import React, { Component } from "react";
+import "./NLSubscribe.css";
+import SubscribeImage from "../../assets/subscribe/SubscribeImage.png";
+import { TextField, Button } from "monday-ui-react-core";
+import EmailValidation from "./../../components/emailValidation/EmailValidation";
 
 class NLSubscribe extends Component {
 	render() {
@@ -18,9 +19,9 @@ class NLSubscribe extends Component {
 							Join the conversation - sign up now to receive updates on Scambi
 							activities.
 						</div>
-						<div className='email-fields'>
-							<input className='textfield' type='text' placeholder='Email' />
-							<button className='submit-button'>Submit</button>
+						<div className="email-fields">
+							<EmailValidation className="submit-button" />
+							<button className="submit-button">Submit</button>
 						</div>
 					</div>
 				</div>

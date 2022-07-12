@@ -8,22 +8,14 @@
 	font-style: normal;
 	font-size: 18px;
 }
+
 .left-aboutScambi {
-	width: 50%;
-	height: 100%;
 	text-align: left;
 	margin-left: 40px;
 }
-.right-aboutScambi {
-	width: 50%;
-	height: 100%;
-}
 
 .scambi-text {
-	/* H2 Headline, Light, 64px */
-	font-family: 'Londrina Solid';
 	text-align: left;
-	font-size: 64px;
 }
 
 .attendButton {
@@ -84,23 +76,18 @@
 .scambiExplanation-text {
 	font-size: 32px;
 	text-align: left;
-
-	font-family: 'Londrina Solid';
+	font-family: "Londrina Solid";
 	margin-bottom: 30px;
 }
 
 .purpleText {
 	color: #69088d;
+	font-weight: bold !important;
 }
 
 .scambi-workExplanation-text {
 	text-align: left;
 	margin-bottom: 20px;
-}
-
-.right-aboutScambi-workExplanation {
-	width: 500px;
-	position: relative;
 }
 
 .exploreWorkshopButton {
@@ -150,15 +137,15 @@
 }
 
 .aboutExampleWorkshop-container {
-	background: linear-gradient(90deg, #e9afff 0%, #ffedc4 98.65%);
-	font-family: 'Londrina Solid';
 	padding: 20px;
 	height: 700px;
+	position: relative;
 }
 
 .aboutExampleWorkshop-text {
 	text-align: left;
 	margin-left: 30px;
+	position: relative;
 }
 
 .exmapleImages {
@@ -166,55 +153,47 @@
 }
 
 .example1 {
-	padding: 100px;
+	padding: 0;
 	width: 33%;
+	margin: 0;
+}
+
+.rightArrow {
+	color: #69008d;
+	position: absolute;
+	right: 0;
+	top: 1px;
 }
 
 .example2 {
-	padding: 100px;
+	padding: 0;
 	width: 33%;
+	margin: 0;
 }
 
 .example3 {
-	padding: 100px;
+	padding: 0;
 	width: 33%;
+	margin: 0;
 }
 
-.aboutScambiQuote-container {
-	height: 700px;
-	font-family: 'Londrina Solid';
+img {
+	margin: 0;
+	padding: 0;
 }
 
 .aboutQuoteText {
-	font-family: 'Londrina Solid';
 	padding: 100px 0;
 	text-align: center;
-	font-size: 64px;
-	width: 40%;
-	display: inline-block;
-	vertical-align: middle;
 	color: white;
 }
 
 .aboutScambiOurTeam-container {
-	background: linear-gradient(90deg, #e9afff 0%, #ffedc4 98.65%);
 	padding: 20px;
-	height: 700px;
-	display: flex;
-}
-
-.aboutOurTeamText {
-	width: 50%;
-}
-
-.boutOurTeamImage {
-	width: 50%;
 }
 
 .textOurTeam {
-	font-family: 'Londrina Solid';
 	text-align: left;
-	font-size: 64px;
 	margin-left: 30px;
 }
 
@@ -224,7 +203,6 @@
 }
 
 .flex-text {
-	width: 80%;
 	text-align: left;
 }
 
@@ -235,10 +213,6 @@
 .secondTextHeader {
 	margin-top: 20px;
 	margin-bottom: 20px;
-}
-
-.oneSide {
-	width: 50%;
 }
 
 .borderImg {

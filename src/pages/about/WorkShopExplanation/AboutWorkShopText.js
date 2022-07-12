@@ -2,7 +2,7 @@ import React from "react";
 
 const TextFlex = (props) => {
 	return (
-		<div className="oneSide">
+		<div className="lg:w-1/2 md:mt-12 md:w-1/2">
 			<div className="flex-text">
 				<h6 className="scambiExplanation-text">
 					Our purpose is to recover the value of{" "}
