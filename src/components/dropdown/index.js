@@ -21,12 +21,12 @@ export default function Dropdown({
 	};
 
 	return (
-		<li className='relative inline-block text-left' role='none' key={content} onClick={handleClick} ref={menu} onBlur={handleBlur}>
+		<li className='nav-menu' role='none' key={content} onClick={handleClick} ref={menu} onBlur={handleBlur}>
 			<a
 				role="menuitem"
 				href="#"
-				className={`${btnStyle} inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500`}
-				aria-expanded="true"
+				className={`${btnStyle} nav-menuitem`}
+				aria-expanded={isOpen}
 				aria-haspopup="true"
 			>
 				{content}
@@ -35,7 +35,7 @@ export default function Dropdown({
 				</span>
 			</a>
 			<ul
-				className={`${dropdownStyle} ${isOpen ? "open" : "close"} py-1 origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none`}
+				className={`${dropdownStyle} ${isOpen ? "" : "close"} nav-submenu`}
 				id={`sub-menu-${content.toLowerCase()}`}
 				role="menu"
 				aria-label={content}
@@ -45,7 +45,7 @@ export default function Dropdown({
 				{children.map((child, index) => (
 					<li key={`${content}-${index}`}>
 						<a href={`#${child.href}`}
-							className="text-gray-700 block px-4 py-2 text-sm"
+							className="nav-submenu-item"
 							role="menuitem"
 						>
 							{child.title}
