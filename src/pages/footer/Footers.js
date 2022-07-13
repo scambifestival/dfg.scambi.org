@@ -1,12 +1,11 @@
-import React, { Component } from "react";
 import FooterTop from "./ FooterTop/FooterTop";
 import FooterMiddle from "./ FooterMiddle/FooterMiddle";
 import FooterBottom from "./ FooterBottom/FooterBottom";
-import "./FooterNew.css";
+import "./Footer.css";
 
 function Footers() {
 	return (
-		<div className="footer">
+		<div className='footer'>
 			<FooterTop />
 			<FooterMiddle />
 			<FooterBottom />

@@ -4,7 +4,7 @@ function LabInfo() {
 	let params = useParams();
 	return (
 		<div>
-			<img src='https://picsum.photos/400/100' className='w-full' />
+			<img src='https://picsum.photos/400/100' className='w-full' alt='' />
 			<div className='mt-10 text-left p-20 w-3/4'>
 				<h1 className='text-5xl mb-10'>Lorem Ipsum {params.labId}</h1>
 				<p className='font-semibold mb-5'>
@@ -46,7 +46,7 @@ function LabInfo() {
 						mattis vulputate.{' '}
 					</p>
 				</div>
-				<img src='https://picsum.photos/400' />
+				<img src='https://picsum.photos/400' alt='' />
 			</div>
 		</div>
 	);
