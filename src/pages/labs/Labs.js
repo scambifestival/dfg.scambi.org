@@ -10,14 +10,12 @@ import {
 	rec7,
 	rec8,
 	rec9,
-	rec10
-} from "../../assets/lab/gallery/index";
-import Card from "../../components/card";
-import Flex from "../../components/Flex/Flex";
-import { Link, Outlet } from "react-router-dom";
-import LabCard from "./components/card";
+	rec10,
+} from '../../assets/lab/gallery/index';
+import Flex from '../../components/Flex/Flex';
+import LabCard from './components/card';
 
-export default function Lab() {
+export default function Labs() {
 	const dummyData = [
 		{
 			title: "Lorem Ipsum",
@@ -59,7 +57,7 @@ export default function Lab() {
 						Get Tickets
 					</button>
 				</div>
-				<img src={labVid} />
+				<img src={labVid} alt='' />
 			</Flex>
 			<Flex classes="items-center justify-around">
 				<img className="w-[436px] h-[425px]" src={lab} alt="" />
@@ -80,32 +78,38 @@ export default function Lab() {
 					<div className="space-y-5">
 						<img
 							src={rec1}
-							className="rounded-2xl border-4 border-yellow-300 shadow-md  w-[200px] h-[260px]"
+							className='rounded-2xl border-4 border-yellow-300 shadow-md  w-[200px] h-[260px]'
+							alt=''
 						/>
 						<img
 							src={rec3}
-							className="rounded-2xl border-4 border-yellow-300 shadow-md w-[200px] h-[134px]"
+							className='rounded-2xl border-4 border-yellow-300 shadow-md w-[200px] h-[134px]'
+							alt=''
 						/>
 					</div>
 					<div className="flex flex-col space-y-5 mx-5">
 						<div className="flex space-x-5">
 							<img
 								src={rec2}
-								className="rounded-2xl border-4 border-yellow-300 shadow-md w-[309px] h-[134px]"
+								className='rounded-2xl border-4 border-yellow-300 shadow-md w-[309px] h-[134px]'
+								alt=''
 							/>
 							<img
 								src={rec6}
-								className="rounded-2xl border-4 border-yellow-300 shadow-md w-[200px] h-[134px]"
+								className='rounded-2xl border-4 border-yellow-300 shadow-md w-[200px] h-[134px]'
+								alt=''
 							/>
 						</div>
 						<div className="flex space-x-5">
 							<img
 								src={rec4}
-								className="rounded-2xl border-4 border-yellow-300 shadow-md w-[200px] h-[256px]"
+								className='rounded-2xl border-4 border-yellow-300 shadow-md w-[200px] h-[256px]'
+								alt=''
 							/>
 							<img
 								src={rec5}
-								className="rounded-2xl border-4 border-yellow-300 shadow-md w-[310px] h-[256px]"
+								className='rounded-2xl border-4 border-yellow-300 shadow-md w-[310px] h-[256px]'
+								alt=''
 							/>
 						</div>
 					</div>
@@ -113,21 +117,25 @@ export default function Lab() {
 						<div className="mr-5">
 							<img
 								src={rec9}
-								className="rounded-2xl border-4 border-yellow-300 shadow-md mb-5 w-[200px] h-[256px]"
+								className='rounded-2xl border-4 border-yellow-300 shadow-md mb-5 w-[200px] h-[256px]'
+								alt=''
 							/>
 							<img
 								src={rec10}
-								className="rounded-2xl border-4 border-yellow-300 shadow-md w-[200px] h-[134px]"
+								className='rounded-2xl border-4 border-yellow-300 shadow-md w-[200px] h-[134px]'
+								alt=''
 							/>
 						</div>
 						<div>
 							<img
 								src={rec7}
-								className="rounded-2xl border-4 border-yellow-300 shadow-md mb-5 w-[310px] h-[256px]"
+								className='rounded-2xl border-4 border-yellow-300 shadow-md mb-5 w-[310px] h-[256px]'
+								alt=''
 							/>
 							<img
 								src={rec8}
-								className="rounded-2xl border-4 border-yellow-300 shadow-md w-[309px] h-[134px]"
+								className='rounded-2xl border-4 border-yellow-300 shadow-md w-[309px] h-[134px]'
+								alt=''
 							/>
 						</div>
 					</div>
