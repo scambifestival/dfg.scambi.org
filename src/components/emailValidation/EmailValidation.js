@@ -20,6 +20,7 @@ class FormComponent extends React.Component {
 	}
 	emailValidation() {
 		const regex =
+			/* eslint-disable no-useless-escape */
 			/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 		if (!this.state.email || regex.test(this.state.email) === false) {
 			this.setState({
@@ -50,7 +51,7 @@ class FormComponent extends React.Component {
 						onChange={this.onChange}
 						className={
 							"focus:outline-none focus:ring focus:ring-violet-800 w-38 h-12 rounded-md " +
-							(this.state.error == "Email is not valid!"
+							(this.state.error === "Email is not valid!"
 								? " outline-none ring ring-red-500"
 								: "")
 						}

@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./../Footer.css";
 import EmailValidation from "../../../components/emailValidation/EmailValidation";
-const btnClass = "purpleBtn";
 const FooterMiddle = (props) => {
 	return (
 		<div className="footerMiddle w-full h-fit flex flex-col flex-container lg:flex-row md:space-x-4 md:space-y-0">
