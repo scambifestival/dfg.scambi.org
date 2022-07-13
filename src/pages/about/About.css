@@ -4,7 +4,7 @@
 	height: 500px;
 	padding-top: 40px;
 	/* Subtitle 2, Semi Bold, 18px */
-	font-family: 'Poppins';
+	font-family: "Poppins";
 	font-style: normal;
 	font-size: 18px;
 }
@@ -40,7 +40,7 @@
 	flex-grow: 0;
 	background-color: white;
 	/* Button Text, Semi bold, 16px */
-	font-family: 'Poppins';
+	font-family: "Poppins";
 	font-style: normal;
 	font-weight: 600;
 	font-size: 16px;
@@ -65,7 +65,7 @@
 }
 
 .bold-fonts {
-	font-weight: bold;
+	font-weight: bold !important;
 }
 
 .aboutScambiExplanation-container {
@@ -83,6 +83,7 @@
 .purpleText {
 	color: #69088d;
 	font-weight: bold !important;
+	font-size: x-large;
 }
 
 .scambi-workExplanation-text {
@@ -142,6 +143,10 @@
 	position: relative;
 }
 
+.quoteBack {
+	background-image: url(https://i.picsum.photos/id/1002/4312/2868.jpg?hmac=5LlLE-NY9oMnmIQp7ms6IfdvSUQOzP_O3DPMWmyNxwo);
+}
+
 .aboutExampleWorkshop-text {
 	text-align: left;
 	margin-left: 30px;
@@ -149,12 +154,18 @@
 }
 
 .exmapleImages {
+	max-width: 1400px;
+	margin: auto;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .example1 {
+	flex: 1;
+	box-sizing: border-box;
 	padding: 0;
-	width: 33%;
+	width: 20rem;
 	margin: 0;
 }
 
@@ -167,14 +178,18 @@
 
 .example2 {
 	padding: 0;
-	width: 33%;
 	margin: 0;
+	flex: 1;
+	width: 20rem;
+	box-sizing: border-box;
 }
 
 .example3 {
 	padding: 0;
-	width: 33%;
 	margin: 0;
+	flex: 1;
+	width: 20rem;
+	box-sizing: border-box;
 }
 
 img {
@@ -222,4 +237,38 @@ img {
 .ourTeamEl {
 	justify-content: center;
 	margin: auto;
+}
+
+.exampleName1 {
+	font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+	.exampleName1 {
+		padding-right: 13%;
+	}
+	.exampleName2 {
+		padding-right: 13%;
+	}
+	.exampleName3 {
+		text-align: left;
+		padding-left: 10%;
+	}
+}
+
+@media (max-width: 680px) {
+	.exmapleImages {
+		margin-left: 13%;
+	}
+
+	.exampleName1 {
+		padding-right: 4%;
+	}
+	.exampleName2 {
+		padding-right: 10%;
+	}
+
+	.exampleName3 {
+		padding-left: 20%;
+	}
 }

@@ -12,7 +12,7 @@
 	margin-top: 1.5em;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
 	.flex-container {
 		flex-wrap: nowrap;
 		justify-content: space-around;
@@ -33,7 +33,7 @@
 	}
 }
 
-@media (min-width: 1280px){
+@media (min-width: 1280px) {
 	.flex-container {
 		width: 75%;
 	}
@@ -41,4 +41,9 @@
 	.flex-image {
 		max-width: 20%;
 	}
+}
+
+.flex-image {
+	max-width: 70%;
+	margin-top: 1.5em;
 }
