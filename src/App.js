@@ -11,6 +11,9 @@ import FAQ from './pages/faq/FAQ';
 import FilmContest from './pages/filmcontest/FilmContest';
 import LabInfo from './pages/labs/LabInfo';
 import Footers from './pages/footer/Footers';
+import OurTeam from "./pages/ourTeam/OurTeam";
+import Team from "./pages/ourTeam/Team";
+
 function App() {
 	return (
 		<div className='App'>
@@ -24,9 +27,11 @@ function App() {
 					<Route index element={<Labs />} />
 					<Route path=':labId' element={<LabInfo />} />
 				</Route>
-				<Route path='faq' element={<FAQ />} />
-				<Route path='careers' element={<Careers />} />
-				<Route path='filmcontest' element={<FilmContest />} />
+				<Route path="faq" element={<FAQ />} />
+				<Route path="careers" element={<Careers />} />
+				<Route path="filmcontest" element={<FilmContest />} />
+				<Route path="ourTeam" element={<OurTeam />} />
+				<Route path="team" render={(props) => <Team {...props} /> } />
 			</Routes>
 			<Footers />
 			{/* <Home />
