@@ -16,6 +16,8 @@
 		"preinstall": "node checkNodeVersion",
 		"prestart": "node checkNodeVersion",
 		"start": "react-scripts start",
+		"lint": "eslint .",
+		"lint:fix": "eslint --fix --ext .js,.jsx",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
