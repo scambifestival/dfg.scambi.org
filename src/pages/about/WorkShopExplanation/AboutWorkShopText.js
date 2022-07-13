@@ -17,12 +17,11 @@ const TextFlex = (props) => {
 					cooking to activism.
 				</p>
 				<p className="scambi-workExplanation-text">
-					All workshops will be instrinsically careful to issues like
+					All workshops will be instrinsically careful to issues like{" "}
 					<span className="bold-fonts">
 						accessibility, sustainebility, and inclusion.
 					</span>
 				</p>
-				<button className="exploreWorkshopButton">Explore workshops</button>
 			</div>
 		</div>
 	);

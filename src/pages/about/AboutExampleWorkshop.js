@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import './About.css';
-import pic2 from './../../assets/lab/gallery/rec1.png';
-import pic3 from './../../assets/lab/gallery/rec10.png';
+import React, { Component } from "react";
+import "./About.css";
+import pic2 from "./../../assets/lab/gallery/rec1.png";
+import pic3 from "./../../assets/lab/gallery/rec10.png";
 
 class AboutExampleWorkshop extends Component {
 	render() {
 		return (
 			<div className="aboutExampleWorkshop-container h-fit">
 				<div className="aboutExampleWorkshop-text">
-					<h2 className="pt-10 text-xl">
+					<h4 className="pt-10 ">
 						Workshops we held in Scambi 2021, "Meeting"
-					</h2>
+					</h4>
 					<i
 						className="fa fa-angle-right fa-3x pt-8 rightArrow"
 						aria-hidden="true"></i>

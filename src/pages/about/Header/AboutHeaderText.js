@@ -5,7 +5,9 @@ const AboutHeaderText = (props) => {
 	return (
 		<div className="md:w-1/2 lg:w-1/2">
 			<div className="flex-text">
-				<h1 className="scambi-text text-6xl">About Scambi</h1>
+				<h2 className="scambi-text text-6xl lg:mt-16 lg:text-6xl md:text-4xl">
+					About Scambi
+				</h2>
 				<p>
 					Scambi, mearninig "exchange" in Italian, is the festival of
 					interactive workshop organized in Pigna, the old town of Sanremo
@@ -18,7 +20,6 @@ const AboutHeaderText = (props) => {
 					where we will explore{" "}
 					<span className="disequilibirum">Disequilibirum.</span>
 				</p>
-				<button className="attendButton">Attend</button>
 			</div>
 		</div>
 	);

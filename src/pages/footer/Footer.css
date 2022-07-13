@@ -27,16 +27,6 @@
 	transform: translate(-50%, -50%);
 }
 
-.headText {
-	/* H2 Headline, Light, 64px */
-	font-family: "Londrina Solid";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 64px;
-	margin-top: 30px;
-	margin-left: 40px;
-}
-
 .readyToJoin {
 	font-family: "Poppins";
 	font-style: normal;

@@ -4,7 +4,7 @@
 	height: 500px;
 	padding-top: 40px;
 	/* Subtitle 2, Semi Bold, 18px */
-	font-family: 'Poppins';
+	font-family: "Poppins";
 	font-style: normal;
 	font-size: 18px;
 }
@@ -40,7 +40,7 @@
 	flex-grow: 0;
 	background-color: white;
 	/* Button Text, Semi bold, 16px */
-	font-family: 'Poppins';
+	font-family: "Poppins";
 	font-style: normal;
 	font-weight: 600;
 	font-size: 16px;
@@ -65,7 +65,7 @@
 }
 
 .bold-fonts {
-	font-weight: bold;
+	font-weight: bold !important;
 }
 
 .aboutScambiExplanation-container {
