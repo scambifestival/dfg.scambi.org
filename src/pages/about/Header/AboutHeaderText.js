@@ -8,7 +8,7 @@ const AboutHeaderText = (props) => {
 				<h2 className="scambi-text text-6xl lg:mt-16 lg:text-5xl md:text-3xl text-left">
 					About Scambi
 				</h2>
-				<p className="text-left md:w-96">
+				<p className="text-left md:w-90">
 					Scambi, mearninig "exchange" in Italian, is the festival of
 					interactive workshop organized in Pigna, the old town of Sanremo
 					(italy) by a team of forty young people under-25,from all around
