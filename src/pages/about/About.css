@@ -135,6 +135,10 @@
 	position: relative;
 }
 
+.quoteBack {
+	background-image: url(https://i.picsum.photos/id/1002/4312/2868.jpg?hmac=5LlLE-NY9oMnmIQp7ms6IfdvSUQOzP_O3DPMWmyNxwo);
+}
+
 .aboutExampleWorkshop-text {
 	text-align: left;
 	margin-left: 30px;
@@ -142,7 +146,7 @@
 }
 
 .exmapleImages {
-	max-width: 1000px;
+	max-width: 1400px;
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -225,4 +229,34 @@ img {
 .ourTeamEl {
 	justify-content: center;
 	margin: auto;
+}
+
+@media (max-width: 1000px) {
+	.exampleName1 {
+		padding-right: 13%;
+	}
+	.exampleName2 {
+		padding-right: 13%;
+	}
+	.exampleName3 {
+		text-align: left;
+		padding-left: 10%;
+	}
+}
+
+@media (max-width: 680px) {
+	.exmapleImages {
+		margin-left: 20%;
+	}
+
+	.exampleName1 {
+		padding-right: 4%;
+	}
+	.exampleName2 {
+		padding-right: 10%;
+	}
+
+	.exampleName3 {
+		padding-left: 20%;
+	}
 }
