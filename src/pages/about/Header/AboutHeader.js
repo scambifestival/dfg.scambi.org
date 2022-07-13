@@ -8,16 +8,15 @@ class AboutHeader extends Component {
 	render() {
 		return (
 			<Flex>
-				<AboutHeaderText className="lg:w-1/2 md:w-1/2 md:mt-12" />
-				<div className="lg:w-1/2 md:mt-12 md:w-1/2">
-					<img
-						src={aboutHearPic}
-						width="600px"
-						height="200px"
-						alt=""
-						className="md:mt-16"
-					/>
-				</div>
+				<AboutHeaderText className="lg:w-2/3 md:mt-12 md:w-1/2 lg:text-6xl md:text-4xl" />
+
+				<img
+					src={aboutHearPic}
+					width="600px"
+					height="200px"
+					alt=""
+					className="lg:w-1/2 md:w-1/2 pt-16"
+				/>
 			</Flex>
 		);
 	}

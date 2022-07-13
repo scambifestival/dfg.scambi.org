@@ -8,9 +8,9 @@ class AboutExampleWorkshop extends Component {
 		return (
 			<div className="aboutExampleWorkshop-container h-fit">
 				<div className="aboutExampleWorkshop-text">
-					<h4 className="pt-10 ">
+					<h3 className="pt-10 ">
 						Workshops we held in Scambi 2021, "Meeting"
-					</h4>
+					</h3>
 					<i
 						className="fa fa-angle-right fa-3x pt-8 rightArrow"
 						aria-hidden="true"></i>
@@ -43,7 +43,7 @@ class AboutExampleWorkshop extends Component {
 								alt=""
 							/>
 						</svg>
-						<p className="exampleName1">Street Art</p>
+						<h4 className="exampleName1">Street Art</h4>
 					</div>
 					<div className="example2">
 						<svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
@@ -64,7 +64,7 @@ class AboutExampleWorkshop extends Component {
 								alt=""
 							/>
 						</svg>
-						<p className="exampleName2">Rifugiato per un giorno</p>
+						<h4 className="exampleName2">Rifugiato per un giorno</h4>
 					</div>
 					<div className="example3">
 						<svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
@@ -86,7 +86,7 @@ class AboutExampleWorkshop extends Component {
 								alt=""
 							/>
 						</svg>
-						<p className="exampleName3">Scambi Sounds Lab</p>
+						<h4 className="exampleName3">Scambi Sounds Lab</h4>
 					</div>
 				</div>
 			</div>

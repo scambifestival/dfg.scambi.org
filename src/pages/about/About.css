@@ -239,6 +239,10 @@ img {
 	margin: auto;
 }
 
+.exampleName1 {
+	font-weight: bold;
+}
+
 @media (max-width: 1000px) {
 	.exampleName1 {
 		padding-right: 13%;
@@ -254,7 +258,7 @@ img {
 
 @media (max-width: 680px) {
 	.exmapleImages {
-		margin-left: 20%;
+		margin-left: 13%;
 	}
 
 	.exampleName1 {
