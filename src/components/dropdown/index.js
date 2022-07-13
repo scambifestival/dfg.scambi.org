@@ -24,7 +24,7 @@ export default function Dropdown({
 		<li className='nav-menu' role='none' key={content} onClick={handleClick} ref={menu} onBlur={handleBlur}>
 			<a
 				role="menuitem"
-				href="#"
+				href="/#"
 				className={`${btnStyle} nav-menuitem`}
 				aria-expanded={isOpen}
 				aria-haspopup="true"
@@ -44,7 +44,7 @@ export default function Dropdown({
 			>
 				{children.map((child, index) => (
 					<li key={`${content}-${index}`}>
-						<a href={`#${child.href}`}
+						<a href={`/${child.href}`}
 							className="nav-submenu-item"
 							role="menuitem"
 						>
