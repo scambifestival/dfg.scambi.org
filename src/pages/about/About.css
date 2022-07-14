@@ -60,12 +60,12 @@
 }
 
 .disequilibirum {
-	font-weight: bold;
 	font-style: italic;
 }
 
 .bold-fonts {
 	font-weight: bold !important;
+	font-size: 170;
 }
 
 .aboutScambiExplanation-container {
@@ -83,7 +83,6 @@
 .purpleText {
 	color: #69088d;
 	font-weight: bold !important;
-	font-size: x-large;
 }
 
 .scambi-workExplanation-text {
@@ -270,5 +269,34 @@ img {
 
 	.exampleName3 {
 		padding-left: 20%;
+	}
+}
+
+@media (max-width: 4140px) {
+	.exmapleImages {
+		margin-left: 4%;
+	}
+
+	.exampleName1 {
+		padding-left: 24%;
+	}
+	.exampleName2 {
+		padding-right: 1%;
+	}
+
+	.exampleName3 {
+		padding-left: 24%;
+	}
+
+	.example1 {
+		margin-right: 70px;
+	}
+
+	.example2 {
+		margin-right: 30px;
+	}
+
+	.example3 {
+		margin-right: 40px;
 	}
 }

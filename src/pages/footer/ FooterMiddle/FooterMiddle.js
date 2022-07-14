@@ -1,6 +1,7 @@
 import React from "react";
 import "./../Footer.css";
 import EmailValidation from "../../../components/emailValidation/EmailValidation";
+
 const FooterMiddle = (props) => {
 	return (
 		<div className="footerMiddle w-full h-fit flex flex-col flex-container lg:flex-row md:space-x-4 md:space-y-0">
@@ -20,7 +21,8 @@ const FooterMiddle = (props) => {
 						<div className="subscribeNews mb-2">
 							Subscribe to our Newsletter!{" "}
 						</div>
-						<EmailValidation className="purpledBtn" />
+
+						<EmailValidation fileName="Footer" />
 					</div>
 				</div>
 			</div>

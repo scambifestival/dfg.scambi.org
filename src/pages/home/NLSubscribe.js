@@ -19,8 +19,9 @@ class NLSubscribe extends Component {
 							activities.
 						</div>
 						<div className="email-fields">
-							<EmailValidation className="submit-button" />
-							<button className="submit-button">Submit</button>
+							<EmailValidation fileName="NLSubscribe">
+								Subscribe
+							</EmailValidation>
 						</div>
 					</div>
 				</div>
