@@ -1,5 +1,6 @@
 import React from "react";
 import "./../About.css";
+import Button from "../../../components/button/index";
 
 const TextFlex = (props) => {
 	return (
@@ -25,6 +26,7 @@ const TextFlex = (props) => {
 					</b>
 				</p>
 			</div>
+			<Button>Explore Workshops</Button>
 		</div>
 	);
 };
