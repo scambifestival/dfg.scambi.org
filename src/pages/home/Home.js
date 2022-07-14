@@ -9,7 +9,25 @@ import TableTalk from '../../assets/home/TableTalk.png';
 import Program from '../../assets/home/Program.png';
 import Volunteer from '../../assets/home/Volunteer.png';
 import Sponsors from '../../assets/home/Sponsors.png';
+import Card from '../../components/card';
 
+const manifestoCards = [
+	{
+		title: "Workshop", description: "Collective experience based on creativity, dialogue and sharing, which blossoms once a year on the squares of La Pigna in order to explore together the various connotations of the current edition's theme."
+	},
+	{
+		title: "Paneuretic",
+		description: "Neologism deriving from the Greek pan (all), eurisko (discover) and ethos (living), because we wish to combine diverse realities that would never meet in their original contexts, while celebrating and respecting our differences, discovering and developing inspiring ideas."
+	},
+	{
+		title: "Accessibility",
+		description: "In a society that says “you must”, we say “just be”: we made every festival activity available and accessible to as many people as possible."
+	},
+	{
+		title: "La Pigna",
+		description: "The iconic and vibrant historic center of Sanremo that welcomes us during the festival, and that we are committed to requalify through social values such as Community and Meeting."
+	}
+]
 
 const Home = () => {
 	return (
@@ -82,6 +100,20 @@ const Home = () => {
 					where distant “planets” have the possibility to interact with each other.”
 				</p>
 			</div>
+
+			<div className="my-20 space-y-12">
+				<h2>Our Manifesto</h2>
+				<div className='flex justify-center mx-32 space-x-10'>
+					{manifestoCards.map((card, index) => (
+						<Card classes={`p-5 w-1/5 h-fit ${index % 2 === 0 ? 'yellow-pink-gradient' : 'bg-white'}`}>
+							<h3 className='leading-loose'>{card.title}</h3>
+							<p className='leading-relaxed'>{card.description}</p>
+						</Card>
+					))}
+				</div>
+				<Button styleType='light'>Read the Manifesto</Button>
+			</div>
+
 			<Flex classes='my-1 space-x-40 space-x-reverse' reverse={true}>
 				<div className="flex-content">
 					<h2 className="leading-tight lg:leading-normal">Our Relations</h2>
