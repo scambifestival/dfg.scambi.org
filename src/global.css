@@ -80,6 +80,8 @@ button {
 /* TailwindCSS style components */
 
 @layer components {
+	/* Button */
+
 	.btn-primary.regular {
 		@apply text-white bg-gradient-to-b from-fuchsia-800 to-transparent;
 	}
