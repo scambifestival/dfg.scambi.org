@@ -23,7 +23,7 @@ const testimonials = [
 const Testimonials = () => {
     return (
         <div className='mt-6 lg:mt-10 xl:mt-20'>
-            <h2 className='px-10'>An experience people love to talk about</h2>
+            <h2 className='px-10 leading-tight'>An experience people love to talk about</h2>
             <div className='flex flex-wrap justify-center mb-5 lg:mt-0 xl:mt-16'>
                 {testimonials.map((testimonial, index) => (
                     <Card classes='relative max-w-[80%] p-10 my-8 bg-white text-left lg:max-w-[27%] lg:mx-5 lg:my-20 xl:max-w-[20%] xl:m-16' key={`testimonial-${index}`}>
