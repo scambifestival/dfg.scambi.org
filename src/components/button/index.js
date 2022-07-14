@@ -11,7 +11,7 @@ export default function Button({
     return (
         <button
             type={type}
-            class={`rounded-2xl font-semibold ${classes} ${buttonStyle} regular`}
+            className={`rounded-2xl font-semibold ${classes} ${buttonStyle} regular`}
             onClick={() => (window.location.href = href)}>
             {children}
         </button>
