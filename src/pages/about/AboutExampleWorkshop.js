@@ -1,23 +1,27 @@
-import React, { Component } from 'react';
-import './About.css';
-import pic2 from './../../assets/lab/gallery/rec1.png';
-import pic3 from './../../assets/lab/gallery/rec10.png';
+import React, { Component } from "react";
+import "./About.css";
+import pic2 from "./../../assets/lab/gallery/rec1.png";
+import pic3 from "./../../assets/lab/gallery/rec10.png";
 
 class AboutExampleWorkshop extends Component {
 	render() {
 		return (
-			<div className="aboutExampleWorkshop-container">
-				<div className="aboutExampleWorkshop-text flex">
-					<h2 className="pt-10 text-xl">
+			<div className="aboutExampleWorkshop-container h-fit">
+				<div className="aboutExampleWorkshop-text">
+					<h3 className="pt-10 ">
 						Workshops we held in Scambi 2021, "Meeting"
-					</h2>
+					</h3>
 					<i
 						className="fa fa-angle-right fa-3x pt-8 rightArrow"
 						aria-hidden="true"></i>
 				</div>
-				<div className="exmapleImages">
+				<div className="exmapleImages flex flex-wrap">
 					<div className="example1">
-						<svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+						<svg
+							width="0"
+							height="0"
+							xmlns="http://www.w3.org/2000/svg"
+							className="imageSVG">
 							<clipPath id="clip01">
 								<path
 									d="M48.6,-39.4C64.7,-32.4,80.7,-16.2,79.4,-1.3C78.1,13.7,59.6,27.3,43.4,38.5C27.3,49.6,13.7,58.2,1.1,57.1C-11.4,55.9,-22.8,45.1,-36.7,33.9C-50.7,22.8,-67.2,11.4,-72.9,-5.7C-78.6,-22.9,-73.6,-45.7,-59.7,-52.6C-45.7,-59.6,-22.9,-50.5,-3.3,-47.2C16.2,-43.9,32.4,-46.3,48.6,-39.4Z"
@@ -31,14 +35,15 @@ class AboutExampleWorkshop extends Component {
 							viewBox="-10 0 250 250"
 							style={{ objectFit: "cover" }}>
 							<image
-								xlinkHref={pic2}
+								xlinkHref="https://images.tommi.space/i?/uploads/j/b/u/jbuqxznr00//2021/08/29/20210829191758-06bb5082-me.jpg"
 								width="100%"
 								height="100%"
 								preserveAspectRatio="xMidYMid slice"
 								clipPath="url(#clip01)"
+								alt=""
 							/>
 						</svg>
-						<p>Street Art</p>
+						<h4 className="exampleName1">Street Art</h4>
 					</div>
 					<div className="example2">
 						<svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
@@ -56,9 +61,10 @@ class AboutExampleWorkshop extends Component {
 								height="100%"
 								preserveAspectRatio="xMidYMid slice"
 								clipPath="url(#clip02)"
+								alt=""
 							/>
 						</svg>
-						<p>Rifugiato per un giorno</p>
+						<h4 className="exampleName2">Rifugiato per un giorno</h4>
 					</div>
 					<div className="example3">
 						<svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
@@ -69,6 +75,7 @@ class AboutExampleWorkshop extends Component {
 								/>
 							</clipPath>
 						</svg>
+
 						<svg width="27rem" height="27rem" viewBox="0 0 250 250">
 							<image
 								xlinkHref={pic3}
@@ -76,9 +83,10 @@ class AboutExampleWorkshop extends Component {
 								height="100%"
 								preserveAspectRatio="xMidYMid slice"
 								clipPath="url(#clip03)"
+								alt=""
 							/>
 						</svg>
-						<p>Scambi Sounds Lab</p>
+						<h4 className="exampleName3">Scambi Sounds Lab</h4>
 					</div>
 				</div>
 			</div>

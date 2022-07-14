@@ -7,7 +7,7 @@ const FooterBottom = () => {
 			<div className="BottomLeft w-4/12">
 				<p>Privacy Policy</p>
 			</div>
-			<div className="bottomMidle w-4/12">
+			<div className="bottomMiddle w-4/12">
 				<a href="https://twitter.com/scambifestival">
 					<i className="fa fa-twitter icon fa-lg" aria-hidden="true"></i>
 				</a>
