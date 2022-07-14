@@ -2,10 +2,10 @@ import { useRef, useState } from 'react';
 import './Dropdown.css';
 
 export default function Dropdown({
-	btnStyle = "",
-	dropdownStyle = "",
+	btnStyle = '',
+	dropdownStyle = '',
 	content,
-	children
+	children,
 }) {
 	const menu = useRef(null);
 	const [isOpen, setIsOpen] = useState(false);
@@ -21,38 +21,42 @@ export default function Dropdown({
 	};
 
 	return (
-		<li className='nav-menu' role='none' key={content} onClick={handleClick} ref={menu} onBlur={handleBlur}>
+		<div
+			className='nav-menu'
+			role='none'
+			key={content}
+			onClick={handleClick}
+			ref={menu}
+			onBlur={handleBlur}>
 			<a
-				role="menuitem"
-				href="/#"
+				role='menuitem'
+				href='/#'
 				className={`${btnStyle} nav-menuitem`}
 				aria-expanded={isOpen}
-				aria-haspopup="true"
-			>
+				aria-haspopup='true'>
 				{content}
-				<span className="pl-2" aria-hidden="true">
-					<i className="fa fa-chevron-down" />
+				<span className='pl-2' aria-hidden='true'>
+					<i className='fa fa-chevron-down' />
 				</span>
 			</a>
 			<ul
-				className={`${dropdownStyle} ${isOpen ? "" : "close"} nav-submenu`}
+				className={`${dropdownStyle} ${isOpen ? '' : 'close'} nav-submenu`}
 				id={`sub-menu-${content.toLowerCase()}`}
-				role="menu"
+				role='menu'
 				aria-label={content}
-				aria-orientation="vertical"
-				aria-labelledby="menu-button"
-			>
+				aria-orientation='vertical'
+				aria-labelledby='menu-button'>
 				{children.map((child, index) => (
 					<li key={`${content}-${index}`}>
-						<a href={`/${child.href}`}
-							className="nav-submenu-item"
-							role="menuitem"
-						>
+						<a
+							href={`/${child.href}`}
+							className='nav-submenu-item'
+							role='menuitem'>
 							{child.title}
 						</a>
 					</li>
 				))}
 			</ul>
-		</li>
+		</div>
 	);
 }
