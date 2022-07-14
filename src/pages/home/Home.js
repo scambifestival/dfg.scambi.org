@@ -1,21 +1,20 @@
-import './Home.scss';
-import React, { Component } from 'react';
+import React from 'react';
 import Header from './Header';
 import NLSubscribe from './NLSubscribe';
 import Purpose from './Purpose';
-import UserTestimonials from './UserTestimonials';
-import Explore from './Explore';
+import Testimonials from './Testimonials';
+import Map from '../../components/map';
 
-class Home extends Component {
-    render() {
-        return <div className='mainhome-container'>
-            <Header />
-            <UserTestimonials />
-            <Purpose />
-            <NLSubscribe />
-            <Explore />
-        </div>
-    }
-}
+const Home = () => {
+	return (
+		<div className='mainhome-container'>
+			<Header />
+			<Testimonials />	
+			<Purpose />
+			<NLSubscribe />
+			<Map />
+		</div>
+	);
+};
 
 export default Home;

@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .outer-testimonial-container {
+        @apply mt-6;
+    }
+
+    .outer-testimonial-container > h2 {
+        @apply px-10;
+    }
+
+    .testimonial-container {
+        @apply flex flex-wrap justify-center mb-5;
+    }
+    
+    .testimonial {
+        @apply relative max-w-[80%] p-10 my-8 bg-white text-left;
+    }
+
+    .testimonial-image {
+        @apply absolute max-w-[12rem] -top-12 -right-14;
+    }
+
+    .testimonial-name {
+        @apply pb-8 text-lg font-semibold;
+    }
+
+    @media screen(lg) {
+        .outer-testimonial-container {
+            @apply mt-10;
+        }
+
+        .testimonial-container {
+            @apply mt-0;
+        }
+
+        .testimonial {
+            @apply max-w-[29%] mx-3 my-6;
+        }
+
+        .testimonial-image {
+            @apply static;
+        }
+    }
+
+    @media screen(xl) {
+        .outer-testimonial-container {
+            @apply mt-20;
+        }
+
+        .testimonial-container {
+            @apply mt-16;
+        }
+
+        .testimonial {
+            @apply max-w-[20%] m-16;
+        }
+
+        .testimonial-image {
+            @apply absolute -top-24 -right-20;
+        }
+    }
+}
