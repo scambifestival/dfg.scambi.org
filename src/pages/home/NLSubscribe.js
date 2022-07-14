@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
-import './NLSubscribe.scss';
+// import './NLSubscribe.scss';
 import SubscribeImage from '../../assets/subscribe/SubscribeImage.png';
 
 
-/**
- * 
- * 
- */
 class NLSubscribe extends Component {
     render() {
         return <div>
