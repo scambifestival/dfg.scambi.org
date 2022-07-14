@@ -1,9 +1,10 @@
 import { useRef, useState } from 'react';
+//import { HashLink } from 'react-router-hash-link';
 import './Dropdown.css';
 
 export default function Dropdown({
-	btnStyle = '',
-	dropdownStyle = '',
+	btnStyle,
+	dropdownStyle,
 	content,
 	children,
 }) {
@@ -14,43 +15,43 @@ export default function Dropdown({
 		setIsOpen(!isOpen);
 	};
 
-	const handleBlur = (e) => {
+	const clickOutside = (e) => {
 		if (!menu.current.contains(e.relatedTarget)) {
 			setIsOpen(false);
 		}
 	};
 
 	return (
-		<div
-			className='nav-menu'
-			role='none'
-			key={content}
-			onClick={handleClick}
-			ref={menu}
-			onBlur={handleBlur}>
-			<a
-				role='menuitem'
-				href='/#'
-				className={`${btnStyle} nav-menuitem`}
-				aria-expanded={isOpen}
-				aria-haspopup='true'>
+		<div className='relative inline-block' onBlur={clickOutside}>
+			<button
+				onClick={handleClick}
+				className={`${btnStyle} inline-flex justify-center px-4 py-2 bg-white text-sm font-medium text-gray-700 focus:outline-none active:ring-2 active:ring-fuchsia-800`}>
 				{content}
 				<span className='pl-2' aria-hidden='true'>
 					<i className='fa fa-chevron-down' />
 				</span>
-			</a>
+			</button>
 			<ul
-				className={`${dropdownStyle} ${isOpen ? '' : 'close'} nav-submenu`}
-				id={`sub-menu-${content.toLowerCase()}`}
+				ref={menu}
+				className={`${dropdownStyle} ${
+					isOpen ? '' : 'hidden'
+				} py-1 absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5`}
+				id={content}
 				role='menu'
 				aria-label={content}
 				aria-orientation='vertical'
 				aria-labelledby='menu-button'>
 				{children.map((child, index) => (
-					<li key={`${content}-${index}`}>
+					<li key={index}>
+						{/*<HashLink
+							href={`/${child.href}`}
+							className='text-gray-700 block px-4 py-2 text-sm'
+							role='menuitem'>
+							{child.title}
+				</HashLink>*/}
 						<a
 							href={`/${child.href}`}
-							className='nav-submenu-item'
+							className='text-gray-700 block px-4 py-2 text-sm'
 							role='menuitem'>
 							{child.title}
 						</a>
