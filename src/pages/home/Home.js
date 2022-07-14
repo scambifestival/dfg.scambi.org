@@ -11,9 +11,25 @@ import Volunteer from '../../assets/home/Volunteer.png';
 import Sponsors from '../../assets/home/Sponsors.png';
 import Card from '../../components/card';
 
+const eventCards = [
+	{
+		title: "Workshops",
+		description: "Collective experiences led by specialists who will accompany us through a variety of fields with the objective of discovering new things and people in an original way, in order to develop new bonds and values."
+	},
+	{
+		title: "Dissolvenze",
+		description: "Our short film contest, through which creatives can share their views and voice their ideas thanks to the magic of pictures."
+	},
+	{
+		title: "Mini Events",
+		description: "Mini-events that come to life in La Pigna, including the reading of Poesie a Colazione, the secondhand clothing exchange Da Capo, innovative solutions for the storage of virtual data and much more."
+	}
+];
+
 const manifestoCards = [
 	{
-		title: "Workshop", description: "Collective experience based on creativity, dialogue and sharing, which blossoms once a year on the squares of La Pigna in order to explore together the various connotations of the current edition's theme."
+		title: "Workshop",
+		description: "Collective experience based on creativity, dialogue and sharing, which blossoms once a year on the squares of La Pigna in order to explore together the various connotations of the current edition's theme."
 	},
 	{
 		title: "Paneuretic",
@@ -27,7 +43,7 @@ const manifestoCards = [
 		title: "La Pigna",
 		description: "The iconic and vibrant historic center of Sanremo that welcomes us during the festival, and that we are committed to requalify through social values such as Community and Meeting."
 	}
-]
+];
 
 const Home = () => {
 	return (
@@ -70,6 +86,19 @@ const Home = () => {
 					<img src={Program} />
 				</div>
 			</Flex>
+
+			<div className='flex flex-col items-center justify-center space-y-7 mt-16 lg:flex-row lg:space-x-14 lg:space-y-0'>
+				{eventCards.map(event => (
+					<Card classes='w-4/5 h-fit px-10 py-5 space-y-4 bg-white lg:w-1/4'>
+						<h4>{event.title}</h4>
+						<p className='text-left'>{event.description}</p>
+						<div className='text-left text-purple-650'>
+							<a>Read more <i className='fa fa-long-arrow-right' /></a>
+						</div>
+					</Card>
+				))}
+			</div>
+
 			<Testimonials />
 			<Flex classes='my-1'>
 				<div className="flex-content max-w-1/2">
