@@ -1,5 +1,4 @@
 import React from 'react';
-import './Testimonials.css';
 import UserTestimonialsPicture from '../../assets/home/UserTestimonial.png';
 import Card from '../../components/card';
 
@@ -23,13 +22,13 @@ const testimonials = [
 
 const Testimonials = () => {
     return (
-        <div className="outer-testimonial-container">
-            <h2>An experience people love to talk about</h2>
-            <div className="testimonial-container">
+        <div className='mt-6 lg:mt-10 xl:mt-20'>
+            <h2 className='px-10'>An experience people love to talk about</h2>
+            <div className='flex flex-wrap justify-center mb-5 lg:mt-0 xl:mt-16'>
                 {testimonials.map(testimonial => (
-                    <Card classes="testimonial">
-                        <img src={testimonial.image} className="testimonial-image" />
-                        <div className="testimonial-name">{testimonial.name}</div>
+                    <Card classes='relative max-w-[80%] p-10 my-8 bg-white text-left lg:max-w-[29%] lg:mx-5 lg:my-20 xl:max-w-[20%] xl:m-16'>
+                        <img src={testimonial.image} className='absolute max-w-[12rem] -top-12 -right-14 lg:-top-14 lg:-right-10 xl:-top-24 xl:-right-20'/>
+                        <div className='pb-8 text-lg font-semibold'>{testimonial.name}</div>
                         <p>{`"${testimonial.quote}"`}</p>
                     </Card>
                 ))}
