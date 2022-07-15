@@ -2,6 +2,8 @@ import Pinoli from '../../assets/minievent/Pinoli.png';
 import Flex from '../../components/Flex/Flex';
 import Card from '../../components/card';
 import EventPlaceholder from '../../assets/minievent/EventPlaceholder.jpg';
+import SupportUs from '../../components/supportus';
+
 
 const dummyData = {
     title: "Event name",
@@ -37,7 +39,7 @@ const MiniEvents = () => {
 
         return events;
     };
-        
+
     return (
         <div>
             <header>
@@ -70,6 +72,11 @@ const MiniEvents = () => {
             <div className='flex flex-wrap justify-center mx-10 lg:mx-20'>
                 {populate()}
             </div>
+
+            <div className='w-full bg-white py-10 my-10 px-7'>
+                <SupportUs/>
+            </div>
+
         </div>
     );
 }
