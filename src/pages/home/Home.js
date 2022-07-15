@@ -134,7 +134,9 @@ const Home = () => {
 				</div>
 			</Flex>
 
-			{/* <NLSubscribe /> */}
+			<div className='bg-white flex justify-center py-10'>
+				<NLSubscribe />
+			</div>
 			<Map />
 		</div>
 	);
