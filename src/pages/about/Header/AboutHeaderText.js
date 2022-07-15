@@ -20,7 +20,7 @@ const AboutHeaderText = (props) => {
 					where we will explore{" "}
 					<b className="disequilibirum">Disequilibirum.</b>
 				</p>
-				<button className="attendButton">Get tickets</button>
+				<button className="attendButton">Attend</button>
 			</div>
 		</div>
 	);
