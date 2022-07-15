@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
-import UserTest from './UserTest';
-import NLSubscribe from './NLSubscribe';
+/*import UserTest from './UserTest';
+import NLSubscribe from './NLSubscribe';*/
 
-class Home extends Component {
-    render() {
-        return <div>
-            <div>Home</div>
-            <UserTest />
-            <NLSubscribe />
-        </div>
-    }
+import Dropdown from '../../components/dropdown';
+
+export default function Home() {
+	const data = [{ title: 'About us', href: '/about' }];
+	return (
+		<div>
+			<p>Home</p>
+			<Dropdown children={data} content='About' />
+		</div>
+	);
 }
-
-export default Home;

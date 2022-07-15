@@ -8,22 +8,14 @@
 	font-style: normal;
 	font-size: 18px;
 }
+
 .left-aboutScambi {
-	width: 50%;
-	height: 100%;
 	text-align: left;
 	margin-left: 40px;
 }
-.right-aboutScambi {
-	width: 50%;
-	height: 100%;
-}
 
 .scambi-text {
-	/* H2 Headline, Light, 64px */
-	font-family: "Londrina Solid";
 	text-align: left;
-	font-size: 64px;
 }
 
 .attendButton {
@@ -33,7 +25,6 @@
 	justify-content: center;
 	align-items: center;
 	padding: 30px 40px;
-	gap: 8px;
 	margin-top: 1vh;
 	width: 162px;
 	height: 46px;
@@ -69,12 +60,12 @@
 }
 
 .disequilibirum {
-	font-weight: bold;
 	font-style: italic;
 }
 
 .bold-fonts {
-	font-weight: bold;
+	font-weight: bold !important;
+	font-size: 170;
 }
 
 .aboutScambiExplanation-container {
@@ -85,23 +76,18 @@
 .scambiExplanation-text {
 	font-size: 32px;
 	text-align: left;
-
 	font-family: "Londrina Solid";
 	margin-bottom: 30px;
 }
 
 .purpleText {
 	color: #69088d;
+	font-weight: bold !important;
 }
 
 .scambi-workExplanation-text {
 	text-align: left;
 	margin-bottom: 20px;
-}
-
-.right-aboutScambi-workExplanation {
-	width: 500px;
-	position: relative;
 }
 
 .exploreWorkshopButton {
@@ -113,7 +99,6 @@
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 10px;
-	gap: 10px;
 	right: 20px;
 	width: 250px;
 	height: 60px;
@@ -132,7 +117,6 @@
 	justify-content: center;
 	align-items: center;
 	padding: 12px 40px;
-	gap: 8px;
 	background: linear-gradient(
 			180deg,
 			rgba(255, 255, 255, 0.2) 0%,
@@ -153,72 +137,77 @@
 }
 
 .aboutExampleWorkshop-container {
-	background: linear-gradient(90deg, #e9afff 0%, #ffedc4 98.65%);
-	font-family: "Londrina Solid";
 	padding: 20px;
 	height: 700px;
+	position: relative;
+}
+
+.quoteBack {
+	background-image: url(https://i.picsum.photos/id/1002/4312/2868.jpg?hmac=5LlLE-NY9oMnmIQp7ms6IfdvSUQOzP_O3DPMWmyNxwo);
 }
 
 .aboutExampleWorkshop-text {
 	text-align: left;
 	margin-left: 30px;
+	position: relative;
 }
 
 .exmapleImages {
+	max-width: 1400px;
+	margin: auto;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .example1 {
-	padding: 100px;
-	width: 33%;
+	flex: 1;
+	box-sizing: border-box;
+	padding: 0;
+	width: 20rem;
+	margin: 0;
+}
+
+.rightArrow {
+	color: #69008d;
+	position: absolute;
+	right: 0;
+	top: 1px;
 }
 
 .example2 {
-	padding: 100px;
-	width: 33%;
+	padding: 0;
+	margin: 0;
+	flex: 1;
+	width: 20rem;
+	box-sizing: border-box;
 }
 
 .example3 {
-	padding: 100px;
-	width: 33%;
+	padding: 0;
+	margin: 0;
+	flex: 1;
+	width: 20rem;
+	box-sizing: border-box;
 }
 
-.aboutScambiQuote-container {
-	background-url: "";
-	height: 700px;
-	font-family: "Londrina Solid";
+img {
+	margin: 0;
+	padding: 0;
 }
 
 .aboutQuoteText {
-	font-family: "Londrina Solid";
 	padding: 100px 0;
 	text-align: center;
-	font-size: 64px;
-	width: 40%;
-	display: inline-block;
-	vertical-align: middle;
 	color: white;
 }
 
 .aboutScambiOurTeam-container {
-	background: linear-gradient(90deg, #e9afff 0%, #ffedc4 98.65%);
 	padding: 20px;
-	height: 700px;
-	display: flex;
-}
-
-.aboutOurTeamText {
-	width: 50%;
-}
-
-.boutOurTeamImage {
-	width: 50%;
 }
 
 .textOurTeam {
-	font-family: "Londrina Solid";
 	text-align: left;
-	font-size: 64px;
 	margin-left: 30px;
 }
 
@@ -228,12 +217,86 @@
 }
 
 .flex-text {
-	width: 50%;
-	margin-top: 80px;
-	margin-left: 60px;
 	text-align: left;
 }
 
 .white-background {
 	background-color: white !important;
+}
+
+.secondTextHeader {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.borderImg {
+	border-radius: 16px;
+}
+
+.ourTeamEl {
+	justify-content: center;
+	margin: auto;
+}
+
+.exampleName1 {
+	font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+	.exampleName1 {
+		padding-right: 13%;
+	}
+	.exampleName2 {
+		padding-right: 13%;
+	}
+	.exampleName3 {
+		text-align: left;
+		padding-left: 10%;
+	}
+}
+
+@media (max-width: 680px) {
+	.exmapleImages {
+		margin-left: 13%;
+	}
+
+	.exampleName1 {
+		padding-right: 4%;
+	}
+	.exampleName2 {
+		padding-right: 10%;
+	}
+
+	.exampleName3 {
+		padding-left: 20%;
+	}
+}
+
+@media (max-width: 4140px) {
+	.exmapleImages {
+		margin-left: 4%;
+	}
+
+	.exampleName1 {
+		padding-left: 24%;
+	}
+	.exampleName2 {
+		padding-right: 1%;
+	}
+
+	.exampleName3 {
+		padding-left: 24%;
+	}
+
+	.example1 {
+		margin-right: 70px;
+	}
+
+	.example2 {
+		margin-right: 30px;
+	}
+
+	.example3 {
+		margin-right: 40px;
+	}
 }
