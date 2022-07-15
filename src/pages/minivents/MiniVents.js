@@ -1,5 +1,6 @@
 import Pinoli from '../../assets/minievent/Pinoli.png';
 import Flex from '../../components/Flex/Flex';
+import EventPlaceholder from '../../assets/minievent/EventPlaceholder.jpg';
 
 const MiniEvents = () => {
         
@@ -22,6 +23,15 @@ const MiniEvents = () => {
                     </div>
                 </Flex>
             </header>
+            <div className='w-full bg-white py-10'>
+                <h2>What is a Pinolo?</h2>
+                <p>A Pinolo is a collateral event that comes to life during Scambi festival.</p>
+                <img src={EventPlaceholder} className='mx-auto mt-10 w-1/2 rounded-2xl' />
+            </div>
+            <div className='px-20 my-10'>
+                <h2 className='pt-5'>Upcoming Pinolis</h2>
+                {/* <Map/> */}
+            </div>
         </div>
     );
 }
