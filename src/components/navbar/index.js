@@ -1,45 +1,50 @@
-import React, { Component } from 'react';
-import './Navbar.scss';
-import { Navbar, Container, NavDropdown, Nav } from 'react-bootstrap';
+import Dropdown from "../dropdown";
+import Button from "../button";
+import { useState } from "react";
 
-class NavbarGlobal extends Component {
-    render() {
-        return <div>
-            <Navbar className="navbar" bg="light" expand="xl">
-                <Container>
-                    <Navbar.Toggle bsprefix="navbar-collapse-custom" aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
-                            <Navbar.Brand className='left-logo' href="/">Scambi</Navbar.Brand>
-                            <NavDropdown title="About Us" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/about">About Scambi</NavDropdown.Item>
-                                <NavDropdown.Item href="/about">Our Story</NavDropdown.Item>
-                                <NavDropdown.Item href="/about">Our Team</NavDropdown.Item>
-                            </NavDropdown>
-                            <NavDropdown title="Festival" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/labs">Labs</NavDropdown.Item>
-                                <NavDropdown.Item href="/pinolis">Pinolis</NavDropdown.Item>
-                                <NavDropdown.Item href="/filmcontest">Film Contest</NavDropdown.Item>
-                                <NavDropdown.Item href="/minivents">Minivents</NavDropdown.Item>
-                            </NavDropdown>
-                            <NavDropdown title="Support" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/donate">Donate</NavDropdown.Item>
-                                <NavDropdown.Item href="/volunteer">Volunteer</NavDropdown.Item>
-                                <NavDropdown.Item href="/join-team">Join Team</NavDropdown.Item>
-                            </NavDropdown>
-                            <Nav.Link href="/blog" id="navbar-link">Blog</Nav.Link>
-                            <Nav.Link href="/faq" id="navbar-link">FAQ</Nav.Link>
-                            <a href="/rsvp" className='rsvp-button'>Attend</a>
-                            <NavDropdown title="Language" id="basic-nav-dropdown" className="justify-content-end">
-                                <NavDropdown.Item href="">English</NavDropdown.Item>
-                                <NavDropdown.Item href="">Italian</NavDropdown.Item>
-                            </NavDropdown>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
-        </div>
-    }
+const aboutUsDropdown = [
+    { title: "About Scambi", href: "about" },
+    { title: "Our Story", href: "" },
+    { title: "Our Team", href: "" },
+];
+
+const festivalDropdown = [
+    { title: "Labs", href: "labs" },
+    { title: "Pinolis", href: "minievents" },
+    // {title: "Film Contest", href:"filmcontest"}
+];
+
+const supportDropdown = [
+    { title: "Donate", href: "donate" },
+    { title: "Volunteer", href: "volunteer" },
+    { title: "Join Team", href: "" }
+];
+
+const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleClick = () => {
+        setIsOpen(!isOpen);
+    };
+
+    return (
+        <nav aria-label='Scambi' className='w-full space-y-7 py-5 flex flex-col items-center justify-around bg-white rounded-b-3xl mr-20 lg:flex-row lg:rounded-b-full lg:space-y-0 lg:px-20 2xl:px-10'>
+            <div className='w-full lg:w-auto flex justify-between px-20 lg:px-0'>
+                <a href='/' className='text-5xl font-["Londrina_Solid"]'>Scambi</a>
+                <i className='fa fa-bars fa-3x lg:hidden' onClick={handleClick} />
+            </div>
+            <ul role='menubar' aria-label='scambi' className={`${isOpen ? 'flex' : 'hidden'} space-y-3 lg:space-y-0 flex-col lg:w-auto 2xl:w-auto lg:flex lg:flex-row justify-around items-center`}>
+                <Dropdown content='ABOUT US' btnStyle='text-xl font-bold' children={aboutUsDropdown} />
+                <Dropdown content='FESTIVAL' btnStyle='text-xl font-bold' children={festivalDropdown} />
+                <Dropdown content='SUPPORT' btnStyle='text-xl font-bold' children={supportDropdown} />
+                <li role='none'>
+                    <a role='menuitem' href='/faq' className='text-xl font-bold'>FAQ</a>
+                </li>
+            </ul>
+
+            <Button classes={`${isOpen ? '' : 'hidden'} lg:inline-block`} >ATTEND</Button>
+        </nav>
+    );
 }
 
-export default NavbarGlobal;
+export default Navbar;
