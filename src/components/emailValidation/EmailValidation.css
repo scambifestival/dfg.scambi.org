@@ -18,3 +18,9 @@ input {
 		height: 5px;
 	}
 }
+
+@media (max-width: 300px) {
+	.incorrectText {
+		font-size: 10px;
+	}
+}

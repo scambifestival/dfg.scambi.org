@@ -4,7 +4,7 @@ import "./../About.css";
 const AboutHeaderText = (props) => {
 	return (
 		<div>
-			<div className="ourTeamEl lg:w-full">
+			<div className="ourTeamEl w-full">
 				<h2 className="scambi-text text-6xl lg:mt-16 lg:text-5xl md:text-3xl text-left">
 					About Scambi
 				</h2>

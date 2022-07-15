@@ -27,7 +27,7 @@ const FooterMiddle = (props) => {
 				</div>
 			</div>
 			<div className="md:w-full lg:w-1/2 inline-flex items-center justify-center  middleRight">
-				<div className="menus1 w-2/4 p-8 mt-8">
+				<div className="menus1 w-1/3 p-8 mt-8">
 					<p className="mt-8">About</p>
 					<p className="mt-8">Team</p>
 					<p className="mt-8">Manifesto</p>
@@ -35,14 +35,14 @@ const FooterMiddle = (props) => {
 					<p className="mt-8 galaxy">Donate</p>
 					<p className="mt-8 galaxy">Volunteer</p>
 				</div>
-				<div className="menus2 w-2/4 p-8 mt-8">
+				<div className="menus2 w-1/3 p-8 mt-8">
 					<p className="mt-8">Labs</p>
 					<p className="mt-8">Pinolis</p>
 					<p className="mt-8">Dissolvenze</p>
 					<p className="mt-8">Ideas</p>
 					<p className="mt-8 galaxy">Join Team</p>
 				</div>
-				<div className="menus3 w-2/4 p-8 mt-8">
+				<div className="menus3 w-1/3 p-8 mt-8">
 					<p className="mt-8">Donate</p>
 					<p className="mt-8">Volunteer</p>
 					<p className="mt-8">Join Team</p>
