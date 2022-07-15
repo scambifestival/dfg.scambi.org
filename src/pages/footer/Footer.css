@@ -30,7 +30,6 @@
 	font-style: normal;
 	font-weight: 600;
 	font-size: 18px;
-
 	line-height: 27px;
 	/* identical to box height */
 
@@ -98,7 +97,6 @@
 	justify-content: center;
 	align-items: center;
 	padding: 30px 40px;
-	gap: 8px;
 	margin-top: 1vh;
 	width: 162px;
 	height: 46px;
@@ -154,6 +152,8 @@
 		height: 250px !important;
 		padding: 0 !important;
 		margin: 0 !important;
+		margin-top: 30px !important;
+		margin-bottom: 30px !important;
 	}
 
 	.blobFooter1 {
@@ -162,17 +162,17 @@
 
 	.menus1 {
 		padding: 0 !important;
-		margin: -0 !important;
+		margin: 0 !important;
 	}
 
 	.menus2 {
 		padding: 0 !important;
-		margin: -0 !important;
+		margin: 0 !important;
 	}
 
 	.menus3 {
 		padding: 0 !important;
-		margin: -0 !important;
+		margin: 0 !important;
 	}
 
 	.contentsBlob {

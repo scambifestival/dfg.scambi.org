@@ -15,7 +15,7 @@ class AboutHeader extends Component {
 					width="600px"
 					height="200px"
 					alt=""
-					className="lg:w-1/2 md:w-1/2 pt-16"
+					className="lg:w-1/2 md:w-1/2 md:pt-36 ld:pt-30 lg:mt-36"
 				/>
 			</Flex>
 		);

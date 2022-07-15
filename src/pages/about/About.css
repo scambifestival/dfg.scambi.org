@@ -143,7 +143,21 @@
 }
 
 .quoteBack {
-	background-image: url(https://i.picsum.photos/id/1002/4312/2868.jpg?hmac=5LlLE-NY9oMnmIQp7ms6IfdvSUQOzP_O3DPMWmyNxwo);
+	background-image: url("./../../assets/about/AboutQuate.jpg");
+	background-size: cover; /* <------ */
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	opacity: 0.9;
 }
 
 .aboutExampleWorkshop-text {
@@ -200,6 +214,7 @@ img {
 	padding: 100px 0;
 	text-align: center;
 	color: white;
+	z-index: 9;
 }
 
 .aboutScambiOurTeam-container {
