@@ -7,9 +7,11 @@ const TextFlex = (props) => {
 			<div className="flex-text">
 				<h4 className="scambiExplanation-text">
 					Our purpose is to recover the value of{" "}
-					<span className="purpleText">communication</span> and{" "}
-					<span className="purpleText">meeting</span> through paneuretic
-					workshops
+					<span className="purpleText scambiExplanation-text">
+						communication
+					</span>{" "}
+					and <span className="purpleText scambiExplanation-text">meeting</span>{" "}
+					through paneuretic workshops
 				</h4>
 				<p className="scambi-workExplanation-text">
 					Create your personalized journey of workshops from topics moving from
@@ -18,9 +20,9 @@ const TextFlex = (props) => {
 				</p>
 				<p className="scambi-workExplanation-text">
 					All workshops will be instrinsically careful to issues like{" "}
-					<span className="bold-fonts">
+					<b className="bold-fonts">
 						accessibility, sustainebility, and inclusion.
-					</span>
+					</b>
 				</p>
 			</div>
 		</div>

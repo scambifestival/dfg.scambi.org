@@ -28,10 +28,11 @@
 }
 
 .readyToJoin {
-	font-family: "Poppins";
+	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 18px;
+	margin-top: 19px;
 	line-height: 27px;
 	/* identical to box height */
 
@@ -40,7 +41,25 @@
 
 .purpledBtn {
 	color: white;
+	width: 11rem;
+	margin-left: 40px;
+	margin-top: 20px;
+	background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 0.2) 0%,
+			rgba(255, 255, 255, 0) 69.78%
+		),
+		#69088d;
+	/* Button/Primary/Dropshadow */
+	box-shadow: 0px 4px 3px rgba(47, 4, 63, 0.7);
+	border-radius: 16px;
+}
 
+.purpledBtnNL {
+	color: white;
+	width: 11rem;
+	margin-left: 40px;
+	margin-top: 20px;
 	background: linear-gradient(
 			180deg,
 			rgba(255, 255, 255, 0.2) 0%,
@@ -55,6 +74,7 @@
 .topRight {
 	position: absolute;
 	right: 30px;
+	margin-top: 10px;
 }
 
 .footerTop {
@@ -63,7 +83,7 @@
 
 .subscribeNews {
 	/* Subtitle 2, Semi Bold, 18px */
-	font-family: "Poppins";
+	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 18px;
@@ -80,7 +100,6 @@
 	justify-content: center;
 	align-items: center;
 	padding: 30px 40px;
-	gap: 8px;
 	margin-top: 1vh;
 	width: 162px;
 	height: 46px;
@@ -96,7 +115,7 @@
 	flex-grow: 0;
 	background-color: white;
 	/* Button Text, Semi bold, 16px */
-	font-family: "Poppins";
+	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 16px;
@@ -245,6 +264,9 @@
 	.bottomMiddle {
 		width: 100% !important;
 	}
+	.purpledBtn {
+		margin-left: 0;
+	}
 }
 
 @media (max-width: 600px) {
@@ -268,7 +290,7 @@
 	}
 
 	.footerMiddle {
-		padding: 250px;
+		padding: 270px;
 	}
 
 	.subscribeNews {
@@ -320,6 +342,12 @@
 	.galaxy {
 		display: block;
 	}
+
+	.purpledBtnNL {
+		width: 8rem;
+		margin-left: 60px;
+		padding: 10px;
+	}
 }
 
 @media (max-width: 500px) {
@@ -346,7 +374,7 @@
 
 	.subscribeNews {
 		margin-left: -20px;
-		font-size: x-small;
+		font-size: small;
 	}
 
 	.blobFooter1 {
@@ -642,6 +670,13 @@
 	.bottomMiddle {
 		width: 100% !important;
 	}
+
+	.purpledBtnNL {
+		font-size: x-small;
+		width: 6rem;
+		margin-left: 50px;
+		padding: 7px;
+	}
 }
 
 @media (max-width: 300px) {
@@ -721,5 +756,11 @@
 
 	.BottomLeft {
 		width: 100% !important;
+	}
+
+	.purpledBtnNL {
+		width: 5rem;
+		margin-left: 36px;
+		padding: 2px;
 	}
 }
