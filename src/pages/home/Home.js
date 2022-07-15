@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import NLSubscribe from './NLSubscribe';
 import Testimonials from './Testimonials';
-// import Map from '../../components/map';
+import Map from '../../components/map';
 import Button from '../../components/button';
 import Flex from '../../components/Flex/Flex';
 import TableTalk from '../../assets/home/TableTalk.png';
@@ -135,7 +135,7 @@ const Home = () => {
 			</Flex>
 
 			{/* <NLSubscribe /> */}
-			{/* <Map /> */}
+			<Map />
 		</div>
 	);
 };
