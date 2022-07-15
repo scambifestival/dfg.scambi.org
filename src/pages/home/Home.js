@@ -63,7 +63,7 @@ const Home = () => {
 						<h4>{event.title}</h4>
 						<p className='text-left'>{event.description}</p>
 						<div className='text-left text-purple-650'>
-							<a>Read more <i className='fa fa-long-arrow-right' /></a>
+							<a href={`/${event.link}`}>Read more <i className='fa fa-long-arrow-right' /></a>
 						</div>
 					</Card>
 				))}
@@ -71,8 +71,8 @@ const Home = () => {
 
 			<Testimonials />
 
-			<Flex classes='my-1'>
-				<div className="lg:text-left space-y-7 md:w-1/2 lg:w-3/5">
+			<Flex>
+				<div className="md:text-left space-y-7 md:w-1/2 lg:w-3/5">
 					<h2 className="leading-tight lg:leading-normal">Scambi Family</h2>
 					<p className="mx-auto md:mx-0">
 						We are a group of under 25s coming from every corner of Europe.
@@ -86,7 +86,7 @@ const Home = () => {
 					<p className="mx-auto md:mx-0">
 						We will be waiting for you in Sanremo, to introduce ourselves properly. In the meanwhile, here is an anticipation of who we are.
 					</p>
-					<Button styleType="secondary">Volunteer with us</Button>
+					<Button styleType="secondary" href='/volunteer'>Volunteer with us</Button>
 				</div>
 				<div className="md:w-1/2 lg:w-3/5">
 					<img src={Volunteer} />

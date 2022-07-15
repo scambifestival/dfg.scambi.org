@@ -22,7 +22,7 @@ const testimonials = [
 
 const Testimonials = () => {
     return (
-        <div className='mt-6 lg:mt-10 xl:mt-20'>
+        <div className='mt-6 lg:mt-10 xl:mt-32'>
             <h2 className='px-10 leading-tight'>An experience people love to talk about</h2>
             <div className='flex flex-wrap justify-center mb-5 lg:mt-0 xl:mt-16'>
                 {testimonials.map((testimonial, index) => (

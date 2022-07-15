@@ -1,15 +1,17 @@
 export const eventCards = [
 	{
 		title: "Workshops",
-		description: "Collective experiences led by specialists who will accompany us through a variety of fields with the objective of discovering new things and people in an original way, in order to develop new bonds and values."
+		description: "Collective experiences led by specialists who will accompany us through a variety of fields with the objective of discovering new things and people in an original way, in order to develop new bonds and values.",
+		link: "labs"
 	},
-	{
-		title: "Dissolvenze",
-		description: "Our short film contest, through which creatives can share their views and voice their ideas thanks to the magic of pictures."
-	},
+	// {
+	// 	title: "Dissolvenze",
+	// 	description: "Our short film contest, through which creatives can share their views and voice their ideas thanks to the magic of pictures."
+	// },
 	{
 		title: "Mini Events",
-		description: "Mini-events that come to life in La Pigna, including the reading of Poesie a Colazione, the secondhand clothing exchange Da Capo, innovative solutions for the storage of virtual data and much more."
+		description: "Mini-events that come to life in La Pigna, including the reading of Poesie a Colazione, the secondhand clothing exchange Da Capo, innovative solutions for the storage of virtual data and much more.",
+		link: "minievents"
 	}
 ];
 
