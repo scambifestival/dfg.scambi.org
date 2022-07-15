@@ -137,7 +137,11 @@ const Home = () => {
 			<div className='bg-white flex justify-center py-10'>
 				<NLSubscribe />
 			</div>
-			<Map />
+
+			<div className='px-20 my-10'>
+				<h2 className='text-left py-5'>Explore Scambi Festival</h2>
+				<Map />
+			</div>
 		</div>
 	);
 };
