@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import "./About.css";
-import pic2 from "./../../assets/lab/gallery/rec1.png";
-import pic3 from "./../../assets/lab/gallery/rec10.png";
 
 class AboutExampleWorkshop extends Component {
 	render() {
@@ -56,7 +54,7 @@ class AboutExampleWorkshop extends Component {
 						</svg>
 						<svg width="27rem" height="27rem" viewBox="0 0 250 250">
 							<image
-								xlinkHref={pic2}
+								xlinkHref="https://images.tommi.space/plugins/download_by_size/action.php?id=23531&part=e&size=small"
 								width="100%"
 								height="100%"
 								preserveAspectRatio="xMidYMid slice"
@@ -78,7 +76,7 @@ class AboutExampleWorkshop extends Component {
 
 						<svg width="27rem" height="27rem" viewBox="0 0 250 250">
 							<image
-								xlinkHref={pic3}
+								xlinkHref="https://images.tommi.space/plugins/download_by_size/action.php?id=23177&part=e&size=small"
 								width="100%"
 								height="100%"
 								preserveAspectRatio="xMidYMid slice"

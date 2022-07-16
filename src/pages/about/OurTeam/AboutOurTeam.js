@@ -9,7 +9,7 @@ class AboutOurTeam extends Component {
 		return (
 			<Flex>
 				<AboutTeamText className="lg:w-1/2 md:mt-12 md:w-1/2 lg:text-6xl md:text-4xl" />
-				<div>
+				<div className="lg:ml-14 md:ml-14">
 					<img src={ourTeampic} width="600px" height="200px" alt="" />
 				</div>
 			</Flex>
