@@ -5,7 +5,7 @@ const AboutHeaderText = (props) => {
 	return (
 		<div>
 			<div className="ourTeamEl w-full">
-				<h2 className="scambi-text text-6xl lg:mt-16 lg:text-5xl md:text-3xl text-left">
+				<h2 className="scambi-text text-6xl lg:mt-16 lg:text-6xl md:text-5xl text-left">
 					About Scambi
 				</h2>
 				<p className="text-left">

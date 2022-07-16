@@ -5,7 +5,7 @@ class AboutTeamText extends Component {
 	render() {
 		return (
 			<div className="ourTeamEl lg:w-1/2 md:w-2/3">
-				<h2 className="textOurTeam lg:text-6xl md:text-4xl">Our Team</h2>
+				<h2 className="textOurTeam g:text-6xl md:text-5xl ">Our Team</h2>
 				<p className="aboutOurTeam-smallText mb-6">
 					We are a group of under 25s coming from every corner of Europe. Our
 					association was born from our wish to value real and deep ties,
