@@ -2,6 +2,7 @@ import Pinoli from '../../assets/minievent/Pinoli.png';
 import Flex from '../../components/Flex/Flex';
 import Card from '../../components/card';
 import EventPlaceholder from '../../assets/minievent/EventPlaceholder.jpg';
+import Map from '../../components/map';
 import SupportUs from '../../components/supportus';
 
 
@@ -66,7 +67,7 @@ const MiniEvents = () => {
             </div>
             <div className='px-20 my-10'>
                 <h2 className='pt-5'>Upcoming Pinolis</h2>
-                {/* <Map/> */}
+                <Map/>
             </div>
 
             <div className='flex flex-wrap justify-center mx-10 lg:mx-20'>
