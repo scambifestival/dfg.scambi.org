@@ -1,0 +1,66 @@
+.cardContainer {
+	max-width: 1400px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+
+.manifestoBtn {
+	background-color: white;
+	color: black;
+	box-shadow: 0px 4px 3px rgba(47, 4, 63, 0.7);
+	border-radius: 16px;
+}
+
+@media (max-width: 640px) {
+	.cardEl {
+		width: 380px;
+	}
+
+	.cardContainer {
+		margin: auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center !important;
+		padding: 0 !important;
+	}
+	.manifestoBtn {
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 400px) {
+	.cardEl {
+		width: 300px;
+		padding: 0;
+	}
+	.cardContainer {
+		margin: auto;
+		display: flex;
+		justify-content: center !important;
+		padding: auto !important;
+	}
+	.manifestoBtn {
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 300px) {
+	.cardEl {
+		width: 200px;
+	}
+	.cardContainer {
+		margin: auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center !important;
+		padding: 0;
+	}
+
+	.manifestoBtn {
+		margin-top: 20px;
+	}
+}

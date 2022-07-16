@@ -7,6 +7,7 @@ import AboutQuote from "./AboutQuote";
 import AboutOurTeam from "./OurTeam/AboutOurTeam";
 import NLSubscribe from "./../home/NLSubscribe";
 import OurRelations from "../../components/OurRelations/OurRelations";
+import OurManifesto from "../../components/OurManifesto/OurManifesto";
 
 class About extends Component {
 	render() {
@@ -16,6 +17,7 @@ class About extends Component {
 				<AboutWorkshopExplanation />
 				<AboutExampleWorkshop />
 				<AboutQuote />
+				<OurManifesto />
 				<AboutOurTeam />
 				<OurRelations />
 				<NLSubscribe />
