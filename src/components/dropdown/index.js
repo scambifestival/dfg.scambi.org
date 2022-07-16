@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 //import { HashLink } from 'react-router-hash-link';
-import './Dropdown.css';
 
 export default function Dropdown({
 	btnStyle,
@@ -25,7 +25,7 @@ export default function Dropdown({
 		<div className='relative inline-block' onBlur={clickOutside}>
 			<button
 				onClick={handleClick}
-				className={`${btnStyle} inline-flex justify-center px-4 py-2 bg-white text-sm font-medium text-gray-700 focus:outline-none active:ring-2 active:ring-fuchsia-800`}>
+				className={`${btnStyle} inline-flex justify-center px-4 py-2 bg-white text-gray-700 focus:outline-none active:ring-2 active:ring-fuchsia-800`}>
 				{content}
 				<span className='pl-2' aria-hidden='true'>
 					<i className='fa fa-chevron-down' />
@@ -35,7 +35,7 @@ export default function Dropdown({
 				ref={menu}
 				className={`${dropdownStyle} ${
 					isOpen ? '' : 'hidden'
-				} py-1 absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5`}
+				} py-1 left-0 mt-2 w-56 rounded-md bg-white ring-1 ring-black ring-opacity-5 lg:absolute lg:shadow-lg`}
 				id={content}
 				role='menu'
 				aria-label={content}
@@ -43,18 +43,12 @@ export default function Dropdown({
 				aria-labelledby='menu-button'>
 				{children.map((child, index) => (
 					<li key={index}>
-						{/*<HashLink
-							href={`/${child.href}`}
+						<Link
+							to={child.href}
 							className='text-gray-700 block px-4 py-2 text-sm'
 							role='menuitem'>
 							{child.title}
-				</HashLink>*/}
-						<a
-							href={`/${child.href}`}
-							className='text-gray-700 block px-4 py-2 text-sm'
-							role='menuitem'>
-							{child.title}
-						</a>
+						</Link>
 					</li>
 				))}
 			</ul>
