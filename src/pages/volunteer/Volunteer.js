@@ -6,7 +6,7 @@ const volunteerOptions = [
         title: ["Summer Volunteer", <br/>, "(Aug 22-29, 2022)"],
         description: "Are you looking for a volunteer experience to crank up your resume? Would you love to participate in the creation of a cultural youth exchange? Are you not afraid of some challenging and insightful work? Would you love to come join us in Italy this summer? Then volunteering for Scambi is something made for you!",
         button: "Learn more",
-        buttonLink: ""
+        buttonLink: "summer"
     },
     {
         title: ["Join the Scambi Team", <br/>, "(Year-round)"],
