@@ -26,18 +26,13 @@
 	align-items: center;
 	padding: 30px 40px;
 	margin-top: 1vh;
-	width: 162px;
+	width: 30px;
 	height: 46px;
-
 	/* Button/Primary/Dropshadow */
 	box-shadow: 0px 4px 3px rgba(47, 4, 63, 0.7);
 	border-radius: 16px;
 	outline: none;
 	border: 0;
-	/* Inside auto layout */
-	flex: none;
-	order: 2;
-	flex-grow: 0;
 	background-color: white;
 	/* Button Text, Semi bold, 16px */
 	font-family: "Poppins";
@@ -45,18 +40,9 @@
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 22px;
-	/* identical to box height, or 138% */
-	display: flex;
-	align-items: center;
-	text-align: center;
 
 	/* Light/--text-color-on-primary */
 	color: black;
-
-	/* Inside auto layout */
-	flex: none;
-	order: 1;
-	flex-grow: 0;
 }
 
 .disequilibirum {
@@ -143,7 +129,21 @@
 }
 
 .quoteBack {
-	background-image: url(https://i.picsum.photos/id/1002/4312/2868.jpg?hmac=5LlLE-NY9oMnmIQp7ms6IfdvSUQOzP_O3DPMWmyNxwo);
+	background-image: url(https://images.tommi.space/plugins/download_by_size/action.php?id=28833&part=e&size=large);
+	background-size: cover; /* <------ */
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	opacity: 0.9;
 }
 
 .aboutExampleWorkshop-text {
@@ -153,7 +153,7 @@
 }
 
 .exmapleImages {
-	max-width: 1400px;
+	max-width: 1500px;
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -200,6 +200,7 @@ img {
 	padding: 100px 0;
 	text-align: center;
 	color: white;
+	z-index: 9;
 }
 
 .aboutScambiOurTeam-container {
@@ -254,8 +255,24 @@ img {
 		padding-left: 10%;
 	}
 }
-
 @media (max-width: 680px) {
+	.exmapleImages {
+		margin-left: 20%;
+	}
+
+	.exampleName1 {
+		padding-right: 25%;
+	}
+	.exampleName2 {
+		padding-right: 25%;
+	}
+
+	.exampleName3 {
+		padding-left: 20%;
+	}
+}
+
+@media (max-width: 500px) {
 	.exmapleImages {
 		margin-left: 13%;
 	}
@@ -272,7 +289,7 @@ img {
 	}
 }
 
-@media (max-width: 4140px) {
+@media (max-width: 414px) {
 	.exmapleImages {
 		margin-left: 4%;
 	}

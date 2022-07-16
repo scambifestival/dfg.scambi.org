@@ -1,0 +1,26 @@
+.incorrectText {
+	color: red;
+}
+
+input {
+	position: relative;
+}
+
+.incorrectTextNL {
+	position: absolute;
+	top: 70px;
+	left: 10px;
+}
+
+@media (max-width: 500px) {
+	input {
+		width: 140px;
+		height: 5px;
+	}
+}
+
+@media (max-width: 300px) {
+	.incorrectText {
+		font-size: 10px;
+	}
+}

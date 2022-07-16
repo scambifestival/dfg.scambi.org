@@ -1,0 +1,333 @@
+.aboutScambiHeader-container {
+	display: inline-flex;
+	background: linear-gradient(90deg, #e9afff 0%, #ffedc4 98.65%);
+	height: 500px;
+	padding-top: 40px;
+	/* Subtitle 2, Semi Bold, 18px */
+	font-family: "Poppins";
+	font-style: normal;
+	font-size: 18px;
+}
+
+.left-aboutScambi {
+	text-align: left;
+	margin-left: 40px;
+}
+
+.scambi-text {
+	text-align: left;
+}
+
+.attendButton {
+	/* Auto layout */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 40px;
+	margin-top: 1vh;
+	width: 162px;
+	height: 46px;
+
+	/* Button/Primary/Dropshadow */
+	box-shadow: 0px 4px 3px rgba(47, 4, 63, 0.7);
+	border-radius: 16px;
+	outline: none;
+	border: 0;
+	/* Inside auto layout */
+	flex: none;
+	order: 2;
+	flex-grow: 0;
+	background-color: white;
+	/* Button Text, Semi bold, 16px */
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	/* identical to box height, or 138% */
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	/* Light/--text-color-on-primary */
+	color: black;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+
+.disequilibirum {
+	font-style: italic;
+}
+
+.bold-fonts {
+	font-weight: bold !important;
+	font-size: 170;
+}
+
+.aboutScambiExplanation-container {
+	display: flex;
+	height: 500px;
+}
+
+.scambiExplanation-text {
+	font-size: 32px;
+	text-align: left;
+	font-family: "Londrina Solid";
+	margin-bottom: 30px;
+}
+
+.purpleText {
+	color: #69088d;
+	font-weight: bold !important;
+}
+
+.scambi-workExplanation-text {
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.exploreWorkshopButton {
+	/* Button */
+	margin-top: 20px;
+	/* Auto layout */
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 10px;
+	right: 20px;
+	width: 250px;
+	height: 60px;
+	left: 50%;
+	/* Inside auto layout */
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	cursor: pointer;
+}
+.exploreWorkshopButton {
+	/* Auto layout */
+	display: flex;
+	font-size: 18px;
+	flex-direction: reverse;
+	justify-content: center;
+	align-items: center;
+	padding: 12px 40px;
+	background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 0.2) 0%,
+			rgba(255, 255, 255, 0) 69.78%
+		),
+		#69088d;
+	/* Button/Primary/Dropshadow */
+	box-shadow: 0px 4px 3px rgba(47, 4, 63, 0.7);
+	border-radius: 16px;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	color: white;
+	border: 0;
+	font-weight: bold;
+}
+
+.aboutExampleWorkshop-container {
+	padding: 20px;
+	height: 700px;
+	position: relative;
+}
+
+.quoteBack {
+	background-image: url("./../../assets/about/AboutQuate.jpg");
+	background-size: cover; /* <------ */
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	opacity: 0.9;
+}
+
+.aboutExampleWorkshop-text {
+	text-align: left;
+	margin-left: 30px;
+	position: relative;
+}
+
+.exmapleImages {
+	max-width: 1500px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.example1 {
+	flex: 1;
+	box-sizing: border-box;
+	padding: 0;
+	width: 20rem;
+	margin: 0;
+}
+
+.rightArrow {
+	color: #69008d;
+	position: absolute;
+	right: 0;
+	top: 1px;
+}
+
+.example2 {
+	padding: 0;
+	margin: 0;
+	flex: 1;
+	width: 20rem;
+	box-sizing: border-box;
+}
+
+.example3 {
+	padding: 0;
+	margin: 0;
+	flex: 1;
+	width: 20rem;
+	box-sizing: border-box;
+}
+
+img {
+	margin: 0;
+	padding: 0;
+}
+
+.aboutQuoteText {
+	padding: 100px 0;
+	text-align: center;
+	color: white;
+	z-index: 9;
+}
+
+.aboutScambiOurTeam-container {
+	padding: 20px;
+}
+
+.textOurTeam {
+	text-align: left;
+	margin-left: 30px;
+}
+
+.aboutOurTeam-smallText {
+	margin-left: 30px;
+	text-align: left;
+}
+
+.flex-text {
+	text-align: left;
+}
+
+.white-background {
+	background-color: white !important;
+}
+
+.secondTextHeader {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.borderImg {
+	border-radius: 16px;
+}
+
+.ourTeamEl {
+	justify-content: center;
+	margin: auto;
+}
+
+.exampleName1 {
+	font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+	.exampleName1 {
+		padding-right: 13%;
+	}
+	.exampleName2 {
+		padding-right: 13%;
+	}
+	.exampleName3 {
+		text-align: left;
+		padding-left: 10%;
+	}
+}
+@media (max-width: 680px) {
+	.exmapleImages {
+		margin-left: 20%;
+	}
+
+	.exampleName1 {
+		padding-right: 4%;
+	}
+	.exampleName2 {
+		padding-right: 10%;
+	}
+
+	.exampleName3 {
+		padding-left: 20%;
+	}
+}
+
+@media (max-width: 500px) {
+	.exmapleImages {
+		margin-left: 13%;
+	}
+
+	.exampleName1 {
+		padding-right: 4%;
+	}
+	.exampleName2 {
+		padding-right: 10%;
+	}
+
+	.exampleName3 {
+		padding-left: 20%;
+	}
+}
+
+@media (max-width: 414px) {
+	.exmapleImages {
+		margin-left: 4%;
+	}
+
+	.exampleName1 {
+		padding-left: 24%;
+	}
+	.exampleName2 {
+		padding-right: 1%;
+	}
+
+	.exampleName3 {
+		padding-left: 24%;
+	}
+
+	.example1 {
+		margin-right: 70px;
+	}
+
+	.example2 {
+		margin-right: 30px;
+	}
+
+	.example3 {
+		margin-right: 40px;
+	}
+}
