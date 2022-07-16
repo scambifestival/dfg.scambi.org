@@ -8,7 +8,7 @@ const supportUsCards = [
         image: require('../../assets/supportus/ElecHand.png'),
         imageAlt: "Graphic of purple hand wrapped with blue string",
         button: "Volunteer",
-        buttonLink: "",
+        buttonLink: "/volunteer",
         background: "orange-250",
     },
     {
