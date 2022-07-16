@@ -10,14 +10,13 @@ import Labs from './pages/labs/Labs';
 import FAQ from './pages/faq/FAQ';
 // import FilmContest from './pages/filmcontest/FilmContest';
 import LabInfo from './pages/labs/LabInfo';
-import Footers from './pages/footer/Footers';
 import PageLayout from './PageLayout';
 
 function App() {
 	return (
 		<div className='App'>
 			<Routes>
-				<Route path='/' element={<PageLayout/>}>
+				<Route path='/' element={<PageLayout />}>
 					<Route path='/' element={<Home />} />
 					<Route path='about' element={<About />} />
 					<Route path='contact' element={<Contact />} />

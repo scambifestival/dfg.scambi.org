@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 //import { HashLink } from 'react-router-hash-link';
-import './Dropdown.css';
 
 export default function Dropdown({
 	btnStyle,
@@ -43,12 +43,12 @@ export default function Dropdown({
 				aria-labelledby='menu-button'>
 				{children.map((child, index) => (
 					<li key={index}>
-						<a
-							href={`/${child.href}`}
+						<Link
+							to={child.href}
 							className='text-gray-700 block px-4 py-2 text-sm'
 							role='menuitem'>
 							{child.title}
-						</a>
+						</Link>
 					</li>
 				))}
 			</ul>
