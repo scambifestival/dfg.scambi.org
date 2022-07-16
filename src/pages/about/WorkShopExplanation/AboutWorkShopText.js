@@ -1,9 +1,10 @@
 import React from "react";
 import "./../About.css";
+import Button from "../../../components/button/index";
 
 const TextFlex = (props) => {
 	return (
-		<div className="lg:w-1/2 md:mt-12 md:w-1/2">
+		<div className="lg:w-1/2 md:mt-12 md:w-1/2 md:ml-12">
 			<div className="flex-text">
 				<h4 className="scambiExplanation-text">
 					Our purpose is to recover the value of{" "}
@@ -25,6 +26,7 @@ const TextFlex = (props) => {
 					</b>
 				</p>
 			</div>
+			<Button>Explore Workshops</Button>
 		</div>
 	);
 };

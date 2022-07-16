@@ -26,13 +26,18 @@
 	align-items: center;
 	padding: 30px 40px;
 	margin-top: 1vh;
-	width: 30px;
+	width: 162px;
 	height: 46px;
+
 	/* Button/Primary/Dropshadow */
 	box-shadow: 0px 4px 3px rgba(47, 4, 63, 0.7);
 	border-radius: 16px;
 	outline: none;
 	border: 0;
+	/* Inside auto layout */
+	flex: none;
+	order: 2;
+	flex-grow: 0;
 	background-color: white;
 	/* Button Text, Semi bold, 16px */
 	font-family: "Poppins";
@@ -40,9 +45,18 @@
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 22px;
+	/* identical to box height, or 138% */
+	display: flex;
+	align-items: center;
+	text-align: center;
 
 	/* Light/--text-color-on-primary */
 	color: black;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 1;
+	flex-grow: 0;
 }
 
 .disequilibirum {
@@ -129,7 +143,7 @@
 }
 
 .quoteBack {
-	background-image: url(https://images.tommi.space/plugins/download_by_size/action.php?id=28833&part=e&size=large);
+	background-image: url("./../../assets/about/AboutQuate.jpg");
 	background-size: cover; /* <------ */
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -261,10 +275,10 @@ img {
 	}
 
 	.exampleName1 {
-		padding-right: 25%;
+		padding-right: 4%;
 	}
 	.exampleName2 {
-		padding-right: 25%;
+		padding-right: 10%;
 	}
 
 	.exampleName3 {

@@ -12,7 +12,6 @@
 	.flex-container {
 		flex-wrap: nowrap;
 		justify-content: space-around;
-		gap: 5em;
 		width: 90%;
 		margin: auto;
 	}
