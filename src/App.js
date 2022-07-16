@@ -11,6 +11,7 @@ import FAQ from './pages/faq/FAQ';
 // import FilmContest from './pages/filmcontest/FilmContest';
 import LabInfo from './pages/labs/LabInfo';
 import PageLayout from './PageLayout';
+import Volunteer from './pages/volunteer/Volunteer';
 
 function App() {
 	return (
@@ -28,6 +29,7 @@ function App() {
 					</Route>
 					<Route path='faq' element={<FAQ />} />
 					<Route path='careers' element={<Careers />} />
+					<Route path='volunteer' element={<Volunteer/>}/>
 					{/* <Route path='filmcontest' element={<FilmContest />} /> */}
 				</Route>
 			</Routes>
