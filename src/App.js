@@ -31,7 +31,7 @@ function App() {
 				<Route path="careers" element={<Careers />} />
 				<Route path="filmcontest" element={<FilmContest />} />
 				<Route path="ourTeam" element={<OurTeam />} />
-				<Route path="team" render={(props) => <Team {...props} /> } />
+				<Route path="ourteam/team" element={<Team />} />
 			</Routes>
 			<Footers />
 			{/* <Home />
