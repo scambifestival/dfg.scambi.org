@@ -4,6 +4,17 @@ import Card from '../../components/card';
 import EventPlaceholder from '../../assets/minievent/EventPlaceholder.jpg';
 import Map from '../../components/map';
 import SupportUs from '../../components/supportus';
+import {
+	rec1,
+	rec2,
+	rec3,
+	rec4,
+	rec5,
+	rec6,
+	rec7,
+	rec8,
+	rec9,
+} from '../../assets/home/highlight/index';
 
 
 const dummyData = {
@@ -63,7 +74,63 @@ const MiniEvents = () => {
             <div className='w-full bg-white py-10'>
                 <h2>What is a Pinolo?</h2>
                 <p>A Pinolo is a collateral event that comes to life during Scambi festival.</p>
-                <img src={EventPlaceholder} className='mx-auto mt-10 w-1/2 rounded-2xl' />
+                <div className='mt-10 flex justify-center'>
+					<div className='flex flex-col space-y-5 mr-5'>
+						<div className='flex space-x-5'>
+							<img
+								src={rec1}
+								className='rounded-2xl shadow-md w-[229px] h-[245px]'
+								alt=''
+							/>
+							<img
+								src={rec2}
+								className='rounded-2xl shadow-md w-[222px] h-[247px]'
+								alt=''
+							/>
+						</div>
+						<img
+							src={rec3}
+							className='rounded-2xl shadow-md w-[480px] h-[251px]'
+							alt=''
+						/>
+					</div>
+					<div className='space-y-5'>
+						<img
+							src={rec4}
+							className='rounded-2xl shadow-md w-[220px] h-[145px]'
+							alt=''
+						/>
+						<img
+							src={rec5}
+							className='rounded-2xl shadow-md w-[220px] h-[353px]'
+							alt=''
+						/>
+					</div>
+					<div className='space-y-5 ml-5'>
+						<img
+							src={rec6}
+							className='rounded-2xl shadow-md mb-5 w-[330px] h-[290px]'
+							alt=''
+						/>
+						<img
+							src={rec7}
+							className='rounded-2xl shadow-md w-[330px] h-[208px]'
+							alt=''
+						/>
+					</div>
+					<div className='space-y-5 ml-5'>
+						<img
+							src={rec8}
+							className='rounded-2xl shadow-md mb-5 w-[202px] h-[186px]'
+							alt=''
+						/>
+						<img
+							src={rec9}
+							className='rounded-2xl shadow-md w-[202px] h-[311px]'
+							alt=''
+						/>
+					</div>
+				</div>
             </div>
             <div className='px-20 my-10'>
                 <h2 className='pt-5'>Upcoming Pinolis</h2>
