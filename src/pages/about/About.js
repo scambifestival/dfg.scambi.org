@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
-import './About.css';
-import AboutExampleWorkshop from './AboutExampleWorkshop';
-import AboutHeader from './Header/AboutHeader';
-import AboutWorkshopExplanation from './WorkShopExplanation/AboutWorkshopExplanation';
-import AboutQuote from './AboutQuote';
-import AboutOurTeam from './OurTeam/AboutOurTeam';
-import NLSubscribe from './../home/NLSubscribe';
+import React, { Component } from "react";
+import "./About.css";
+import AboutExampleWorkshop from "./AboutExampleWorkshop";
+import AboutHeader from "./Header/AboutHeader";
+import AboutWorkshopExplanation from "./WorkShopExplanation/AboutWorkshopExplanation";
+import AboutQuote from "./AboutQuote";
+import AboutOurTeam from "./OurTeam/AboutOurTeam";
+import NLSubscribe from "./../home/NLSubscribe";
+import OurRelations from "../../components/OurRelations/OurRelations";
+import OurManifesto from "../../components/OurManifesto/OurManifesto";
 
 class About extends Component {
 	render() {
@@ -15,7 +17,9 @@ class About extends Component {
 				<AboutWorkshopExplanation />
 				<AboutExampleWorkshop />
 				<AboutQuote />
+				<OurManifesto />
 				<AboutOurTeam />
+				<OurRelations />
 				<NLSubscribe />
 			</div>
 		);

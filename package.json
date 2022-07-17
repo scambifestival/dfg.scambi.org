@@ -10,17 +10,18 @@
 		"react-app": "^1.1.2",
 		"react-bootstrap": "^2.4.0",
 		"react-dom": "^17.0.2",
-		"react-router": "^6.3.0",
+		"react-player": "^2.10.1",
 		"react-router-dom": "^6.3.0",
-		"react-scripts": "^5.0.1",
-		"react-translate": "^7.0.1",
-		"tailwind": "^4.0.0",
+		"react-router-hash-link": "^2.4.3",
+		"react-scripts": "5.0.0",
 		"web-vitals": "^2.1.4"
 	},
 	"scripts": {
 		"preinstall": "node checkNodeVersion",
 		"prestart": "node checkNodeVersion",
 		"start": "react-scripts start",
+		"lint": "eslint . --max-warnings=0",
+		"lint:fix": "eslint --fix --ext .js,.jsx",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
