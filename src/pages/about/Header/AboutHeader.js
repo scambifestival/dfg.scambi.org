@@ -2,21 +2,16 @@ import React, { Component } from "react";
 import AboutHeaderText from "../Header/AboutHeaderText";
 import Flex from "../../../components/Flex/Flex";
 import "../../../components/Flex/Flex.css";
-import aboutHearPic from "./../../../assets/about/aboutHeader.png";
+import aboutHearPic from "./../../../assets/about/aboutHeaderNew.png";
 
 class AboutHeader extends Component {
 	render() {
 		return (
 			<Flex classes="md:flex-col lg:flex-row">
-				<AboutHeaderText className="xl:w-1/2  md:w-auto lg:w-full" />
-
-				<img
-					src={aboutHearPic}
-					width="600px"
-					height="200px"
-					alt=""
-					className="xl:w-1/2 md:w-full lg:w-1/2 md:pt-24 lg:pt-56 mt-96 xl-pt-60 2xl:mt-60"
-				/>
+				<AboutHeaderText className="xl:w-1/2  md:w-auto lg:w-full lg:text-6xl md:text-4xl" />
+				<div className="lg:ml-14 md:ml-14 w-full">
+					<img src={aboutHearPic} width="600px" height="200px" alt="" />
+				</div>
 			</Flex>
 		);
 	}
