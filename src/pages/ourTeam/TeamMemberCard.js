@@ -7,7 +7,7 @@ const cardContent = (member) => {
     console.log(member);
     return(
         <div className="card-container">
-            <img src={CardMemberImage} className="card-image" alt="team-member-image" />
+            <img src={CardMemberImage} className="card-image" alt="team-member" />
             <br/>
             <h1 className="card-title">{member.memberInfo.name}</h1>
             <br/>

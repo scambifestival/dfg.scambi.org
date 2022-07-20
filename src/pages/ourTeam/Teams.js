@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./OurTeam.css";
 import teamList from "./teamInfoList.json";
 import TeamCard from "./TeamCard";

@@ -1,14 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import "./OurTeam.css";
 import Card from "../../components/card";
 import CardImage from "./aps-oltre 1.png";
-import {Link, useNavigate} from "react-router-dom"
+import {Link} from "react-router-dom"
 
 const cardContent = (cardInfo) => {
 
     return(
             <div className="card-container">
-                <img src={CardImage} className="card-image" alt="team-image" />
+                <img src={CardImage} className="card-image" alt="team-icon" />
                 <h1 className="card-title">{cardInfo.cardInfo.teamName}</h1>
                 <div className="card-subtitle">{cardInfo.cardInfo.teamFunction}</div>
                 <div className="card-content">{cardInfo.cardInfo.teamDescription}</div>

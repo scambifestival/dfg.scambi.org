@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation, useParams } from "react-router";
+import { useLocation } from "react-router";
 import TeamHeader from "./TeamHeader";
 import TeamMembers from "./TeamMembers";
 import teamInfo from "./teamInfo.json"
