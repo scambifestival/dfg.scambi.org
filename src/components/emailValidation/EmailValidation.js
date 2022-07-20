@@ -44,7 +44,8 @@ class FormComponent extends React.Component {
 			<div>
 				<div
 					className={
-						"mb-3 flex " + (this.props.fileName === "Footer" && "flex-col")
+						"mb-3 flex " +
+						(this.props.fileName === "Footer" ? "flex-col " : "newLetterBtn")
 					}>
 					<input
 						type="text"

@@ -1,4 +1,4 @@
-.incorrectText {
+EmailValidation.css .incorrectText {
 	color: red;
 }
 
@@ -14,13 +14,26 @@ input {
 
 @media (max-width: 500px) {
 	input {
-		width: 140px;
+		width: 240px;
 		height: 5px;
+	}
+	.newLetterBtn {
+		display: block !important;
+	}
+	.incorrectText {
+		top: 50px;
+	}
+	.submit-button {
+		margin-top: 30px;
 	}
 }
 
 @media (max-width: 300px) {
 	.incorrectText {
 		font-size: 10px;
+	}
+	input {
+		width: 140px;
+		height: 5px;
 	}
 }
