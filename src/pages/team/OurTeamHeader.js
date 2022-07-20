@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import OurTeamHeaderText from './OurTeamHeaderText';
 //import Flex from '../../components/Flex/Flex';
-import OurTeamImage from './About illustration.png';
+import OurTeamImage from '../../assets/team/About illustration.png';
 //import {Container, Row, Col } from "react-bootstrap";
 import '../../components/Flex/Flex.css';
 

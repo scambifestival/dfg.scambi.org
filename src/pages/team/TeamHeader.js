@@ -1,7 +1,7 @@
 //import { computeHeadingLevel } from "@testing-library/react";
 import React, { Component } from 'react';
 import TeamHeaderText from './TeamHeaderText';
-import TeamImage from './TeamImage.png';
+import TeamImage from '../../assets/team/TeamImage.png';
 
 class TeamHeader extends Component {
 	render() {

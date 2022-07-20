@@ -10,7 +10,7 @@ import Labs from './pages/labs/Labs';
 import FAQ from './pages/faq/FAQ';
 // import FilmContest from './pages/filmcontest/FilmContest';
 import LabInfo from './pages/labs/LabInfo';
-import OurTeam from './pages/ourTeam/OurTeam';
+import OurTeam from './pages/team/OurTeam';
 import PageLayout from './PageLayout';
 
 function App() {

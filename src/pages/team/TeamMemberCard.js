@@ -1,7 +1,7 @@
 import React from 'react';
 import './OurTeam.css';
 import Card from '../../components/card';
-import CardMemberImage from './CardMemberImage.png';
+import CardMemberImage from '../../assets/team/CardMemberImage.png';
 
 const cardContent = (member) => {
 	console.log(member);
