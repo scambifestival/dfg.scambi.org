@@ -11,6 +11,10 @@ import FAQ from './pages/faq/FAQ';
 // import FilmContest from './pages/filmcontest/FilmContest';
 import LabInfo from './pages/labs/LabInfo';
 import PageLayout from './PageLayout';
+import Volunteer from './pages/volunteer/Volunteer';
+import SummerVolunteer from './pages/volunteer/SummerVolunteer';
+import OurTeam from './pages/ourTeam/OurTeam'
+import Team from './pages/ourTeam/Team'
 
 function App() {
 	return (
@@ -28,9 +32,12 @@ function App() {
 					</Route>
 					<Route path='faq' element={<FAQ />} />
 					<Route path='careers' element={<Careers />} />
-					<Route path="faq" element={<FAQ />} />
 					<Route path="ourTeam" element={<OurTeam />} />
 					<Route path="ourteam/team" element={<Team />} />
+					<Route path='volunteer'>
+						<Route index element={<Volunteer/>}/>
+						<Route path='summer' element={<SummerVolunteer/>}/>
+					</Route>
 					{/* <Route path='filmcontest' element={<FilmContest />} /> */}
 				</Route>
 			</Routes>
