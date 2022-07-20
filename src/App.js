@@ -10,6 +10,7 @@ import Labs from './pages/labs/Labs';
 import FAQ from './pages/faq/FAQ';
 // import FilmContest from './pages/filmcontest/FilmContest';
 import LabInfo from './pages/labs/LabInfo';
+import OurTeam from './pages/ourTeam/OurTeam';
 import PageLayout from './PageLayout';
 
 function App() {
@@ -28,9 +29,8 @@ function App() {
 					</Route>
 					<Route path='faq' element={<FAQ />} />
 					<Route path='careers' element={<Careers />} />
-					<Route path="faq" element={<FAQ />} />
-					<Route path="ourTeam" element={<OurTeam />} />
-					<Route path="ourteam/team" element={<Team />} />
+					<Route path='faq' element={<FAQ />} />
+					<Route path='teams' element={<OurTeam />} />
 					{/* <Route path='filmcontest' element={<FilmContest />} /> */}
 				</Route>
 			</Routes>
