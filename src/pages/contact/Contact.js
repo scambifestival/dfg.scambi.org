@@ -9,47 +9,52 @@ export default function Contact() {
 					Contact us with any general questions and we will try to get back to
 					you as soon as we can.{' '}
 				</h3>
-				<form className='lg:mx-auto mt-10 p-10 lg:p-0 lg:flex lg:flex-col lg:items-center space-y-5'>
-					<div className='flex flex-col space-y-5 lg:space-y-0 lg:flex-row'>
-						<div className='relative bg-white p-2 rounded-md lg:mr-3'>
+				<form className='bg-white lg:mx-auto mt-10 p-10 max-w-3xl space-y-5 border-2 border-purple-650 rounded-md'>
+					<div className='flex flex-col space-y-5 lg:space-y-0 lg:flex-row lg:justify-center max-w-full'>
+						<div className='lg:mr-5 w-full'>
 							<input
 								id='name'
 								type='text'
-								className='bg-transparent lg:w-[310px] focus:outline-none peer'
+								placeholder='Name'
+								className='w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-[#7B61FF] placeholder:text-gray-300 peer'
 							/>
-							<label className="absolute left-2 after:content-['*'] after:text-red-600 peer-focus:hidden">
-								Name
-							</label>
+							<p className='text-red-600 font-bold text-left mt-2 invisible peer-invalid:visible'>
+								This field is required
+							</p>
 						</div>
-						<div className='relative bg-white p-2 rounded-md'>
+						<div className='w-full'>
 							<input
-								id='name'
-								type='text'
-								className='bg-transparent lg:w-[310px] focus:outline-none peer'
+								id='email'
+								type='email'
+								placeholder='Email'
+								className='w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-[#7B61FF] placeholder:text-gray-300 peer'
 							/>
-							<label className="absolute left-2 after:content-['*'] after:text-red-600 peer-focus:hidden">
-								Email
-							</label>
+							<p className='text-red-600 font-bold text-left mt-2 invisible peer-invalid:visible'>
+								This field is required
+							</p>
 						</div>
 					</div>
-					<div className='relative bg-white p-2 rounded-md'>
+					<div className='max-w-full'>
 						<input
-							id='name'
+							id='subject'
 							type='text'
-							className='bg-transparent lg:w-[650px] focus:outline-none peer'
+							placeholder='Subject'
+							className='w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-[#7B61FF] placeholder:text-gray-300 peer'
 						/>
-						<label className="absolute left-2 peer-focus:hidden after:content-['*'] after:text-red-600">
-							Subject
-						</label>
+						<p className='text-red-600 font-bold text-left mt-2 invisible peer-invalid:visible'>
+							This field is required
+						</p>
 					</div>
-					<div className='relative bg-white p-2 rounded-md'>
+					<div className='w-full'>
 						<textarea
 							id='name'
-							className='bg-transparent h-[328px] lg:w-[650px] focus:outline-none peer'
+							placeholder='Message'
+							rows={4}
+							className='w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-[#7B61FF] placeholder:text-gray-300 peer'
 						/>
-						<label className="absolute left-2 peer-focus:hidden after:content-['*'] after:text-red-600">
-							Message
-						</label>
+						<p className='text-red-600 font-bold text-left mt-2 invisible peer-invalid:visible'>
+							This field is required
+						</p>
 					</div>
 					<Button>Send</Button>
 				</form>
