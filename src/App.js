@@ -13,6 +13,8 @@ import LabInfo from './pages/labs/LabInfo';
 import PageLayout from './PageLayout';
 import Volunteer from './pages/volunteer/Volunteer';
 import SummerVolunteer from './pages/volunteer/SummerVolunteer';
+import OurTeam from './pages/ourTeam/OurTeam'
+import Team from './pages/ourTeam/Team'
 
 function App() {
 	return (
@@ -30,6 +32,10 @@ function App() {
 					</Route>
 					<Route path='faq' element={<FAQ />} />
 					<Route path='careers' element={<Careers />} />
+					<Route path="ourteam">
+						<Route index element={<OurTeam />} />
+						<Route path="team" element={<Team />} />
+					</Route>
 					<Route path='volunteer'>
 						<Route index element={<Volunteer/>}/>
 						<Route path='summer' element={<SummerVolunteer/>}/>
