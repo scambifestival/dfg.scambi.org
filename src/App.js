@@ -32,8 +32,10 @@ function App() {
 					</Route>
 					<Route path='faq' element={<FAQ />} />
 					<Route path='careers' element={<Careers />} />
-					<Route path="ourTeam" element={<OurTeam />} />
-					<Route path="ourteam/team" element={<Team />} />
+					<Route path="ourteam">
+						<Route index element={<OurTeam />} />
+						<Route path="team" element={<Team />} />
+					</Route>
 					<Route path='volunteer'>
 						<Route index element={<Volunteer/>}/>
 						<Route path='summer' element={<SummerVolunteer/>}/>

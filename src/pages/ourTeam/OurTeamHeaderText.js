@@ -1,10 +1,11 @@
 import React from "react";
 import "./OurTeam.css";
+import Button from "../../components/button";
 
 const OurTeamHeaderText = (props) => {
     return(
-        <div className="our-team-header-text">
-			<h1 className="scambi-text">OurTeam</h1>
+        <div className="our-team-header-text flex flex-col items-start text-left">
+			<h1 className="scambi-text">Our Team</h1>
             <p>
                 We are a group of under 25s coming from every corner of Europe.
             </p>
@@ -19,7 +20,7 @@ const OurTeamHeaderText = (props) => {
                 We will be waiting for you in Sanremo, to introduce ourselves properly.
                 In the meanwhile, here is an anticipation of who we are.
 			</p>
-			<button className="joinTeamButton mt-10">Join Our Team</button>
+			<Button styleType='light' classes='mt-10'>Join Our Team </Button>
 		</div>
     );
 }

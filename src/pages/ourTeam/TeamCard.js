@@ -12,8 +12,8 @@ const cardContent = (cardInfo) => {
                 <h1 className="card-title">{cardInfo.cardInfo.teamName}</h1>
                 <div className="card-subtitle">{cardInfo.cardInfo.teamFunction}</div>
                 <div className="card-content">{cardInfo.cardInfo.teamDescription}</div>
-                <Link to='team' state={{ teamLink: `${cardInfo.cardInfo.linkToTeam}`}}>
-                    Meet the {cardInfo.cardInfo.teamName}
+                <Link to='team' className='text-purple-650' state={{ teamLink: `${cardInfo.cardInfo.linkToTeam}`}}>
+                    Meet the {cardInfo.cardInfo.teamName} <i className='fa fa-long-arrow-right'/>
                 </Link>
             </div>
     )
