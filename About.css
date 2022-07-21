@@ -246,11 +246,7 @@ img {
 
 .borderImg {
 	border-radius: 16px;
-}
-
-.shadowForpic {
-	box-shadow: 2px 2px 4px gray;
-	box-shadow: 2px 2px 4px inset;
+	position: relative;
 }
 
 .ourTeamEl {

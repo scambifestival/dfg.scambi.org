@@ -8,7 +8,7 @@ class AboutOurTeam extends Component {
 	render() {
 		return (
 			<Flex classes="md:flex-col lg:flex-row p-16">
-				<AboutTeamText className="xl:w-1/2  md:w-auto lg:w-full lg:text-6xl md:text-4xl" />
+				<AboutTeamText className="xl:w-1/2  md:w-auto lg:w-full" />
 				<div className="lg:ml-14 md:ml-14">
 					<img src={ourTeampic} width="600px" height="200px" alt="" />
 				</div>

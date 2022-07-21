@@ -16,10 +16,14 @@
 	margin-top: 100px;
 	border-top-left-radius: 30px;
 	border-top-right-radius: 30px;
+
 	display: flex;
-	min-height: 100vh;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+.bottomRight {
+	position: relative;
 }
 
 .icon {
@@ -87,6 +91,15 @@
 	position: relative;
 }
 
+.BottomLeft {
+	position: relative;
+}
+
+.bottomLeftT {
+	position: absolute;
+	left: 20%;
+}
+
 .subscribeNews {
 	/* Subtitle 2, Semi Bold, 18px */
 	font-family: "Poppins";
@@ -97,6 +110,11 @@
 
 	/* Main UI Colors/Primary/Purple */
 	color: #69088d;
+}
+.footerArrow {
+	position: absolute;
+	right: 70px !important;
+	bottom: 0px;
 }
 
 .attendButton {
@@ -229,6 +247,14 @@
 	.blob {
 		margin-bottom: 150px !important;
 	}
+
+	.footerBottom {
+		margin-top: 0 !important;
+	}
+
+	.footerMiddle {
+		height: 300px !important;
+	}
 }
 
 @media (max-width: 770px) {
@@ -304,6 +330,10 @@
 
 	.footerBottom {
 		margin-top: 160px;
+	}
+
+	.bottomLeftT {
+		display: none;
 	}
 }
 

@@ -1,5 +1,6 @@
 import React from "react";
 import "./../Footer.css";
+import Button from "../../../components/button/index";
 
 const FooterTop = () => {
 	return (
@@ -12,7 +13,7 @@ const FooterTop = () => {
 					<h6 className="readyToJoin">Ready to join us?</h6>
 				</div>
 				<div className="topRight2">
-					<button className="purpledBtn">ATTEND</button>
+					<Button>ATTEND</Button>
 				</div>
 			</div>
 		</div>

@@ -5,7 +5,7 @@ const FooterBottom = () => {
 	return (
 		<div className="footerBottom flex">
 			<div className="BottomLeft w-4/12">
-				<p>Privacy Policy</p>
+				<p className="bottomLeftT">Privacy Policy</p>
 			</div>
 			<div className="bottomMiddle w-4/12">
 				<a href="https://twitter.com/scambifestival">

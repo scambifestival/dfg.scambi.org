@@ -1,5 +1,4 @@
 import "./EmailValidation.css";
-
 import React from "react";
 
 const emailState = {
@@ -74,8 +73,8 @@ class FormComponent extends React.Component {
 						onClick={() => this.onSubmit()}
 						className={
 							this.props.fileName === "Footer"
-								? "purpledBtnNL"
-								: "submit-button"
+								? "purpledBtnNL active:bg-purple-750 hover:bg-purple-650 "
+								: "submit-button bg-yellow-300 active:bg-yellow-400 hover:bg-yellow-450"
 						}>
 						Subscribe
 					</button>

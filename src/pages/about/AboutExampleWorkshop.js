@@ -10,15 +10,21 @@ class AboutExampleWorkshop extends Component {
 				</div>
 				<div className="exmapleImages flex flex-wrap">
 					<div className="exampleContent1">
-						<div className="blob1"></div>
+						<div class="blob-wrap">
+							<div className="blob1"></div>
+						</div>
 						<h4 className="exampleName1">Street Art</h4>
 					</div>
 					<div className="exampleContent2">
-						<div className="blob2"></div>
+						<div class="blob-wrap">
+							<div className="blob2"></div>
+						</div>
 						<h4 className="exampleName2">Rifugiato per un giorno</h4>
 					</div>
 					<div className="exampleContent3">
-						<div className="blob3"></div>
+						<div class="blob-wrap">
+							<div className="blob3"></div>
+						</div>
 						<h4 className="exampleName3">Scambi Sounds Lab</h4>
 					</div>
 				</div>
