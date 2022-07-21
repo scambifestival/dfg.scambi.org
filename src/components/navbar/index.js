@@ -43,31 +43,31 @@ const Navbar = () => {
 				aria-label='scambi'
 				className={`${
 					isOpen ? 'flex' : 'hidden'
-				} space-y-3 lg:space-y-0 flex-col lg:w-auto 2xl:w-auto lg:flex lg:flex-row justify-around items-center`}>
+				} space-y-3 lg:space-y-0 flex-col lg:w-auto 2xl:w-auto lg:flex lg:flex-row justify-around space-x-0 xl:space-x-10 2xl:space-x-16 items-center`}>
 				<Dropdown
-					content='ABOUT US'
-					btnStyle='text-xl font-bold'
+					content='About us'
+					btnStyle='text-xl 2xl:text-2xl font-bold uppercase'
 					children={aboutUsDropdown}
 				/>
 				<Dropdown
-					content='FESTIVAL'
-					btnStyle='text-xl font-bold'
+					content='Festival'
+					btnStyle='text-xl 2xl:text-2xl font-bold uppercase'
 					children={festivalDropdown}
 				/>
 				<Dropdown
-					content='SUPPORT'
-					btnStyle='text-xl font-bold'
+					content='Support'
+					btnStyle='text-xl 2xl:text-2xl font-bold uppercase'
 					children={supportDropdown}
 				/>
 				<li role='none'>
-					<a role='menuitem' href='/faq' className='text-xl font-bold'>
+					<Link role='menuitem' to='/faq' className='text-xl 2xl:text-2xl font-bold'>
 						FAQ
-					</a>
+					</Link>
 				</li>
 			</ul>
 
-			<Button classes={`${isOpen ? '' : 'hidden'} lg:inline-block`}>
-				ATTEND
+			<Button classes={`${isOpen ? '' : 'hidden'} lg:inline-block uppercase`}>
+				Attend
 			</Button>
 		</nav>
 	);

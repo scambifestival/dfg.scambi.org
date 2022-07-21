@@ -25,7 +25,7 @@ export default function Dropdown({
 		<div className='relative inline-block' onBlur={clickOutside}>
 			<button
 				onClick={handleClick}
-				className={`${btnStyle} inline-flex justify-center px-4 py-2 bg-white text-gray-700 focus:outline-none active:ring-2 active:ring-fuchsia-800`}>
+				className={`${btnStyle} inline-flex justify-center px-4 py-2 bg-white focus:outline-none active:ring-2 active:ring-fuchsia-800`}>
 				{content}
 				<span className='pl-2' aria-hidden='true'>
 					<i className='fa fa-chevron-down' />
@@ -45,7 +45,7 @@ export default function Dropdown({
 					<li key={index}>
 						<Link
 							to={child.href}
-							className='text-gray-700 block px-4 py-2 text-sm'
+							className='text-lg font-bold block px-4 py-2 text-sm uppercase'
 							role='menuitem'>
 							{child.title}
 						</Link>
