@@ -31,7 +31,8 @@ class FormComponent extends React.Component {
 		}
 		return true;
 	}
-	onSubmit() {
+	onSubmit(props) {
+		console.log("clicked");
 		if (this.emailValidation()) {
 			console.log(this.state);
 			this.setState(emailState);
@@ -41,7 +42,10 @@ class FormComponent extends React.Component {
 	render() {
 		return (
 			<div>
-				<div className="mb-3 flex flex-col">
+				<div
+					className={
+						"mb-3 flex " + (this.props.fileName === "Footer" && "flex-col")
+					}>
 					<input
 						type="text"
 						id="email"
@@ -52,13 +56,28 @@ class FormComponent extends React.Component {
 						className={
 							"focus:outline-none focus:ring focus:ring-violet-800 w-38 h-12 rounded-md " +
 							(this.state.error === "Email is not valid!"
-								? " outline-none ring ring-red-500"
-								: "")
+								? " outline-none ring ring-red-500 "
+								: " ") +
+							(this.props.fileName === "NLSubscribe" && "inputForNL")
 						}
 					/>
 
-					<span className="incorrectText">{this.state.error}</span>
-					<button onClick={() => this.onSubmit()}>Submit</button>
+					<span
+						className={
+							"incorrectText " +
+							(this.props.fileName === "NLSubscribe" && "incorrectTextNL")
+						}>
+						{this.state.error}
+					</span>
+					<button
+						onClick={() => this.onSubmit()}
+						className={
+							this.props.fileName === "Footer"
+								? "purpledBtnNL"
+								: "submit-button"
+						}>
+						Subscribe
+					</button>
 				</div>
 				<div></div>
 			</div>
