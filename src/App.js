@@ -14,7 +14,7 @@ import PageLayout from './PageLayout';
 
 function App() {
 	return (
-		<div className='App'>
+		<div className='App relative'>
 			<Routes>
 				<Route path='/' element={<PageLayout />}>
 					<Route path='/' element={<Home />} />

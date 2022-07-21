@@ -31,7 +31,7 @@ const Navbar = () => {
 	return (
 		<nav
 			aria-label='Scambi'
-			className='w-full space-y-7 py-5 flex flex-col items-center justify-around bg-white rounded-b-3xl mr-20 lg:flex-row lg:rounded-b-full lg:space-y-0 lg:px-20 2xl:px-10'>
+			className='fixed w-full space-y-7 py-5 flex flex-col items-center justify-around bg-white rounded-b-3xl mr-20 lg:flex-row lg:rounded-b-full lg:space-y-0 lg:px-20 2xl:px-10'>
 			<div className='w-full lg:w-auto flex justify-between px-20 lg:px-0'>
 				<Link to='/' className='text-5xl font-["Londrina_Solid"]'>
 					Scambi
