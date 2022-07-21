@@ -6,19 +6,19 @@ import { Link } from 'react-router-dom';
 const aboutUsDropdown = [
 	{ title: 'About Scambi', href: 'about' },
 	{ title: 'Our Story', href: '' },
-	{ title: 'Our Team', href: '' },
+	{ title: 'Our Team', href: 'teams' },
 ];
 
 const festivalDropdown = [
 	{ title: 'Labs', href: 'labs' },
 	{ title: 'Pinolis', href: 'minievents' },
-	// {title: "Film Contest", href:"filmcontest"}
+	// {title: 'Film Contest', href:'filmcontest'}
 ];
 
 const supportDropdown = [
 	{ title: 'Donate', href: 'donate' },
 	{ title: 'Volunteer', href: 'volunteer' },
-	{ title: 'Join Team', href: '' },
+	{ title: 'Join Team', href: 'careers' },
 ];
 
 const Navbar = () => {
@@ -31,8 +31,8 @@ const Navbar = () => {
 	return (
 		<nav
 			aria-label='Scambi'
-			className='fixed w-full space-y-7 py-5 flex flex-col items-center justify-around bg-white rounded-b-3xl mr-20 lg:flex-row lg:rounded-b-full lg:space-y-0 lg:px-20 2xl:px-10'>
-			<div className='w-full lg:w-auto flex justify-between px-20 lg:px-0'>
+			className={`fixed z-50 w-11/12 flex flex-col items-center justify-between bg-white shadow-xl left-1/2 -translate-x-1/2 mt-10 space-y-7 py-5 ${isOpen ? 'rounded-3xl' : 'rounded-full'} lg:flex-row lg:rounded-full lg:space-y-0 lg:px-12 2xl:px-20`}>
+			<div className='w-full flex justify-between px-16 lg:w-auto lg:px-0'>
 				<Link to='/' className='text-5xl font-["Londrina_Solid"]'>
 					Scambi
 				</Link>
@@ -41,9 +41,8 @@ const Navbar = () => {
 			<ul
 				role='menubar'
 				aria-label='scambi'
-				className={`${
-					isOpen ? 'flex' : 'hidden'
-				} space-y-3 lg:space-y-0 flex-col lg:w-auto 2xl:w-auto lg:flex lg:flex-row justify-around space-x-0 xl:space-x-10 2xl:space-x-16 items-center`}>
+				className={`${isOpen ? 'flex' : 'hidden'
+					} space-y-3 flex-col justify-around items-center space-x-0 lg:w-auto lg:flex lg:flex-row lg:space-y-0 xl:space-x-10 2xl:w-auto 2xl:space-x-16`}>
 				<Dropdown
 					content='About us'
 					btnStyle='text-xl 2xl:text-2xl font-bold uppercase'
