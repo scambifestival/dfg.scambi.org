@@ -16,6 +16,7 @@ export default function Contact() {
 								id='name'
 								type='text'
 								placeholder='Name'
+								required
 								className='w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-[#7B61FF] placeholder:text-gray-300 peer'
 							/>
 							<p className='text-red-600 font-bold text-left mt-2 invisible peer-invalid:visible'>
@@ -27,10 +28,11 @@ export default function Contact() {
 								id='email'
 								type='email'
 								placeholder='Email'
+								required
 								className='w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-[#7B61FF] placeholder:text-gray-300 peer'
 							/>
 							<p className='text-red-600 font-bold text-left mt-2 invisible peer-invalid:visible'>
-								This field is required
+								Please enter a valid email address
 							</p>
 						</div>
 					</div>
@@ -39,6 +41,7 @@ export default function Contact() {
 							id='subject'
 							type='text'
 							placeholder='Subject'
+							required
 							className='w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-[#7B61FF] placeholder:text-gray-300 peer'
 						/>
 						<p className='text-red-600 font-bold text-left mt-2 invisible peer-invalid:visible'>
@@ -49,7 +52,8 @@ export default function Contact() {
 						<textarea
 							id='name'
 							placeholder='Message'
-							rows={4}
+							required
+							rows={10}
 							className='w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-[#7B61FF] placeholder:text-gray-300 peer'
 						/>
 						<p className='text-red-600 font-bold text-left mt-2 invisible peer-invalid:visible'>
