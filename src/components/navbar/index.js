@@ -32,11 +32,13 @@ const Navbar = () => {
 		<nav
 			aria-label='Scambi'
 			className={`fixed z-50 w-11/12 flex flex-col items-center justify-between bg-white shadow-xl left-1/2 -translate-x-1/2 mt-10 space-y-7 py-5 ${isOpen ? 'rounded-3xl' : 'rounded-full'} lg:flex-row lg:rounded-full lg:space-y-0 lg:px-12 2xl:px-20`}>
-			<div className='w-full flex justify-between px-16 lg:w-auto lg:px-0'>
-				<Link to='/' className='text-5xl font-["Londrina_Solid"]'>
+			<div className='w-full flex justify-between items-center px-16 lg:w-auto lg:px-0'>
+				<Link to='/' className='text-5xl font-["Londrina_Solid"]  outline-none hover:text-fuchsia-800 active:text-fuchsia-800 focus:text-fuchsia-800'>
 					Scambi
 				</Link>
+				<button className='lg:hidden p-0 outline-none hover:text-fuchsia-800 focus:text-fuchsia-800' onClick={handleClick}>
 				<i className='fa fa-bars fa-3x lg:hidden' onClick={handleClick} />
+				</button>
 			</div>
 			<ul
 				role='menubar'
@@ -59,13 +61,13 @@ const Navbar = () => {
 					children={supportDropdown}
 				/>
 				<li role='none'>
-					<Link role='menuitem' to='/faq' className='text-xl 2xl:text-2xl font-bold'>
+					<Link role='menuitem' to='/faq' className='text-xl 2xl:text-2xl font-bold outline-none hover:text-fuchsia-800 active:text-fuchsia-800 focus:text-fuchsia-800'>
 						FAQ
 					</Link>
 				</li>
 			</ul>
 
-			<Button classes={`${isOpen ? '' : 'hidden'} lg:inline-block uppercase`}>
+			<Button classes={`${isOpen ? '' : 'hidden'} lg:inline-block uppercase outline-offset-1`}>
 				Attend
 			</Button>
 		</nav>
