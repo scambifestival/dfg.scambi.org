@@ -4,7 +4,7 @@ import Button from "../../../components/button/index";
 
 const TextFlex = (props) => {
 	return (
-		<div className="lg:w-1/2 md:mt-12 md:w-1/2 md:ml-12">
+		<div className="lg:w-1/2 md:mt-12 md:w-full md:ml-12">
 			<div className="flex-text">
 				<h4 className="scambiExplanation-text">
 					Our purpose is to recover the value of{" "}
@@ -22,7 +22,7 @@ const TextFlex = (props) => {
 				<p className="scambi-workExplanation-text">
 					All workshops will be instrinsically careful to issues like{" "}
 					<b className="bold-fonts">
-						accessibility, sustainebility, and inclusion.
+						accessibility, sustainability, and inclusion.
 					</b>
 				</p>
 			</div>

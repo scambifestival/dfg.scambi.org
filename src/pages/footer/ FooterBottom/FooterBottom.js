@@ -31,7 +31,7 @@ const FooterBottom = () => {
 			</div>
 			<div className="bottomRight w-4/12">
 				<i
-					className="fa fa-chevron-circle-up fa-3x icon"
+					className="fa fa-chevron-circle-up fa-3x icon footerArrow"
 					aria-hidden="true"
 					onClick={() => {
 						window.scrollTo({ top: 0, left: 0, behavior: "smooth" });

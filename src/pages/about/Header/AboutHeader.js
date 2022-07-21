@@ -7,9 +7,9 @@ import aboutHearPic from "./../../../assets/about/aboutHeaderNew.png";
 class AboutHeader extends Component {
 	render() {
 		return (
-			<Flex classes="md:flex-col lg:flex-col xl:flex-row">
-				<AboutHeaderText className="xl:w-1/2  md:w-auto lg:w-full lg:text-6xl md:text-4xl" />
-				<div className="lg:ml-14 md:ml-14 w-full">
+			<Flex classes="md:flex-col lg:flex-row y-20 space-y-12 pb-36">
+				<AboutHeaderText className="xl:w-1/2 md:w-auto lg:w-full" />
+				<div className="aboutHeaderPic">
 					<img src={aboutHearPic} width="600px" height="200px" alt="" />
 				</div>
 			</Flex>

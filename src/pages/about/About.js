@@ -8,6 +8,7 @@ import AboutOurTeam from "./OurTeam/AboutOurTeam";
 import NLSubscribe from "./../home/NLSubscribe";
 import OurRelations from "../../components/OurRelations/OurRelations";
 import OurManifesto from "../../components/OurManifesto/OurManifesto";
+import SupportUs from "../../components/supportus/index";
 
 class About extends Component {
 	render() {
@@ -23,6 +24,7 @@ class About extends Component {
 				<div className="bg-white flex justify-center py-10">
 					<NLSubscribe />
 				</div>
+				<SupportUs />
 			</div>
 		);
 	}
