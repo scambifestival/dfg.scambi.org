@@ -27,7 +27,7 @@ export default function Dropdown({
 				className={`${btnStyle} ${isOpen ? 'text-fuchsia-800' : ''} inline-flex justify-center px-4 py-2 bg-white outline-none hover:text-fuchsia-800 active:text-fuchsia-800 focus:text-fuchsia-800`}>
 				{content}
 				<span className='pl-2' aria-hidden='true'>
-					<i className='fa fa-chevron-down' />
+					<i className={`fa ${isOpen ? 'fa-chevron-up' : 'fa-chevron-down'}`} />
 				</span>
 			</button>
 			<ul

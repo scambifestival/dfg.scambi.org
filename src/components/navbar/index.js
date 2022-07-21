@@ -37,7 +37,7 @@ const Navbar = () => {
 					Scambi
 				</Link>
 				<button className='lg:hidden p-0 outline-none hover:text-fuchsia-800 focus:text-fuchsia-800' onClick={handleClick}>
-				<i className='fa fa-bars fa-3x lg:hidden' onClick={handleClick} />
+					<i className={`fa fa-3x ${isOpen ? 'fa-close' : 'fa-bars'}`} />
 				</button>
 			</div>
 			<ul
