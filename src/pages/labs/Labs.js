@@ -79,12 +79,12 @@ export default function Labs() {
 					<div className='space-y-5'>
 						<img
 							src={rec1}
-							className='rounded-2xl border-4 border-yellow-300 shadow-md  w-[200px] h-[260px]'
+							className='rounded-2xl shadow-md w-[200px] h-[260px]'
 							alt=''
 						/>
 						<img
 							src={rec3}
-							className='rounded-2xl border-4 border-yellow-300 shadow-md w-[200px] h-[134px]'
+							className='rounded-2xl shadow-md w-[200px] h-[134px]'
 							alt=''
 						/>
 					</div>
@@ -92,24 +92,24 @@ export default function Labs() {
 						<div className='flex space-x-5'>
 							<img
 								src={rec2}
-								className='rounded-2xl border-4 border-yellow-300 shadow-md w-[309px] h-[134px]'
+								className='rounded-2xl shadow-md w-[309px] h-[134px]'
 								alt=''
 							/>
 							<img
 								src={rec6}
-								className='rounded-2xl border-4 border-yellow-300 shadow-md w-[200px] h-[134px]'
+								className='rounded-2xl shadow-md w-[200px] h-[134px]'
 								alt=''
 							/>
 						</div>
 						<div className='flex space-x-5'>
 							<img
 								src={rec4}
-								className='rounded-2xl border-4 border-yellow-300 shadow-md w-[200px] h-[256px]'
+								className='rounded-2xl shadow-md w-[200px] h-[256px]'
 								alt=''
 							/>
 							<img
 								src={rec5}
-								className='rounded-2xl border-4 border-yellow-300 shadow-md w-[310px] h-[256px]'
+								className='rounded-2xl shadow-md w-[310px] h-[256px]'
 								alt=''
 							/>
 						</div>
@@ -118,24 +118,24 @@ export default function Labs() {
 						<div className='mr-5'>
 							<img
 								src={rec9}
-								className='rounded-2xl border-4 border-yellow-300 shadow-md mb-5 w-[200px] h-[256px]'
+								className='rounded-2xl shadow-md mb-5 w-[200px] h-[256px]'
 								alt=''
 							/>
 							<img
 								src={rec10}
-								className='rounded-2xl border-4 border-yellow-300 shadow-md w-[200px] h-[134px]'
+								className='rounded-2xl shadow-md w-[200px] h-[134px]'
 								alt=''
 							/>
 						</div>
 						<div>
 							<img
 								src={rec7}
-								className='rounded-2xl border-4 border-yellow-300 shadow-md mb-5 w-[310px] h-[256px]'
+								className='rounded-2xl  shadow-md mb-5 w-[310px] h-[256px]'
 								alt=''
 							/>
 							<img
 								src={rec8}
-								className='rounded-2xl border-4 border-yellow-300 shadow-md w-[309px] h-[134px]'
+								className='rounded-2xl  shadow-md w-[309px] h-[134px]'
 								alt=''
 							/>
 						</div>

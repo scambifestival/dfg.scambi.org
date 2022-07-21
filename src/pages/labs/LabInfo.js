@@ -6,11 +6,11 @@ function LabInfo() {
 		<div>
 			<img
 				src='https://picsum.photos/400/100'
-				className='w-full h-full'
+				className='w-full min-h-[60vh] z-0'
 				alt=''
 			/>
 			<div className='mt-10 mx-auto text-left p-10 lg:p-20 lg:w-3/4'>
-				<h1 className='text-5xl mb-10'>Lorem Ipsum {params.labId}</h1>
+				<h2 className='mb-10'>Lorem Ipsum {params.labId}</h2>
 				<p className='font-semibold mb-5'>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 					eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in
@@ -33,8 +33,8 @@ function LabInfo() {
 				vitae tortor condimentum lacinia quis vel eros donec.
 			</div>
 			<div className='mt-10 mx-auto p-10 lg:p-20 flex flex-col items-center lg:flex-row justify-between'>
-				<div className='text-left lg:w-1/2'>
-					<h2 className='text-xl'>Meet the Lab Host</h2>
+				<div className='text-left w-auto lg:w-3/4 xl:w-3/4'>
+					<h3 className=''>Meet the Lab Host</h3>
 					<p className='font-semibold mt-3 mb-5'>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in
@@ -50,7 +50,34 @@ function LabInfo() {
 						mattis vulputate.{' '}
 					</p>
 				</div>
-				<img className='mt-10 lg:mt-0' src='https://picsum.photos/400' alt='' />
+				<svg
+					width='242'
+					height='317'
+					viewBox='0 0 242 317'
+					fill='none'
+					xmlns='http://www.w3.org/2000/svg'>
+					<defs>
+						<pattern
+							id='img'
+							patternUnits='userSpaceOnUse'
+							width='242'
+							height='317'>
+							<image
+								href='https://picsum.photos/242/317'
+								x='0'
+								y='0'
+								width='242'
+								height='317'
+							/>
+						</pattern>
+					</defs>
+					<path
+						fillRule='evenodd'
+						clipRule='evenodd'
+						d='M226.959 24.4434C243.794 49.2094 235.86 97.0334 236.441 137.812C237.021 178.377 245.729 211.896 238.763 244.562C231.603 277.014 208.383 308.398 180.519 315.23C152.655 322.062 119.954 304.555 89.768 288.329C59.582 272.103 32.105 257.372 17.012 232.819C1.919 208.053 -0.983507 173.466 1.91899 137.385C4.62799 101.09 13.3355 63.5139 35.201 39.6019C57.0665 15.9034 92.2835 6.29595 130.596 2.02595C168.909 -2.03055 210.318 -0.322548 226.959 24.4434Z'
+						fill='url(#img)'
+					/>
+				</svg>
 			</div>
 		</div>
 	);

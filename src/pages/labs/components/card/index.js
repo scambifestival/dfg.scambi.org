@@ -6,7 +6,7 @@ export default function LabCard({ imgSrc, index, title, description }) {
 		<Card key={index} classes='bg-white'>
 			<div className='flex p-5 items-center'>
 				<div className='text-left'>
-					<h1 className='text-lg font-semibold mb-5'>{title}</h1>
+					<p className='text-2xl mb-5'>{title}</p>
 					<p className='mb-10 w-[400px]'>{description}</p>
 					<Link
 						className='text-[#69088D] flex items-center'
