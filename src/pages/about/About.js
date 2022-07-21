@@ -20,7 +20,9 @@ class About extends Component {
 				<OurManifesto />
 				<AboutOurTeam />
 				<OurRelations />
-				<NLSubscribe />
+				<div className="bg-white flex justify-center py-10">
+					<NLSubscribe />
+				</div>
 			</div>
 		);
 	}

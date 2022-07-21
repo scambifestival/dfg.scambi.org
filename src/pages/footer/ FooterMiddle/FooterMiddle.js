@@ -26,26 +26,52 @@ const FooterMiddle = (props) => {
 					</div>
 				</div>
 			</div>
-			<div className="md:w-full lg:w-1/2 inline-flex items-center justify-center  middleRight">
-				<div className="menus1 w-1/3 p-8 mt-8">
-					<p className="mt-8">About</p>
-					<p className="mt-8">Team</p>
-					<p className="mt-8">Manifesto</p>
-					<p className="mt-8">Accessibility</p>
-					<p className="mt-8 galaxy">Donate</p>
-					<p className="mt-8 galaxy">Volunteer</p>
+			<div className="md:w-full lg:w-1/2 inline-flex items-center justify-center middleRight">
+				<div className="menus1 w-1/3">
+					<p className="mt-2">
+						<a href="/about">About</a>
+					</p>
+					<p className="mt-2">
+						<a href="/">Team</a>
+					</p>
+					<p className="mt-2">
+						<a href="/">Manifesto</a>
+					</p>
+					<p className="mt-2">
+						<a href="/">Accessibility</a>
+					</p>
+					<p className="mt-2 galaxy">
+						<a href="/donate">Donate</a>
+					</p>
+					<p className="mt-2 galaxy">
+						<a href="/volunteer">Volunteer</a>
+					</p>
 				</div>
-				<div className="menus2 w-1/3 p-8 mt-8">
-					<p className="mt-8">Labs</p>
-					<p className="mt-8">Pinolis</p>
-					<p className="mt-8">Dissolvenze</p>
-					<p className="mt-8">Ideas</p>
-					<p className="mt-8 galaxy">Join Team</p>
+				<div className="menus2 w-1/3">
+					<p className="mt-2">
+						<a href="/lab">Labs</a>
+					</p>
+					<p className="mt-2">
+						<a href="/minievents">Pinolis</a>
+					</p>
+					<p className="mt-2">
+						<a href="/">Dissolvenze</a>
+					</p>
+					<p className="mt-2">
+						<a href="/">Ideas</a>
+					</p>
+					<p className="galaxy">Join Team</p>
 				</div>
-				<div className="menus3 w-1/3 p-8 mt-8">
-					<p className="mt-8">Donate</p>
-					<p className="mt-8">Volunteer</p>
-					<p className="mt-8">Join Team</p>
+				<div className="menus3 w-1/3">
+					<p className="mt-2">
+						<a href="/donate">Donate</a>
+					</p>
+					<p className="mt-2">
+						<a href="/volunteer">Volunteer</a>
+					</p>
+					<p className="mt-2">
+						<a href="/">Join Team</a>
+					</p>
 				</div>
 			</div>
 		</div>

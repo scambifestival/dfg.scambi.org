@@ -5,11 +5,21 @@
 	z-index: 1;
 }
 
+.blobFooter {
+	overflow: hidden !important;
+}
+
 .footer {
+	box-shadow: 1px 0 19px rgba(47, 4, 63, 0.7);
+	z-index: 100;
 	background-color: white;
 	margin-top: 100px;
 	border-top-left-radius: 30px;
 	border-top-right-radius: 30px;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .icon {
@@ -39,7 +49,6 @@
 .purpledBtn {
 	color: white;
 	width: 11rem;
-	margin-left: 40px;
 
 	background: linear-gradient(
 			180deg,
@@ -80,7 +89,7 @@
 
 .subscribeNews {
 	/* Subtitle 2, Semi Bold, 18px */
-	font-family: 'Poppins';
+	font-family: "Poppins";
 	font-style: normal;
 	font-weight: 600;
 	font-size: 18px;
@@ -112,7 +121,7 @@
 	flex-grow: 0;
 	background-color: white;
 	/* Button Text, Semi bold, 16px */
-	font-family: 'Poppins';
+	font-family: "Poppins";
 	font-style: normal;
 	font-weight: 600;
 	font-size: 16px;
@@ -298,7 +307,7 @@
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 615px) {
 	.headText {
 		display: none;
 	}

@@ -5,14 +5,14 @@ const FooterTop = () => {
 	return (
 		<div className="footerTop flex">
 			<div className="topLeft w-1/5">
-				<h2 className="headText md:text-5xl  p-10">Scambi</h2>
+				<h2 className="headText p-6">Scambi</h2>
 			</div>
-			<div className="topRight flex p-14 md:p-10">
+			<div className="topRight flex p-10">
 				<div className="topRigh1t w-2/3 p-3">
 					<h6 className="readyToJoin">Ready to join us?</h6>
 				</div>
-				<div className="topRight2 w-1/5">
-					<button className="w-36 h-12 purpledBtn">ATTEND</button>
+				<div className="topRight2">
+					<button className="purpledBtn">ATTEND</button>
 				</div>
 			</div>
 		</div>
