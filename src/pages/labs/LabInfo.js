@@ -4,8 +4,12 @@ function LabInfo() {
 	let params = useParams();
 	return (
 		<div>
-			<img src='https://picsum.photos/400/100' className='w-full' alt='' />
-			<div className='mt-10 text-left p-20 w-3/4'>
+			<img
+				src='https://picsum.photos/400/100'
+				className='w-full h-full'
+				alt=''
+			/>
+			<div className='mt-10 mx-auto text-left p-10 lg:p-20 lg:w-3/4'>
 				<h1 className='text-5xl mb-10'>Lorem Ipsum {params.labId}</h1>
 				<p className='font-semibold mb-5'>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -28,8 +32,8 @@ function LabInfo() {
 				scelerisque in dictum non. Proin fermentum leo vel orci porta non. Massa
 				vitae tortor condimentum lacinia quis vel eros donec.
 			</div>
-			<div className='mt-10 p-20 flex justify-between'>
-				<div className='text-left w-1/2'>
+			<div className='mt-10 mx-auto p-10 lg:p-20 flex flex-col items-center lg:flex-row justify-between'>
+				<div className='text-left lg:w-1/2'>
 					<h2 className='text-xl'>Meet the Lab Host</h2>
 					<p className='font-semibold mt-3 mb-5'>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -46,7 +50,7 @@ function LabInfo() {
 						mattis vulputate.{' '}
 					</p>
 				</div>
-				<img src='https://picsum.photos/400' alt='' />
+				<img className='mt-10 lg:mt-0' src='https://picsum.photos/400' alt='' />
 			</div>
 		</div>
 	);
