@@ -10,10 +10,11 @@ import {
 	rec7,
 	rec8,
 	rec9,
-	rec10
-} from "../../assets/lab/gallery/index";
-import Flex from "../../components/Flex/Flex";
-import LabCard from "./components/card";
+	rec10,
+} from '../../assets/lab/gallery/index';
+import Flex from '../../components/Flex/Flex';
+import LabCard from './components/card';
+import Carousel from 'framer-motion-carousel';
 
 export default function Labs() {
 	const dummyData = [
@@ -57,11 +58,11 @@ export default function Labs() {
 						Get Tickets
 					</button>
 				</div>
-				<img src={labVid} alt="" />
+				<img src={labVid} className='mt-10' alt='' />
 			</Flex>
 			<Flex classes='items-center justify-around'>
 				<img className='w-[436px] h-[425px]' src={lab} alt='' />
-				<div className='text-left w-[500px]'>
+				<div className='text-left lg:w-[500px] mt-12'>
 					<h1 className='text-5xl font-semibold mb-10'>What are Labs?</h1>
 					<p>
 						Laboratories are work-groups guided by an external host aimed at
@@ -74,7 +75,7 @@ export default function Labs() {
 					<h1>Scambi 2021:</h1>
 					<h1>Lab Photo Gallery</h1>
 				</div>
-				<div className='flex justify-center'>
+				<div className='hidden lg:flex justify-center'>
 					<div className='space-y-5'>
 						<img
 							src={rec1}
@@ -140,10 +141,23 @@ export default function Labs() {
 						</div>
 					</div>
 				</div>
+				<div className='lg:hidden' style={{ margin: '0 auto' }}>
+					<Carousel autoPlay='false'>
+						{[...Array(10).keys()].map((item, i) => (
+							<img
+								draggable='false'
+								src={require(`../../assets/lab/gallery/rec${item + 1}.png`)}
+								key={i}
+								className='w-full h-full mx-0 my-auto'
+								alt=''
+							/>
+						))}
+					</Carousel>
+				</div>
 			</div>
 			<div className='mt-20'>
 				<h1 className='text-5xl font-semibold mb-10'>Upcoming Labs</h1>
-				<div className='grid grid-cols-2 gap-x-5 gap-y-10'>
+				<div className='flex flex-col space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-5 lg:gap-y-10'>
 					{dummyData.map((el, index) => {
 						return (
 							<LabCard

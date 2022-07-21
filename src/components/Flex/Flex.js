@@ -1,5 +1,5 @@
-import React from "react";
-import "./Flex.css";
+import React from 'react';
+import './Flex.css';
 
 const Flex = ({ children, classes, reverse = false }) => {
 	return (

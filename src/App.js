@@ -10,10 +10,10 @@ import Labs from './pages/labs/Labs';
 import FAQ from './pages/faq/FAQ';
 // import FilmContest from './pages/filmcontest/FilmContest';
 import LabInfo from './pages/labs/LabInfo';
+import OurTeam from './pages/ourTeam/OurTeam';
 import PageLayout from './PageLayout';
 import Volunteer from './pages/volunteer/Volunteer';
 import SummerVolunteer from './pages/volunteer/SummerVolunteer';
-import OurTeam from './pages/ourTeam/OurTeam'
 import Team from './pages/ourTeam/Team'
 
 function App() {
@@ -37,8 +37,8 @@ function App() {
 						<Route path="team" element={<Team />} />
 					</Route>
 					<Route path='volunteer'>
-						<Route index element={<Volunteer/>}/>
-						<Route path='summer' element={<SummerVolunteer/>}/>
+						<Route index element={<Volunteer />} />
+						<Route path='summer' element={<SummerVolunteer />} />
 					</Route>
 					{/* <Route path='filmcontest' element={<FilmContest />} /> */}
 				</Route>
