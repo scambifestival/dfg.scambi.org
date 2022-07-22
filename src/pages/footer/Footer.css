@@ -25,8 +25,9 @@
 	margin-top: 100px;
 	border-top-left-radius: 30px;
 	border-top-right-radius: 30px;
-
+	position: relative;
 	display: flex;
+	height: 600px !important;
 	flex-direction: column;
 	justify-content: space-between;
 }
@@ -36,11 +37,10 @@
 	width: 150px;
 	margin: auto;
 	position: absolute;
-	top: 0;
-	left: 100px;
+	top: 0px;
+	left: 70px;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(255, 255, 255, 0.6);
 }
 
 .bottomRight {
@@ -50,6 +50,10 @@
 .icon {
 	padding: 5px;
 	color: #69088d;
+}
+
+.incorrectTextFooter {
+	width: 200px !important;
 }
 
 .readyToJoin {
@@ -77,11 +81,17 @@
 	border-radius: 16px;
 }
 
+.inputForFooter {
+	width: 17rem;
+	right: 23%;
+}
+
 .purpledBtnNL {
 	color: white;
 	width: 11rem;
-	margin-left: 40px;
-	margin-top: 20px;
+	margin-left: 10%;
+	position: absolute;
+	top: 80px;
 	background: linear-gradient(
 			180deg,
 			rgba(255, 255, 255, 0.2) 0%,
@@ -103,26 +113,46 @@
 	position: relative;
 }
 
-.BottomLeft {
+.footerBottom {
 	position: relative;
 }
 
 .bottomLeftT {
 	position: absolute;
-	left: 20%;
+	left: 10%;
+	bottom: 10px;
 }
 
 .subscribeNews {
-	/* Subtitle 2, Semi Bold, 18px */
+	position: absolute;
+	width: 267px;
+	height: 27px;
+	margin-bottom: 10px;
+	bottom: 70px;
+	left: -18px;
+	/* Subtitle 2, Semi Bold,  18px */
 	font-family: "Poppins";
 	font-style: normal;
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 27px;
+	/* identical to box height */
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	/* Main UI Colors/Primary/Purple */
+	color: #69088d;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
 
 	/* Main UI Colors/Primary/Purple */
 	color: #69088d;
 }
+
 .footerArrow {
 	position: absolute;
 	right: 70px !important;
@@ -295,7 +325,7 @@
 	}
 	.footer {
 		bottom: 0;
-		height: 600px !important;
+		height: 770px !important;
 	}
 
 	.subscribeNews {
@@ -305,8 +335,9 @@
 
 	.blobFooter {
 		margin-bottom: 0;
-		height: 460px;
-		left: 10px;
+		width: 40rem;
+		height: 40rem;
+		background-color: red;
 	}
 
 	.bottomRight {
@@ -317,8 +348,10 @@
 	}
 
 	.blobFooter {
-		width: 20rem;
-		height: 20rem;
+		margin: 0 auto;
+		text-align: center;
+		width: 20rem !important;
+		height: 20rem !important;
 	}
 
 	input {
@@ -337,10 +370,6 @@
 		margin-top: 0;
 	}
 
-	.galaxy {
-		display: block;
-	}
-
 	.purpledBtnNL {
 		width: 8rem;
 		margin-left: 60px;
@@ -348,14 +377,14 @@
 	}
 
 	.footerBottom {
-		margin-top: 30px;
+		margin-top: 70px;
 	}
 }
 
 @media (max-width: 500px) {
 	.footer {
 		bottom: 0;
-		height: 700px;
+		height: 770px;
 	}
 
 	.subscribeNews {
@@ -393,6 +422,12 @@
 
 	.bottomMiddle {
 		width: 100% !important;
+	}
+
+	.footerbottom {
+		margin-top: 40px;
+		display: flex;
+		flex-direction: column !important;
 	}
 }
 

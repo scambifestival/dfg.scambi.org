@@ -58,14 +58,16 @@ class FormComponent extends React.Component {
 							(this.state.error === "Email is not valid!"
 								? " outline-none ring ring-red-500 "
 								: " ") +
-							(this.props.fileName === "NLSubscribe" && "inputForNL")
+							(this.props.fileName === "NLSubscribe" && "inputForNL") +
+							(this.props.fileName === "Footer" && " inputForFooter")
 						}
 					/>
 
 					<span
 						className={
 							"incorrectText " +
-							(this.props.fileName === "NLSubscribe" && "incorrectTextNL")
+							(this.props.fileName === "NLSubscribe" && "incorrectTextNL") +
+							(this.props.fileName === "Footer" && " incorrectTextFooter")
 						}>
 						{this.state.error}
 					</span>
