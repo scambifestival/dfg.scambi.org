@@ -32,7 +32,7 @@ const Navbar = () => {
 		<nav
 			aria-label='Scambi'
 			className={`fixed z-50 w-11/12 flex flex-col items-center justify-between bg-white shadow-xl left-1/2 -translate-x-1/2 mt-10 space-y-7 py-5 ${isOpen ? 'rounded-3xl' : 'rounded-full'} lg:flex-row lg:rounded-full lg:space-y-0 lg:px-12 2xl:px-20`}>
-			<div className='w-full flex justify-between items-center px-16 lg:w-auto lg:px-0'>
+			<div className='w-full flex justify-between items-center px-8 sm:px-16 lg:w-auto lg:px-0'>
 				<Link to='/' className='text-5xl font-["Londrina_Solid"]  outline-none hover:text-fuchsia-800 active:text-fuchsia-800 focus:text-fuchsia-800'>
 					Scambi
 				</Link>
