@@ -3,11 +3,11 @@ import Navbar from "./components/navbar";
 import Footers from "./pages/footer/Footers";
 
 export default function PageLayout() {
-    return (
-      <>
-        <Navbar/>
-        <Outlet/>
-        <Footers/>
-      </>  
-    );
-};
+	return (
+		<>
+			<Navbar />
+			<Outlet />
+			<Footers />
+		</>
+	);
+}
