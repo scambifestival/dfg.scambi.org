@@ -226,6 +226,8 @@ img {
 	color: white;
 	z-index: 9;
 	font-size: 102px;
+	width: 100%;
+	overflow: auto;
 }
 
 .aboutScambiOurTeam-container {
@@ -330,11 +332,11 @@ img {
 		padding-right: 25%;
 	}
 	.exampleName2 {
-		padding-right: 25%;
+		padding-right: 20%;
 	}
 
 	.exampleName3 {
-		padding-right: 25%;
+		padding-right: 20%;
 	}
 
 	.aboutExampleWorkshop-container {
@@ -353,12 +355,12 @@ img {
 		padding-right: 25%;
 	}
 	.exampleName2 {
-		padding-right: 25%;
+		padding-right: 20%;
 	}
 
 	.exampleName3 {
 		left: 20%;
-		top: 90%;
+		top: 94%;
 	}
 
 	.aboutExampleWorkshop-container {
@@ -380,6 +382,11 @@ img {
 
 	.aboutExampleWorkshop-container {
 		height: 1500px;
+	}
+}
+@media (max-width: 540px) {
+	.exampleName2 {
+		left: 22%;
 	}
 }
 
@@ -416,7 +423,7 @@ img {
 
 	.exampleName3 {
 		top: 90%;
-		left: 1%;
+		left: 16% !important;
 	}
 
 	.example1 {
@@ -464,7 +471,7 @@ img {
 		left: 36%;
 	}
 	.exampleName2 {
-		left: 23%;
+		left: 12%;
 	}
 
 	.exampleName3 {
@@ -491,7 +498,7 @@ img {
 		left: 38%;
 	}
 	.exampleName2 {
-		left: 23%;
+		left: 10%;
 	}
 
 	.exampleName3 {
@@ -515,17 +522,17 @@ img {
 	}
 
 	.exampleName1 {
-		top: 200px;
+		top: 220px;
 		left: 28%;
 	}
 	.exampleName2 {
-		left: 5%;
-		top: 200px;
+		left: 1%;
+		top: 220px;
 	}
 
 	.exampleName3 {
 		left: 30px !important;
-		top: 200px;
+		top: 220px;
 		padding-left: 0 !important;
 	}
 

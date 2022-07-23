@@ -392,7 +392,7 @@
 		left: -25px !important;
 		border-radius: 12px;
 		width: 120px;
-		right: 38%;
+		right: 35%;
 	}
 	.blobFooter {
 		width: 18rem;
@@ -442,7 +442,7 @@
 		left: -15px !important;
 		border-radius: 12px;
 		width: 120px;
-		right: 38%;
+		right: 30%;
 	}
 	.blobFooter {
 		width: 18rem;
@@ -825,6 +825,13 @@
 }
 
 @media (max-width: 300px) {
+	.inputForFooter {
+		width: 180px !important;
+		margin-left: 52px !important;
+		height: 30px !important;
+		margin-top: 18px !important;
+	}
+
 	.blobFooter {
 		width: 17rem !important;
 		height: 17rem !important;
@@ -834,12 +841,23 @@
 	}
 
 	.subscribeNews {
-		top: -37px !important;
+		top: -23px !important;
 		margin-left: 45px !important;
 		width: 140px;
 	}
 
 	.footerBlob {
 		left: -20px !important;
+	}
+
+	.bottomLeftT {
+		margin-top: 20px;
+		text-align: center !important;
+		margin-left: -10%;
+	}
+
+	.readyToJoin {
+		padding-top: 1px !important;
+		padding-left: 5px !important;
 	}
 }

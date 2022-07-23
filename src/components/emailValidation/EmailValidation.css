@@ -21,9 +21,3 @@ input {
 		margin-bottom: 30px !important;
 	}
 }
-
-@media (max-width: 300px) {
-	.incorrectText {
-		font-size: 10px;
-	}
-}
