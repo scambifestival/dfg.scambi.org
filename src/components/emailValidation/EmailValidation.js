@@ -58,7 +58,7 @@ class FormComponent extends React.Component {
 							(this.state.error === "Email is not valid!"
 								? " outline-none ring ring-red-500 "
 								: " ") +
-							(this.props.fileName === "NLSubscribe" && "inputForNL") +
+							(this.props.fileName === "NLSubscribe" && " inputForNL") +
 							(this.props.fileName === "Footer" && " inputForFooter")
 						}
 					/>
@@ -66,7 +66,7 @@ class FormComponent extends React.Component {
 					<span
 						className={
 							"incorrectText " +
-							(this.props.fileName === "NLSubscribe" && "incorrectTextNL") +
+							(this.props.fileName === "NLSubscribe" && " incorrectTextNL") +
 							(this.props.fileName === "Footer" && " incorrectTextFooter")
 						}>
 						{this.state.error}
@@ -75,13 +75,12 @@ class FormComponent extends React.Component {
 						onClick={() => this.onSubmit()}
 						className={
 							this.props.fileName === "Footer"
-								? "purpledBtnNL active:bg-purple-750 hover:bg-purple-650 "
+								? "purpledBtnNL btn-primary regular active:bg-purple-750 hover:bg-purple-650 "
 								: "submit-button bg-yellow-300 active:bg-yellow-400 hover:bg-yellow-450"
 						}>
 						Subscribe
 					</button>
 				</div>
-				<div></div>
 			</div>
 		);
 	}

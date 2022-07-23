@@ -5,7 +5,7 @@ import BlobFooter from "./BlobFooter";
 
 const FooterMiddle = (props) => {
 	return (
-		<div className="footerMiddle w-full h-fit flex  md:flex:row sm:flex-row flex-container lg:flex-row md:space-x-4 md:space-y-0">
+		<div className="footerMiddle w-full h-fit flex  md:flex:row sm:flex-row flex-container lg:flex-row">
 			<div className="middleLeft md:w-1/3 lg:w-1/4 sm:w-1/3">
 				<BlobFooter>
 					<div className="contentBlob">
@@ -49,13 +49,13 @@ const FooterMiddle = (props) => {
 				</div>
 				<div className="menus3 w-1/3 lg:w-48 md:w-36 sm:w-36 xl:w-1/3">
 					<ul>
-						<li className="mt-8 lg:ml-24 sm:ml-12">
+						<li className="mt-8 lg:ml-6 sm:ml-12">
 							<a href="/donate">Donate</a>
 						</li>
-						<li className="mt-8 lg:ml-24 sm:ml-12">
+						<li className="mt-8 lg:ml-6 sm:ml-12">
 							<a href="/volunteer">Volunteer</a>
 						</li>
-						<li className="mt-8 lg:ml-24 sm:ml-12">
+						<li className="mt-8 lg:ml-6 sm:ml-12">
 							<a href="/">Join Team</a>
 						</li>
 					</ul>

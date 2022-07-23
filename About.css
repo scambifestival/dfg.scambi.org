@@ -304,7 +304,7 @@ img {
 	}
 }
 
-@media (max-width: 414px) {
+@media (max-width: 415px) {
 	.exmapleImages {
 		margin-left: 4%;
 	}
@@ -313,11 +313,11 @@ img {
 		padding-left: 24%;
 	}
 	.exampleName2 {
-		padding-right: 1%;
+		padding-left: 1%;
 	}
 
 	.exampleName3 {
-		padding-left: 24%;
+		margin-left: 14% !important;
 	}
 
 	.example1 {
@@ -330,5 +330,18 @@ img {
 
 	.example3 {
 		margin-right: 40px;
+	}
+
+	.blob1 {
+		width: 10rem;
+		height: 10rem;
+	}
+	.blob2 {
+		width: 10rem;
+		height: 10rem;
+	}
+	.blob3 {
+		width: 10rem;
+		height: 10rem;
 	}
 }

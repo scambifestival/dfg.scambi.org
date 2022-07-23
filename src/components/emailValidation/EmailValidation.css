@@ -1,21 +1,24 @@
 .incorrectText {
 	color: red;
+	position: absolute;
+
+	width: 160px !important;
+	top: 50px;
 }
 
 input {
-	position: relative;
+	width: 280px !important;
+	margin-right: 10px !important;
 }
 
-.incorrectTextNL {
-	position: absolute;
-	top: 70px;
-	left: 10px;
-}
+@media (max-width: 700px) {
+	.newLetterBtn {
+		display: flex;
+		flex-direction: column !important;
+	}
 
-@media (max-width: 500px) {
 	input {
-		width: 140px;
-		height: 5px;
+		margin-bottom: 30px !important;
 	}
 }
 

@@ -29,6 +29,7 @@ const FooterBottom = () => {
 					<i className="fa fa-mastodon icon fa-lg" aria-hidden="true"></i>
 				</a>
 			</div>
+
 			<div className="bottomRight w-4/12">
 				<i
 					className="fa fa-chevron-circle-up fa-3x icon footerArrow"

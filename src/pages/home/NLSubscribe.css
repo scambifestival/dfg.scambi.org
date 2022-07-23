@@ -104,13 +104,8 @@
 	width: 477px;
 }
 
-.inputForNL {
-	width: 20rem;
-	margin-right: 20px;
-}
-
 @media (max-width: 800px) {
 	.inputForNL {
-		width: 10rem;
+		width: 20rem;
 	}
 }

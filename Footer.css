@@ -131,10 +131,6 @@
 	flex-grow: 0;
 }
 
-.galaxy {
-	display: none;
-}
-
 @media (min-width: 1400px) {
 	.blobFooter1 {
 		position: absolute;
@@ -490,10 +486,6 @@
 		display: none;
 	}
 
-	.galaxy {
-		display: block;
-	}
-
 	.footerBottom {
 		display: flex;
 		flex-direction: column;
@@ -562,9 +554,6 @@
 		display: none;
 	}
 
-	.galaxy {
-		display: block;
-	}
 	.footerBottom {
 		display: flex;
 		flex-direction: column;
@@ -624,13 +613,6 @@
 		position: absolute;
 		right: 0;
 		margin-top: 0;
-	}
-	.menus3 {
-		display: none;
-	}
-
-	.galaxy {
-		display: block;
 	}
 
 	input {
@@ -699,13 +681,6 @@
 		position: absolute;
 		right: 0;
 		margin-top: 0;
-	}
-	.menus3 {
-		display: none;
-	}
-
-	.galaxy {
-		display: block;
 	}
 
 	input {

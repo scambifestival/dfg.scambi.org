@@ -5,7 +5,7 @@ import "./Footer.css";
 
 function Footers() {
 	return (
-		<div className="footer h-full">
+		<div className="footer">
 			<FooterTop />
 			<FooterMiddle />
 			<FooterBottom />
