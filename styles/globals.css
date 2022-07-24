@@ -1,26 +1,61 @@
-html,
+/* TailwindCSS */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	h1 {
+		@apply text-[102px];
+	}
+
+	h2 {
+		@apply text-[64px];
+	}
+
+	h3 {
+		@apply text-[32px];
+	}
+
+	h4 {
+		@apply text-[24px];
+	}
+}
+
+/* Normal CSS */
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	background: linear-gradient(90deg, #e9afff 0%, #ffedc4 98.65%);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+button {
+	font-size: 16px;
+	line-height: 22px;
+	padding: 0.85em 3em;
+	font-weight: 600;
+	box-shadow: 0px 4px 3px rgba(47, 4, 63, 0.7);
 }
 
-* {
-  box-sizing: border-box;
+.btn-primary {
+	color: white;
+	background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 0.2) 0%,
+			rgba(255, 255, 255, 0) 69.78%
+		),
+		#69088d;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.btn-primary:hover {
+	color: white;
+	background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 0.2) 0%,
+			rgba(255, 255, 255, 0) 69.78%
+		),
+		#69088d;
+}
+
+.btn-primary:active {
+	background: #4e0968;
 }
