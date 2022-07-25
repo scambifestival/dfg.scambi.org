@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import ReactPlayer from 'react-player';
 
 //import { readFile } from 'fs';
 //import path from 'path';
@@ -11,9 +10,11 @@ import Button from '../components/button';
 import Subscribe from '../components/subscribe';
 import Testimonials from '../components/testimonials';
 import Map from '../components/map';
+import { ArrowRight } from '../components/icons/arrow';
 
+/* A different way to import image
 import TableTalk from '../public/illustrations/table-talk.png';
-import Program from '../public/illustrations/program.png';
+import Program from '../public/illustrations/program.png'; */
 import Sponsors from '../public/illustrations/sponsors.png';
 import {
 	rec1,
@@ -32,7 +33,7 @@ import { eventCards, manifestoCards } from '../assets/data';
 export default function Home() {
 	return (
 		<section>
-			<div className='w-10/12 mx-auto my-10 text-left flex flex-col justify-between xl:items-center  xl:flex-row'>
+			<div className='w-10/12 mx-auto mt-48 mb-10 text-left flex flex-col justify-between xl:items-center  xl:flex-row'>
 				<div>
 					<h1 className='leading-none'>Scambi Festival</h1>
 					<h3>The Festival of Paneuretic Workshops, free for all to attend</h3>
@@ -49,9 +50,9 @@ export default function Home() {
 					url='https://vimeo.com/658183199'
         />
       </div>*/}
-			<Flex classes='mt-16'>
-				<div className='flex-content'>
-					<h2 className='leading-tight lg:leading-normal'>
+			<Flex classes='mt-16 justify-between mx-auto'>
+				<div className=''>
+					<h2 className='leading-tight lg:leading-normal mx-auto'>
 						What are paneuretic workshops?
 					</h2>
 					<p className='mx-auto my-5 w-4/5 md:mx-0'>
@@ -63,17 +64,20 @@ export default function Home() {
 						ideas.
 					</p>
 				</div>
-				<div className='flex-image'>
-					<Image src={TableTalk} alt='' />
-				</div>
+				<Image
+					src='/illustrations/table-talk.png'
+					alt=''
+					width={808}
+					height={800}
+				/>
 			</Flex>
 
-			<Flex classes='w-full' reverse={true}>
-				<div className='flex-content'>
+			<Flex classes='w-full mx-auto justify-between' reverse={true}>
+				<div className='text-left lg:ml-40'>
 					<h2 className='leading-tight lg:leading-normal'>
 						2022 Edition: “Imbalance”
 					</h2>
-					<p className='mx-auto my-5 w-4/5 md:mx-0'>
+					<p className='my-5 w-4/5'>
 						Scambi is the festival of paneuretic workshops, born from the
 						necessity felt by a group of young people to{' '}
 						<span className='font-semibold'>
@@ -92,11 +96,14 @@ export default function Home() {
 							</a>
 						</Link>
 					</p>
-					<Button>View the 2022 Program</Button>
+					<Button classes='btn-primary'>View the 2022 Program</Button>
 				</div>
-				<div className='flex-image'>
-					<Image src={Program} alt='' />
-				</div>
+				<Image
+					src='/illustrations/program.png'
+					alt=''
+					width={918}
+					height={1026}
+				/>
 			</Flex>
 
 			<div className='flex flex-col items-center justify-center space-y-7 mt-16 lg:flex-row lg:space-x-14 lg:space-y-0'>
@@ -108,14 +115,14 @@ export default function Home() {
 						<p className='text-left'>{event.description}</p>
 						<div className='text-left text-purple-650'>
 							<a href={`/${event.link}`}>
-								Read more <i className='fa fa-long-arrow-right' />
+								Read more <ArrowRight />
 							</a>
 						</div>
 					</Card>
 				))}
 			</div>
 
-			<div className='mt-20'>
+			<div className='mt-20 lg:mx-10'>
 				<h1>Scambi 2021 Highlights</h1>
 				<div className='mt-10 flex justify-center'>
 					<div className='flex flex-col space-y-5 mr-5'>
@@ -183,8 +190,8 @@ export default function Home() {
 				<Testimonials />
 			</div>
 
-			<Flex>
-				<div className='md:text-left space-y-7 md:w-1/2 lg:w-3/5'>
+			<Flex classes='mx-auto'>
+				<div className='md:text-left space-y-7 md:w-1/2 lg:w-3/5 mr-10'>
 					<h2 className='leading-tight lg:leading-normal'>Scambi Family</h2>
 					<p className='mx-auto md:mx-0'>
 						We are a group of under 25s coming from every corner of Europe.
@@ -201,14 +208,18 @@ export default function Home() {
 						We will be waiting for you in Sanremo, to introduce ourselves
 						properly. In the meanwhile, here is an anticipation of who we are.
 					</p>
-					<Button>Volunteer with us</Button>
+					<Button classes='btn-primary'>Volunteer with us</Button>
 				</div>
-				<div className='md:w-1/2 lg:w-3/5'>
-					<Image src={rec5} alt='' />
-				</div>
+				<Image
+					src={rec5}
+					alt=''
+					width={500}
+					height={319}
+					className='rounded-2xl'
+				/>
 			</Flex>
 
-			<div className='flex justify-center px-14 py-10 font-normal bg-white sm:px-20 lg:px-24 xl:px-42 2xl:px-60'>
+			<div className='flex justify-center text-center px-14 py-10 font-normal bg-white sm:px-20 lg:px-24 xl:px-42 2xl:px-60'>
 				<p className='text-3xl sm:leading-relaxed sm:text-4xl xl:text-5xl xl:leading-relaxed 2xl:leading-loose'>
 					“Our purpose is to recover the value of{' '}
 					<span className='font-bold text-3xl sm:text-4xl xl:text-5xl'>
@@ -224,8 +235,8 @@ export default function Home() {
 				</p>
 			</div>
 
-			<div className='my-20 space-y-12'>
-				<h2>Our Manifesto</h2>
+			<div className='my-20 mx-auto space-y-12'>
+				<h2 className='text-center'>Our Manifesto</h2>
 				<div className='flex flex-col justify-center mx-16 space-y-6 lg:space-x-5 lg:space-y-0 lg:flex-row xl:space-x-10 2xl:mx-32'>
 					{manifestoCards.map((card, index) => (
 						<Card
@@ -238,11 +249,17 @@ export default function Home() {
 						</Card>
 					))}
 				</div>
-				<Button styleType='light'>Read the Manifesto</Button>
+				<div className='flex justify-center'>
+					<Button classes='btn-primary'>Read the Manifesto</Button>
+				</div>
+			</div>
+
+			<div className='bg-white flex justify-center py-10'>
+				<Subscribe />
 			</div>
 
 			<Flex
-				classes='my-1 px-8 space-y-10 md:space-x-reverse xl:gap-x-52'
+				classes='my-1 px-8 mx-auto space-y-10 md:space-x-reverse xl:gap-x-52'
 				reverse={true}>
 				<div className='w-4/5 flex flex-col text-center space-y-8 md:text-left'>
 					<h2 className='leading-tight lg:leading-normal'>Our Relations</h2>
@@ -253,18 +270,17 @@ export default function Home() {
 						Sanremo and many other special people.
 					</p>
 					<div className='flex flex-row justify-center md:justify-start space-x-7'>
-						<Button>Partner with us</Button>
-						<Button styleType='secondary'>Meet our partners</Button>
+						<Button classes='btn-primary'>Partner with us</Button>
+						<Button>Meet our partners</Button>
 					</div>
 				</div>
-				<div className='w-3/5 lg:w-4/12'>
-					<Image src={Sponsors} alt='' />
-				</div>
+				<Image
+					src='/illustrations/sponsors.png'
+					alt=''
+					width={654}
+					height={689}
+				/>
 			</Flex>
-
-			<div className='bg-white flex justify-center py-10'>
-				<Subscribe />
-			</div>
 
 			<div className='px-20 my-10'>
 				<h2 className='text-left py-5'>Explore Scambi Festival</h2>

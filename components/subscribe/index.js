@@ -4,17 +4,17 @@ import Button from '../button';
 
 export default function Subscribe() {
 	return (
-		<div className='flex px-10 rounded-[32px]'>
+		<div className='flex rounded-[32px] bg-primary text-white mx-16 drop-shadow-2xl'>
 			<Image
 				src={SubscribeImg}
 				alt='Subscribe illustration'
-				className='hidden lg:block'
+				className='hidden lg:block lg:rounded-l-[32px]'
 			/>
-			<div>
-				<div>
+			<div className='flex flex-col items-center justify-center lg:pr-10'>
+				<div className='lg:ml-10'>
 					<p className='uppercase'>exchanges of letters, our newsletter</p>
 					<h2>Scambi Epistolari</h2>
-					<p>
+					<p className='mb-5'>
 						Join the conversation - sign up now to receive updates on Scambi
 						activities.
 					</p>
@@ -22,9 +22,9 @@ export default function Subscribe() {
 						<input
 							type='email'
 							placeholder='Enter your email'
-							className='rounded-md peer'
+							className='rounded-md lg:w-[300px] lg:mr-5 peer'
 						/>
-						<Button classes='bg-primary-yellow peer-invalid:disabled'>
+						<Button classes='bg-primary-yellow peer-invalid:disabled text-black'>
 							Subscribe
 						</Button>
 					</form>
