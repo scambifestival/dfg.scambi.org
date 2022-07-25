@@ -187,7 +187,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+#logo {
 	font-family: 'Londrina Solid';
 }
 
@@ -197,6 +198,10 @@ button {
 	padding: 0.85em 3em;
 	font-weight: 600;
 	box-shadow: 0px 4px 3px rgba(47, 4, 63, 0.7);
+}
+
+footer {
+	box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.3);
 }
 
 .btn-primary {
@@ -209,7 +214,8 @@ button {
 		#69088d;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary-light:hover {
 	color: white;
 	background: linear-gradient(
 			180deg,
@@ -219,6 +225,25 @@ button {
 		#69088d;
 }
 
-.btn-primary:active {
+.btn-primary:active,
+.btn-primary-light:active {
 	background: #4e0968;
+}
+
+.btn-primary-light {
+	background-color: white;
+}
+
+.yellow-pink-gradient {
+	background: linear-gradient(110deg, #ffecc0 15%, #ffb0c4 60%);
+}
+
+.overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	opacity: 0.9;
 }
