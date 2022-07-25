@@ -11,7 +11,7 @@ module.exports = {
 				primary: '#69088d',
 				'primary-hover': '#4E0968',
 				'primary-selected': '#EDBBFF',
-				'primary-yellow': 'FFD166',
+				'primary-yellow': '#FFD166',
 			},
 		},
 	},
