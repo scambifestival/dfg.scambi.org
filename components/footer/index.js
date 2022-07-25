@@ -1,33 +1,47 @@
 import Link from 'next/link';
 import Button from '../button';
+import {
+	Twitter,
+	Facebook,
+	Mastodon,
+	Instagram,
+	Peertube,
+	Pixelfed,
+} from '../icons/social-media';
 
 export default function Footer() {
 	return (
-		<div className='h-full'>
-			<div className='footerTop flex'>
-				<div className='topLeft w-1/5'>
-					<h2 className='headText pl-16 pb-0 pt-4'>Scambi</h2>
-				</div>
-				<div className='topRight flex p-4'>
-					<div className='topRigh1t w-2/3 p-3'>
-						<h6 className='readyToJoin'>Ready to join us?</h6>
+		<footer className='h-full bg-white rounded-t-[32px]'>
+			<div className='flex justify-between items-center px-16 pt-10'>
+				<h2>Scambi</h2>
+				<div className='flex'>
+					<div className='w-2/3 p-3'>
+						<p className='text-[18px]'>Ready to join us?</p>
 					</div>
-					<div className='topRight2'>
-						<Button>ATTEND</Button>
-					</div>
+					<Button classes='btn-primary'>ATTEND</Button>
 				</div>
 			</div>
-			<div className='footerMiddle w-full h-fit flex  md:flex:row sm:flex-row flex-container lg:flex-row md:space-x-4 md:space-y-0'>
-				<div className='middleLeft md:w-1/3 lg:w-1/4 sm:w-1/3'>
+			<div className='w-full h-fit lg:my-10 flex md:flex-row sm:flex-row lg:flex-row md:space-x-4 md:space-y-0 justify-between px-16 py-10'>
+				<div className='md:w-1/3 lg:w-1/4 sm:w-1/3'>
 					<div className='blob-wrap'>
 						<div className='blobFooter'></div>
 					</div>
-					<div className='contentBlob'>
-						<p>Subscribe to our Newsletter!</p>
+					<div className='text-center'>
+						<p className='pb-5'>Subscribe to our Newsletter!</p>
+						<form>
+							<input
+								type='email'
+								placeholder='Enter your email'
+								className='rounded-md lg:w-[300px] lg:mr-5 peer'
+							/>
+							<Button classes='btn-primary peer-invalid:disabled mt-5'>
+								Subscribe
+							</Button>
+						</form>
 					</div>
 				</div>
-				<div className='md:w-2/3 lg:w-3/4 xl:w-2/3 sm:w-2/3 inline-flex items-center justify-center middleRight'>
-					<div className='menus1 w-1/3 lg:w-42 md:w-36 sm:w-36 xl:w-1/3'>
+				<div className='md:w-2/3 lg:w-3/4 xl:w-2/3 sm:w-2/3 inline-flex justify-center'>
+					<div className='w-1/3 lg:w-42 md:w-36 sm:w-36 xl:w-1/3'>
 						<ul>
 							<li className='mt-2 lg:ml-24 sm:ml-12'>
 								<Link href='/about'>
@@ -78,51 +92,78 @@ export default function Footer() {
 					<div className='menus3 w-1/3 lg:w-48 md:w-36 sm:w-36 xl:w-1/3'>
 						<ul>
 							<li className='mt-2 lg:ml-24 sm:ml-12'>
-								<a href='/donate'>Donate</a>
+								<Link href='/'>
+									<a>Donate</a>
+								</Link>
 							</li>
 							<li className='mt-2 lg:ml-24 sm:ml-12'>
-								<a href='/volunteer'>Volunteer</a>
+								<Link href='/'>
+									<a>Volunteer</a>
+								</Link>
 							</li>
-							<li className='mt-2 lg:ml-24 sm:ml-12'></li>
+							<li className='mt-2 lg:ml-24 sm:ml-12'>
+								<Link href='/'>
+									<a>Join Team</a>
+								</Link>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
-			<div className='footerBottom flex'>
-				<div className='BottomLeft w-4/12'>
-					<p className='bottomLeftT'>Privacy Policy</p>
-				</div>
-				<div className='bottomMiddle w-4/12'>
+			<div className='flex justify-between px-16 pb-10 items-center'>
+				<p className=''>Privacy Policy</p>
+				<div className='flex space-x-5 items-center'>
 					<Link href='https://twitter.com/scambifestival'>
-						<i className='fa fa-twitter icon fa-lg' aria-hidden='true'></i>
+						<a>
+							<Twitter />
+						</a>
 					</Link>
 					<Link href='https://www.facebook.com/cambisfestival/'>
-						<i
-							className='fa fa-facebook-official icon fa-lg'
-							aria-hidden='true'></i>
+						<a>
+							<Facebook />
+						</a>
 					</Link>
 					<Link href='https://www.instagram.com/scambifestival/?hl=en'>
-						<i className='fa fa-instagram icon fa-lg' aria-hidden='true'></i>
+						<a>
+							<Instagram />{' '}
+						</a>
 					</Link>
 					<Link href='https://pixelfed.uno/scambi'>
-						<i className='fa fa-pixelfed icon fa-lg' aria-hidden='true'></i>
+						<a>
+							<Pixelfed />
+						</a>
 					</Link>
 					<Link href='https://peertube.uno/c/scambifestival/videos'>
-						<i className='fa fa-peertube icon fa-lg' aria-hidden='true'></i>
+						<a>
+							<Peertube />
+						</a>
 					</Link>
 					<Link href='https://mastodon.uno/@scambi'>
-						<i className='fa fa-mastodon icon fa-lg' aria-hidden='true'></i>
+						<a>
+							<Mastodon />
+						</a>
 					</Link>
 				</div>
-				<div className='bottomRight w-4/12'>
-					<i
-						className='fa fa-chevron-circle-up fa-3x icon footerArrow'
-						aria-hidden='true'
-						onClick={() => {
-							window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-						}}></i>
+				<div
+					className='p-2 rounded-full bg-primary cursor-pointer'
+					onClick={() => {
+						window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+					}}>
+					<svg
+						xmlns='http://www.w3.org/2000/svg'
+						className='h-6 w-6 text-white'
+						fill='none'
+						viewBox='0 0 24 24'
+						stroke='currentColor'
+						strokeWidth={2}>
+						<path
+							strokeLinecap='round'
+							strokeLinejoin='round'
+							d='M5 15l7-7 7 7'
+						/>
+					</svg>
 				</div>
 			</div>
-		</div>
+		</footer>
 	);
 }
