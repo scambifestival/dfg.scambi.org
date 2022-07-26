@@ -12,7 +12,7 @@ const aboutUsDropdown = [
 
 const festivalDropdown = [
 	{ title: 'Labs', href: 'labs' },
-	{ title: 'Pinolis', href: 'minievents' },
+	{ title: 'Pinolis', href: 'pinoli' },
 	// {title: 'Film Contest', href:'filmcontest'}
 ];
 
@@ -49,7 +49,7 @@ export default function Navbar() {
 					<Menu isOpen={isOpen} />
 				</button>
 			</div>
-			{/*<ul
+			<ul
 				role='menubar'
 				aria-label='scambi'
 				className={`${
@@ -65,20 +65,19 @@ export default function Navbar() {
 					btnStyle='text-xl 2xl:text-2xl font-bold uppercase'
 					content={festivalDropdown}
 				/>
-				<Dropdown
+				{/*<Dropdown
 					name='Support'
 					btnStyle='text-xl 2xl:text-2xl font-bold uppercase'
 					content={supportDropdown}
-				/>
+			/>*/}
 				<li role='none'>
-					<Link
-						role='menuitem'
-						to='/faq'
-						className='text-xl 2xl:text-2xl font-bold outline-none hover:text-fuchsia-800 active:text-fuchsia-800 focus:text-fuchsia-800'>
-						FAQ
+					<Link href='/faq'>
+						<a className='text-xl 2xl:text-2xl font-bold outline-none hover:text-fuchsia-800 active:text-fuchsia-800 focus:text-fuchsia-800'>
+							FAQ
+						</a>
 					</Link>
 				</li>
-			</ul>*/}
+			</ul>
 
 			<Button
 				classes={`${

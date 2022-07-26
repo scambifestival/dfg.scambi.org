@@ -39,3 +39,33 @@ export const manifestoCards = [
 			'The iconic and vibrant historic center of Sanremo that welcomes us during the festival, and that we are committed to requalify through social values such as Community and Meeting.',
 	},
 ];
+
+export const data = [
+	{
+		question:
+			'When and where is the next edition of Scambi Festival taking place?',
+		answer:
+			'Scambi Festival 2022 is taking place in the neighborhood of Pigna, Sanremo, Italy, from the 25th to the 28th of August 2022.',
+	},
+	{
+		question:
+			'I already know I cannot be in Sanremo from the 25th to the 28th of August 2022. Will I be able to follow the meetings online?',
+		answer:
+			'Unfortunately, not. Virtual meetings deny the very definition of what we are working on. Physicality is a key factor in the human exchange and mutual growth we are pursuing.',
+	},
+	{
+		question: 'Can’t wait to be there! Are there any accommodation solutions?',
+		answer:
+			'It is too soon to know for sure, but we are working on offering low-cost accommodation solution to allow the participation of everyone, no matter if local or coming from Tatooine.',
+	},
+	{
+		question: 'How much does the ticket cost?',
+		answer:
+			'Nothing. Scambi aims to be accessible to everyone, literally: there are no age limits, no activities inaccessible to people with disabilities, and, of course, there is no fee.',
+	},
+	{
+		question: 'How cool! Can I work with you?',
+		answer:
+			'We are always thrilled to welcome new people in our team! Everything you need to know about this is',
+	},
+];
