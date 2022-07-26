@@ -180,7 +180,8 @@ html {
 	font-family: 'Poppins';
 }
 
-body {
+body,
+#similar-lab {
 	background: linear-gradient(90deg, #e9afff 0%, #ffedc4 98.65%);
 }
 
@@ -246,4 +247,14 @@ footer {
 	left: 0;
 	background-color: rgba(0, 0, 0, 0.4);
 	opacity: 0.9;
+}
+
+.slide {
+	opacity: 0;
+	transition-duration: 1s ease;
+}
+
+.slide.active {
+	opacity: 1;
+	transition-duration: 1s;
 }

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Flex from '../../components/flex';
 import LabCard from '../../components/card/lab-card';
 
-export default function Lab() {
+export default function Pinolo() {
 	return (
 		<section className='bg-white'>
 			<div className='w-full'>
