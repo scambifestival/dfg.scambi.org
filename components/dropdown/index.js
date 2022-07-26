@@ -17,16 +17,13 @@ export default function Dropdown({ btnStyle, dropdownStyle, name, content }) {
 
 	return (
 		<div className='relative inline-block' onBlur={clickOutside}>
-			<button
+			<p
 				onClick={handleClick}
 				className={`${btnStyle} ${
 					isOpen ? 'text-fuchsia-800' : ''
-				} inline-flex justify-center px-4 py-2 bg-white outline-none hover:text-fuchsia-800 active:text-fuchsia-800 focus:text-fuchsia-800`}>
+				} cursor-pointer px-4 py-2 bg-white outline-none hover:text-fuchsia-800 active:text-fuchsia-800 focus:text-fuchsia-800`}>
 				{name}
-				<span className='pl-2' aria-hidden='true'>
-					<i className={`fa ${isOpen ? 'fa-chevron-up' : 'fa-chevron-down'}`} />
-				</span>
-			</button>
+			</p>
 			<ul
 				ref={menu}
 				className={`${dropdownStyle} ${
@@ -39,10 +36,10 @@ export default function Dropdown({ btnStyle, dropdownStyle, name, content }) {
 				aria-labelledby='menu-button'>
 				{content.map((child, index) => (
 					<li key={index} role='menuitem'>
-						<Link
-							href={child.href}
-							className='text-lg font-bold block px-4 py-2 uppercase outline-none hover:text-fuchsia-800 active:text-fuchsia-800 focus:text-fuchsia-800'>
-							<a>{child.title}</a>
+						<Link href={child.href}>
+							<a className='text-lg font-bold block px-4 py-2 uppercase outline-none hover:text-fuchsia-800 active:text-fuchsia-800 focus:text-fuchsia-800'>
+								{child.title}
+							</a>
 						</Link>
 					</li>
 				))}
