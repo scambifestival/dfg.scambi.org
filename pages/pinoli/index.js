@@ -34,7 +34,7 @@ export default function Pinoli() {
 					festival.
 				</p>
 				<div className='mt-10'>
-					<Carousel content={pinoli} />
+					<Carousel slides={pinoli} />
 				</div>
 			</div>
 
