@@ -1,15 +1,15 @@
-import Card from '.';
+import Card from '..';
 import Link from 'next/link';
-import { ArrowRight } from '../icons/arrow';
+import { ArrowRight } from '../../icons/arrow';
 
-export default function LabCard({ imgSrc, index, title, description }) {
+export default function LabCard({ imgSrc, title, description }) {
 	return (
 		<Card key={index} classes='bg-white'>
 			<div className='flex p-5 items-center'>
 				<div className='text-left'>
 					<h1 className='text-lg font-semibold mb-5'>{title}</h1>
 					<p className='mb-10 w-[400px]'>{description}</p>
-					<Link href='/labs/[id]' as={`/labs/${index}`}>
+					<Link href='/labs/[id]' as={`/labs/${title}`}>
 						<a className='text-primary flex items-center space-x-2'>
 							Read more
 							<ArrowRight />

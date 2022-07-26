@@ -1,6 +1,6 @@
 import { gallery } from '../../assets/gallery';
 import Flex from '../../components/flex';
-import LabCard from '../../components/card/lab-card';
+//import LabCard from '../../components/card/lab-card';
 
 import Image from 'next/image';
 import Carousel from '../../components/carousel';
@@ -80,19 +80,6 @@ export default function Labs() {
 				<div>
 					<Carousel slides={gallery} />
 				</div>
-				{/*<div className='lg:hidden' style={{ margin: '0 auto' }}>
-					<Carousel autoPlay='false'>
-						{[...Array(10).keys()].map((item, i) => (
-							<img
-								draggable='false'
-								src={require(`../../assets/lab/gallery/rec${item + 1}.png`)}
-								key={i}
-								className='w-full h-full mx-0 my-auto'
-								alt=''
-							/>
-						))}
-					</Carousel>
-            </div>*/}
 			</div>
 			<Flex classes='mx-auto'>
 				<h1>More Info Coming Soon!</h1>
@@ -110,7 +97,6 @@ export default function Labs() {
 						return (
 							<LabCard
 								key={index}
-								index={index}
 								title={el.title}
 								description={el.description}
 							/>
