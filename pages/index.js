@@ -1,9 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-//import { readFile } from 'fs';
-//import path from 'path';
-
 import Flex from '../components/flex';
 import Card from '../components/card';
 import Button from '../components/button';
@@ -11,22 +8,14 @@ import Subscribe from '../components/subscribe';
 import Testimonials from '../components/testimonials';
 import Map from '../components/map';
 import { ArrowRight } from '../components/icons/arrow';
+import Carousel from '../components/carousel';
+
+import { highlights } from '../assets/highlights';
 
 /* A different way to import image
 import TableTalk from '../public/illustrations/table-talk.png';
 import Program from '../public/illustrations/program.png'; */
-import Sponsors from '../public/illustrations/sponsors.png';
-import {
-	rec1,
-	rec2,
-	rec3,
-	rec4,
-	rec5,
-	rec6,
-	rec7,
-	rec8,
-	rec9,
-} from '../assets/highlights/index';
+//import Sponsors from '../public/illustrations/sponsors.png';
 
 import { eventCards, manifestoCards } from '../assets/data';
 
@@ -114,47 +103,36 @@ export default function Home() {
 						<h4>{event.title}</h4>
 						<p className='text-left'>{event.description}</p>
 						<div className='text-left text-purple-650'>
-							<a href={`/${event.link}`}>
-								Read more <ArrowRight />
-							</a>
+							<Link href={`/${event.link}`}>
+								<a className='flex items-center space-x-3 text-primary'>
+									<p>Read more</p>
+									<ArrowRight />
+								</a>
+							</Link>
 						</div>
 					</Card>
 				))}
 			</div>
 
-			<div className='mt-20 lg:mx-10'>
+			<div className='mt-28 lg:px-16 text-center'>
+				<h2 className='mb-10'>Scambi 2021 Highlights</h2>
+				<Carousel slides={highlights} />
+			</div>
+
+			{/*<div className='mt-20 lg:mx-10'>
 				<h1>Scambi 2021 Highlights</h1>
+				<div>
+					<Image src={rec1} className='rounded-2xl shadow-md' alt='' />
+					<Image src={rec2} className='rounded-2xl shadow-md' alt='' />
+				</div>
 				<div className='mt-10 flex justify-center'>
 					<div className='flex flex-col space-y-5 mr-5'>
-						<div className='flex space-x-5'>
-							<Image
-								src={rec1}
-								className='rounded-2xl shadow-md w-[229px] h-[245px]'
-								alt=''
-							/>
-							<Image
-								src={rec2}
-								className='rounded-2xl shadow-md w-[222px] h-[247px]'
-								alt=''
-							/>
-						</div>
-						<Image
-							src={rec3}
-							className='rounded-2xl shadow-md w-[480px] h-[251px]'
-							alt=''
-						/>
+						<div className='flex space-x-5 w-full'></div>
+						<Image src={rec3} className='rounded-2xl shadow-md' alt='' />
 					</div>
 					<div className='space-y-5'>
-						<Image
-							src={rec4}
-							className='rounded-2xl shadow-md w-[220px] h-[145px]'
-							alt=''
-						/>
-						<Image
-							src={rec5}
-							className='rounded-2xl shadow-md w-[220px] h-[353px]'
-							alt=''
-						/>
+						<Image src={rec4} className='rounded-2xl shadow-md' alt='' />
+						<Image src={rec5} className='rounded-2xl shadow-md' alt='' />
 					</div>
 					<div className='space-y-5 ml-5'>
 						<Image
@@ -181,7 +159,7 @@ export default function Home() {
 						/>
 					</div>
 				</div>
-			</div>
+				</div>*/}
 
 			<div className='mt-6 lg:mt-10 xl:mt-32'>
 				<h2 className='px-10 leading-tight'>
@@ -211,7 +189,7 @@ export default function Home() {
 					<Button classes='btn-primary'>Volunteer with us</Button>
 				</div>
 				<Image
-					src={rec5}
+					src={highlights[4]}
 					alt=''
 					width={500}
 					height={319}

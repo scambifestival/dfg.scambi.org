@@ -7,8 +7,9 @@ import rec6 from './rec6.png';
 import rec7 from './rec7.png';
 import rec8 from './rec8.png';
 import rec9 from './rec9.png';
+import rec10 from './rec10.png';
 
-export const highlights = [
+export const gallery = [
 	rec1,
 	rec2,
 	rec3,
@@ -18,4 +19,5 @@ export const highlights = [
 	rec7,
 	rec8,
 	rec9,
+	rec10,
 ];
