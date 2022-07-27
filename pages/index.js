@@ -22,24 +22,26 @@ import { eventCards, manifestoCards } from '../assets/data';
 export default function Home() {
 	return (
 		<section>
-			<div className='w-10/12 mx-auto mt-48 mb-10 text-left flex flex-col justify-between xl:items-center  xl:flex-row'>
-				<div>
-					<h1 className='leading-none'>Scambi Festival</h1>
-					<h3>The Festival of Paneuretic Workshops, free for all to attend</h3>
+			<header className='space-y-7'>
+				<div className='w-full flex flex-col justify-between mt-10 text-center sm:w-10/12 sm:mx-auto sm:my-10 sm:text-left xl:flex-row xl:items-end'>
+					<div className='my-5 space-y-5 md:space-y-2 md:my-3 xl:my-0'>
+						<h1 className='leading-none font-medium'>Scambi Festival</h1>
+						<h3 className='leading-tight font-medium'>The Festival of Paneuretic Workshops, free for all to attend</h3>
+					</div>
+					<p className='font-medium'>
+						<span className='text-2xl'>August 25 - 28, 2022</span> <br />
+						<span className='text-lg'>La Pigna, Sanremo, Italy</span>
+					</p>
 				</div>
-				<p className='font-semibold'>
-					<span className='text-2xl'>August 25 - 28, 2022</span> <br />
-					<span className='text-lg'>La Pigna, Sanremo, Italy</span>
-				</p>
-			</div>
-			<div className='relative pb-[50%] lg:pb-[40%] xl:pb-[30%]'>
-				<iframe
-					className='absolute top-0 left-0 w-full h-full'
-					src='https://player.vimeo.com/video/658183199'
-					title='Scambi Festival 2021 Rewind'
-					allow="autoplay; fullscreen"					
-				/>
-			</div>
+				<div className='relative pb-[50%] lg:pb-[40%] xl:pb-[30%]'>
+					<iframe
+						className='absolute top-0 left-0 w-full h-full'
+						src='https://player.vimeo.com/video/658183199'
+						title='Scambi Festival 2021 Rewind'
+						allow="autoplay; fullscreen"
+					/>
+				</div>
+			</header>
 			<Flex classes='mt-16 justify-between mx-auto'>
 				<div className=''>
 					<h2 className='leading-tight lg:leading-normal mx-auto'>
@@ -219,9 +221,8 @@ export default function Home() {
 				<div className='flex flex-col justify-center mx-16 space-y-6 lg:space-x-5 lg:space-y-0 lg:flex-row xl:space-x-10 2xl:mx-32'>
 					{manifestoCards.map((card, index) => (
 						<Card
-							classes={`p-5 w-full h-fit lg:w-1/4 xl:w-1/5 ${
-								index % 2 === 0 ? 'yellow-pink-gradient' : 'bg-white'
-							}`}
+							classes={`p-5 w-full h-fit lg:w-1/4 xl:w-1/5 ${index % 2 === 0 ? 'yellow-pink-gradient' : 'bg-white'
+								}`}
 							key={`manifesto-${index}`}>
 							<h3 className='leading-loose'>{card.title}</h3>
 							<p className='leading-relaxed'>{card.description}</p>
