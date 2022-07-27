@@ -1,8 +1,8 @@
 import Button from '../../components/button';
-import MemberCard from '../../components/card/teams-card';
+import { MemberCard } from '../../components/card/teams-card';
 import {
 	getAllTeams,
-	getAMember,
+	getFullName,
 	getATeam,
 	getTeamMembers,
 } from '../../lib/teams';
@@ -10,23 +10,26 @@ import { i18n } from '../../lib/i18n';
 
 import ReactMarkdown from 'react-markdown';
 import matter from 'gray-matter';
+import Flex from '../../components/flex';
 
 export default function Team({ frontmatter, team, members }) {
 	return (
 		<section className='mt-40'>
-			<div>
-				<h2>{frontmatter.name}</h2>
-				{/*eslint-disable-next-line react/no-children-prop*/}
-				<ReactMarkdown children={team} />
-				<Button classes='btn-primary'>Join the team</Button>
-			</div>
-			<div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
-				{members.map(({ frontmatter, content }) => (
+			<Flex classes='mx-auto mb-20'>
+				<div>
+					<h2>{frontmatter.name}</h2>
+					{/*eslint-disable-next-line react/no-children-prop*/}
+					<ReactMarkdown children={team} />
+					<Button classes='btn-primary mt-5'>Join the team</Button>
+				</div>
+			</Flex>
+			<div className='grid grid-cols-1 lg:grid-cols-3 gap-5 lg:px-16 mb-20'>
+				{members.map((member) => (
 					<MemberCard
-						key={frontmatter.name}
-						name={frontmatter.name}
-						role={frontmatter.role}
-						desc={content}
+						key={member.id}
+						name={getFullName(member['Nome'], member['Cognome'])}
+						role={member['Ruolo'].value}
+						desc='To be added'
 					/>
 				))}
 			</div>
@@ -46,16 +49,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params: id, locale }) {
 	const team = getATeam(id.id, locale);
 	const { data, content } = matter(team);
-
-	const membersFile = getTeamMembers(id.id);
-	const members = membersFile.map((member) => {
-		const readFile = getAMember(id, member, locale);
-		const { data, content } = matter(readFile);
-		return {
-			frontmatter: data,
-			content,
-		};
-	});
+	const members = await getTeamMembers(id.id);
 
 	return {
 		props: {

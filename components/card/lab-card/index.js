@@ -4,7 +4,7 @@ import { ArrowRight } from '../../icons/arrow';
 
 export default function LabCard({ imgSrc, title, description }) {
 	return (
-		<Card key={index} classes='bg-white'>
+		<Card classes='bg-white'>
 			<div className='flex p-5 items-center'>
 				<div className='text-left'>
 					<h1 className='text-lg font-semibold mb-5'>{title}</h1>

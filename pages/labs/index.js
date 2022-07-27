@@ -5,29 +5,6 @@ import Flex from '../../components/flex';
 import Image from 'next/image';
 import Carousel from '../../components/carousel';
 
-const dummyData = [
-	{
-		title: 'Lorem Ipsum',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ',
-	},
-	{
-		title: 'Lorem Ipsum',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ',
-	},
-	{
-		title: 'Lorem Ipsum',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ',
-	},
-	{
-		title: 'Lorem Ipsum',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ',
-	},
-];
-
 export default function Labs() {
 	return (
 		<section className='mt-48'>
