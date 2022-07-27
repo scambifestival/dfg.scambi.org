@@ -46,11 +46,10 @@ export default function Teams({ teams }) {
 	);
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
 	const files = getAllTeams();
 	const teams = files.map((team) => {
-		//const readFile = fs.readFileSync(`teams/${team}/${team}.md`, 'utf-8');
-		const readFile = getATeam(team);
+		const readFile = getATeam(team, locale);
 		const { data, content } = matter(readFile);
 		return {
 			team,
