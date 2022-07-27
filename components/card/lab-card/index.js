@@ -2,12 +2,12 @@ import Card from '..';
 import Link from 'next/link';
 import { ArrowRight } from '../../icons/arrow';
 
-export default function LabCard({ id, imgSrc, title, description, lang }) {
+export default function LabCard({ imgSrc, id, title, description, lang }) {
 	return (
 		<Card classes='bg-white'>
 			<div className='flex p-5 items-center'>
 				<div className='text-left'>
-					<h1 className='text-lg font-semibold mb-5'>{title}</h1>
+					<h4 className='font-semibold mb-5'>{title}</h4>
 					<p className='w-[400px]'>{description}</p>
 					<div className='flex space-x-5 my-5'>
 						{lang.map(({ id, value }) => (
@@ -16,7 +16,7 @@ export default function LabCard({ id, imgSrc, title, description, lang }) {
 							</p>
 						))}
 					</div>
-					<Link href='/labs/[...id]' as={`/labs/${id}/${title}`}>
+					<Link href={`/labs/${id}`}>
 						<a className='text-primary flex items-center space-x-2'>
 							Read more
 							<ArrowRight />
