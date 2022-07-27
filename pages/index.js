@@ -32,13 +32,14 @@ export default function Home() {
 					<span className='text-lg'>La Pigna, Sanremo, Italy</span>
 				</p>
 			</div>
-			{/*<div className='min-h-[20rem] mx-5 flex justify-center md:min-h-[32rem] md:mx-10 md:mt-10 xl:mt-16'>
-				<ReactPlayer
-					width='100%'
-					height='auto'
-					url='https://vimeo.com/658183199'
-        />
-      </div>*/}
+			<div className='relative pb-[50%] lg:pb-[40%] xl:pb-[30%]'>
+				<iframe
+					className='absolute top-0 left-0 w-full h-full'
+					src='https://player.vimeo.com/video/658183199'
+					title='Scambi Festival 2021 Rewind'
+					allow="autoplay; fullscreen"					
+				/>
+			</div>
 			<Flex classes='mt-16 justify-between mx-auto'>
 				<div className=''>
 					<h2 className='leading-tight lg:leading-normal mx-auto'>
