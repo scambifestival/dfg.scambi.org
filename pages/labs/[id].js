@@ -66,11 +66,11 @@ export async function getStaticPaths() {
 	const paths = labs.map((lab) => {
 		return {
 			params: {
-				id: [`${lab.id}`, lab.title],
+				id: `${lab.id}`,
 				locale: 'en',
 			},
 			params: {
-				id: [`${lab.id}`, lab.title],
+				id: `${lab.id}`,
 				locale: 'it',
 			},
 		};
@@ -83,7 +83,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-	const lab = await getALab(params.id[0]);
+	const lab = await getALab(params.id);
 	return {
 		props: {
 			lab,
