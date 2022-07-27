@@ -1,11 +1,11 @@
 import { gallery } from '../../assets/gallery';
 import Flex from '../../components/flex';
-//import LabCard from '../../components/card/lab-card';
+import LabCard from '../../components/card/lab-card';
 
 import Image from 'next/image';
 import Carousel from '../../components/carousel';
 
-export default function Labs({labs}) {
+export default function Labs({ labs }) {
 	return (
 		<section className='mt-48'>
 			<Flex classes='items-center mx-auto'>
