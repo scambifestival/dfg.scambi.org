@@ -1,3 +1,3 @@
-import ArrowRight from './arrow-right';
+import ArrowRight from './right';
 
 export { ArrowRight };
