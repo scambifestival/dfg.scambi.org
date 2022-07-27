@@ -41,7 +41,7 @@ export default function Lab({ lab }) {
 					height={427}
 				/>
 			</Flex>
-			<div id='similar-lab' className='px-2 lg:px-10 py-28 mt-10'>
+			{/*<div id='similar-lab' className='px-2 lg:px-10 py-28 mt-10'>
 				<h3 className='mb-10 text-left'>Similar Labs</h3>
 				<div className='grid grid-cols-1 gap-y-5 lg:grid-cols-2 lg:gap-x-5 xl:gap-x-5'>
 					<LabCard
@@ -55,7 +55,7 @@ export default function Lab({ lab }) {
 					eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 					/>
 				</div>
-			</div>
+					</div>*/}
 		</section>
 	);
 }
