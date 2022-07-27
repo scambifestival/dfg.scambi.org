@@ -6,6 +6,7 @@ import {
 	getATeam,
 	getTeamMembers,
 } from '../../lib/teams';
+import { i18n } from '../../lib/i18n';
 
 import ReactMarkdown from 'react-markdown';
 import matter from 'gray-matter';
@@ -35,24 +36,20 @@ export default function Team({ frontmatter, team, members }) {
 
 export async function getStaticPaths() {
 	const files = getAllTeams();
-	const paths = files.map((team) => ({
-		params: {
-			id: team.replace('.en.md', ''),
-		},
-	}));
+	const paths = i18n(files);
 	return {
 		paths,
 		fallback: false,
 	};
 }
 
-export async function getStaticProps({ params: id }) {
-	const team = getATeam(id);
+export async function getStaticProps({ params: id, locale }) {
+	const team = getATeam(id.id, locale);
 	const { data, content } = matter(team);
 
-	const membersFile = getTeamMembers(id);
+	const membersFile = getTeamMembers(id.id);
 	const members = membersFile.map((member) => {
-		const readFile = getAMember(id, member);
+		const readFile = getAMember(id, member, locale);
 		const { data, content } = matter(readFile);
 		return {
 			frontmatter: data,
