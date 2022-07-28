@@ -1,6 +1,6 @@
 import { gallery } from '../../assets/gallery';
 import Flex from '../../components/flex';
-import LabCard from '../../components/card/lab-card';
+//import LabCard from '../../components/card/lab-card';
 
 import Image from 'next/image';
 import Carousel from '../../components/carousel';
@@ -28,7 +28,7 @@ const dummyData = [
 	},
 ];
 
-export default function Labs() {
+export default function Labs({ labs }) {
 	return (
 		<section className='mt-48'>
 			<Flex classes='items-center mx-auto'>
@@ -80,19 +80,6 @@ export default function Labs() {
 				<div>
 					<Carousel slides={gallery} />
 				</div>
-				{/*<div className='lg:hidden' style={{ margin: '0 auto' }}>
-					<Carousel autoPlay='false'>
-						{[...Array(10).keys()].map((item, i) => (
-							<img
-								draggable='false'
-								src={require(`../../assets/lab/gallery/rec${item + 1}.png`)}
-								key={i}
-								className='w-full h-full mx-0 my-auto'
-								alt=''
-							/>
-						))}
-					</Carousel>
-            </div>*/}
 			</div>
 			<Flex classes='mx-auto'>
 				<h1>More Info Coming Soon!</h1>
@@ -103,21 +90,37 @@ export default function Labs() {
 					height={500}
 				/>
 			</Flex>
-			{/*<div className='mt-20 mx-auto p-2 lg:px-16 lg:pb-28'>
+			<div className='mt-20 mx-auto p-2 lg:px-16 lg:pb-28'>
 				<h2 className='font-semibold mb-10 text-center'>Upcoming Labs</h2>
 				<div className='flex flex-col space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-5 lg:gap-y-10'>
-					{dummyData.map((el, index) => {
+					{labs.map((lab) => {
 						return (
 							<LabCard
 								key={index}
-								index={index}
 								title={el.title}
 								description={el.description}
 							/>
 						);
 					})}
 				</div>
-				</div>*/}
+			</div>
 		</section>
 	);
+}
+
+export async function getStaticProps() {
+	const response = await fetch(
+		'https://api.baserow.io/api/database/rows/table/58806/?user_field_names=true&filter_field_341210_equal=lab',
+		{
+			method: 'GET',
+			headers: { Authorization: 'Token ' + process.env.BASEROW },
+		}
+	);
+	const labs = await response.json();
+
+	return {
+		props: {
+			labs: labs.results,
+		},
+	};
 }
