@@ -60,21 +60,19 @@ export default function Lab({ lab }) {
 	);
 }
 
-export async function getStaticPaths() {
+export async function getStaticPaths({ locales }) {
 	const labs = await getAllLabs();
 
-	const paths = labs.map((lab) => {
-		return {
-			params: {
-				id: `${lab.id}`,
-				locale: 'en',
-			},
-			params: {
-				id: `${lab.id}`,
-				locale: 'it',
-			},
-		};
-	});
+	const paths = labs
+		.map((lab) =>
+			locales.map((locale) => ({
+				params: {
+					id: `${lab.id}`,
+				},
+				locale,
+			}))
+		)
+		.flat();
 
 	return {
 		paths,
