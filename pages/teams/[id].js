@@ -5,6 +5,8 @@ import {
 	getFullName,
 	getATeam,
 	getTeamMembers,
+	getBio,
+	getImgSrc,
 } from '../../lib/teams';
 import { i18n } from '../../lib/i18n';
 
@@ -29,7 +31,8 @@ export default function Team({ frontmatter, team, members }) {
 						key={member.id}
 						name={getFullName(member['Nome'], member['Cognome'])}
 						role={member['Ruolo'].value}
-						desc='To be added'
+						imgSrc={getImgSrc(member['profile_pic'])}
+						desc={getBio(member.bio)}
 					/>
 				))}
 			</div>
