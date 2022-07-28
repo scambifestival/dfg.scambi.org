@@ -32,7 +32,7 @@ export default function Team({ frontmatter, team, members }) {
 						name={getFullName(member['Nome'], member['Cognome'])}
 						role={member['Ruolo'].value}
 						imgSrc={getImgSrc(member['profile_pic'])}
-						desc={getBio(member.bio)}
+						desc={getBio(member)}
 					/>
 				))}
 			</div>
