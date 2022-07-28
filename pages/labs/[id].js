@@ -1,8 +1,21 @@
 import Image from 'next/image';
 import Flex from '../../components/flex';
 import LabCard from '../../components/card/lab-card';
+import { useAppContext } from '../../context';
+import { useEffect } from 'react';
 
 export default function Lab() {
+	const { labId } = useAppContext();
+	const [data, setData] = useState({});
+
+	useEffect(() => {
+		fetch(
+			`https://api.baserow.io/api/database/rows/table/58806/${labId}/?user_field_names=true&filter_field_341210_equal=lab`
+		)
+			.then((res) => res.json())
+			.then((lab) => setData(lab));
+	}, []);
+
 	return (
 		<section className='bg-white'>
 			<div className='w-full'>
@@ -11,30 +24,13 @@ export default function Lab() {
 
 			<Flex classes='pt-[700px] mx-auto text-left justify-between'>
 				<div className='lg:w-1/2'>
-					<h1 className='mb-10'>Lorem Ipsum</h1>
+					<h1 className='mb-10'>{data.title}</h1>
 					<p className='font-semibold mb-5'>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in
 						mollis nunc sed. Et molestie ac feugiat sed lectus.{' '}
 					</p>
-					<p>
-						Libero volutpat sed cras ornare. Nulla facilisi nullam vehicula
-						ipsum a arcu cursus vitae. Magna fringilla urna porttitor rhoncus
-						dolor purus non enim. Porta nibh venenatis cras sed felis eget
-						velit. Felis bibendum ut tristique et. Integer malesuada nunc vel
-						risus commodo. Amet risus nullam eget felis eget nunc. Eget sit amet
-						tellus cras. Proin libero nunc consequat interdum varius sit amet
-						mattis vulputate. Sed tempus urna et pharetra pharetra massa. Eu mi
-						bibendum neque egestas congue quisque egestas diam in. Pharetra sit
-						amet aliquam id diam maecenas ultricies mi. Egestas erat imperdiet
-						sed euismod nisi porta lorem mollis aliquam. Aenean euismod
-						elementum nisi quis eleifend quam adipiscing vitae proin. Eu
-						tincidunt tortor aliquam nulla facilisi. Vitae purus faucibus ornare
-						suspendisse sed nisi lacus sed. Eu turpis egestas pretium aenean
-						pharetra magna. Blandit aliquam etiam erat velit scelerisque in
-						dictum non. Proin fermentum leo vel orci porta non. Massa vitae
-						tortor condimentum lacinia quis vel eros donec.
-					</p>
+					<p>{data.description}</p>
 				</div>
 
 				<Image
@@ -47,11 +43,12 @@ export default function Lab() {
 			<Flex classes='mt-10 mx-auto justify-between bg-white'>
 				<div className='text-left lg:w-1/2'>
 					<h2 className=''>Meet the Lab Host</h2>
-					<p className='font-semibold mt-3 mb-5'>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in
-						mollis nunc sed. Et molestie ac feugiat sed lectus.{' '}
-					</p>
+					{data.host.map((el, index) => (
+						<p key={index} className='font-semibold mt-3 mb-5'>
+							{el}
+						</p>
+					))}
+
 					<p>
 						Libero volutpat sed cras ornare. Nulla facilisi nullam vehicula
 						ipsum a arcu cursus vitae. Magna fringilla urna porttitor rhoncus
@@ -86,4 +83,34 @@ export default function Lab() {
 			</div>
 		</section>
 	);
+}
+
+export async function getStaticPaths() {
+	const response = await fetch(
+		'https://api.baserow.io/api/database/rows/table/58806/?user_field_names=true&filter_field_341210_equal=lab',
+		{
+			method: 'GET',
+			headers: { Authorization: 'Token ' + process.env.BASEROW },
+		}
+	);
+	const data = await response.json();
+	const labs = data.results;
+
+	const paths = labs.map((lab) => {
+		return {
+			params: {
+				id: lab.title,
+				locale: 'en',
+			},
+			params: {
+				id: lab.title,
+				locale: 'it',
+			},
+		};
+	});
+
+	return {
+		paths,
+		fallback: false,
+	};
 }
