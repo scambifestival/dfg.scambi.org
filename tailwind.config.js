@@ -16,7 +16,7 @@ module.exports = {
 		},
 		screens: {
 			GalaxyFold: "280px",
-			iPhones: "414px",
+			iPhones: "375px",
 			SurfaceDuo: "540px",
 			tablet: "639px",
 			sm: "640px",
