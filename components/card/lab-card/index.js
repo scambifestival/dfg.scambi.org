@@ -2,14 +2,21 @@ import Card from '..';
 import Link from 'next/link';
 import { ArrowRight } from '../../icons/arrow';
 
-export default function LabCard({ imgSrc, title, description }) {
+export default function LabCard({ imgSrc, id, title, description, lang }) {
 	return (
 		<Card classes='bg-white'>
 			<div className='flex p-5 items-center'>
 				<div className='text-left'>
-					<h1 className='text-lg font-semibold mb-5'>{title}</h1>
-					<p className='mb-10 w-[400px]'>{description}</p>
-					<Link href='/labs/[id]' as={`/labs/${title}`}>
+					<h4 className='font-semibold mb-5'>{title}</h4>
+					<p className='w-[400px]'>{description}</p>
+					<div className='flex space-x-5 my-5'>
+						{lang.map(({ id, value }) => (
+							<p key={id} className='rounded-full p-2 bg-primary-yellow'>
+								{value}
+							</p>
+						))}
+					</div>
+					<Link href={`/labs/${id}`}>
 						<a className='text-primary flex items-center space-x-2'>
 							Read more
 							<ArrowRight />
@@ -29,7 +36,11 @@ export default function LabCard({ imgSrc, title, description }) {
 							width='282'
 							height='258'>
 							<image
-								href='https://picsum.photos/282/258'
+								href={`${
+									imgSrc !== undefined
+										? imgSrc
+										: 'https://picsum.photos/282/258'
+								}`}
 								x='0'
 								y='0'
 								width='282'
