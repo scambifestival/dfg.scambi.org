@@ -1,34 +1,16 @@
 import { gallery } from '../../assets/gallery';
 import Flex from '../../components/flex';
-//import LabCard from '../../components/card/lab-card';
+import LabCard from '../../components/card/lab-card';
 
 import Image from 'next/image';
 import Carousel from '../../components/carousel';
-
-const dummyData = [
-	{
-		title: 'Lorem Ipsum',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ',
-	},
-	{
-		title: 'Lorem Ipsum',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ',
-	},
-	{
-		title: 'Lorem Ipsum',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ',
-	},
-	{
-		title: 'Lorem Ipsum',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ',
-	},
-];
+import { getAllLabs, getDescription } from '../../lib/labs';
+import { useRouter } from 'next/router';
 
 export default function Labs({ labs }) {
+	const router = useRouter();
+	const locale = router.locale;
+
 	return (
 		<section className='mt-48'>
 			<Flex classes='items-center mx-auto'>
@@ -81,7 +63,7 @@ export default function Labs({ labs }) {
 					<Carousel slides={gallery} />
 				</div>
 			</div>
-			<Flex classes='mx-auto'>
+			{/*<Flex classes='mx-auto'>
 				<h1>More Info Coming Soon!</h1>
 				<Image
 					src='/illustrations/rocket.png'
@@ -89,16 +71,18 @@ export default function Labs({ labs }) {
 					width={382}
 					height={500}
 				/>
-			</Flex>
+	</Flex>*/}
 			<div className='mt-20 mx-auto p-2 lg:px-16 lg:pb-28'>
 				<h2 className='font-semibold mb-10 text-center'>Upcoming Labs</h2>
 				<div className='flex flex-col space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-5 lg:gap-y-10'>
 					{labs.map((lab) => {
 						return (
 							<LabCard
-								key={index}
-								title={el.title}
-								description={el.description}
+								key={lab.id}
+								id={lab.id}
+								title={lab.title}
+								description={getDescription(locale, lab)}
+								lang={lab.lang}
 							/>
 						);
 					})}
@@ -109,18 +93,11 @@ export default function Labs({ labs }) {
 }
 
 export async function getStaticProps() {
-	const response = await fetch(
-		'https://api.baserow.io/api/database/rows/table/58806/?user_field_names=true&filter_field_341210_equal=lab',
-		{
-			method: 'GET',
-			headers: { Authorization: 'Token ' + process.env.BASEROW },
-		}
-	);
-	const labs = await response.json();
+	const labs = await getAllLabs();
 
 	return {
 		props: {
-			labs: labs.results,
+			labs: labs,
 		},
 	};
 }
