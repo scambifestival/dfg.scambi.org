@@ -2,9 +2,7 @@ import Button from '../../components/button';
 import Flex from '../../components/flex';
 import Image from 'next/image';
 import { TeamCard } from '../../components/card/teams-card';
-import sample from '../../public/illustrations/pinoli.png';
 import { getAllTeams, getATeam } from '../../lib/teams';
-import fs from 'fs';
 import matter from 'gray-matter';
 
 export default function Teams({ teams }) {

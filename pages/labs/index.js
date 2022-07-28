@@ -1,32 +1,9 @@
 import { gallery } from '../../assets/gallery';
 import Flex from '../../components/flex';
-//import LabCard from '../../components/card/lab-card';
+import LabCard from '../../components/card/lab-card';
 
 import Image from 'next/image';
 import Carousel from '../../components/carousel';
-
-const dummyData = [
-	{
-		title: 'Lorem Ipsum',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ',
-	},
-	{
-		title: 'Lorem Ipsum',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ',
-	},
-	{
-		title: 'Lorem Ipsum',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ',
-	},
-	{
-		title: 'Lorem Ipsum',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ',
-	},
-];
 
 export default function Labs({ labs }) {
 	return (
