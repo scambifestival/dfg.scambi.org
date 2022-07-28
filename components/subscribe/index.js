@@ -15,6 +15,11 @@ export default function Subscribe() {
 		setEmail(e.target.value);
 	};
 
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		subscribe(email);
+	};
+
 	return (
 		<div className='flex rounded-[32px] bg-primary text-white mx-16 drop-shadow-2xl'>
 			<Image
@@ -39,7 +44,7 @@ export default function Subscribe() {
 						/>
 						<Button
 							classes='bg-primary-yellow peer-invalid:disabled text-black'
-							onSubmit={subscribe(email)}>
+							onSubmit={handleSubmit}>
 							{t('button')}
 						</Button>
 					</form>
