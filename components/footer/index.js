@@ -21,12 +21,14 @@ export default function Footer() {
 							<b>Ready to join us?</b>
 						</p>
 					</div>
-					<Button classes="btn-primary">ATTEND</Button>
+					<Button classes="btn-primary SurfaceDuo:mr-0 GalaxyFold:mr-2">
+						ATTEND
+					</Button>
 				</div>
 			</div>
-			<div className="w-full h-fit flex flex-row md:flex-row sm:flex-col lg:flex-row md:space-x-4 md:space-y-0 items-center tablet:flex-col iPhones:flex-col GalaxyFold:flex-col SurfaceDuo:flex-col">
+			<div className="w-full h-fit flex flex-row md:flex-row sm:flex-col lg:flex-row md:space-x-4 md:space-y-0 items-center iPhoneSE:flex-col GalaxyFold:flex-col SurfaceDuo:flex-col">
 				<div className="md:w-1/3 lg:w-1/4 sm:w-1/3 md:h-1/2 sm:h-1/2 xs:w-1/2 lg:ml-20 md:ml-12 sm:ml-12">
-					<div className="relative -mt-10 lg:-mt-12 md:-mt-20 sm:-mt-10 SurfaceDuo:mt-2 iPhones:mt-2 GalaxyFold:mt-2">
+					<div className="relative -mt-10 lg:-mt-12 md:-mt-20 sm:-mt-10 SurfaceDuo:mt-2 iPhoneSE:mt-2 GalaxyFold:mt-2">
 						<div className="blob-wrap">
 							<div className="blobFooter drop-shadow-lg lg:ml-4">
 								<div className="flex flex-col justify-center items-center relative">
@@ -34,7 +36,7 @@ export default function Footer() {
 								</div>
 							</div>
 						</div>
-						<div className="flex flex-col text-center bottom-28 absolute justify-center content-center items-center w-full px-4 GalaxyFold:top-40 iPhones:bottom-28 contentBlob">
+						<div className="flex flex-col text-center bottom-28 absolute justify-center content-center items-center w-full px-4 GalaxyFold:top-40 iPhoneSE:bottom-28 contentBlob">
 							<p className="pb-5">
 								<b className="items-center">Subscribe to our Newsletter!</b>
 							</p>
@@ -51,9 +53,9 @@ export default function Footer() {
 						</div>
 					</div>
 				</div>
-				<div className="flex flex-col GalaxyFold:mb-0 md:pl-20 SurfaceDuo:ml-24 iPhones:ml-24 lg:ml-96">
+				<div className="flex flex-col GalaxyFold:mb-0 md:pl-20 SurfaceDuo:ml-24  lg:ml-96 GalaxyFold:ml-4">
 					<div className="flex flex-row">
-						<div className="sm:columns-3 GalaxyFold:columns-2 sm:gap-x-20 md:gap-x-10 lg:gap-x-24 xl:gap-x-44 w-full md:mt-20 sm:mt-12 iPhones:mt-0 GalaxyFold:mt-0">
+						<div className="sm:columns-3 GalaxyFold:columns-2 sm:gap-x-20 md:gap-x-9 lg:gap-x-24 xl:gap-x-44 w-full md:mt-20 SurfaceDuo:ml-0 sm:mt-12 iPhoneSE:mt-0 GalaxyFold:mt-0 GalaxyFold:ml-6 iPhoneSE:ml-6">
 							<ul>
 								<li className="">
 									<Link href="/about">
