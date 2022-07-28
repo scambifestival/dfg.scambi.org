@@ -13,8 +13,11 @@ import { i18n } from '../../lib/i18n';
 import ReactMarkdown from 'react-markdown';
 import matter from 'gray-matter';
 import Flex from '../../components/flex';
+import { useRouter } from 'next/router';
 
 export default function Team({ frontmatter, team, members }) {
+	const router = useRouter();
+	const locale = router.locale;
 	return (
 		<section className='mt-40'>
 			<Flex classes='mx-auto mb-20'>
@@ -30,9 +33,9 @@ export default function Team({ frontmatter, team, members }) {
 					<MemberCard
 						key={member.id}
 						name={getFullName(member['Nome'], member['Cognome'])}
-						role={member['Ruolo'].value}
+						role={member['role'].value}
 						imgSrc={getImgSrc(member['profile_pic'])}
-						desc={getBio(member)}
+						desc={getBio(member, locale)}
 					/>
 				))}
 			</div>
@@ -40,9 +43,9 @@ export default function Team({ frontmatter, team, members }) {
 	);
 }
 
-export async function getStaticPaths() {
+export async function getStaticPaths({ locales }) {
 	const files = getAllTeams();
-	const paths = i18n(files);
+	const paths = i18n(files, locales);
 	return {
 		paths,
 		fallback: false,
@@ -53,6 +56,7 @@ export async function getStaticProps({ params: id, locale }) {
 	const team = getATeam(id.id, locale);
 	const { data, content } = matter(team);
 	const members = await getTeamMembers(id.id);
+	console.log(members);
 
 	return {
 		props: {
