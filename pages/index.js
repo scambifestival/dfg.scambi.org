@@ -100,16 +100,16 @@ export default function Home() {
 				</div>
 			</Flex>
 
-			<div className='flex flex-col items-center justify-center space-y-7 mt-16 lg:flex-row lg:space-x-14 lg:space-y-0'>
+			<div className='flex flex-col items-center justify-center space-y-7 mt-16 lg:flex-row lg:items-start lg:space-x-14 lg:space-y-0'>
 				{eventCards.map((event, index) => (
 					<Card
 						key={index}
-						classes='w-4/5 h-fit px-10 py-5 space-y-4 bg-white lg:w-1/4'>
-						<h4>{event.title}</h4>
-						<p className='text-left'>{event.description}</p>
-						<div className='text-left text-purple-650'>
+						classes='w-5/6 h-fit px-7 py-5 space-y-4 text-left bg-white lg:w-1/4'>
+						<h4 class='font-["Poppins"] font-medium'>{event.title}</h4>
+						<p>{event.description}</p>
+						<div>
 							<Link href={`/${event.link}`}>
-								<a className='flex items-center space-x-3 text-primary'>
+								<a className='flex items-center space-x-2 text-primary'>
 									<p>Read more</p>
 									<ArrowRight />
 								</a>
