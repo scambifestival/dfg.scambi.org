@@ -1,31 +1,34 @@
-import Image from "next/image";
-import SubscribeImg from "../../public/illustrations/subscribe.png";
-import Button from "../button";
+import Image from 'next/image';
+import { useTranslation } from 'next-i18next';
+
+import SubscribeImg from '../../public/illustrations/subscribe.png';
+import Button from '../button';
 
 export default function Subscribe() {
+	const { t } = useTranslation('subscribe');
 	return (
-		<div className="flex rounded-[32px] bg-primary text-white mx-16 drop-shadow-2xl md:flex-row GalaxyFold:flex-col">
+		<div className='flex rounded-[32px] bg-primary text-white mx-16 drop-shadow-2xl md:flex-row GalaxyFold:flex-col'>
 			<Image
 				src={SubscribeImg}
-				alt="Subscribe illustration"
-				className="hidden lg:block lg:rounded-l-[32px] GalaxyFold:rounded-t-[32px]"
+				alt='Subscribe illustration'
+				className='hidden lg:block lg:rounded-l-[32px] GalaxyFold:rounded-t-[32px]'
 			/>
-			<div className="flex flex-col items-center justify-center lg:pr-10 p-6">
-				<div className="lg:ml-10">
-					<p className="uppercase">exchanges of letters, our newsletter</p>
+			<div className='flex flex-col items-center justify-center lg:pr-10 p-6'>
+				<div className='lg:ml-10'>
+					<p className='uppercase'>exchanges of letters, our newsletter</p>
 					<h2>Scambi Epistolari</h2>
-					<p className="mb-5">
+					<p className='mb-5'>
 						Join the conversation - sign up now to receive updates on Scambi
 						activities.
 					</p>
 					<form>
 						<input
-							type="email"
-							placeholder="Enter your email"
-							className="rounded-md lg:w-[300px] lg:mr-5 peer GalaxyFold:mb-3"
+							type='email'
+							placeholder={t('input')}
+							className='rounded-md lg:w-[300px] lg:mr-5 peer GalaxyFold:mb-3'
 						/>
-						<Button classes="bg-primary-yellow peer-invalid:disabled text-black">
-							Subscribe
+						<Button classes='bg-primary-yellow peer-invalid:disabled text-black'>
+							{t('button')}
 						</Button>
 					</form>
 				</div>
