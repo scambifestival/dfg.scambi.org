@@ -1,15 +1,13 @@
 /** @type {import('next').NextConfig} */
+
+const i18n = require('./next-i18next.config');
+
 const nextConfig = {
 	reactStrictMode: true,
 	swcMinify: true,
+	i18n,
 	images: {
 		domains: ['picsum.photos', 'images.tommi.space'],
-	},
-	i18n: {
-		// providing the locales supported by your application
-		locales: ['en', 'it'],
-		//  default locale used when the non-locale paths are visited
-		defaultLocale: 'en',
 	},
 	webpack: (config, { isServer }) => {
 		if (!isServer) {

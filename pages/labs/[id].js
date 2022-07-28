@@ -1,20 +1,9 @@
 import Image from 'next/image';
 import Flex from '../../components/flex';
 import LabCard from '../../components/card/lab-card';
-import { useAppContext } from '../../context';
-import { useEffect } from 'react';
 
 export default function Lab() {
-	const { labId } = useAppContext();
 	const [data, setData] = useState({});
-
-	useEffect(() => {
-		fetch(
-			`https://api.baserow.io/api/database/rows/table/58806/${labId}/?user_field_names=true&filter_field_341210_equal=lab`
-		)
-			.then((res) => res.json())
-			.then((lab) => setData(lab));
-	}, []);
 
 	return (
 		<section className='bg-white'>
