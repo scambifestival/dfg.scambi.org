@@ -42,12 +42,12 @@ export default function Home() {
 					/>
 				</div>
 			</header>
-			<Flex classes='mt-16 justify-between mx-auto'>
-				<div className=''>
-					<h2 className='leading-tight lg:leading-normal mx-auto'>
+			<Flex classes='mt-16 mb-10 mx-7 py-0 justify-between text-center sm:mx-16 md:mx-auto md:mt-20 md:text-left md:space-x-20 lg:space-x-36 2xl:mb-10 2xl:w-9/12'>
+				<div className='space-y-3 md:w-full'>
+					<h2 className='leading-tight font-medium'>
 						What are paneuretic workshops?
 					</h2>
-					<p className='mx-auto my-5 w-4/5 md:mx-0'>
+					<p>
 						<span className='font-semibold'>Pan - eur - etic:</span> Neologism
 						deriving from the Greek pan (all), eurisko (discover) and ethos
 						(living), because we wish to combine diverse realities that would
@@ -56,20 +56,22 @@ export default function Home() {
 						ideas.
 					</p>
 				</div>
-				<Image
-					src='/illustrations/table-talk.png'
-					alt=''
-					width={808}
-					height={800}
-				/>
+				<div className='w-3/4 sm:w-1/2 md:w-3/4 lg:w-3/5 xl:w-2/5'>
+					<Image
+						src='/illustrations/table-talk.png'
+						alt='Illustration of 3 people sitting around a table talking'
+						width={808}
+						height={800}
+					/>
+				</div>
 			</Flex>
 
-			<Flex classes='w-full mx-auto justify-between' reverse={true}>
-				<div className='text-left lg:ml-40'>
-					<h2 className='leading-tight lg:leading-normal'>
+			<Flex classes='mt-10 mb-32 mx-7 py-0 justify-between text-center sm:mx-16 md:mx-auto md:mt-20 md:text-left md:space-x-reverse md:space-x-20 lg:space-x-reverse lg:space-x-28 2xl:mt-10 2xl:w-9/12' reverse={true}>
+				<div className='space-y-3 sm:space-y-6 md:w-full'>
+					<h2 className='leading-tight font-medium'>
 						2022 Edition: “Imbalance”
 					</h2>
-					<p className='my-5 w-4/5'>
+					<p>
 						Scambi is the festival of paneuretic workshops, born from the
 						necessity felt by a group of young people to{' '}
 						<span className='font-semibold'>
@@ -79,23 +81,23 @@ export default function Home() {
 						August in the historic center of La Pigna (Sanremo), we chose{' '}
 						<span className='font-semibold'>imbalance</span> as a theme.
 					</p>
-					<p className='mx-auto my-8 w-4/5 md:mx-0'>
+					<p>
 						Not sure where to start? Check out our{' '}
-						<Link href='/'>
-							<a className='font-semibold text-purple-650'>
-								Frequently Asked Questions
-								<i className='fa fa-chevron-right px-3' />
-							</a>
+						<Link href='/faq'>
+							<a className='font-medium text-primary'>
+								Frequently Asked Questions {'>'}							</a>
 						</Link>
 					</p>
 					<Button classes='btn-primary'>View the 2022 Program</Button>
 				</div>
-				<Image
-					src='/illustrations/program.png'
-					alt=''
-					width={918}
-					height={1026}
-				/>
+				<div className='w-1/2 md:w-3/4 lg:w-3/5 xl:w-2/5'>
+					<Image
+						src='/illustrations/program.png'
+						alt=''
+						width={918}
+						height={1026}
+					/>
+				</div>
 			</Flex>
 
 			<div className='flex flex-col items-center justify-center space-y-7 mt-16 lg:flex-row lg:space-x-14 lg:space-y-0'>
