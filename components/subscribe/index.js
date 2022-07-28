@@ -1,8 +1,11 @@
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
+
 import SubscribeImg from "../../public/illustrations/subscribe.png";
 import Button from "../button";
 
 export default function Subscribe() {
+	const { t } = useTranslation("subscribe");
 	return (
 		<div className="flex rounded-[32px] bg-primary text-white mx-16 drop-shadow-2xl md:flex-row GalaxyFold:flex-col">
 			<Image
@@ -21,11 +24,11 @@ export default function Subscribe() {
 					<form>
 						<input
 							type="email"
-							placeholder="Enter your email"
-							className="rounded-md lg:w-[300px] lg:mr-5 peer GalaxyFold:mb-3"
+							placeholder={t("input")}
+							className="rounded-md lg:w-[300px] lg:mr-5 peer"
 						/>
 						<Button classes="bg-primary-yellow peer-invalid:disabled text-black">
-							Subscribe
+							{t("button")}
 						</Button>
 					</form>
 				</div>
