@@ -1,11 +1,20 @@
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
 
+import { subscribe } from '../../lib/communications';
+
 import SubscribeImg from '../../public/illustrations/subscribe.png';
 import Button from '../button';
+import { useState } from 'react';
 
 export default function Subscribe() {
 	const { t } = useTranslation('subscribe');
+	const [email, setEmail] = useState('');
+
+	const handleInput = (e) => {
+		setEmail(e.target.value);
+	};
+
 	return (
 		<div className='flex rounded-[32px] bg-primary text-white mx-16 drop-shadow-2xl'>
 			<Image
@@ -25,9 +34,12 @@ export default function Subscribe() {
 						<input
 							type='email'
 							placeholder={t('input')}
+							onChange={handleInput}
 							className='rounded-md lg:w-[300px] lg:mr-5 peer'
 						/>
-						<Button classes='bg-primary-yellow peer-invalid:disabled text-black'>
+						<Button
+							classes='bg-primary-yellow peer-invalid:disabled text-black'
+							onSubmit={subscribe(email)}>
 							{t('button')}
 						</Button>
 					</form>
