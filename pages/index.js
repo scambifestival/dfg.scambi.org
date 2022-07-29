@@ -120,7 +120,7 @@ export default function Home() {
 			</div>
 
 			<div className='mt-28 lg:px-16 text-center'>
-				<h2 className='mb-10'>Scambi 2021 Highlights</h2>
+				<h2 className='mb-10 font-medium leading-tight'>Scambi 2021 Highlights</h2>
 				<Carousel slides={highlights} />
 			</div>
 
