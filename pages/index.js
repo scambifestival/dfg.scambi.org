@@ -173,13 +173,13 @@ export default function Home() {
 				<Testimonials />
 			</div>
 
-			<Flex classes='mx-auto'>
-				<div className='md:text-left space-y-7 md:w-1/2 lg:w-3/5 mr-10'>
-					<h2 className='leading-tight lg:leading-normal'>Scambi Family</h2>
-					<p className='mx-auto md:mx-0'>
+			<Flex classes='mx-auto my-10 space-y-4 text-center md:flex-col lg:flex-row lg:space-x-10 lg:text-left'>
+				<div className='mx-4 space-y-7 lg:w-3/5'>
+					<h2 className='leading-tight lg:leading-normal font-medium'>Scambi Family</h2>
+					<p>
 						We are a group of under 25s coming from every corner of Europe.
 					</p>
-					<p className='mx-auto md:mx-0'>
+					<p>
 						Our association was born from our wish to value real and deep ties,
 						horizontality and dialogue, curiosity and welcoming of the
 						different. After lots of videocalls, thousand doubts and just as
@@ -187,19 +187,23 @@ export default function Home() {
 						diversity and passion, enthusiastic in sharing inspiration and in
 						continuously proposing new perspectives.
 					</p>
-					<p className='mx-auto md:mx-0'>
+					<p>
 						We will be waiting for you in Sanremo, to introduce ourselves
 						properly. In the meanwhile, here is an anticipation of who we are.
 					</p>
 					<Button classes='btn-primary'>Volunteer with us</Button>
 				</div>
-				<Image
-					src={highlights[4]}
-					alt=''
-					width={500}
-					height={319}
-					className='rounded-2xl'
-				/>
+				<div className='w-3/4 sm:w-3/5 lg:w-1/2'>
+					<Image
+						src={highlights[4]}
+						alt=''
+						layout='responsive'
+						width={475}
+						objectFit='cover'
+						objectPosition='right'
+						className='rounded-2xl'
+					/>
+				</div>
 			</Flex>
 
 			<div className='flex justify-center text-center px-14 py-10 font-normal bg-white sm:px-20 lg:px-24 xl:px-42 2xl:px-60'>
