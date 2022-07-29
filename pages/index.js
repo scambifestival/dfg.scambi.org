@@ -85,7 +85,8 @@ export default function Home() {
 						Not sure where to start? Check out our{' '}
 						<Link href='/faq'>
 							<a className='font-medium text-primary'>
-								Frequently Asked Questions {'>'}							</a>
+								Frequently Asked Questions {'>'}
+							</a>
 						</Link>
 					</p>
 					<Button classes='btn-primary'>View the 2022 Program</Button>
@@ -191,7 +192,9 @@ export default function Home() {
 						We will be waiting for you in Sanremo, to introduce ourselves
 						properly. In the meanwhile, here is an anticipation of who we are.
 					</p>
-					<Button classes='btn-primary'>Volunteer with us</Button>
+					<Link href='/contact'>
+						<Button classes='btn-primary'>Volunteer with us</Button>
+					</Link>
 				</div>
 				<div className='w-3/4 sm:w-3/5 lg:w-1/2'>
 					<Image
@@ -236,7 +239,7 @@ export default function Home() {
 					))}
 				</div>
 				<div className='flex justify-center'>
-					<Button classes='btn-primary'>Read the Manifesto</Button>
+					<Button classes='btn-primary-light'>Read the Manifesto</Button>
 				</div>
 			</div>
 
@@ -256,7 +259,9 @@ export default function Home() {
 						Sanremo and many other special people.
 					</p>
 					<div className='flex flex-col justify-center items-center space-y-5 sm:flex-row sm:space-x-7 sm:space-y-0 md:justify-start'>
-						<Button classes='btn-primary'>Partner with us</Button>
+						<Link href='/contact'>
+							<Button classes='btn-primary'>Partner with us</Button>
+						</Link>
 						<Button classes='btn-primary-light'>Meet our partners</Button>
 					</div>
 				</div>
