@@ -166,8 +166,8 @@ export default function Home() {
 				</div>
 				</div>*/}
 
-			<div className='mt-6 lg:mt-10 xl:mt-32'>
-				<h2 className='px-10 leading-tight'>
+			<div className='mt-24 my-20 space-y-28'>
+				<h2 className='text-center leading-tight font-medium mx-3 sm:w-4/5 sm:mx-auto'>
 					An experience people love to talk about
 				</h2>
 				<Testimonials />
