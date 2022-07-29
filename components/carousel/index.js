@@ -15,14 +15,20 @@ export default function Carousel({ slides }) {
 	return (
 		<motion.div
 			ref={carousel}
-			className='overflow-hidden cursor-grab bg-white rounded-md pt-10'>
+			className='overflow-hidden cursor-grab bg-white rounded-md px-10 py-10 md:w-full'>
 			<motion.div
 				drag='x'
-				dragConstraints={{ right: width, left: -width }}
-				className='flex items-center justify-center space-x-5 px-10'>
+				dragConstraints={{ right: 0, left: (width + 40) * -1 }}
+				className='flex items-center justify-start space-x-5'>
 				{slides.map((slide, index) => (
-					<div key={index} className='block w-[800px] h-[350px]'>
-						<Image src={slide} alt='' layout='fixed' className='rounded-2xl' />
+					<div key={index} className='block w-[800px] h-fit'>
+						<Image
+							src={slide}
+							alt=''
+							layout='fixed'
+							// objectFit='cover'
+							// objectPosition='center'
+							className='rounded-2xl' />
 					</div>
 				))}
 			</motion.div>
