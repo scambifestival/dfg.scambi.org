@@ -144,7 +144,7 @@ export default function Footer() {
 								<p>
 									<b>Codice Fiscale:</b> 900098410088
 								</p>
-								<p className="flex flex-wrap lg:w-full">
+								<p className="flex flex-wrap lg:w-full GalaxyFold:pr-2">
 									<b>IBAN:</b> IT63E05018014600000016986952
 								</p>
 							</div>
