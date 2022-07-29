@@ -245,27 +245,30 @@ export default function Home() {
 			</div>
 
 			<Flex
-				classes='my-1 px-8 mx-auto space-y-10 md:space-x-reverse xl:gap-x-52'
+				classes='my-1 mx-4 space-y-10 sm:mx-10 md:my-20 lg:mx-auto md:space-x-reverse md:space-x-16 xl:space-x-reverse xl:space-x-40'
 				reverse={true}>
-				<div className='w-4/5 flex flex-col text-center space-y-8 md:text-left'>
-					<h2 className='leading-tight lg:leading-normal'>Our Relations</h2>
-					<p className='mx-auto md:mx-0 w-full 2xl:w-4/5'>
+				<div className='w-full flex flex-col text-center space-y-8 md:text-left'>
+					<h2 className='leading-tight lg:leading-normal font-medium'>Our Relations</h2>
+					<p>
 						Alone we would not have been able to concretize the magic of Scambi.
 						What makes our festival unique are the relationships and the bonds
 						with local and non-local bodies, the public administration of
 						Sanremo and many other special people.
 					</p>
-					<div className='flex flex-row justify-center md:justify-start space-x-7'>
+					<div className='flex flex-col justify-center items-center space-y-5 sm:flex-row sm:space-x-7 sm:space-y-0 md:justify-start'>
 						<Button classes='btn-primary'>Partner with us</Button>
-						<Button>Meet our partners</Button>
+						<Button classes='btn-primary-light'>Meet our partners</Button>
 					</div>
 				</div>
-				<Image
-					src='/illustrations/sponsors.png'
-					alt=''
-					width={654}
-					height={689}
-				/>
+				<div className='w-3/5 sm:w-1/2'>
+					<Image
+						src='/illustrations/sponsors.png'
+						alt=''
+						layout='responsive'
+						width={654}
+						height={689}
+					/>
+				</div>
 			</Flex>
 
 			<div className='px-20 my-10'>
