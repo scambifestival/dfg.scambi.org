@@ -10,7 +10,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 export default function About() {
 	return (
 		<section className='mt-32'>
-			<Flex classes='mx-auto my-10 GalaxyFold:p-6'>
+			<Flex classes='mx-auto my-10 GalaxyFold:p-6 md:flex-col lg:flex-row'>
 				<div className='xl:w-1/2 md:w-auto w-full'>
 					<h2 className='lg:mt-16 text-left'>About Scambi</h2>
 					<p className='text-left'>
@@ -24,14 +24,14 @@ export default function About() {
 						Join us for our second year in Sanremo Italy on Aug 25 - 28, 2022,
 						where we will explore <b>Disequilibirum.</b>
 					</p>
-					<Button classes='btn-primary'>Attend</Button>
+					<Button classes='btn-primary GalaxyFold:mb-12'>Attend</Button>
 				</div>
 				<Image
 					src='/illustrations/about-header.png'
 					width={705}
 					height={353}
 					alt=''
-					className='xl:w-1/2 md:w-1/2 lg:w-1/2 md:pt-24 lg:pt-56 mt-96 xl-pt-60 2xl:mt-60'
+					className='xl:w-1/2 md:w-1/2 lg:w-1/2 md:pt-24 lg:pt-56 mt-96 xl-pt-60 2xl:mt-60 GalaxyFold:py-30'
 				/>
 			</Flex>
 			<div className='bg-white py-10'>
@@ -353,7 +353,7 @@ export default function About() {
 			</div>
 			<div className='my-20 mx-auto space-y-12'>
 				<h2 className='text-center'>Our Manifesto</h2>
-				<div className='flex flex-col justify-center mx-16 space-y-6 lg:space-x-5 lg:space-y-0 lg:flex-row xl:space-x-10 2xl:mx-32'>
+				<div className='flex flex-col justify-center mx-16 space-y-6 lg:space-x-5 lg:space-y-0 lg:flex-row xl:space-x-10 2xl:mx-32 GalaxyFold:mx-10'>
 					{manifestoCards.map((card, index) => (
 						<Card
 							classes={`p-5 w-full h-fit lg:w-1/4 xl:w-1/5 ${
@@ -369,9 +369,9 @@ export default function About() {
 					<Button classes='btn-primary'>Read the Manifesto</Button>
 				</div>
 			</div>
-			<Flex classes='mx-auto p-6'>
-				<div className='lg:w-1/2 md:w-2/3'>
-					<h2 className='textOurTeam lg:text-6xl md:text-4xl'>Our Team</h2>
+			<Flex classes='mx-auto pb-0'>
+				<div className='lg:w-1/2 md:w-2/3 pl-6 pr-6'>
+					<h2 className='textOurTeam'>Our Team</h2>
 					<p className='aboutOurTeam-smallText mb-6'>
 						We are a group of under 25s coming from every corner of Europe. Our
 						association was born from our wish to value real and deep ties,
@@ -383,7 +383,7 @@ export default function About() {
 						properly.
 					</p>
 				</div>
-				<div className='lg:ml-14 md:ml-14'>
+				<div className='lg:ml-14 md:ml-14 pl-6 pr-6 mt-0'>
 					<Image
 						src='/illustrations/team.png'
 						width={635}
@@ -392,11 +392,12 @@ export default function About() {
 					/>
 				</div>
 			</Flex>
+
 			<Flex
-				classes='mb-20 px-8 mx-auto md:space-x-reverse xl:gap-x-52'
+				classes='px-1 mx-auto my-10 md:space-x-reverse GalaxyFold:p-6 GalaxyFold:mt-0 GalaxyFold:pt-0'
 				reverse={true}>
 				<div className='my-20 mx-auto space-y-12'>
-					<h2 className='text-left'>Our Relations</h2>
+					<h2 className='text-center'>Our Relations</h2>
 					<p className='mx-auto md:mx-0 w-full 2xl:w-4/5 text-left'>
 						Alone we would not have been able to concretize the magic of Scambi.
 						<br />
@@ -405,9 +406,13 @@ export default function About() {
 						with local and non-local bodies, the public administration of
 						Sanremo and many other special people.
 					</p>
-					<div className='flex flex-row justify-center md:justify-start space-x-7 GalaxyFold:flex-col iPhones:flex-row'>
-						<Button classes='btn-primary'>Partner with us</Button>
-						<Button>Meet our partners</Button>
+					<div className='flex flex-row justify-center iPhoneSE:flex-col GalaxyFold:flex-col SurfaceDuo:flex-row grid-flow-row:left-0 GalaxyFold:place-items-center'>
+						<Button classes='btn-primary GalaxyFold:w-50 iPhoneSE:w-full'>
+							Partner with us
+						</Button>
+						<Button classes='ml-2 GalaxyFold:ml-0 GalaxyFold:mt-4 GalaxyFold:w-50 iPhoneSE:w-full SurfaceDuo:mt-0 SurfaceDuo:ml-4'>
+							Meet our partners
+						</Button>
 					</div>
 				</div>
 				<Image
@@ -417,7 +422,10 @@ export default function About() {
 					height={689}
 				/>
 			</Flex>
-			<Subscribe />
+
+			<div className='bg-white flex justify-center py-10'>
+				<Subscribe />
+			</div>
 			<SupportUs />
 		</section>
 	);
