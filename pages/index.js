@@ -271,8 +271,8 @@ export default function Home() {
 				</div>
 			</Flex>
 
-			<div className='px-20 my-10'>
-				<h2 className='text-left py-5'>Explore Scambi Festival</h2>
+			<div className='m-7 sm:m-10 xl:mx-20'>
+				<h2 className='leading-tight font-medium text-center sm:text-left py-5'>Explore Scambi Festival</h2>
 				<Map />
 			</div>
 		</section>
