@@ -223,15 +223,15 @@ export default function Home() {
 			</div>
 
 			<div className='my-20 mx-auto space-y-12'>
-				<h2 className='text-center'>Our Manifesto</h2>
-				<div className='flex flex-col justify-center mx-16 space-y-6 lg:space-x-5 lg:space-y-0 lg:flex-row xl:space-x-10 2xl:mx-32'>
+				<h2 className='leading-tight text-center font-medium'>Our Manifesto</h2>
+				<div className='flex flex-wrap justify-center items-stretch mx-5 space-y-6 sm:mx-16 md:mx-5 md:space-y-0'>
 					{manifestoCards.map((card, index) => (
 						<Card
-							classes={`p-5 w-full h-fit lg:w-1/4 xl:w-1/5 ${index % 2 === 0 ? 'yellow-pink-gradient' : 'bg-white'
+							classes={`p-5 w-full h-fit md:max-w-[40%] md:mr-7 md:mb-24 xl:w-1/5 ${index % 2 === 0 ? 'yellow-pink-gradient' : 'bg-white'
 								}`}
 							key={`manifesto-${index}`}>
-							<h3 className='leading-loose'>{card.title}</h3>
-							<p className='leading-relaxed'>{card.description}</p>
+							<h3 className='leading-loose text-center font-["Poppins"] font-semibold text-2xl'>{card.title}</h3>
+							<p className='leading-relaxed text-center sm:text-left'>{card.description}</p>
 						</Card>
 					))}
 				</div>
