@@ -12,9 +12,9 @@ export default function Labs({ labs }) {
 	const locale = router.locale;
 
 	return (
-		<section className='mt-48'>
-			<Flex classes='items-center mx-auto'>
-				<div className='text-left'>
+		<section className='mt-28 lg:mt-40'>
+			<Flex classes='items-center lg:mx-auto mx-5'>
+				<div className='text-center lg:text-left'>
 					<h2 className='font-semibold mb-3'>Labs</h2>
 					<p className='italic mb-10'>
 						Scambi’s workshops are the place where the exchange becomes reality.
@@ -30,7 +30,7 @@ export default function Labs({ labs }) {
 						Get Tickets
 					</button>
 				</div>
-				<div className='mt-10 ml-10'>
+				<div className='mt-10 lg:ml-10'>
 					<Image
 						src='https://picsum.photos/640/412'
 						width={640}
@@ -39,15 +39,18 @@ export default function Labs({ labs }) {
 					/>
 				</div>
 			</Flex>
-			<Flex classes='mx-auto items-center justify-between mt-12'>
-				<Image
-					src='/illustrations/table-talk.png'
-					width={436}
-					height={425}
-					alt=''
-				/>
-				<div className='text-left lg:w-[500px]'>
-					<h2 className='font-semibold mb-10'>What are Labs?</h2>
+			<Flex classes='lg:mx-auto mx-5 items-center justify-between mt-5 lg:mt-12 flex-col-reverse lg:flex-row'>
+				<div className='mt-10 lg:mt-0'>
+					<Image
+						src='/illustrations/table-talk.png'
+						width={436}
+						height={425}
+						alt=''
+					/>
+				</div>
+
+				<div className='text-center w-full lg:text-left lg:w-[500px]'>
+					<h2 className='font-semibold lg:mb-10'>What are Labs?</h2>
 					<p>
 						Laboratories are work-groups guided by an external host aimed at
 						exploring the current edition theme.{' '}
