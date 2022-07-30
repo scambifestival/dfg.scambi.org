@@ -8,7 +8,7 @@ import Carousel from '../../components/carousel';
 
 export default function Pinoli() {
 	return (
-		<section className='mt-40'>
+		<section>
 			<Flex classes='py-20 mx-4 space-y-8 SurfaceDuo:mx-8 sm:mx-12 md:flex-col md:space-y-12 md:mx-auto lg:flex-row lg:space-y-0 lg:space-x-16 lg:mx-auto xl:space-x-56'>
 				<div className='w-fit text-center lg:text-left'>
 					<h1 className='font-semibold'>Pinoli</h1>
@@ -29,7 +29,7 @@ export default function Pinoli() {
 				</div>
 			</Flex>
 
-			<div className='lg:px-16 bg-white py-10 text-center'>
+			<div className='bg-white text-center py-10 px-4 lg:px-16'>
 				<h2>What is a Pinolo?</h2>
 				<p>
 					A Pinolo is a collateral event that comes to life during Scambi
