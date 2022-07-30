@@ -22,7 +22,7 @@ import { eventCards, manifestoCards } from '../assets/data';
 export default function Home() {
 	return (
 		<section>
-			<div className='w-10/12 mx-auto mt-48 mb-10 text-left flex flex-col justify-between xl:items-center  xl:flex-row'>
+			<div className='w-10/12 mx-auto mb-10 text-left flex flex-col justify-between xl:items-center  xl:flex-row'>
 				<div>
 					<h1 className='leading-none'>Scambi Festival</h1>
 					<h3>The Festival of Paneuretic Workshops, free for all to attend</h3>
