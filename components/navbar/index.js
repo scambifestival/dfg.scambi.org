@@ -96,7 +96,11 @@ export default function Navbar() {
 					content={supportDropdown}
 				/>
 				<li role='none'>
+<<<<<<< HEAD
 					<Link href='faq'>
+=======
+					<Link href='/faq'>
+>>>>>>> 4d6bf4bdcdcdeca4af5b7d0224500d4fb11b98f5
 						<a className='text-xl font-bold outline-none hover:text-fuchsia-800 active:text-fuchsia-800 focus:text-fuchsia-800'>
 							FAQ
 						</a>
