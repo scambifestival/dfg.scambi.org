@@ -18,9 +18,9 @@ const festivalDropdown = [
 ];
 
 const supportDropdown = [
-	{ title: 'Donate', href: 'donate' },
-	{ title: 'Volunteer', href: 'volunteer' },
-	{ title: 'Join Team', href: 'careers' },
+	{ title: 'Donate', href: 'https://www.paypal.com/paypalme/apsoltre' },
+	{ title: 'Volunteer', href: 'contact' },
+	// { title: 'Join Team', href: 'careers' },
 ];
 
 export default function Navbar() {
@@ -89,11 +89,11 @@ export default function Navbar() {
 					btnStyle='text-xl 2xl:text-2xl font-bold uppercase'
 					content={festivalDropdown}
 				/>
-				{/*<Dropdown
+				<Dropdown
 					name='Support'
-					btnStyle='text-xl 2xl:text-2xl font-bold uppercase'
+					btnStyle='text-xl font-bold uppercase'
 					content={supportDropdown}
-			/>*/}
+				/>
 				<li role='none'>
 					<Link href='/faq'>
 						<a className='text-xl 2xl:text-2xl font-bold outline-none hover:text-fuchsia-800 active:text-fuchsia-800 focus:text-fuchsia-800'>
