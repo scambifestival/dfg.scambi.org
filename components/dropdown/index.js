@@ -1,10 +1,12 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { ChevronUp, ChevronDown } from '../icons/chevron';
 
 export default function Dropdown({ btnStyle, dropdownStyle, name, content }) {
 	const menu = useRef(null);
 	const [isOpen, setIsOpen] = useState(false);
+	const router = useRouter();
 
 	const handleClick = () => {
 		setIsOpen(!isOpen);
@@ -15,6 +17,12 @@ export default function Dropdown({ btnStyle, dropdownStyle, name, content }) {
 			setIsOpen(false);
 		}
 	};
+
+	useEffect(() => {
+		if (isOpen) {
+		  setIsOpen(false);
+		}
+	  }, [router]);
 
 	return (
 		<div className='relative inline-block' onBlur={clickOutside}>

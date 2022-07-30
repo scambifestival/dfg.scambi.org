@@ -1,7 +1,7 @@
 import Dropdown from '../dropdown';
 import Button from '../button';
 import Menu from '../icons/menu';
-import { useState, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -46,6 +46,12 @@ export default function Navbar() {
 		}
 	};
 
+	useEffect(() => {
+		if (isOpen) {
+			setIsOpen(false);
+		}
+	}, [router]);
+
 	return (
 		<nav
 			aria-label='Scambi'
@@ -79,22 +85,29 @@ export default function Navbar() {
 				role='menubar'
 				aria-label='scambi'
 				className={`${isOpen ? 'flex' : 'hidden'
-					} w-full space-y-3 flex-col justify-between items-start space-x-0 lg:w-auto lg:flex lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 xl:space-x-16`}>
-				<Dropdown
-					name='About us'
-					btnStyle='text-xl font-bold uppercase'
-					content={aboutUsDropdown}
-				/>
-				<Dropdown
-					name='Festival'
-					btnStyle='text-xl font-bold uppercase'
-					content={festivalDropdown}
-				/>
-				<Dropdown
-					name='Support'
-					btnStyle='text-xl font-bold uppercase'
-					content={supportDropdown}
-				/>
+					} w-full space-y-3 flex-col justify-between items-start space-x-0 lg:w-auto lg:flex lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 xl:space-x-16`}
+			>
+				<li>
+					<Dropdown
+						name='About us'
+						btnStyle='text-xl font-bold uppercase'
+						content={aboutUsDropdown}
+					/>
+				</li>
+				<li>
+					<Dropdown
+						name='Festival'
+						btnStyle='text-xl font-bold uppercase'
+						content={festivalDropdown}
+					/>
+				</li>
+				<li>
+					<Dropdown
+						name='Support'
+						btnStyle='text-xl font-bold uppercase'
+						content={supportDropdown}
+					/>
+				</li>
 				<li role='none'>
 					<Link href='/faq'>
 						<a className='text-xl font-bold outline-none hover:text-fuchsia-800 active:text-fuchsia-800 focus:text-fuchsia-800'>
