@@ -169,7 +169,7 @@ export default function Home() {
 			</div>
 
 			<Flex classes='mx-auto'>
-				<div className='md:text-left space-y-7 md:w-1/2 lg:w-3/5 mr-10'>
+				<div className='md:text-left space-y-7 md:w-1/2 lg:w-3/5 mr-10' id='family'>
 					<h2 className='leading-tight lg:leading-normal'>Scambi Family</h2>
 					<p className='mx-auto md:mx-0'>
 						We are a group of under 25s coming from every corner of Europe.
