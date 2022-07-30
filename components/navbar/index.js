@@ -1,7 +1,7 @@
 import Dropdown from '../dropdown';
 import Button from '../button';
 import Menu from '../icons/menu';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Link from 'next/link';
 
 const aboutUsDropdown = [
@@ -23,19 +23,24 @@ const supportDropdown = [
 ];
 
 export default function Navbar() {
+	const navbar = useRef(null);
 	const [isOpen, setIsOpen] = useState(false);
 
 	const handleClick = () => {
 		setIsOpen(!isOpen);
 	};
 
+	const clickOutside = (e) => {
+		if (!navbar.current.contains(e.relatedTarget)) {
+			setIsOpen(false);
+		}
+	};
+
 	return (
 		<nav
 			aria-label='Scambi'
-			className={`fixed top-0 left-12 w-11/12 z-50 flex flex-col items-center justify-between bg-white shadow-xl mt-10 space-y-7 py-3 ${
-				isOpen ? 'rounded-3xl' : 'rounded-full'
-			} lg:flex-row lg:rounded-full lg:space-y-0 lg:px-12 2xl:px-20`}>
-			<div className='w-full flex justify-between items-center px-8 sm:px-16 lg:w-auto lg:px-0'>
+			ref={navbar}
+			onBlur={clickOutside}
 			className={`${isOpen ? 'rounded-3xl' : 'rounded-full'
 				} fixed w-11/12 top-10 left-1/2 -translate-x-1/2 z-50 flex flex-col items-start justify-between bg-white shadow-xl py-5 px-10 space-y-7 sm:px-14 lg:flex-row lg:items-center lg:space-y-0`}>
 			<div className='w-full flex justify-between items-center lg:w-auto lg:px-0'>
