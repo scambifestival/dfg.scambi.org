@@ -50,14 +50,16 @@ export default function Pinoli() {
 				{populate()}
 </div>*/}
 
-			<Flex classes='mx-auto'>
-				<h1>More Info Coming Soon!</h1>
-				<Image
-					src='/illustrations/rocket.png'
-					alt=''
-					width={382}
-					height={500}
-				/>
+			<Flex classes='mx-1 py-32 justify-between items-center iPhoneSE:mx-7 sm:mx-auto md:justify-around md:space-y-0 md:py-40 md:mx-auto md:space-x-12 lg:justify-center lg:space-x-20'>
+				<h2 className='leading-tight text-center md:text-left md:w-fit'>More Info Coming Soon!</h2>
+				<div className='w-3/4 iPhoneSE:w-1/2 SurfaceDuo:w-1/3 sm:w-2/5 md:w-fit md:max-w-full lg:max-w-xs'>
+					<Image
+						src='/illustrations/rocket.png'
+						alt=''
+						width={382}
+						height={500}
+					/>
+				</div>
 			</Flex>
 
 			<div className='my-40'>
