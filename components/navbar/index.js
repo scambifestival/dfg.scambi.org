@@ -36,10 +36,20 @@ export default function Navbar() {
 				isOpen ? 'rounded-3xl' : 'rounded-full'
 			} lg:flex-row lg:rounded-full lg:space-y-0 lg:px-12 2xl:px-20`}>
 			<div className='w-full flex justify-between items-center px-8 sm:px-16 lg:w-auto lg:px-0'>
+			className={`${isOpen ? 'rounded-3xl' : 'rounded-full'
+				} fixed w-11/12 top-10 left-1/2 -translate-x-1/2 z-50 flex flex-col items-start justify-between bg-white shadow-xl py-5 px-10 space-y-7 sm:px-14 lg:flex-row lg:items-center lg:space-y-0`}>
+			<div className='w-full flex justify-between items-center lg:w-auto lg:px-0'>
+				<button
+					type='button'
+					className={`w-6 sm:w-8 lg:hidden p-0 outline-none hover:text-fuchsia-800 focus:text-fuchsia-800 shadow-none`}
+					onClick={handleClick}
+				>
+					<Menu isOpen={isOpen} />
+				</button>
 				<Link href='/'>
 					<a
 						id='logo'
-						className='text-4xl outline-none hover:text-fuchsia-800 active:text-fuchsia-800 focus:text-fuchsia-800'>
+						className=' font-medium text-4xl outline-none hover:text-fuchsia-800 active:text-fuchsia-800 focus:text-fuchsia-800'>
 						Scambi
 					</a>
 				</Link>
@@ -52,9 +62,8 @@ export default function Navbar() {
 			<ul
 				role='menubar'
 				aria-label='scambi'
-				className={`${
-					isOpen ? 'flex' : 'hidden'
-				} space-y-3 flex-col justify-around items-center space-x-0 lg:w-auto lg:flex lg:flex-row lg:space-y-0 xl:space-x-10 2xl:w-auto 2xl:space-x-16`}>
+				className={`${isOpen ? 'flex' : 'hidden'
+					} w-full space-y-3 flex-col justify-between items-start space-x-0 lg:w-auto lg:flex lg:flex-row lg:items-center lg:space-y-0 xl:space-x-10 2xl:w-auto 2xl:space-x-16`}>
 				<Dropdown
 					name='About us'
 					btnStyle='text-xl 2xl:text-2xl font-bold uppercase'
@@ -80,8 +89,7 @@ export default function Navbar() {
 			</ul>
 
 			<Button
-				classes={`${
-					isOpen ? '' : 'hidden'
+				classes={`${isOpen ? '' : 'hidden'
 				} lg:inline-block uppercase outline-offset-1 btn-primary`}>
 				Attend
 			</Button>
