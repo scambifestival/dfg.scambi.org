@@ -3,6 +3,7 @@ import Button from '../button';
 import Menu from '../icons/menu';
 import { useState, useRef } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const aboutUsDropdown = [
 	{ title: 'About Scambi', href: 'about' },
@@ -25,6 +26,15 @@ const supportDropdown = [
 export default function Navbar() {
 	const navbar = useRef(null);
 	const [isOpen, setIsOpen] = useState(false);
+	const router = useRouter();
+
+	const languageDropdown = router.locales.map(locale => (
+		{
+			title: locale.toUpperCase(),
+			href: router.asPath,
+			locale: locale
+		}
+	));
 
 	const handleClick = () => {
 		setIsOpen(!isOpen);
@@ -58,11 +68,11 @@ export default function Navbar() {
 						Scambi
 					</a>
 				</Link>
-				<button
-					className='lg:hidden p-0 outline-none hover:text-fuchsia-800 focus:text-fuchsia-800'
-					onClick={handleClick}>
-					<Menu isOpen={isOpen} />
-				</button>
+				<Dropdown
+					name={router.locale.toUpperCase()}
+					content={languageDropdown}
+					dropdownStyle='w-fit px-2 absolute left-auto right-0 shadow-xl'
+				/>
 			</div>
 			<ul
 				role='menubar'
@@ -95,7 +105,7 @@ export default function Navbar() {
 
 			<Button
 				classes={`${isOpen ? '' : 'hidden'
-				} lg:inline-block uppercase outline-offset-1 btn-primary`}>
+					} lg:inline-block uppercase outline-offset-1 btn-primary`}>
 				Attend
 			</Button>
 		</nav>
