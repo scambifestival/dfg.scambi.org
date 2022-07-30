@@ -1,6 +1,6 @@
-import Layout from '../components/layout';
-import { appWithTranslation } from 'next-i18next';
-import '../styles/globals.css';
+import Layout from "../components/layout";
+import { appWithTranslation } from "next-i18next";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
 	return (
