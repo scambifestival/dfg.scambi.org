@@ -48,7 +48,7 @@ export default function Dropdown({ btnStyle, dropdownStyle, name, content }) {
 				aria-labelledby='menu-button'>
 				{content.map((child, index) => (
 					<li key={index} role='menuitem'>
-						<Link href={child.href}>
+						<Link href={child.href} locale={child.locale || router.locale}>
 							<a className='text-lg font-bold block px-4 py-2 uppercase outline-none hover:text-fuchsia-800 active:text-fuchsia-800 focus:text-fuchsia-800'>
 								{child.title}
 							</a>
