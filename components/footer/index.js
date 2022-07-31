@@ -21,7 +21,7 @@ export default function Footer() {
 
 	return (
 		<footer className="h-full bg-white rounded-t-[32px]">
-			<div className="flex justify-between items-center SurfaceDuo:px-16 pt-10 GalaxyFold:px-0 GalaxyFold:justify-end sm:justify-between">
+			<div className="flex justify-between items-center SurfaceDuo:px-1 sm:px-10 pt-10 GalaxyFold:px-0 GalaxyFold:justify-end sm:justify-between">
 				<h2 className="GalaxyFold:hidden sm:block">Scambi</h2>
 				<div className="flex">
 					<div className="w-2/3 p-3">
@@ -34,14 +34,12 @@ export default function Footer() {
 					</Button>
 				</div>
 			</div>
-			<div className="w-full h-fit flex flex-row md:flex-row sm:flex-col lg:flex-row md:space-x-4 md:space-y-0 items-center iPhoneSE:flex-col GalaxyFold:flex-col SurfaceDuo:flex-col">
+			<div className="w-full h-fit flex flex-row md:flex-row sm:flex-col lg:flex-row md:space-x-4 md:space-y-0 items-center iPhoneSE:flex-col GalaxyFold:flex-col SurfaceDuo:flex-col md:-mt-10">
 				<div className="md:w-1/3 lg:w-1/4 sm:w-1/3 md:h-1/2 sm:h-1/2 xs:w-1/2 lg:ml-20 md:ml-12 sm:ml-2">
-					<div className="relative -mt-10 lg:-mt-12 md:-mt-52 sm:-mt-10 SurfaceDuo:-mt-10 iPhoneSE:mt-0 iPhoneSE:mb-10 GalaxyFold:mt-2">
+					<div className="relative lg:mt-6 md:-mt-20 sm:-mt-10 SurfaceDuo:-mt-2 iPhoneSE:mt-0 iPhoneSE:mb-10 GalaxyFold:mt-2">
 						<div className="blobFooter drop-shadow-lg">
 							<div className="flex flex-col justify-center items-center relative">
 								<svg
-									viewBox="0 0 200 200"
-									xmlns="http://www.w3.org/2000/svg"
 									width={
 										isGalaxyS8
 											? 280
@@ -52,9 +50,9 @@ export default function Footer() {
 											: isSmall
 											? 400
 											: isMedium
-											? 430
+											? 400
 											: isLarge
-											? 500
+											? 340
 											: 400
 									}
 									height={
@@ -67,21 +65,62 @@ export default function Footer() {
 											: isSmall
 											? 400
 											: isMedium
-											? 460
+											? 400
 											: isLarge
-											? 350
+											? 340
 											: 400
-									}>
-									<path
-										fill="#EDBBFF"
-										d="M44.9,-56.5C60.6,-50.3,77.4,-40.5,84.8,-25.7C92.2,-10.9,90.1,8.9,82.2,24.7C74.4,40.6,60.6,52.6,45.9,64.1C31.3,75.7,15.6,86.8,0.4,86.3C-14.9,85.8,-29.9,73.7,-39.7,60.6C-49.6,47.5,-54.5,33.4,-62.7,18C-70.9,2.7,-82.4,-13.9,-82.1,-30.2C-81.7,-46.5,-69.4,-62.5,-53.7,-68.7C-38,-74.8,-19,-71.1,-2.2,-68C14.6,-65,29.2,-62.6,44.9,-56.5Z"
-										transform="translate(100 100)"
-									/>
+									}
+									viewBox="0 0 437 385"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g filter="url(#filter0_d_4572_33029)">
+										<path
+											fillRule="evenodd"
+											clipRule="evenodd"
+											d="M259.757 30.2453C307.315 39.7447 361.414 41.1139 391.562 76.3805C422.908 113.048 417.818 162.249 410.762 206.887C403.306 254.047 393.335 304.526 351.158 331.96C307.592 360.297 246.244 366.435 194.792 347.366C148.464 330.195 137.375 278.95 108.147 241.892C77.1488 202.59 18.1299 174.135 21.0246 127.045C24.0276 78.1922 72.9156 42.2192 121.635 22.4646C164.586 5.04909 212.626 20.8313 259.757 30.2453Z"
+											fill="#EDBBFF"
+										/>
+									</g>
+									<defs>
+										<filter
+											id="filter0_d_4572_33029"
+											x="0.921875"
+											y="0.645752"
+											width="435.158"
+											height="383.708"
+											filterUnits="userSpaceOnUse"
+											colorInterpolationFilters="sRGB">
+											<feFlood floodOpacity="0" result="BackgroundImageFix" />
+											<feColorMatrix
+												in="SourceAlpha"
+												type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+												result="hardAlpha"
+											/>
+											<feOffset dy="6" />
+											<feGaussianBlur stdDeviation="10" />
+											<feColorMatrix
+												type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
+											/>
+											<feBlend
+												mode="normal"
+												in2="BackgroundImageFix"
+												result="effect1_dropShadow_4572_33029"
+											/>
+											<feBlend
+												mode="normal"
+												in="SourceGraphic"
+												in2="effect1_dropShadow_4572_33029"
+												result="shape"
+											/>
+										</filter>
+									</defs>
 								</svg>
 							</div>
 						</div>
-						<div className="flex flex-col text-center bottom-28 absolute justify-center content-center items-center w-full GalaxyFold:top-40 iPhoneSE:bottom-28 iPhoneSE:ml-0 GalaxyFold:ml-0 pl-4">
-							<p className="GalaxyFold:pb-0 iPhoneSE:w-30  GalaxyFold:w-3/4 sm:w-60 SurfaceDuo:pb-5">
+						<div className="flex flex-col text-center bottom-28 absolute justify-center content-center items-center w-full GalaxyFold:top-40 iPhoneSE:bottom-28 iPhoneSE:pl-12 GalaxyFold:ml-0 pl-6 pb-10">
+							<p className="GalaxyFold:pb-0 iPhoneSE:w-full iPhoneSE:pr-8 lg:pr-0 GalaxyFold:w-3/4 sm:w-60 md:w-96 iPhoneSE:pb-2 SurfaceDuo:pb-5">
 								<b className="items-center text-fuchsia-800">
 									Subscribe to our Newsletter!
 								</b>
