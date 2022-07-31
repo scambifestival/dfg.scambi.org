@@ -9,8 +9,16 @@ import {
 	Peertube,
 	Pixelfed
 } from "../icons/social-media";
+import useMediaQuery from "../../lib/hooks/media-query";
 
 export default function Footer() {
+	const isLarge = useMediaQuery("(max-width: 940px)");
+	const isMedium = useMediaQuery("(max-width: 767px)");
+	const isSmall = useMediaQuery("(max-width: 430px)");
+	const isXSmall = useMediaQuery("(max-width: 400px)");
+	const isIPhoneSE = useMediaQuery("(max-width: 375px)");
+	const isGalaxyS8 = useMediaQuery("(max-width: 360px)");
+
 	return (
 		<footer className="h-full bg-white rounded-t-[32px]">
 			<div className="flex justify-between items-center SurfaceDuo:px-16 pt-10 GalaxyFold:px-0 GalaxyFold:justify-end sm:justify-between">
@@ -27,35 +35,71 @@ export default function Footer() {
 				</div>
 			</div>
 			<div className="w-full h-fit flex flex-row md:flex-row sm:flex-col lg:flex-row md:space-x-4 md:space-y-0 items-center iPhoneSE:flex-col GalaxyFold:flex-col SurfaceDuo:flex-col">
-				<div className="md:w-1/3 lg:w-1/4 sm:w-1/3 md:h-1/2 sm:h-1/2 xs:w-1/2 lg:ml-20 md:ml-12 sm:ml-12">
-					<div className="relative -mt-10 lg:-mt-12 md:-mt-20 sm:-mt-10 SurfaceDuo:mt-2 iPhoneSE:mt-2 GalaxyFold:mt-2">
-						<div className="blob-wrap">
-							<div className="blobFooter drop-shadow-lg lg:ml-4">
-								<div className="flex flex-col justify-center items-center relative">
-									<div className="blob"></div>
-								</div>
+				<div className="md:w-1/3 lg:w-1/4 sm:w-1/3 md:h-1/2 sm:h-1/2 xs:w-1/2 lg:ml-20 md:ml-12 sm:ml-2">
+					<div className="relative -mt-10 lg:-mt-12 md:-mt-52 sm:-mt-10 SurfaceDuo:-mt-10 iPhoneSE:mt-0 iPhoneSE:mb-10 GalaxyFold:mt-2">
+						<div className="blobFooter drop-shadow-lg">
+							<div className="flex flex-col justify-center items-center relative">
+								<svg
+									viewBox="0 0 200 200"
+									xmlns="http://www.w3.org/2000/svg"
+									width={
+										isGalaxyS8
+											? 280
+											: isIPhoneSE
+											? 300
+											: isXSmall
+											? 375
+											: isSmall
+											? 400
+											: isMedium
+											? 430
+											: isLarge
+											? 500
+											: 400
+									}
+									height={
+										isGalaxyS8
+											? 280
+											: isIPhoneSE
+											? 300
+											: isXSmall
+											? 375
+											: isSmall
+											? 400
+											: isMedium
+											? 460
+											: isLarge
+											? 350
+											: 400
+									}>
+									<path
+										fill="#EDBBFF"
+										d="M44.9,-56.5C60.6,-50.3,77.4,-40.5,84.8,-25.7C92.2,-10.9,90.1,8.9,82.2,24.7C74.4,40.6,60.6,52.6,45.9,64.1C31.3,75.7,15.6,86.8,0.4,86.3C-14.9,85.8,-29.9,73.7,-39.7,60.6C-49.6,47.5,-54.5,33.4,-62.7,18C-70.9,2.7,-82.4,-13.9,-82.1,-30.2C-81.7,-46.5,-69.4,-62.5,-53.7,-68.7C-38,-74.8,-19,-71.1,-2.2,-68C14.6,-65,29.2,-62.6,44.9,-56.5Z"
+										transform="translate(100 100)"
+									/>
+								</svg>
 							</div>
 						</div>
-						<div className="flex flex-col text-center bottom-28 absolute justify-center content-center items-center w-full px-4 GalaxyFold:top-40 iPhoneSE:bottom-28 contentBlob">
-							<p className="pb-5">
+						<div className="flex flex-col text-center bottom-28 absolute justify-center content-center items-center w-full GalaxyFold:top-40 iPhoneSE:bottom-28 iPhoneSE:ml-0 GalaxyFold:ml-0 pl-4">
+							<p className="GalaxyFold:pb-0 iPhoneSE:w-30  GalaxyFold:w-3/4 sm:w-60">
 								<b className="items-center">Subscribe to our Newsletter!</b>
 							</p>
 							<form className="flex flex-col">
 								<input
 									type="email"
 									placeholder="Enter your email"
-									className="rounded-md lg:w-[260px] lg:ml-5 peer"
+									className="rounded-md lg:w-[260px] lg:ml-5 peer GalaxyFold:w-30 GalaxyFold:ml-4 iPhoneSE:ml-0"
 								/>
-								<Button classes="btn-primary peer-invalid:disabled lg:w-fit lg:ml-12 mt-5 blobBtn">
+								<Button classes="btn-primary peer-invalid:disabled lg:w-48 lg:ml-12 lg:pl-6 lg:pr-6 mt-5 blobBtn md:pr-0 md:pl-0 md:w-32 md:ml-8">
 									Subscribe
 								</Button>
 							</form>
 						</div>
 					</div>
 				</div>
-				<div className="flex flex-col GalaxyFold:mb-0 md:pl-20 SurfaceDuo:ml-24  lg:ml-96 GalaxyFold:ml-4">
+				<div className="flex flex-col GalaxyFold:mb-0 md:pl-20  lg:ml-96 GalaxyFold:ml-4 iPhoneSE:ml-0">
 					<div className="flex flex-row">
-						<div className="sm:columns-3 GalaxyFold:columns-2 sm:gap-x-20 md:gap-x-9 lg:gap-x-24 xl:gap-x-44 w-full md:mt-20 SurfaceDuo:ml-0 sm:mt-12 iPhoneSE:mt-0 GalaxyFold:mt-0 GalaxyFold:ml-6 iPhoneSE:ml-6">
+						<div className="iPhoneSE:columns-3 GalaxyFold:columns-2 sm:gap-x-20 md:gap-x-9 SurfaceDuo:gap-x-24 lg:gap-x-24 xl:gap-x-44 w-full md:mt-20 md:ml-0 sm:mt-2 iPhoneSE:mt-0 GalaxyFold:mt-0 GalaxyFold:ml-6 SurfaceDuo:ml-0">
 							<ul>
 								<li className="">
 									<Link href="/about">
@@ -131,7 +175,7 @@ export default function Footer() {
 						</div>
 					</div>
 
-					<div className="flex lg:flex-row SurfaceDuo:flex-row w-full">
+					<div className="flex lg:flex-row SurfaceDuo:flex-row w-full iPhoneSE:pl-6 SurfaceDuo:pl-0">
 						<div className="flex flex-col mt-12 w-full sm:flex-row md:flex-col lg:flex-row">
 							<div className="pt-6 text-left w-full md:w-full">
 								<p className="lg:w-full">
