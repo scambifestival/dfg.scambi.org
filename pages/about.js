@@ -6,6 +6,7 @@ import { manifestoCards } from "../assets/data";
 import Subscribe from "../components/subscribe";
 import SupportUs from "../components/support-cards";
 import useMediaQuery from "../lib/hooks/media-query";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function About() {
 	const isSmall = useMediaQuery("(max-width: 430px)");
