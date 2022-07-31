@@ -19,7 +19,9 @@ export default function Carousel({ slides }) {
 			<motion.div
 				drag='x'
 				dragConstraints={{ right: 0, left: (width * -1.015)}}
-				className={`grid grid-cols-[repeat(${slides.length},1fr)] justify-start items-center space-x-5`}>
+				className={`grid justify-start items-center space-x-5`}
+				style={{gridTemplateColumns: `repeat(${slides.length},1fr)`}}
+				>
 				{slides.map((slide, index) => (
 					<div key={index} className='inline-block w-[200px] SurfaceDuo:w-[400px]'>
 						<Image
