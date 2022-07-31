@@ -81,7 +81,7 @@ export default function Footer() {
 							</div>
 						</div>
 						<div className="flex flex-col text-center bottom-28 absolute justify-center content-center items-center w-full GalaxyFold:top-40 iPhoneSE:bottom-28 iPhoneSE:ml-0 GalaxyFold:ml-0 pl-4">
-							<p className="GalaxyFold:pb-0 iPhoneSE:w-30  GalaxyFold:w-3/4 sm:w-60 iPhoneSE:pb-5">
+							<p className="GalaxyFold:pb-0 iPhoneSE:w-30  GalaxyFold:w-3/4 sm:w-60 SurfaceDuo:pb-5">
 								<b className="items-center text-fuchsia-800">
 									Subscribe to our Newsletter!
 								</b>
