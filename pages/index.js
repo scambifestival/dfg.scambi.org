@@ -94,7 +94,7 @@ export default function Home() {
 				<div className='w-1/2 md:w-3/4 lg:w-3/5 xl:w-2/5'>
 					<Image
 						src='/illustrations/program.png'
-						alt=''
+						alt='Illustration of woman with curly hair in yellow sleeveless top, brownish bottoms, and sandals reading a program while resting on a bundle of blue roots'
 						width={918}
 						height={1026}
 					/>
@@ -199,7 +199,7 @@ export default function Home() {
 				<div className='w-3/4 sm:w-3/5 lg:w-1/2'>
 					<Image
 						src={highlights[4]}
-						alt=''
+						alt='Five volunteers pose for group photo outside during the festival'
 						layout='responsive'
 						width={475}
 						objectFit='cover'
@@ -268,7 +268,7 @@ export default function Home() {
 				<div className='w-3/5 sm:w-1/2'>
 					<Image
 						src='/illustrations/sponsors.png'
-						alt=''
+						alt='Illustration of three individuals holding hands, moving in a circle'
 						layout='responsive'
 						width={654}
 						height={689}
