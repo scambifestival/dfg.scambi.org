@@ -91,21 +91,21 @@ export default function Navbar() {
 				className={`${isOpen ? 'flex' : 'hidden'
 					} w-full space-y-3 flex-col justify-between items-start space-x-0 lg:w-auto lg:flex lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 xl:space-x-16`}
 			>
-				<li>
+				<li role='none'>
 					<Dropdown
 						name='About us'
 						btnStyle='text-xl font-bold uppercase'
 						content={aboutUsDropdown}
 					/>
 				</li>
-				<li>
+				<li role='none'>
 					<Dropdown
 						name='Festival'
 						btnStyle='text-xl font-bold uppercase'
 						content={festivalDropdown}
 					/>
 				</li>
-				<li>
+				<li role='none'>
 					<Dropdown
 						name='Support'
 						btnStyle='text-xl font-bold uppercase'
@@ -114,7 +114,9 @@ export default function Navbar() {
 				</li>
 				<li role='none'>
 					<Link href='/faq'>
-						<a className='text-xl font-bold outline-none hover:text-fuchsia-800 active:text-fuchsia-800 focus:text-fuchsia-800'>
+						<a
+							role='menuitem'
+							className='text-xl font-bold outline-none hover:text-fuchsia-800 active:text-fuchsia-800 focus:text-fuchsia-800'>
 							FAQ
 						</a>
 					</Link>
