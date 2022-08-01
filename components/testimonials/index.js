@@ -25,10 +25,10 @@ const testimonials = [
 
 export default function Testimonials() {
 	return (
-		<div className='flex flex-wrap justify-around items-stretch space-y-24 lg:space-y-0 xl:justify-center xl:space-x-40'>
+		<div className='flex flex-wrap justify-around items-stretch space-y-16 lg:space-y-0 xl:justify-center xl:space-x-40'>
 			{testimonials.map((testimonial, index) => (
 				<Card
-					classes={`relative max-w-[80%] p-10 bg-white text-left lg:max-w-[25%] xl:max-w-[20%]`}
+					classes={`${index === 1 ? 'lg:top-24' : ''} relative max-w-[80%] p-10 bg-white text-left lg:max-w-[25%] xl:max-w-[20%]`}
 					key={`testimonial-${index}`}>
 					<div className='absolute -top-10 -right-[10%] z-10 w-24 sm:w-32 sm:-top-14 lg:-top-16 lg:-right-[10%]'>
 						<Image

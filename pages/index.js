@@ -170,7 +170,7 @@ export default function Home() {
 				</div>
 				</div>*/}
 
-			<div className='mt-24 my-20 space-y-28'>
+			<div className='my-24 lg:my-40 space-y-20 lg:space-y-32'>
 				<h2 className='text-center leading-tight font-medium mx-3 sm:w-4/5 sm:mx-auto'>
 					An experience people love to talk about
 				</h2>
