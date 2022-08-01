@@ -24,8 +24,8 @@ export default function Home() {
 		<section>
 			<header className='space-y-7'>
 				<div className='w-full flex flex-col justify-between mt-10 text-center sm:w-10/12 sm:mx-auto sm:my-10 sm:text-left xl:flex-row xl:items-end'>
-					<div className='my-5 space-y-5 md:space-y-2 md:my-3 xl:my-0'>
-						<h1 className='leading-none font-medium'>Scambi Festival</h1>
+					<div className='mx-3 my-5 space-y-5 sm:mx-0 md:space-y-2 md:my-3 xl:my-0'>
+						<h1 className='leading-none font-medium text-[5.75rem] iPhoneSE:text-[102px]'>Scambi Festival</h1>
 						<h3 className='leading-tight font-medium'>The Festival of Paneuretic Workshops, free for all to attend</h3>
 					</div>
 					<p className='font-medium'>
@@ -44,7 +44,7 @@ export default function Home() {
 			</header>
 			<Flex classes='mt-16 mb-10 mx-7 py-0 justify-between text-center sm:mx-16 md:mx-auto md:mt-20 md:text-left md:space-x-20 lg:space-x-36 2xl:mb-10 2xl:w-9/12'>
 				<div className='space-y-3 md:w-full'>
-					<h2 className='leading-tight font-medium'>
+					<h2 className='leading-tight font-medium text-6xl iPhoneSE:text-[64px]'>
 						What are paneuretic workshops?
 					</h2>
 					<p>
@@ -56,7 +56,7 @@ export default function Home() {
 						ideas.
 					</p>
 				</div>
-				<div className='w-3/4 sm:w-1/2 md:w-3/4 lg:w-3/5 xl:w-2/5'>
+				<div className='w-full iPhoneSE:w-3/4 sm:w-1/2 md:w-3/4 lg:w-3/5 xl:w-2/5'>
 					<Image
 						src='/illustrations/table-talk.png'
 						alt='Illustration of 3 people sitting around a table talking'
@@ -66,9 +66,12 @@ export default function Home() {
 				</div>
 			</Flex>
 
-			<Flex classes='mt-10 mb-32 mx-7 py-0 justify-between text-center sm:mx-16 md:mx-auto md:mt-20 md:text-left md:space-x-reverse md:space-x-20 lg:space-x-reverse lg:space-x-28 2xl:mt-10 2xl:w-9/12' reverse={true}>
+			<Flex
+				classes='mt-10 mb-32 mx-7 py-0 justify-between text-center sm:mx-16 md:mx-auto md:mt-20 md:text-left md:space-x-reverse md:space-x-20 lg:space-x-reverse lg:space-x-28 2xl:mt-10 2xl:w-9/12'
+				reverse={true}
+			>
 				<div className='space-y-3 sm:space-y-6 md:w-full'>
-					<h2 className='leading-tight font-medium'>
+					<h2 className='leading-tight font-medium text-6xl iPhoneSE:text-[64px]'>
 						2022 Edition: “Imbalance”
 					</h2>
 					<p>
@@ -91,7 +94,7 @@ export default function Home() {
 					</p>
 					<Button classes='btn-primary'>View the 2022 Program</Button>
 				</div>
-				<div className='w-1/2 md:w-3/4 lg:w-3/5 xl:w-2/5'>
+				<div className='w-full iPhoneSE:w-1/2 md:w-3/4 lg:w-3/5 xl:w-2/5'>
 					<Image
 						src='/illustrations/program.png'
 						alt='Illustration of woman with curly hair in yellow sleeveless top, brownish bottoms, and sandals reading a program while resting on a bundle of blue roots'
