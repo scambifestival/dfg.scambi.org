@@ -258,20 +258,3 @@ footer {
 	opacity: 1;
 	transition-duration: 1s;
 }
-
-@media only screen and (max-width: 375px) {
-	.contentBlob {
-		width: 170px;
-		left: 40px;
-	}
-
-	.blobBtn {
-		padding: 13px !important;
-		width: 55%;
-		display: flex;
-		align-items: center;
-		margin-left: 45px !important;
-		margin-top: 10px;
-		margin-bottom: 40px;
-	}
-}

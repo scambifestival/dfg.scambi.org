@@ -29,7 +29,7 @@ export default function Footer() {
 							<b>Ready to join us?</b>
 						</p>
 					</div>
-					<Button classes="btn-primary SurfaceDuo:mr-0 GalaxyFold:mr-2">
+					<Button classes="btn-primary SurfaceDuo:mr-0 GalaxyFold:mr-2 GalaxyFold:p-4 GalaxyFold:h-14 iPhoneSE:px-12 iPhoneSE:h-auto iPhoneSE:mt-auto">
 						ATTEND
 					</Button>
 				</div>
@@ -129,9 +129,9 @@ export default function Footer() {
 								<input
 									type="email"
 									placeholder="Enter your email"
-									className="rounded-md lg:w-[260px] lg:ml-5 peer GalaxyFold:w-30 GalaxyFold:ml-4 iPhoneSE:ml-0"
+									className="rounded-md lg:w-[260px] lg:ml-5 peer GalaxyFold:w-30 GalaxyFold:ml-4 iPhoneSE:ml-0 GalaxyFold:w-36"
 								/>
-								<Button classes="btn-primary peer-invalid:disabled lg:w-48 lg:ml-12 lg:pl-6 lg:pr-6 mt-5 blobBtn md:pr-0 md:pl-0 md:w-32 md:ml-8">
+								<Button classes="btn-primary peer-invalid:disabled lg:w-48 lg:ml-12 lg:pl-6 lg:pr-6 mt-5 blobBtn md:pr-0 md:pl-0 md:w-32 md:ml-8 GalaxyFold:px-0">
 									Subscribe
 								</Button>
 							</form>
@@ -149,7 +149,7 @@ export default function Footer() {
 								</li>
 								<li className="mt-2">
 									<Link href="/teams">
-										<a>Teams</a>
+										<a>Team</a>
 									</Link>
 								</li>
 								<li className="mt-2">
@@ -160,16 +160,6 @@ export default function Footer() {
 								<li className="mt-2">
 									<Link href="/">
 										<a>Accessibility</a>
-									</Link>
-								</li>
-								<li className="mt-2">
-									<Link href="/">
-										<a>Donate</a>
-									</Link>
-								</li>
-								<li className="mt-2">
-									<Link href="/">
-										<a>Volunteer</a>
 									</Link>
 								</li>
 								<li className="mt-2">
@@ -198,18 +188,13 @@ export default function Footer() {
 									</Link>
 								</li>
 								<li className="mt-2">
-									<Link href="/">
+									<Link href="https://www.paypal.com/paypalme/apsoltre">
 										<a>Donate</a>
 									</Link>
 								</li>
 								<li className="mt-2">
-									<Link href="/">
+									<Link href="/contact">
 										<a>Volunteer</a>
-									</Link>
-								</li>
-								<li className="mt-2">
-									<Link href="/">
-										<a>Join Team</a>
 									</Link>
 								</li>
 							</ul>
