@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 const aboutUsDropdown = [
 	{ title: 'About Scambi', href: 'about' },
 	// { title: 'Our Story', href: '' },
-	{ title: 'Our Team', href: '/#family' },
+	{ title: 'Our Team', href: 'teams' },
 ];
 
 const festivalDropdown = [
