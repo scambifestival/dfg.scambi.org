@@ -1,6 +1,7 @@
 import Dropdown from '../dropdown';
 import Button from '../button';
 import Menu from '../icons/menu';
+import Logo from '../icons/logo';
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -58,8 +59,8 @@ export default function Navbar() {
 			ref={navbar}
 			onBlur={clickOutside}
 			className={`${isOpen ? 'rounded-3xl' : 'rounded-full'
-				} fixed w-11/12 top-10 left-1/2 -translate-x-1/2 z-50 flex flex-col items-start justify-between bg-white shadow-xl py-5 px-10 space-y-7 sm:px-14 lg:flex-row lg:items-center lg:space-y-0 xl:px-20`}>
-			<div className='w-full flex justify-between items-center lg:w-auto lg:px-0'>
+				} bg-white shadow-xl fixed w-11/12 top-10 left-1/2 -translate-x-1/2 z-50 flex flex-col items-start justify-between py-5 px-10 space-y-7 sm:px-14 lg:flex-row lg:items-center lg:space-y-0 xl:px-16`}>
+			<div className='w-full flex justify-between items-center lg:inline-flex lg:w-32'>
 				<button
 					type='button'
 					className={`w-6 sm:w-8 lg:hidden p-0 outline-none hover:text-fuchsia-800 focus:text-fuchsia-800 shadow-none`}
@@ -68,11 +69,14 @@ export default function Navbar() {
 					<Menu isOpen={isOpen} />
 				</button>
 				<Link href='/'>
-					<a
+					{/* <a
 						id='logo'
 						className='font-semibold text-3xl iPhoneSE:text-4xl outline-none hover:text-fuchsia-800 active:text-fuchsia-800 focus:text-fuchsia-800'>
 						Scambi
-					</a>
+					</a> */}
+					<span id='logo' className='w-1/3 SurfaceDuo:w-1/4 md:w-1/5 lg:w-full'>
+						<Logo />
+					</span>
 				</Link>
 				<Dropdown
 					name={router.locale}
@@ -117,7 +121,7 @@ export default function Navbar() {
 				</li>
 			</ul>
 
-			<div className={`${isOpen ? '' : 'hidden'} lg:inline-block lg:w-fit lg:space-x-5 xl:space-x-10`}>
+			<div className={`${isOpen ? '' : 'hidden'} lg:flex lg:items-center lg:w-fit lg:space-x-5 xl:space-x-3`}>
 				<Button
 					classes={`lg:inline-block uppercase outline-offset-1 btn-primary`}>
 					Attend
