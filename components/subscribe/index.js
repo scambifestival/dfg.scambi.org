@@ -21,14 +21,14 @@ export default function Subscribe() {
 	};
 
 	return (
-		<div className='flex rounded-[32px] bg-primary text-white mx-16 drop-shadow-2xl'>
+		<div className='flex rounded-[32px] bg-primary text-white mx-16 drop-shadow-2xl md:flex-row GalaxyFold:flex-col GalaxyFold:w-60 iPhoneSE:w-full'>
 			<Image
 				src={SubscribeImg}
 				alt='Subscribe illustration'
-				className='hidden lg:block lg:rounded-l-[32px]'
+				className='hidden lg:block lg:rounded-l-[32px] md:rounded-tr-[0px] GalaxyFold:rounded-t-[32px] md:rounded-l-[32px] object-fill'
 			/>
-			<div className='flex flex-col items-center justify-center lg:pr-10'>
-				<div className='lg:ml-10'>
+			<div className='flex flex-col items-center justify-center lg:pr-10 p-6 GalaxyFold:p-12'>
+				<div className='lg:ml-10 GalaxyFold:p-2'>
 					<p className='uppercase'>exchanges of letters, our newsletter</p>
 					<h2>Scambi Epistolari</h2>
 					<p className='mb-5'>
@@ -39,12 +39,9 @@ export default function Subscribe() {
 						<input
 							type='email'
 							placeholder={t('input')}
-							onChange={handleInput}
-							className='rounded-md lg:w-[300px] lg:mr-5 peer'
+							className='rounded-md lg:w-[300px] lg:mr-5 peer mr-2'
 						/>
-						<Button
-							classes='bg-primary-yellow peer-invalid:disabled text-black'
-							onSubmit={handleSubmit}>
+						<Button classes='bg-primary-yellow peer-invalid:disabled text-black GalaxyFold:mt-2'>
 							{t('button')}
 						</Button>
 					</form>
