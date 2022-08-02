@@ -169,7 +169,7 @@ export default function Footer() {
 								</li>
 								<li className="mt-2">
 									<Link href="/pinoli">
-										<a>Pinoli</a>
+										<a>Pinolis</a>
 									</Link>
 								</li>
 								<li className="mt-2">
@@ -183,11 +183,6 @@ export default function Footer() {
 									</Link>
 								</li>
 								<li className="mt-2">
-									<Link href="/">
-										<a>Join Team</a>
-									</Link>
-								</li>
-								<li className="mt-2">
 									<Link href="https://www.paypal.com/paypalme/apsoltre">
 										<a>Donate</a>
 									</Link>
@@ -195,6 +190,11 @@ export default function Footer() {
 								<li className="mt-2">
 									<Link href="/contact">
 										<a>Volunteer</a>
+									</Link>
+								</li>
+								<li className="mt-2">
+									<Link href="/">
+										<a>Join Team</a>
 									</Link>
 								</li>
 							</ul>
@@ -212,10 +212,10 @@ export default function Footer() {
 							</div>
 							<div className="pt-6 text-left pb-12 lg:w-full md:w-1/2 sm:w-1/2">
 								<p>
-									<b>Codice Fiscale:</b> 900098410088
+									<b>Codice Fiscale:</b> 90098410088
 								</p>
 								<p className="flex flex-wrap lg:w-full GalaxyFold:pr-2">
-									<b>IBAN:</b> IT63E05018014600000016986952
+									<b>IBAN:</b> IT63E0501801400000016986952
 								</p>
 							</div>
 						</div>
