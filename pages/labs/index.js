@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Carousel from '../../components/carousel';
 import { getAllLabs, getDescription } from '../../lib/labs';
 import { useRouter } from 'next/router';
+import Button from '../../components/button';
 
 export default function Labs({ labs }) {
 	const router = useRouter();
@@ -13,9 +14,9 @@ export default function Labs({ labs }) {
 
 	return (
 		<section className='mt-28 lg:mt-40'>
-			<Flex classes='items-center lg:mx-auto mx-5'>
-				<div className='text-center lg:text-left'>
-					<h2 className='font-semibold mb-3'>Labs</h2>
+			<Flex classes='items-center mx-5 md:flex-col md:w-full md:mx-auto md:px-20 lg:flex-row lg:space-x-12 xl:px-32 xl:space-x-20'>
+				<div className='text-center lg:text-left lg:w-3/4'>
+					<h1 className='font-semibold mb-3 text-8xl leading-relaxed'>Labs</h1>
 					<p className='italic mb-10'>
 						Scambi’s workshops are the place where the exchange becomes reality.
 					</p>
@@ -26,16 +27,18 @@ export default function Labs({ labs }) {
 						theme from different perspectives, in order to know better
 						themselves, others and the world around them.
 					</p>
-					<button className='px-10 py-2 rounded-lg bg-[#69088D] text-white'>
+					<Button classes='btn-primary text-white'>
 						Get Tickets
-					</button>
+					</Button>
 				</div>
-				<div className='mt-10 lg:ml-10'>
+				<div className='mt-10 min-w-full SurfaceDuo:w-4/5 SurfaceDuo:min-w-[10%] md:w-2/3 xl:w-1/2'>
 					<Image
 						src='https://picsum.photos/640/412'
 						width={640}
 						height={412}
+						layout='responsive'
 						alt=''
+						className='rounded-xl'
 					/>
 				</div>
 			</Flex>
