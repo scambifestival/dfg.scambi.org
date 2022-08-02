@@ -120,18 +120,18 @@ export default function Footer() {
 							</div>
 						</div>
 						<div className="flex flex-col text-center bottom-28 absolute justify-center content-center items-center w-full GalaxyFold:top-40 iPhoneSE:bottom-28 iPhoneSE:pl-12 GalaxyFold:ml-0 pl-6 pb-10">
-							<p className="GalaxyFold:pb-0 iPhoneSE:w-full iPhoneSE:pr-8 lg:pr-0 GalaxyFold:w-3/4 sm:w-60 md:w-96 iPhoneSE:pb-2 SurfaceDuo:pb-5">
+							<p className="GalaxyFold:pb-0 iPhoneSE:w-full iPhoneSE:pr-8 lg:pr-0 GalaxyFold:w-3/4 GalaxyFold:mr-0 sm:w-60 md:w-96 iPhoneSE:pb-2 iPhoneSE::mb-2 iPhonseSE:ml-0 iPhoneSE:mb-2 SurfaceDuo:pb-2 GalaxyS8:mb-1 md:mt-6 lg:mr-2">
 								<b className="items-center text-fuchsia-800">
 									Subscribe to our Newsletter!
 								</b>
 							</p>
-							<form className="flex flex-col">
+							<form className="flex flex-col GalaxyFold:mb-12">
 								<input
 									type="email"
 									placeholder="Enter your email"
-									className="rounded-md lg:w-[260px] lg:ml-5 peer GalaxyFold:w-30 GalaxyFold:ml-4 iPhoneSE:ml-0 GalaxyFold:w-36"
+									className="rounded-md lg:w-[260px] lg:ml-5 peer GalaxyFold:w-[180px] iPhoneSE:mr-8 iPhoneXR:w-72 iPhoneXR:mb-2 iPhoneSE:w-[250px] md:w-[220px] md:mr-8 iPhonseSE:mb-2"
 								/>
-								<Button classes="btn-primary peer-invalid:disabled lg:w-48 lg:ml-12 lg:pl-6 lg:pr-6 mt-5 blobBtn md:pr-0 md:pl-0 md:w-32 md:ml-8 GalaxyFold:px-0">
+								<Button classes="btn-primary peer-invalid:disabled lg:w-48 lg:ml-12 lg:mb-8 lg:pl-4 lg:pr-4 mt-5 blobBtn md:pr-0 md:pl-0 md:w-30 md:ml-10 GalaxyFold:w-28 GalaxyFold:ml-8 GalaxyFold:pl-2 GalaxyFold:pr-2 GalaxyFold:mt-2 iPhoneSE:mr-30 iPhoneSE:mt-3 iPhoneXR:w-36 iPhoneXR:ml-20 iPhoneSE:w-36 md:w-36 GalaxyFold:py-2 GalaxyFold:rounded-xl iPhoneSE:ml-16 iPhoneSE:py-4 iPhoneXR:rounded-2xl GalaxyS8:ml-10">
 									Subscribe
 								</Button>
 							</form>
