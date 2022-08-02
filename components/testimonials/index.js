@@ -25,12 +25,12 @@ const testimonials = [
 
 export default function Testimonials() {
 	return (
-		<div className='flex flex-wrap justify-center mb-5 lg:mt-0 xl:mt-16'>
+		<div className='flex flex-wrap justify-around items-stretch space-y-16 lg:space-y-0 xl:justify-center xl:space-x-40'>
 			{testimonials.map((testimonial, index) => (
 				<Card
-					classes='relative max-w-[80%] p-10 my-8 bg-white text-left lg:max-w-[27%] lg:mx-5 lg:my-20 xl:max-w-[20%] xl:m-16'
+					classes={`${index === 1 ? 'lg:top-24' : ''} relative max-w-[80%] p-10 bg-white text-left lg:max-w-[25%] xl:max-w-[20%]`}
 					key={`testimonial-${index}`}>
-					<div className='absolute -top-12 -right-10 z-10 lg:-top-20 '>
+					<div className='absolute -top-10 -right-[10%] z-10 w-24 sm:w-32 sm:-top-14 lg:-top-16 lg:-right-[10%]'>
 						<Image
 							alt=''
 							src={testimonial.image}
@@ -40,7 +40,7 @@ export default function Testimonials() {
 						/>
 					</div>
 
-					<div className='pb-8 text-lg font-semibold'>{testimonial.name}</div>
+					<div className='pb-8 text-lg font-medium'>{testimonial.name}</div>
 					<p>{`"${testimonial.quote}"`}</p>
 				</Card>
 			))}
