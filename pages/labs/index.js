@@ -42,18 +42,19 @@ export default function Labs({ labs }) {
 					/>
 				</div>
 			</Flex>
-			<Flex classes='lg:mx-auto mx-5 items-center justify-between mt-5 lg:mt-12 flex-col-reverse lg:flex-row'>
-				<div className='mt-10 lg:mt-0'>
+			<Flex classes='mt-5 mx-5 flex-col-reverse justify-around items-center sm:mx-auto sm:px-10 md:flex-col-reverse lg:flex-row lg:mt-12'>
+				<div className='mt-10 min-w-full iPhoneSE:min-w-[10%] iPhoneSE:w-2/3 sm:w-1/2 lg:mt-0 xl:w-1/3'>
 					<Image
 						src='/illustrations/table-talk.png'
 						width={436}
 						height={425}
 						alt=''
+						layout='responsive'
 					/>
 				</div>
 
-				<div className='text-center w-full lg:text-left lg:w-[500px]'>
-					<h2 className='font-semibold lg:mb-10'>What are Labs?</h2>
+				<div className='text-center w-full lg:text-left lg:w-2/3 lg:ml-20 xl:w-2/5'>
+					<h2 className='font-semibold mb-3 lg:mb-10'>What are Labs?</h2>
 					<p>
 						Laboratories are work-groups guided by an external host aimed at
 						exploring the current edition theme.{' '}
