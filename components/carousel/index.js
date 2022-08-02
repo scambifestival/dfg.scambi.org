@@ -9,20 +9,30 @@ export default function Carousel({ slides }) {
 	const carousel = useRef();
 
 	useEffect(() => {
-		setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+		setWidth(carousel.current.scrollWidth - carousel.current.clientWidth);
 	}, []);
 
 	return (
 		<motion.div
 			ref={carousel}
-			className='overflow-hidden cursor-grab bg-white rounded-md pt-10'>
+			className='overflow-hidden cursor-grab bg-white rounded-md px-5 SurfaceDuo:px-10 py-10 md:w-full'>
 			<motion.div
 				drag='x'
-				dragConstraints={{ right: width, left: -width }}
-				className='flex items-center justify-center space-x-5 px-10'>
+				dragConstraints={{ right: 0, left: (width * -1.015)}}
+				className={`grid justify-start items-center space-x-5`}
+				style={{gridTemplateColumns: `repeat(${slides.length},1fr)`}}
+				>
 				{slides.map((slide, index) => (
-					<div key={index} className='block w-[800px] h-[350px]'>
-						<Image src={slide} alt='' layout='fixed' className='rounded-2xl' />
+					<div key={index} className='inline-block w-[200px] SurfaceDuo:w-[400px]'>
+						<Image
+							src={slide}
+							alt=''
+							layout='responsive'
+							width={475}
+							objectFit='cover'
+							objectPosition='center'
+							className='rounded-2xl'
+						/>
 					</div>
 				))}
 			</motion.div>
