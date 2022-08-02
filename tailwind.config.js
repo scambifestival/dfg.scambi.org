@@ -17,7 +17,8 @@ module.exports = {
 		screens: {
 			GalaxyFold: "280px",
 			GalaxyS8: "360px",
-			iPhoneSE: "375px",
+			iPhoneSE: "376px",
+			iPhoneXR: "414px",
 			SurfaceDuo: "540px",
 			sm: "640px",
 			md: "768px",
