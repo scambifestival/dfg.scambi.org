@@ -95,6 +95,7 @@ export default function Navbar() {
 					<Dropdown
 						name='About us'
 						btnStyle='text-xl font-bold uppercase'
+						dropdownStyle='w-56'
 						content={aboutUsDropdown}
 					/>
 				</li>
@@ -102,6 +103,7 @@ export default function Navbar() {
 					<Dropdown
 						name='Festival'
 						btnStyle='text-xl font-bold uppercase'
+						dropdownStyle='w-56'
 						content={festivalDropdown}
 					/>
 				</li>
@@ -109,6 +111,7 @@ export default function Navbar() {
 					<Dropdown
 						name='Support'
 						btnStyle='text-xl font-bold uppercase'
+						dropdownStyle='w-56'
 						content={supportDropdown}
 					/>
 				</li>
