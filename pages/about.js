@@ -30,7 +30,9 @@ export default function About() {
 						Join us for our second year in Sanremo Italy on Aug 25 - 28, 2022,
 						where we will explore <b>Disequilibirum.</b>
 					</p>
-					<Button classes="btn-primary GalaxyFold:mb-12">Attend</Button>
+					<Button classes="btn-primary GalaxyFold:mb-12">
+						<a href="https://pretix.eu/scambi/2022/">ATTEND</a>
+					</Button>
 				</div>
 				<Image
 					src="/illustrations/about-header.png"
