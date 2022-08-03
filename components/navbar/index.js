@@ -123,7 +123,7 @@ export default function Navbar() {
 				</li>
 			</ul>
 
-			<div className={`${isOpen ? '' : 'hidden'} lg:flex lg:items-center lg:w-fit lg:space-x-5 xl:space-x-3`}>
+			<div className={`${isOpen ? '' : 'hidden'} lg:flex lg:items-center lg:w-fit lg:space-x-5 xl:space-x-5`}>
 				<Button
 					classes={`lg:inline-block uppercase outline-offset-1 btn-primary`}>
 					Attend
@@ -132,7 +132,7 @@ export default function Navbar() {
 					name={router.locale}
 					content={languageDropdown}
 					btnStyle='text-xl uppercase hidden lg:inline-flex'
-					dropdownStyle='w-fit px-2 left-auto right-0 shadow-xl'
+					dropdownStyle='absolute w-fit px-2 left-auto right-0 shadow-xl'
 				/>
 			</div>
 		</nav>
