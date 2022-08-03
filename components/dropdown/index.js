@@ -40,7 +40,7 @@ export default function Dropdown({ btnStyle, dropdownStyle, name, content }) {
 			<ul
 				ref={menu}
 				className={`${dropdownStyle} ${isOpen ? '' : 'hidden'
-					} py-1 left-0 mt-2 w-56 rounded-md bg-white lg:absolute lg:shadow-xl`}
+					} py-1 left-0 mt-2 rounded-md bg-white lg:absolute lg:shadow-xl`}
 				id={name}
 				role='menu'
 				aria-label={name}
