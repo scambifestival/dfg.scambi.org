@@ -30,7 +30,7 @@ export default function Footer() {
 						</p>
 					</div>
 					<Button classes="btn-primary SurfaceDuo:mr-0 GalaxyFold:mr-2 GalaxyFold:p-4 GalaxyFold:h-14 iPhoneSE:px-12 iPhoneSE:h-auto iPhoneSE:mt-auto">
-						ATTEND
+						<a href="https://pretix.eu/scambi/2022/">ATTEND</a>
 					</Button>
 				</div>
 			</div>
