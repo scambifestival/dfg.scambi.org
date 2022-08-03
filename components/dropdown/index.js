@@ -31,7 +31,7 @@ export default function Dropdown({ btnStyle, dropdownStyle, name, content }) {
 				aria-expanded={isOpen}
 				onClick={handleClick}
 				className={`${btnStyle} ${isOpen ? 'text-fuchsia-800' : ''
-					} inline-flex justify-start items-center shadow-none cursor-pointer px-0 py-2 bg-white outline-none hover:text-fuchsia-800 active:text-fuchsia-800 focus:text-fuchsia-800`}>
+					} inline-flex justify-start items-center shadow-none cursor-pointer px-0 py-2 bg-white outline-none active:text-fuchsia-800 focus:text-fuchsia-800 lg:hover:text-fuchsia-800`}>
 				{name}
 				<span className='pl-2' aria-hidden='true'>
 					{isOpen ? <ChevronUp /> : <ChevronDown />}
