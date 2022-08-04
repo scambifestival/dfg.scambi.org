@@ -128,7 +128,9 @@ export default function Navbar() {
 
 			<div className={`${isOpen ? '' : 'hidden'} lg:flex lg:items-center lg:w-fit lg:space-x-5 xl:space-x-5`}>
 				<Button
-					classes={`lg:inline-block uppercase outline-offset-1 btn-primary`}>
+					classes={`lg:inline-block uppercase outline-offset-1 btn-primary`}
+					onClick={() => window.open('https://pretix.eu/scambi/2022/', '_blank')}
+				>
 					Attend
 				</Button>
 				<Dropdown
