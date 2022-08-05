@@ -163,7 +163,7 @@ export default function Footer() {
 									</Link>
 								</li>
 								<li className="mt-2">
-									<Link href="/lab">
+									<Link href="/labs">
 										<a>Labs</a>
 									</Link>
 								</li>
@@ -193,7 +193,7 @@ export default function Footer() {
 									</Link>
 								</li>
 								<li className="mt-2">
-									<Link href="/">
+									<Link href="/contact">
 										<a>Join Team</a>
 									</Link>
 								</li>
