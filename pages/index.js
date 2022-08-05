@@ -279,9 +279,14 @@ export default function Home() {
 				</div>
 			</Flex>
 
-			<div className='m-7 sm:m-10 xl:mx-20'>
+			<div className='mx-7 my-20 sm:mx-10 xl:mx-20'>
 				<h2 className='leading-tight font-medium text-center sm:text-left py-5'>Explore Scambi Festival</h2>
 				<Map />
+				<Button
+					classes='font-[500] bg-white mt-6 px-9 py-2'
+					onClick={() => window.open("//umap.openstreetmap.fr/en/map/scambi-2022_792002", '_self')}>
+					See full screen
+				</Button>
 			</div>
 		</section>
 	);
