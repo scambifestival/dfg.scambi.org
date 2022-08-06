@@ -13,8 +13,8 @@ const aboutUsDropdown = [
 ];
 
 const festivalDropdown = [
-	{ title: 'Labs', href: 'labs' },
-	{ title: 'Pinolis', href: 'pinoli' },
+	{ title: "Labs", href: "labs" },
+	{ title: "Pinolis", href: "pinoli" }
 	// {title: 'Film Contest', href:'filmcontest'}
 ];
 
@@ -22,7 +22,6 @@ const supportDropdown = [
 	{ title: 'Donate', href: 'https://www.paypal.com/paypalme/apsoltre' },
 	{ title: 'Volunteer', href: 'contact' },
 	// { title: 'Join Team', href: 'careers' },
-];
 
 export default function Navbar() {
 	const navbar = useRef(null);
