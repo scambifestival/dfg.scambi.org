@@ -13,8 +13,8 @@ const aboutUsDropdown = [
 ];
 
 const festivalDropdown = [
-	{ title: "Labs", href: "labs" },
-	{ title: "Pinolis", href: "pinoli" }
+	{ title: 'Labs', href: 'labs' },
+	{ title: 'Pinolis', href: 'pinoli' },
 	// {title: 'Film Contest', href:'filmcontest'}
 ];
 
@@ -22,19 +22,18 @@ const supportDropdown = [
 	{ title: 'Donate', href: 'https://www.paypal.com/paypalme/apsoltre' },
 	{ title: 'Volunteer', href: 'contact' },
 	// { title: 'Join Team', href: 'careers' },
+];
 
 export default function Navbar() {
 	const navbar = useRef(null);
 	const [isOpen, setIsOpen] = useState(false);
 	const router = useRouter();
 
-	const languageDropdown = router.locales.map(locale => (
-		{
-			title: locale.toUpperCase(),
-			href: router.asPath,
-			locale: locale
-		}
-	));
+	const languageDropdown = router.locales.map((locale) => ({
+		title: locale.toUpperCase(),
+		href: router.asPath,
+		locale: locale,
+	}));
 
 	const handleClick = () => {
 		setIsOpen(!isOpen);
@@ -57,14 +56,14 @@ export default function Navbar() {
 			aria-label='Scambi'
 			ref={navbar}
 			onBlur={clickOutside}
-			className={`${isOpen ? 'rounded-3xl' : 'rounded-full'
-				} bg-white shadow-xl fixed w-11/12 top-10 left-1/2 -translate-x-1/2 z-50 flex flex-col items-start justify-between py-5 px-10 space-y-7 sm:px-14 lg:flex-row lg:items-center lg:space-y-0 xl:px-16`}>
+			className={`${
+				isOpen ? 'rounded-3xl' : 'rounded-full'
+			} bg-white shadow-xl fixed w-11/12 top-10 left-1/2 -translate-x-1/2 z-50 flex flex-col items-start justify-between py-5 px-10 space-y-7 sm:px-14 lg:flex-row lg:items-center lg:space-y-0 xl:px-16`}>
 			<div className='w-full flex justify-between items-center lg:inline-flex lg:w-32'>
 				<button
 					type='button'
 					className={`w-6 sm:w-8 lg:hidden p-0 outline-none hover:text-fuchsia-800 focus:text-fuchsia-800 shadow-none`}
-					onClick={handleClick}
-				>
+					onClick={handleClick}>
 					<Menu isOpen={isOpen} />
 				</button>
 				<Link href='/'>
@@ -87,9 +86,9 @@ export default function Navbar() {
 			<ul
 				role='menubar'
 				aria-label='scambi'
-				className={`${isOpen ? 'flex' : 'hidden'
-					} w-full space-y-3 flex-col justify-between items-start space-x-0 lg:w-auto lg:flex lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 xl:space-x-16`}
-			>
+				className={`${
+					isOpen ? 'flex' : 'hidden'
+				} w-full space-y-3 flex-col justify-between items-start space-x-0 lg:w-auto lg:flex lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 xl:space-x-16`}>
 				<li role='none'>
 					<Dropdown
 						name='About us'
@@ -125,11 +124,15 @@ export default function Navbar() {
 				</li>
 			</ul>
 
-			<div className={`${isOpen ? '' : 'hidden'} lg:flex lg:items-center lg:w-fit lg:space-x-5 xl:space-x-5`}>
+			<div
+				className={`${
+					isOpen ? '' : 'hidden'
+				} lg:flex lg:items-center lg:w-fit lg:space-x-5 xl:space-x-5`}>
 				<Button
 					classes={`lg:inline-block uppercase outline-offset-1 btn-primary`}
-					onClick={() => window.open('https://pretix.eu/scambi/2022/', '_blank')}
-				>
+					onClick={() =>
+						window.open('https://pretix.eu/scambi/2022/', '_blank')
+					}>
 					Attend
 				</Button>
 				<Dropdown
