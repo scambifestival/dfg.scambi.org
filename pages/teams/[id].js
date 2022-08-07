@@ -15,9 +15,7 @@ import matter from 'gray-matter';
 import Flex from '../../components/flex';
 import { useRouter } from 'next/router';
 
-export default function Team({ frontmatter, team, members }) {
-	const router = useRouter();
-	const locale = router.locale;
+function TeamInfo({ frontmatter, team, members, locale }) {
 	return (
 		<section className='mt-40'>
 			<Flex classes='mx-auto mb-20'>
@@ -43,6 +41,30 @@ export default function Team({ frontmatter, team, members }) {
 	);
 }
 
+// TODO: Add translation
+function TeamError() {
+	return (
+		<section className='mt-40'>
+			<h2>This team is lost in the festival</h2>
+		</section>
+	);
+}
+
+export default function Team({ frontmatter, team, members }) {
+	const router = useRouter();
+	const locale = router.locale;
+	return frontmatter ? (
+		<TeamInfo
+			frontmatter={frontmatter}
+			team={team}
+			members={members}
+			locale={locale}
+		/>
+	) : (
+		<TeamError />
+	);
+}
+
 export async function getStaticPaths({ locales }) {
 	const files = getAllTeams();
 	const paths = i18n(files, locales);
@@ -54,9 +76,16 @@ export async function getStaticPaths({ locales }) {
 
 export async function getStaticProps({ params: id, locale }) {
 	const team = getATeam(id.id, locale);
-	const { data, content } = matter(team);
-	const members = await getTeamMembers(id.id);
-	console.log(members);
+	let data = null;
+	let content = null;
+	let members = [];
+
+	if (team !== null) {
+		const parse = matter(team);
+		data = parse.data;
+		content = parse.content;
+		members = await getTeamMembers(id.id);
+	}
 
 	return {
 		props: {
