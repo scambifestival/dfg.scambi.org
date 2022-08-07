@@ -17,7 +17,7 @@ export default function FAQ() {
 					<Accordion content={data} />
 				</div>
 			</div>
-		</Flex>
+		</section>
 	);
 }
 
