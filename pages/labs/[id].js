@@ -9,12 +9,12 @@ export default function Lab({ lab }) {
 	const locale = router.locale;
 
 	return (
-		<section className='bg-white'>
+		<section className='bg-white -mt-48'>
 			<div className='w-full'>
-				<Image src='https://picsum.photos/1000/500' layout='fill' alt='' />
+				<Image src='https://picsum.photos/1000/500' layout='responsive' width={1000} height={500} alt='' />
 			</div>
 
-			<Flex classes='pt-[700px] mx-auto text-left justify-between'>
+			<Flex classes=' mx-auto text-left justify-between'>
 				<div className='lg:w-1/2'>
 					<h1 className='mb-10'>{lab.title}</h1>
 					<p>{getDescription(locale, lab)}</p>
