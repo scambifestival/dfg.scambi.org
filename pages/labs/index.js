@@ -79,9 +79,9 @@ export default function Labs({ labs }) {
 					height={500}
 				/>
 	</Flex>*/}
-			<div className='mt-20 mx-auto p-2 lg:px-16 lg:pb-28'>
-				<h2 className='font-semibold mb-10 text-center'>Upcoming Labs</h2>
-				<div className='flex flex-col space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-5 lg:gap-y-10'>
+			<div className='my-10 mx-5 iPhoneXR:mx-10 md:mx-5 lg:mx-10'>
+				<h2 className='font-semibold text-center mb-10'>Upcoming Labs</h2>
+				<div className='flex justify-around flex-wrap w-full'>
 					{labs.map((lab) => {
 						return (
 							<LabCard
