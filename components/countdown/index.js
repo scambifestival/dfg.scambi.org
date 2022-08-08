@@ -35,7 +35,7 @@ export default function CountDown() {
 	};
 
 	return (
-		<motion.div className="text-center">
+		<motion.div className="text-center mt-16 mb-2">
 			{timeLeft.days >= 0 ? (
 				<div className="flex  flex-col">
 					<h2>Counting down to Festival</h2>
