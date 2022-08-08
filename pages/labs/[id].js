@@ -22,10 +22,9 @@ export default function Lab({ lab }) {
 				/>
 			</div>
 
-			<Flex classes=' mx-auto text-left justify-between'>
-				<div className='lg:w-1/2'>
-					<h1 className='mb-10'>{lab.title}</h1>
-					<p>{getDescription(locale, lab)}</p>
+			<Flex classes='px-5 justify-between iPhoneXR:px-10 sm:mx-auto text-center md:text-left md:flex-col xl:flex-row xl:px-0'>
+				<div className='xl:w-3/5'>
+					<h1 className='mb-10 leading-tight text-[5.4rem] iPhoneXR:text-[102px]'>Human Thread Lab</h1>
 				</div>
 
 				{/* <Image
@@ -34,7 +33,7 @@ export default function Lab({ lab }) {
 					width={387}
 					height={427}
 				/> */}
-				<div className='mb-5 mx-auto w-full min-w-0 iPhoneXR:w-2/3 sm:w-1/2 lg:order-last lg:mb-0 lg:w-1/3'>
+				<div className='mb-5 mx-auto w-full min-w-0 iPhoneXR:w-2/3 sm:w-1/2 lg:order-last lg:mb-0 lg:w-1/3 xl:mr-0'>
 					<svg
 						viewBox='0 0 282 258'
 						fill='none'
@@ -63,12 +62,9 @@ export default function Lab({ lab }) {
 					</svg>
 				</div>
 			</Flex>
-			<Flex classes='mt-10 mx-auto justify-between bg-white'>
-				<div className='text-left lg:w-1/2'>
-					<h2 className=''>Meet the Lab Host</h2>
-					{lab['host'].map((host) => (
-						<p key={host.id}>{host.value}</p>
-					))}
+			<Flex classes='mt-10 px-5 justify-between bg-white iPhoneXR:px-10 sm:mx-auto md:flex-col lg:flex-row lg:px-0 lg:py-20'>
+				<div className='text-center sm:text-left lg:w-1/2'>
+					<h2>Meet the Lab Host</h2>
 				</div>
 				{/* <Image
 					src='https://picsum.photos/400'
@@ -77,7 +73,7 @@ export default function Lab({ lab }) {
 					height={427}
 				/> */}
 
-				<div className='mb-5 mx-auto w-full min-w-0 iPhoneXR:w-2/3 sm:w-1/2 lg:order-last lg:mb-0 lg:w-1/3'>
+				<div className='mb-5 mx-auto w-full min-w-0 iPhoneXR:w-2/3 sm:w-1/2 lg:order-last lg:mb-0 lg:w-2/5 xl:w-1/3 lg:mr-0'>
 					<svg
 						viewBox='0 0 282 258'
 						fill='none'
