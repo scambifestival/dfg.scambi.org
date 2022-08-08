@@ -10,8 +10,16 @@ export default function Lab({ lab }) {
 
 	return (
 		<section className='bg-white -mt-48'>
-			<div className='w-full'>
-				<Image src='https://picsum.photos/1000/500' layout='responsive' width={1000} height={500} alt='' />
+			<div className='relative w-full h-[500px] min-h-full'>
+				<Image
+					src='https://picsum.photos/2000/1000'
+					layout='fill'
+					width={2000}
+					height={1000}
+					objectFit='cover'
+					objectPosition='center'
+					alt=''
+				/>
 			</div>
 
 			<Flex classes=' mx-auto text-left justify-between'>
