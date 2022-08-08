@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 const calculateTimeLeft = () => {
 	const now = new Date();
-	const start = new Date("2022-08-25T09:30:00+02:00");
+	const start = new Date("2022-08-25T12:00:00+02:00");
 	const difference = +start - +now;
 	let timeLeft = {};
 
