@@ -4,10 +4,11 @@ import Image from 'next/image';
 import { TeamCard } from '../../components/card/teams-card';
 import { getAllTeams, getATeam } from '../../lib/teams';
 import matter from 'gray-matter';
+import Card from '../../components/card';
 
 export default function Teams({ teams }) {
 	return (
-		<section className='mt-40'>
+		<section>
 			<Flex classes='mx-auto justify-between'>
 				<div className='lg:w-1/2 mr-5'>
 					<h2>Our Teams</h2>
@@ -29,16 +30,22 @@ export default function Teams({ teams }) {
 				<Image src='/illustrations/group.png' alt='' width={600} height={400} />
 			</Flex>
 			<div className='grid grid-cols-1 lg:px-16 gap-20 lg:grid-cols-3'>
-				{teams.map(({ team, frontmatter, content }) => (
-					<TeamCard
-						key={team}
-						imgSrc={frontmatter.image}
-						teamName={frontmatter.name}
-						duty={frontmatter.duty}
-						desc={content}
-						path={team}
-					/>
-				))}
+				{teams.map(({ team, frontmatter, content }) =>
+					frontmatter ? (
+						<TeamCard
+							key={team}
+							imgSrc={frontmatter.image}
+							teamName={frontmatter.name}
+							duty={frontmatter.duty}
+							desc={content}
+							path={team}
+						/>
+					) : (
+						<Card key={team}>
+							<h3>To be added</h3>
+						</Card>
+					)
+				)}
 			</div>
 		</section>
 	);
@@ -48,7 +55,14 @@ export async function getStaticProps({ locale }) {
 	const files = getAllTeams();
 	const teams = files.map((team) => {
 		const readFile = getATeam(team, locale);
-		const { data, content } = matter(readFile);
+		let data = null;
+		let content = null;
+		if (readFile) {
+			const parse = matter(readFile);
+			data = parse.data;
+			content = parse.content;
+		}
+
 		return {
 			team,
 			frontmatter: data,
