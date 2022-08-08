@@ -1,37 +1,38 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import Flex from '../components/flex';
-import Card from '../components/card';
-import Button from '../components/button';
-import Subscribe from '../components/subscribe';
-import Testimonials from '../components/testimonials';
-import Map from '../components/map';
-import { ArrowRight } from '../components/icons/arrow';
-import Carousel from '../components/carousel';
-
-import { highlights } from '../assets/highlights';
+import Flex from "../components/flex";
+import Card from "../components/card";
+import Button from "../components/button";
+import Subscribe from "../components/subscribe";
+import Testimonials from "../components/testimonials";
+import Map from "../components/map";
+import { ArrowRight } from "../components/icons/arrow";
+import Carousel from "../components/carousel";
+import CountDown from "../components/countdown";
+import { highlights } from "../assets/highlights";
 
 /* A different way to import image
 import TableTalk from '../public/illustrations/table-talk.png';
 import Program from '../public/illustrations/program.png'; */
 //import Sponsors from '../public/illustrations/sponsors.png';
 
-import { eventCards, manifestoCards } from '../assets/data';
+import { eventCards, manifestoCards } from "../assets/data";
 
 export default function Home() {
 	return (
 		<section>
-			<div className='w-10/12 mx-auto mt-48 mb-10 text-left flex flex-col justify-between xl:items-center  xl:flex-row'>
+			<div className="w-10/12 mx-auto mt-48 mb-10 text-left flex flex-col justify-between xl:items-center  xl:flex-row">
 				<div>
-					<h1 className='leading-none'>Scambi Festival</h1>
+					<h1 className="leading-none">Scambi Festival</h1>
 					<h3>The Festival of Paneuretic Workshops, free for all to attend</h3>
 				</div>
-				<p className='font-semibold'>
-					<span className='text-2xl'>August 25 - 28, 2022</span> <br />
-					<span className='text-lg'>La Pigna, Sanremo, Italy</span>
+				<p className="font-semibold">
+					<span className="text-2xl">August 25 - 28, 2022</span> <br />
+					<span className="text-lg">La Pigna, Sanremo, Italy</span>
 				</p>
 			</div>
+
 			{/*<div className='min-h-[20rem] mx-5 flex justify-center md:min-h-[32rem] md:mx-10 md:mt-10 xl:mt-16'>
 				<ReactPlayer
 					width='100%'
@@ -39,13 +40,14 @@ export default function Home() {
 					url='https://vimeo.com/658183199'
         />
       </div>*/}
-			<Flex classes='mt-16 justify-between mx-auto'>
-				<div className=''>
-					<h2 className='leading-tight lg:leading-normal mx-auto'>
+			<CountDown />
+			<Flex classes="mt-16 justify-between mx-auto">
+				<div className="">
+					<h2 className="leading-tight lg:leading-normal mx-auto">
 						What are paneuretic workshops?
 					</h2>
-					<p className='mx-auto my-5 w-4/5 md:mx-0'>
-						<span className='font-semibold'>Pan - eur - etic:</span> Neologism
+					<p className="mx-auto my-5 w-4/5 md:mx-0">
+						<span className="font-semibold">Pan - eur - etic:</span> Neologism
 						deriving from the Greek pan (all), eurisko (discover) and ethos
 						(living), because we wish to combine diverse realities that would
 						never meet in their original contexts, while celebrating and
@@ -54,57 +56,57 @@ export default function Home() {
 					</p>
 				</div>
 				<Image
-					src='/illustrations/table-talk.png'
-					alt=''
+					src="/illustrations/table-talk.png"
+					alt=""
 					width={808}
 					height={800}
 				/>
 			</Flex>
 
-			<Flex classes='w-full mx-auto justify-between' reverse={true}>
-				<div className='text-left lg:ml-40'>
-					<h2 className='leading-tight lg:leading-normal'>
+			<Flex classes="w-full mx-auto justify-between" reverse={true}>
+				<div className="text-left lg:ml-40">
+					<h2 className="leading-tight lg:leading-normal">
 						2022 Edition: “Imbalance”
 					</h2>
-					<p className='my-5 w-4/5'>
+					<p className="my-5 w-4/5">
 						Scambi is the festival of paneuretic workshops, born from the
-						necessity felt by a group of young people to{' '}
-						<span className='font-semibold'>
+						necessity felt by a group of young people to{" "}
+						<span className="font-semibold">
 							fight the intolerance towards the different.
-						</span>{' '}
+						</span>{" "}
 						For the 2022 edition, which will take place from 25th to 28th of
-						August in the historic center of La Pigna (Sanremo), we chose{' '}
-						<span className='font-semibold'>imbalance</span> as a theme.
+						August in the historic center of La Pigna (Sanremo), we chose{" "}
+						<span className="font-semibold">imbalance</span> as a theme.
 					</p>
-					<p className='mx-auto my-8 w-4/5 md:mx-0'>
-						Not sure where to start? Check out our{' '}
-						<Link href='/'>
-							<a className='font-semibold text-purple-650'>
+					<p className="mx-auto my-8 w-4/5 md:mx-0">
+						Not sure where to start? Check out our{" "}
+						<Link href="/">
+							<a className="font-semibold text-purple-650">
 								Frequently Asked Questions
-								<i className='fa fa-chevron-right px-3' />
+								<i className="fa fa-chevron-right px-3" />
 							</a>
 						</Link>
 					</p>
-					<Button classes='btn-primary'>View the 2022 Program</Button>
+					<Button classes="btn-primary">View the 2022 Program</Button>
 				</div>
 				<Image
-					src='/illustrations/program.png'
-					alt=''
+					src="/illustrations/program.png"
+					alt=""
 					width={918}
 					height={1026}
 				/>
 			</Flex>
 
-			<div className='flex flex-col items-center justify-center space-y-7 mt-16 lg:flex-row lg:space-x-14 lg:space-y-0'>
+			<div className="flex flex-col items-center justify-center space-y-7 mt-16 lg:flex-row lg:space-x-14 lg:space-y-0">
 				{eventCards.map((event, index) => (
 					<Card
 						key={index}
-						classes='w-4/5 h-fit px-10 py-5 space-y-4 bg-white lg:w-1/4'>
+						classes="w-4/5 h-fit px-10 py-5 space-y-4 bg-white lg:w-1/4">
 						<h4>{event.title}</h4>
-						<p className='text-left'>{event.description}</p>
-						<div className='text-left text-purple-650'>
+						<p className="text-left">{event.description}</p>
+						<div className="text-left text-purple-650">
 							<Link href={`/${event.link}`}>
-								<a className='flex items-center space-x-3 text-primary'>
+								<a className="flex items-center space-x-3 text-primary">
 									<p>Read more</p>
 									<ArrowRight />
 								</a>
@@ -114,8 +116,8 @@ export default function Home() {
 				))}
 			</div>
 
-			<div className='mt-28 lg:px-16 text-center'>
-				<h2 className='mb-10'>Scambi 2021 Highlights</h2>
+			<div className="mt-28 lg:px-16 text-center">
+				<h2 className="mb-10">Scambi 2021 Highlights</h2>
 				<Carousel slides={highlights} />
 			</div>
 
@@ -161,20 +163,20 @@ export default function Home() {
 				</div>
 				</div>*/}
 
-			<div className='mt-6 lg:mt-10 xl:mt-32'>
-				<h2 className='px-10 leading-tight'>
+			<div className="mt-6 lg:mt-10 xl:mt-32">
+				<h2 className="px-10 leading-tight">
 					An experience people love to talk about
 				</h2>
 				<Testimonials />
 			</div>
 
-			<Flex classes='mx-auto'>
-				<div className='md:text-left space-y-7 md:w-1/2 lg:w-3/5 mr-10'>
-					<h2 className='leading-tight lg:leading-normal'>Scambi Family</h2>
-					<p className='mx-auto md:mx-0'>
+			<Flex classes="mx-auto">
+				<div className="md:text-left space-y-7 md:w-1/2 lg:w-3/5 mr-10">
+					<h2 className="leading-tight lg:leading-normal">Scambi Family</h2>
+					<p className="mx-auto md:mx-0">
 						We are a group of under 25s coming from every corner of Europe.
 					</p>
-					<p className='mx-auto md:mx-0'>
+					<p className="mx-auto md:mx-0">
 						Our association was born from our wish to value real and deep ties,
 						horizontality and dialogue, curiosity and welcoming of the
 						different. After lots of videocalls, thousand doubts and just as
@@ -182,29 +184,29 @@ export default function Home() {
 						diversity and passion, enthusiastic in sharing inspiration and in
 						continuously proposing new perspectives.
 					</p>
-					<p className='mx-auto md:mx-0'>
+					<p className="mx-auto md:mx-0">
 						We will be waiting for you in Sanremo, to introduce ourselves
 						properly. In the meanwhile, here is an anticipation of who we are.
 					</p>
-					<Button classes='btn-primary'>Volunteer with us</Button>
+					<Button classes="btn-primary">Volunteer with us</Button>
 				</div>
 				<Image
 					src={highlights[4]}
-					alt=''
+					alt=""
 					width={500}
 					height={319}
-					className='rounded-2xl'
+					className="rounded-2xl"
 				/>
 			</Flex>
 
-			<div className='flex justify-center text-center px-14 py-10 font-normal bg-white sm:px-20 lg:px-24 xl:px-42 2xl:px-60'>
-				<p className='text-3xl sm:leading-relaxed sm:text-4xl xl:text-5xl xl:leading-relaxed 2xl:leading-loose'>
-					“Our purpose is to recover the value of{' '}
-					<span className='font-bold text-3xl sm:text-4xl xl:text-5xl'>
+			<div className="flex justify-center text-center px-14 py-10 font-normal bg-white sm:px-20 lg:px-24 xl:px-42 2xl:px-60">
+				<p className="text-3xl sm:leading-relaxed sm:text-4xl xl:text-5xl xl:leading-relaxed 2xl:leading-loose">
+					“Our purpose is to recover the value of{" "}
+					<span className="font-bold text-3xl sm:text-4xl xl:text-5xl">
 						communication
-					</span>{' '}
-					and{' '}
-					<span className='font-bold text-3xl sm:text-4xl xl:text-5xl'>
+					</span>{" "}
+					and{" "}
+					<span className="font-bold text-3xl sm:text-4xl xl:text-5xl">
 						meeting
 					</span>
 					, often forgotten or hidden behind a two-dimentional screen. Scambi is
@@ -213,55 +215,55 @@ export default function Home() {
 				</p>
 			</div>
 
-			<div className='my-20 mx-auto space-y-12'>
-				<h2 className='text-center'>Our Manifesto</h2>
-				<div className='flex flex-col justify-center mx-16 space-y-6 lg:space-x-5 lg:space-y-0 lg:flex-row xl:space-x-10 2xl:mx-32'>
+			<div className="my-20 mx-auto space-y-12">
+				<h2 className="text-center">Our Manifesto</h2>
+				<div className="flex flex-col justify-center mx-16 space-y-6 lg:space-x-5 lg:space-y-0 lg:flex-row xl:space-x-10 2xl:mx-32">
 					{manifestoCards.map((card, index) => (
 						<Card
 							classes={`p-5 w-full h-fit lg:w-1/4 xl:w-1/5 ${
-								index % 2 === 0 ? 'yellow-pink-gradient' : 'bg-white'
+								index % 2 === 0 ? "yellow-pink-gradient" : "bg-white"
 							}`}
 							key={`manifesto-${index}`}>
-							<h3 className='leading-loose'>{card.title}</h3>
-							<p className='leading-relaxed'>{card.description}</p>
+							<h3 className="leading-loose">{card.title}</h3>
+							<p className="leading-relaxed">{card.description}</p>
 						</Card>
 					))}
 				</div>
-				<div className='flex justify-center'>
-					<Button classes='btn-primary'>Read the Manifesto</Button>
+				<div className="flex justify-center">
+					<Button classes="btn-primary">Read the Manifesto</Button>
 				</div>
 			</div>
 
-			<div className='bg-white flex justify-center py-10'>
+			<div className="bg-white flex justify-center py-10">
 				<Subscribe />
 			</div>
 
 			<Flex
-				classes='my-1 px-8 mx-auto space-y-10 md:space-x-reverse xl:gap-x-52'
+				classes="my-1 px-8 mx-auto space-y-10 md:space-x-reverse xl:gap-x-52"
 				reverse={true}>
-				<div className='w-4/5 flex flex-col text-center space-y-8 md:text-left'>
-					<h2 className='leading-tight lg:leading-normal'>Our Relations</h2>
-					<p className='mx-auto md:mx-0 w-full 2xl:w-4/5'>
+				<div className="w-4/5 flex flex-col text-center space-y-8 md:text-left">
+					<h2 className="leading-tight lg:leading-normal">Our Relations</h2>
+					<p className="mx-auto md:mx-0 w-full 2xl:w-4/5">
 						Alone we would not have been able to concretize the magic of Scambi.
 						What makes our festival unique are the relationships and the bonds
 						with local and non-local bodies, the public administration of
 						Sanremo and many other special people.
 					</p>
-					<div className='flex flex-row justify-center md:justify-start space-x-7'>
-						<Button classes='btn-primary'>Partner with us</Button>
+					<div className="flex flex-row justify-center md:justify-start space-x-7">
+						<Button classes="btn-primary">Partner with us</Button>
 						<Button>Meet our partners</Button>
 					</div>
 				</div>
 				<Image
-					src='/illustrations/sponsors.png'
-					alt=''
+					src="/illustrations/sponsors.png"
+					alt=""
 					width={654}
 					height={689}
 				/>
 			</Flex>
 
-			<div className='px-20 my-10'>
-				<h2 className='text-left py-5'>Explore Scambi Festival</h2>
+			<div className="px-20 my-10">
+				<h2 className="text-left py-5">Explore Scambi Festival</h2>
 				<Map />
 			</div>
 		</section>
