@@ -1,10 +1,14 @@
 export default function Map() {
 	return (
-		<div className='shadow-2xl'>
+		<div className='shadow-2xl rounded-xl overflow-hidden'>
 			<iframe
-				title='map'
-				className='w-full h-[32rem] rounded-xl'
-				src='https://www.openstreetmap.org/export/embed.html?bbox=7.764823436737061%2C43.82261500966294%2C7.778985500335694%2C43.82944193035853&amp;layer=mapnik'></iframe>
+				width="100%"
+				height="400px"
+				frameborder="0"
+				allowfullscreen
+				src="//umap.openstreetmap.fr/en/map/scambi-2022_792002?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"
+			>
+			</iframe>
 		</div>
 	);
 }
