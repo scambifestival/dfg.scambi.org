@@ -13,7 +13,7 @@ export const eventCards = [
 		title: 'Mini Events',
 		description:
 			'Mini-events that come to life in La Pigna, including the reading of Poesie a Colazione, the secondhand clothing exchange Da Capo, innovative solutions for the storage of virtual data and much more.',
-		link: 'minievents',
+		link: 'pinoli',
 	},
 ];
 
