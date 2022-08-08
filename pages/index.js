@@ -9,7 +9,7 @@ import Testimonials from '../components/testimonials';
 import Map from '../components/map';
 import { ArrowRight } from '../components/icons/arrow';
 import Carousel from '../components/carousel';
-
+import CountDown from '../components/countdown';
 import { highlights } from '../assets/highlights';
 
 /* A different way to import image
@@ -22,36 +22,32 @@ import { eventCards, manifestoCards } from '../assets/data';
 export default function Home() {
 	return (
 		<section>
-			<header className='space-y-7'>
-				<div className='w-full flex flex-col justify-between mt-10 text-center sm:w-10/12 sm:mx-auto sm:my-10 sm:text-left xl:flex-row xl:items-end'>
-					<div className='mx-3 my-5 space-y-5 sm:mx-0 md:space-y-2 md:my-3 xl:my-0'>
-						<h1 className='leading-none font-medium text-[5.4rem] iPhoneSE:text-[102px]'>
-							Scambi Festival
-						</h1>
-						<h3 className='leading-tight font-medium'>
-							The Festival of Paneuretic Workshops, free for all to attend
-						</h3>
-					</div>
-					<p className='font-medium'>
-						<span className='text-2xl'>August 25 - 28, 2022</span> <br />
-						<span className='text-lg'>La Pigna, Sanremo, Italy</span>
-					</p>
+			<div className='w-10/12 mx-auto mt-48 mb-10 text-left flex flex-col justify-between xl:items-center  xl:flex-row'>
+				<div>
+					<h1 className='leading-none'>Scambi Festival</h1>
+					<h3>The Festival of Paneuretic Workshops, free for all to attend</h3>
 				</div>
-				<div className='relative pb-[50%] lg:pb-[40%] xl:pb-[30%]'>
+				<p className='font-semibold'>
+					<span className='text-2xl'>August 25 - 28, 2022</span> <br />
+					<span className='text-lg'>La Pigna, Sanremo, Italy</span>
+				</p>
+			</div>
+			{/* <div className='relative pb-[50%] lg:pb-[40%] xl:pb-[30%]'>
 					<iframe
 						className='absolute top-0 left-0 w-full h-full'
 						src='https://player.vimeo.com/video/658183199'
 						title='Scambi Festival 2021 Rewind'
 						allow='autoplay; fullscreen'
 					/>
-				</div>
-			</header>
-			<Flex classes='mt-16 mb-10 mx-7 py-0 justify-between text-center sm:mx-16 md:mx-auto md:mt-20 md:text-left md:space-x-20 lg:space-x-36 2xl:mb-10 2xl:w-9/12'>
-				<div className='space-y-3 md:w-full'>
-					<h2 className='leading-tight font-medium text-[3.5rem] iPhoneSE:text-[64px]'>
+				</div>*/}
+			<CountDown />
+			<Flex classes='mt-16 justify-between mx-auto'>
+				<div className=''>
+					<h2 className='leading-tight lg:leading-normal mx-auto'>
 						What are paneuretic workshops?
 					</h2>
-					<p>
+					<p className='mx-auto my-5 w-4/5 md:mx-0'>
+						<span className='font-semibold'>Pan - eur - etic:</span> Neologism
 						<span className='font-semibold'>Pan - eur - etic:</span> Neologism
 						deriving from the Greek pan (all), eurisko (discover) and ethos
 						(living), because we wish to combine diverse realities that would
