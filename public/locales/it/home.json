@@ -1,0 +1,64 @@
+{
+	"header": {
+		"heading": "Scambi Festival",
+		"text": "The Festival of Paneuretic Workshops, free for all to attend",
+		"month": "August"
+	},
+	"paneuretic": {
+		"heading": "What are paneuretic workshops?",
+		"text": "Neologism deriving from the Greek pan (all), eurisko (discover) and ethos (living), because we wish to combine diverse realities that would never meet in their original contexts, while celebrating and respecting our differences, discovering and developing inspiring ideas."
+	},
+	"edition": {
+		"heading": "2022 Edition: “Imbalance”",
+		"text": "Scambi is the festival of paneuretic workshops, born from the necessity felt by a group of young people to <strong>fight the intolerance towards the different</strong>. For the 2022 edition, which will take place from 25th to 28th of August in the historic center of La Pigna (Sanremo), we chose <strong>Imbalance</strong> as a theme."
+	},
+	"family": {
+		"heading": "Scambi Family",
+		"text": [
+			"We are a group of under 25s coming from every corner of Europe.",
+
+			"Our association was born from our wish to value real and deep ties, horizontality and dialogue, curiosity and welcoming of the different. After lots of videocalls, thousand doubts and just as many ideas, our team has become a family. We are proud of our diversity and passion, enthusiastic in sharing inspiration and in continuously proposing new perspectives.",
+
+			"We will be waiting for you in Sanremo, to introduce ourselves properly. In the meanwhile, here is an anticipation of who we are."
+		],
+		"button": "Volunteer with us"
+	},
+	"purpose": "“Our purpose is to recover the value of <strong>communication</strong> and <strong>meeting</strong>, often forgotten or hidden behind a two-dimentional screen. Scambi is a multi-dimensional universe, where distant “planets” have the possibility to interact with each other.”",
+	"activities": [
+		{
+			"title": "Workshops",
+			"description": "Collective experiences led by specialists who will accompany us through a variety of fields with the objective of discovering new things and people in an original way, in order to develop new bonds and values.",
+			"link": "labs"
+		},
+		{
+			"title": "Mini Events",
+			"description": "Mini-events that come to life in La Pigna, including the reading of Poesie a Colazione, the secondhand clothing exchange Da Capo, innovative solutions for the storage of virtual data and much more.",
+			"link": "labs"
+		},
+		{
+			"title": "Dissolvenze",
+			"description": "Our short film contest, through which creatives can share their views and voice their ideas thanks to the magic of pictures.",
+			"link": "labs"
+		}
+	],
+	"testimonials": {
+		"title": "An experience people love to talk about",
+		"data": [
+			{
+				"name": "Anna",
+				"quote": "To me, Scambi is where I can be free and be hopeful for the future; in these confusing and uncertain times we all need to go back to focusing on what living together really means.",
+				"image": "https://picsum.photos/200"
+			},
+			{
+				"name": "Luce",
+				"quote": "I decided to join Scambi because I saw what last year the team was able to create thanks to everybodys dedication and commitment, and I would d love to help to recreate the same magic for the next edition of the festival.",
+				"image": "https://picsum.photos/200"
+			},
+			{
+				"name": "Luisa",
+				"quote": "I like Scambi because it brought together young people from all over Italy with the goal of inventing something new, of combining music, dancing and a lot of curiosity.",
+				"image": "https://picsum.photos/200"
+			}
+		]
+	}
+}
