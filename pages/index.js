@@ -113,7 +113,7 @@ export default function Home() {
 					<Card
 						key={index}
 						classes="w-5/6 h-fit px-7 py-5 space-y-4 text-left bg-white lg:w-1/4">
-						<h4 class='font-["Poppins"] font-medium'>{event.title}</h4>
+						<h4 className='font-["Poppins"] font-medium'>{event.title}</h4>
 						<p>{event.description}</p>
 						<div>
 							<Link href={`/${event.link}`}>
