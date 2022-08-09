@@ -6,7 +6,12 @@ const nextConfig = {
 	swcMinify: true,
 	i18n,
 	images: {
-		domains: ['picsum.photos', 'images.tommi.space'],
+		domains: [
+			'picsum.photos',
+			'images.tommi.space',
+			'nuvola.scambi.org',
+			'x.scambi.org',
+		],
 	},
 	webpack: (config, { isServer }) => {
 		if (!isServer) {

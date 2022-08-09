@@ -33,7 +33,7 @@ function TeamInfo({ frontmatter, team, members, locale }) {
 						name={getFullName(member['Nome'], member['Cognome'])}
 						role={member['role'].value}
 						imgSrc={getImgSrc(member['profile_pic'])}
-						desc={getBio(member, locale)}
+						desc={getBio(locale, member)}
 					/>
 				))}
 			</div>
@@ -85,6 +85,7 @@ export async function getStaticProps({ params: id, locale }) {
 		data = parse.data;
 		content = parse.content;
 		members = await getTeamMembers(id.id);
+		console.log(members);
 	}
 
 	return {
