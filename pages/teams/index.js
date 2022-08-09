@@ -29,7 +29,7 @@ export default function Teams({ teams }) {
 				</div>
 				<Image src='/illustrations/group.png' alt='' width={600} height={400} />
 			</Flex>
-			<div className='grid grid-cols-1 lg:px-16 gap-20 lg:grid-cols-3'>
+			<div className='grid grid-cols-1 lg:px-16 gap-20 lg:grid-cols-3 mb-14'>
 				{teams.map(({ team, frontmatter, content }) =>
 					frontmatter ? (
 						<TeamCard
