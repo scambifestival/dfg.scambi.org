@@ -1,44 +1,44 @@
 {
 	"header": {
 		"heading": "Scambi Festival",
-		"text": "The Festival of paneurethic Workshops, free for all to attend",
+		"text": "The Festival of Paneurethic Labs",
 		"month": "August"
 	},
-	"paneurethic": {
-		"heading": "What are paneurethic workshops?",
-		"text": "Neologism deriving from the Greek pan (all), eurisko (discover) and ethos (living), because we wish to combine diverse realities that would never meet in their original contexts, while celebrating and respecting our differences, discovering and developing inspiring ideas."
-	},
 	"edition": {
-		"heading": "2022 Edition: “Imbalance”",
-		"text": "Scambi is the festival of paneurethic workshops, born from the necessity felt by a group of young people to <strong>fight the intolerance towards the different</strong>. For the 2022 edition, which will take place from 25th to 28th of August in the historic center of La Pigna (Sanremo), we chose <strong>Imbalance</strong> as a theme."
+		"heading": "2022 Edition",
+		"text": "Scambi Festival 2022 will take place from 25<sup>th</sup> to 28<sup>th</sup> of August in the historic center of <em lang='it'>La Pigna</em> (<em lang='it'>Sanremo</em>), we chose ***Disequilibrium*** as its theme."
+	},
+	"paneurethic": {
+		"heading": "What does *Paneurethic* mean?",
+		"text": "*Paneurethic* is a neologism we created to synthetize the meaning and values of Scambi. It derives from the Greek <em lang='grc'>pan</em> (all), <em lang='grc'>eurisko</em> (discover) and <em lang='em'>ethos</em> (ethical living). We wish to combine diverse realities that would never meet in their original contexts, while celebrating and respecting our differences, discovering and developing inspiring ideas."
 	},
 	"family": {
-		"heading": "Scambi Family",
+		"heading": "The Scambi Family",
 		"text": [
 			"We are a group of under 25s coming from every corner of Europe.",
 
-			"Our association was born from our wish to value real and deep ties, horizontality and dialogue, curiosity and welcoming of the different. After lots of videocalls, thousand doubts and just as many ideas, our team has become a family. We are proud of our diversity and passion, enthusiastic in sharing inspiration and in continuously proposing new perspectives.",
+			"Our association was born from our wish to value **real** and **deep ties**, horizontality and dialogue, curiosity and welcoming of diversity. After lots of videocalls, thousand doubts and just as many ideas, <u>our staff has become a family</u>. We are proud of our etherogeneity and passion, we are enthusiastic in sharing inspiration and in continuously proposing new perspectives.",
 
-			"We will be waiting for you in Sanremo, to introduce ourselves properly. In the meanwhile, here is an anticipation of who we are."
+			"We will be waiting for you in Sanremo, to introduce ourselves properly. In the meanwhile, [here is](/about-us 'About us') who we are."
 		],
 		"button": "Volunteer with us"
 	},
-	"purpose": "“Our purpose is to recover the value of <strong>communication</strong> and <strong>meeting</strong>, often forgotten or hidden behind a two-dimentional screen. Scambi is a multi-dimensional universe, where distant “planets” have the possibility to interact with each other.”",
+	"purpose": "“Our purpose is to recover the value of meaningful **communication** and conscious **meeting**, often forgotten or hidden behind a two-dimentional screen. <u>Scambi is a multi-dimensional universe</u>, where distant worlds have the possibility to interact with each other.”",
 	"activities": [
 		{
-			"title": "Workshops",
-			"description": "Collective experiences led by specialists who will accompany us through a variety of fields with the objective of discovering new things and people in an original way, in order to develop new bonds and values.",
-			"link": "labs"
+			"title": "Labs",
+			"description": "Labs are collective experiences led by experts who accompany participants us a variety of fields with the purpose of discovering new things and people in an unique way, in order to develop new bonds and values.",
+			"link": "Labs"
 		},
 		{
-			"title": "Mini Events",
-			"description": "Mini-events that come to life in La Pigna, including the reading of Poesie a Colazione, the secondhand clothing exchange Da Capo, innovative solutions for the storage of virtual data and much more.",
-			"link": "labs"
+			"title": "Pinoli",
+			"description": "Pinoli are events where you can meet new people: book presentations, exhibitions of innovative technological solutions, exchanges of secondhand clothing, and much more.",
+			"link": "Pinoli"
 		},
 		{
-			"title": "Dissolvenze",
-			"description": "Our short film contest, through which creatives can share their views and voice their ideas thanks to the magic of pictures.",
-			"link": "labs"
+			"title": "<cite lang='it'>Dissolvenze</cite>",
+			"description": "<cite lang='it'>Dissolvenze</cite> is our short film contest, through which creatives share their views and voice their ideas thanks to the magic of pictures.",
+			"link": "Dissolvenze"
 		}
 	],
 	"testimonials": {
@@ -47,17 +47,17 @@
 			{
 				"name": "Anna",
 				"quote": "To me, Scambi is where I can be free and be hopeful for the future; in these confusing and uncertain times we all need to go back to focusing on what living together really means.",
-				"image": "https://picsum.photos/200"
+				"image": "ttps://x.scambi.org/profile_pics/Anna_Mastrantuono.jpg"
 			},
 			{
 				"name": "Luce",
 				"quote": "I decided to join Scambi because I saw what last year the team was able to create thanks to everybodys dedication and commitment, and I would d love to help to recreate the same magic for the next edition of the festival.",
-				"image": "https://picsum.photos/200"
+				"image": "https://x.scambi.org/profile_pics/Lucilla_Luprano.jpg"
 			},
 			{
 				"name": "Luisa",
 				"quote": "I like Scambi because it brought together young people from all over Italy with the goal of inventing something new, of combining music, dancing and a lot of curiosity.",
-				"image": "https://picsum.photos/200"
+				"image": "https://x.scambi.org/profile_pics/Luisa_Riccardi.jpg"
 			}
 		]
 	}
