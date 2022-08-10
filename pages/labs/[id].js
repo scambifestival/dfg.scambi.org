@@ -103,7 +103,7 @@ export default function Lab({ lab }) {
 				</div>
 			</Flex>
 			{/* <div id='similar-lab' className='py-10 px-5 iPhoneXR:px-10 md:px-5 lg:px-10'>
-				<h2 className='mb-10 text-left font-semibold leading-tight'>Similar Labs</h2>
+				<h2 className='text-center mb-10 lg:text-left font-semibold leading-tight'>Similar Labs</h2>
 				<div className='w-full flex flex-wrap justify-around'>
 					<LabCard
 						title='Lorem Ipsum'
