@@ -1,79 +1,79 @@
 {
-	"lab": "Labs",
+	"lab": "Lab",
 	"pinoli": "Pinoli",
-	"donate": "Donate",
-	"volunteer": "Volunteer",
-	"attend": "Attend",
-	"tickets": "Get Tickets",
+	"donate": "Dona",
+	"volunteer": "Unisciti",
+	"attend": "Partecipa",
+	"tickets": "Prenota",
 	"privacy-policy": "Privacy Policy",
 	"navbar": {
 		"about": {
-			"title": "about us",
-			"about-scambi": "about scambi",
-			"team": "our team"
+			"title": "Chi siamo",
+			"about-scambi": "Cos’è Scambi",
+			"team": "Lo staff"
 		},
 		"festival": {
-			"title": "festival"
+			"title": "Festival"
 		},
 		"support": {
-			"title": "support"
+			"title": "Aiuto"
 		},
 		"language-switcher": {
-			"en": "English",
-			"it": "Italian"
+			"en": "🇬🇧",
+			"it": "🇮🇹"
 		}
 	},
 	"subscribe": {
-		"button": "Subscribe",
-		"input": "Enter your email",
-		"title": "Subscribe to our Newsletter!",
-		"subtitle": "EXCHANGES OF LETTERS, OUR NEWSLETTER",
-		"join": "Join the conversation - sign up now to receive updates on Scambi activities."
+		"button": "Iscriviti",
+		"input": "Digita il tuo indirizzo email",
+		"title": "Iscriviti alla newsletter!",
+		"subtitle": "<cite>Scambi di Parole</cite>, la nostra newsletter",
+		"join": "Leggendo la newsletter potrai rimanere aggiornatə su tutte le attività di Scambi, nonché esplorare più a fondo le tematiche trattate, con approfondimenti tematici, interviste esclusive e nostre riflessioni su quello che accade intorno a noi."
 	},
 	"footer": {
-		"ready": "Ready to join us?",
-		"about": "About",
-		"team": "Team",
+		"ready": "Che aspetti a unirti?",
+		"about": "Che cavolo è?",
+		"team": "Staff",
 		"manifesto": "Manifesto",
-		"accessibility": "Accessibility",
-		"join": "Join Team"
+		"accessibility": "Accessibilità",
+		"join": "Sali a bordo!"
 	},
 	"relations": {
-		"heading": "Our Relations",
-		"text": "Alone we would not have been able to concretize the magic of Scambi. <br /> <br /> What makes our festival unique are the relationships and the bonds with local and non-local bodies, the public administration of Sanremo and many other special people.",
-		"partner-button": "Partner with us",
-		"meet-button": "Meet our partners"
+		"heading": "Relazioni",
+		"text": "Da solз non saremmo in grado di dar vita alla magia di Scambi.<br>Ciò che rende unico il nostro festival sono anche le speciali relazioni e i profondi legami con realtà locali ed internazionali, la pubblica amministrazione e molte altre persone speciali.",
+		"partner-button": "Collabora con noi",
+		"meet-button": "Le nostre relazioni"
 	},
 	"manifesto": [
 		{
-			"name": "Workshop",
-			"text": "Collective experience based on creativity, dialogue and sharing, which blossoms once a year on the squares of La Pigna in order to explore together the various connotations of the current edition's theme."
+			"name": "La Pigna, le radici",
+			"text": "<cite>Scambi</cite> affonda le proprie radici nella Pigna, <u>il magico centro storico di Sanremo</u>. Perfetta allegoria dei valori alla base dei nostri intenti, la Pigna è **uno scrigno colmo** di carrugi in cui si respira una bellezza rovinata e resiliente."
 		},
 		{
-			"name": "Paneuretic",
-			"text": "Neologism deriving from the Greek pan (all), eurisko (discover) and ethos (living), because we wish to combine diverse realities that would never meet in their original contexts, while celebrating and respecting our differences, discovering and developing inspiring ideas."
+			"name": "Accessibilità, il tronco",
+			"text": "Valorizziamo le diversità e intendiamo donare a tuttɜ la possibilità di sentirsi accoltɜ nel nostro mondo. Per noi Accessibilità significa credere e lavorare per la realizzazione di un mondo più giusto, che possa abbracciare tuttɜ, al di là e <u>*attraverso* le differenze</u>."
 		},
 		{
-			"name": "Accessibility",
-			"text": "In a society that says “you must”, we say “just be”: we made every festival activity available and accessible to as many people as possible."
+			"name": "Laboratori, i rami",
+			"text": "Rigorosamente coinvolgenti e orizzontali, i Lab intendono creare relazioni fra chi li vive. Personalità perite nelle più diverse discipline propongono esperienze che aiutino ad allargare i propri orizzonti sperimentando con idee e cose."
 		},
 		{
-			"name": "La Pigna",
-			"text": "The iconic and vibrant historic center of Sanremo that welcomes us during the festival, and that we are committed to requalify through social values such as Community and Meeting."
+			"name": "Paneuretico, il frutto",
+			"text": "È paneuretico ciò che spinge a scoprire cose nuove, a rivolgersi ai più diversi ambiti, in modi originali. Questa ricerca non è priva di indirizzo, ciò che è paneuretico segue un’etica basata su valori vitali da costruire e condividere."
 		}
 	],
 	"support": [
 		{
-			"name": "Volunteer with us",
-			"text": "Join us in the festivities and help from the inside!"
+			"name": "Candidati come volontario",
+			"text": "Diventa parte della squadra durante il festival, aiutandoci dietro le quinte"
 		},
 		{
-			"name": "Join us Aug 25 - 28, 2022",
-			"text": "Celebrate with us this year, tickets are free of charge."
+			"name": "Partecipa al Festival",
+			"text": "Prendi parte a questa esplosione di pensieri e azioni per costruire un domani più equo. Vieni a Scambi, la partecipazione è gratuita!"
 		},
 		{
-			"name": "Donate Securely",
-			"text": "Make a one-time or monthly donation to help run Scambi Festival."
+			"name": "Sostienici",
+			"text": "Non esageriamo nel dire che siamo proprio squattrinati. Fare cose belle, gratis, per tuttз comporta un onere economico che saremmo felici se ci aiutassi ad alleggerire!"
 		}
 	]
 }
