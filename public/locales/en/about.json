@@ -1,13 +1,13 @@
 {
 	"about": {
 		"heading": "About Scambi",
-		"desc": "Scambi, meaning &quot;exchanges&quot; in Italian, is the festival of interactive workshops organized in Pigna, the old town of Sanremo (Italy) by a team of forty young people under-25, from all around Europe. ",
-		"text": "Join us for our second year in Sanremo, Italy on Aug 25 - 28, 2022, where we will explore <strong><i>Disequilibirum.</i></strong>"
+		"desc": "Scambi, meaning “exchanges” in Italian, is the festival of interactive workshops organized in Pigna, the old town of Sanremo (Italy) by a team of 50+ under-25 volunteers, from all around Europe.",
+		"text": "The second edition of the festival is taking place from August 25<sup>th</sup> to 28<sup>th</sup>, and the main topic of the year is ***Disequilibrium***"
 	},
 	"purpose": {
-		"heading": "Our purpose is to recover the value of <span style='color: #69088D'>communication<span> and <span style='color: #69088D'>meeting<span> through paneuretic workshops",
-		"text": "Create your personalized journey of workshops from topics moving from physics to languages, from history to dancing, from music to law, from cooking to activism. ",
-		"last": "All workshops will be instrinsically careful to issues like <strong>accessibility, sustainability, and inclusion.</strong>",
+		"heading": "Our purpose is to recover the value of <span style='color: #69088D'>communication<span> and <span style='color: #69088D'>meeting<span>, through [paneurethic Labs](/en/labs 'Scambi’s Labs')",
+		"text": "Create your personalized journey of laboratories from topics moving from physics to languages, from history to dancing, from music to law, from cooking to activism. ",
+		"last": "All workshops are instrinsically careful to issues like <strong>accessibility, sustainability, and inclusion.</strong>",
 		"button": "Explore Workshops"
 	},
 	"last-workshops": "Workshops we held in Scambi 2021, “Meeting”",
