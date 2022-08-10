@@ -183,7 +183,7 @@ export default function Footer() {
 									</Link>
 								</li>
 								<li className="mt-2">
-									<Link href="https://www.paypal.com/paypalme/apsoltre">
+									<Link href="https://liberapay.com/scambi">
 										<a>Donate</a>
 									</Link>
 								</li>
