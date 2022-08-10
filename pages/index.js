@@ -185,7 +185,7 @@ export default function Home() {
 				</div>
 				<div className='w-3/4 sm:w-3/5 lg:w-1/2'>
 					<Image
-						src={highlights[4]}
+						src='https://x.scambi.org/images/staff.webp'
 						alt='Five volunteers pose for group photo outside during the festival'
 						layout='responsive'
 						width={475}
