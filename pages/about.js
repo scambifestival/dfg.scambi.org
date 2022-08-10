@@ -32,11 +32,11 @@ export default function About() {
 					</Button>
 				</div>
 				<Image
-					src='/illustrations/about-header.png'
+					src='https://x.scambi.org/images/inaugurazione.webp'
 					width={705}
 					height={353}
 					alt=''
-					className='xl:w-1/2 md:w-1/2 lg:w-1/2 md:pt-24 lg:pt-56 xl-pt-60 2xl:mt-60'
+					className='xl:w-1/2 md:w-1/2 lg:w-1/2 md:pt-24 lg:pt-56 xl-pt-60 2xl:mt-60 rounded-[32px]'
 				/>
 			</Flex>
 			<div className='bg-white py-10'>
@@ -373,7 +373,7 @@ export default function About() {
 				</div>
 				<div className='lg:ml-14 md:ml-14 pl-6 pr-6 mt-0'>
 					<Image
-						src='/illustrations/team.png'
+						src='/illustrations/https://x.scambi.org/images/staff.webp'
 						width={635}
 						height={450}
 						alt=''
@@ -401,7 +401,7 @@ export default function About() {
 					</div>
 				</div>
 				<Image
-					src='/illustrations/sponsors.png'
+					src='https://x.scambi.org/images/fun.webp'
 					alt=''
 					width={654}
 					height={689}
