@@ -3,7 +3,7 @@ import { useTranslation } from 'next-i18next';
 
 import { subscribe } from '../../lib/communications';
 
-import SubscribeImg from '../../public/illustrations/subscribe.png';
+import SubscribeImg from 'https://x.scambi.org/illustrations/press.webp';
 import Button from '../button';
 import { useState } from 'react';
 

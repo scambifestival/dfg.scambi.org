@@ -62,7 +62,7 @@ export default function Home() {
 				</div>
 				<div className='w-full iPhoneSE:w-3/4 sm:w-1/2 md:w-3/4 lg:w-3/5 xl:w-2/5'>
 					<Image
-						src='/illustrations/table-talk.png'
+						src='https://x.scambi.org/illustrations/tabletalk.webp'
 						alt='Illustration of 3 people sitting around a table talking'
 						width={808}
 						height={800}
@@ -90,7 +90,7 @@ export default function Home() {
 				</div>
 				<div className='w-full iPhoneSE:w-1/2 md:w-3/4 lg:w-3/5 xl:w-2/5'>
 					<Image
-						src='/illustrations/program.png'
+						src='https://x.scambi.org/illustrations/program.webp'
 						alt='Illustration of woman with curly hair in yellow sleeveless top, brownish bottoms, and sandals reading a program while resting on a bundle of blue roots'
 						width={918}
 						height={1026}
@@ -229,7 +229,7 @@ export default function Home() {
 				</div>
 				<div className='w-3/5 sm:w-1/2'>
 					<Image
-						src='/illustrations/sponsors.png'
+						src='https://x.scambi.org/images/fun.webp'
 						alt='Illustration of three individuals holding hands, moving in a circle'
 						layout='responsive'
 						width={654}
