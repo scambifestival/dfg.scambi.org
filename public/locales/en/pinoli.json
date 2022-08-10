@@ -1,11 +1,11 @@
 {
 	"header": {
-		"desc": "Pinoli are not just the sweet seeds that make pesto so delicious; when it comes to Scambi, they are events where you can meet new people: book presentations, exhibitions of innovative technological solutions, exchanges of secondhand clothing, and much more.",
-		"button": "See events"
+		"desc": "<em lang='it'>Pinoli</em> are not just the sweet seeds that make <em lang='it'>pesto</em> so delicious; when it comes to Scambi, they are events where you can meet new people: book presentations, exhibitions of innovative technological solutions, exchanges of secondhand clothing, and much more.",
+		"button": "Check out 2022 <em lang='it'>Pinoli</em>"
 	},
 	"pinolo": {
-		"heading": "What is a Pinolo?",
-		"text": "A Pinolo is a collateral event that comes to life during Scambi festival. "
+		"heading": "What is a <em lang='it'>Pinolo</em>?",
+		"text": "<em lang='it'>Pinoli</em> are the collateral events, pop-up stands, and kiosks that crowd <em lang='it'>La Pigna</em> during Scambi Festival."
 	},
-	"upcoming": "Upcoming Pinoli"
+	"upcoming": "Scambi 2022’s <em lang='it'>Pinoli</em>"
 }
