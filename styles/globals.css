@@ -1,39 +1,44 @@
 /* Fonts */
 @font-face {
-	font-family: 'Londrina Solid';
-	src: url('../public/fonts/Londrina_Solid/LondrinaSolid-Regular.ttf') format('truetype');
+	font-family: "Londrina Solid";
+	src: url("../public/fonts/Londrina_Solid/LondrinaSolid-Regular.ttf")
+		format("truetype");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Londrina Solid';
-	src: url('../public/fonts/Londrina_Solid/LondrinaSolid-Regular.ttf') format('truetype');
+	font-family: "Londrina Solid";
+	src: url("../public/fonts/Londrina_Solid/LondrinaSolid-Regular.ttf")
+		format("truetype");
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Londrina Solid';
-	src: url('../public/fonts/Londrina_Solid/LondrinaSolid-Black.ttf') format('truetype');
+	font-family: "Londrina Solid";
+	src: url("../public/fonts/Londrina_Solid/LondrinaSolid-Black.ttf")
+		format("truetype");
 	font-weight: 900;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Londrina Solid';
-	src: url('../public/fonts/Londrina_Solid/LondrinaSolid-Light.ttf') format('truetype');
+	font-family: "Londrina Solid";
+	src: url("../public/fonts/Londrina_Solid/LondrinaSolid-Light.ttf")
+		format("truetype");
 	font-family: 300;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Londrina Solid';
-	src: url('../public/fonts/Londrina_Solid/LondrinaSolid-Thin.ttf') format('truetype');
+	font-family: "Londrina Solid";
+	src: url("../public/fonts/Londrina_Solid/LondrinaSolid-Thin.ttf")
+		format("truetype");
 	font-weight: 100;
 	font-style: normal;
 	font-display: swap;
@@ -80,16 +85,17 @@
 }
 
 @font-face {
-	font-family: 'Poppins';
-	src: url('../public/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+	font-family: "Poppins";
+	src: url("../public/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
 	font-style: normal;
 	font-weight: 500;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Poppins';
-	src: url('../public/fonts/Poppins/Poppins-MediumItalic.ttf') format('truetype');
+	font-family: "Poppins";
+	src: url("../public/fonts/Poppins/Poppins-MediumItalic.ttf")
+		format("truetype");
 	font-style: italic;
 	font-weight: 500;
 	font-display: swap;
@@ -120,8 +126,9 @@
 }
 
 @font-face {
-	font-family: 'Poppins';
-	src: url('../public/fonts/Poppins/Poppins-SemiBoldItalic.ttf') format('truetype');
+	font-family: "Poppins";
+	src: url("../public/fonts/Poppins/Poppins-SemiBoldItalic.ttf")
+		format("truetype");
 	font-style: italic;
 	font-weight: 600;
 	font-display: swap;
@@ -152,8 +159,9 @@
 }
 
 @font-face {
-	font-family: 'Poppins';
-	src: url('../public/fonts/Poppins/Poppins-ExtraBoldItalic.ttf') format('truetype');
+	font-family: "Poppins";
+	src: url("../public/fonts/Poppins/Poppins-ExtraBoldItalic.ttf")
+		format("truetype");
 	font-style: italic;
 	font-weight: 600;
 	font-display: swap;
@@ -216,18 +224,22 @@ footer {
 
 .btn-primary {
 	color: white;
-	background: linear-gradient(180deg,
+	background: linear-gradient(
+			180deg,
 			rgba(255, 255, 255, 0.2) 0%,
-			rgba(255, 255, 255, 0) 69.78%),
+			rgba(255, 255, 255, 0) 69.78%
+		),
 		#69088d;
 }
 
 .btn-primary:hover,
 .btn-primary-light:hover {
 	color: white;
-	background: linear-gradient(180deg,
+	background: linear-gradient(
+			180deg,
 			rgba(255, 255, 255, 0.2) 0%,
-			rgba(255, 255, 255, 0) 69.78%),
+			rgba(255, 255, 255, 0) 69.78%
+		),
 		#69088d;
 }
 
