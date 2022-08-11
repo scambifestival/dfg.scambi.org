@@ -356,7 +356,7 @@ export default function About() {
 			</div>
 			<div className='relative h-screen w-screen'>
 				<div className='w-full h-full flex justify-center items-center'>
-					<h2 className='z-20 uppercase text-white text-center font-bold md:w-1/3 sm:w-1/2 SurfaceDuo:w-1/3'>
+					<h2 className='z-20 uppercase text-white text-center font-bold md:w-1/2 sm:w-1/2 SurfaceDuo:w-1/3'>
 						{t('belief')}
 					</h2>
 				</div>
