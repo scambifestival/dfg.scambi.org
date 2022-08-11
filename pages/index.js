@@ -44,22 +44,22 @@ export default function Home() {
 			</div>
 			{/* <div className='relative pb-[50%] lg:pb-[40%] xl:pb-[30%]'>
 					<iframe
-						className='absolute top-0 left-0 w-full h-full'
-						src='https://player.vimeo.com/video/658183199'
-						title='Scambi Festival 2021 Rewind'
-						allow='autoplay; fullscreen'
+						className="absolute top-0 left-0 w-full h-full"
+						src="https://player.vimeo.com/video/658183199"
+						title="Scambi Festival 2021 Rewind"
+						allow="autoplay; fullscreen"
 					/>
-				</div>*/}
+	</div>*/}
 			<CountDown />
 			<Flex classes='mt-16 justify-between mx-auto'>
 				<div className=''>
 					<h2 className='leading-tight lg:leading-normal mx-auto'>
 						<Markdown content={t('paneurethic.heading')} />
 					</h2>
-					<p className='mx-auto my-5 w-4/5 md:mx-0'>
+					<div className='mx-auto my-5 w-4/5 md:mx-0'>
 						<span className='font-semibold'>Pan - eur - etic:</span>{' '}
 						<Markdown content={t('paneurethic.text')} />
-					</p>
+					</div>
 				</div>
 				<div className='w-full iPhoneSE:w-3/4 sm:w-1/2 md:w-3/4 lg:w-3/5 xl:w-2/5'>
 					<Image
@@ -242,11 +242,21 @@ export default function Home() {
 				</div>
 			</Flex>
 
-			<div className='m-7 sm:m-10 xl:mx-20'>
+			<div className='mx-7 my-20 sm:mx-10 xl:mx-20'>
 				<h2 className='leading-tight font-medium text-center sm:text-left py-5'>
 					Explore Scambi Festival
 				</h2>
 				<Map />
+				<Button
+					classes='font-[500] bg-white mt-6 px-9 py-2'
+					onClick={() =>
+						window.open(
+							'//umap.openstreetmap.fr/en/map/scambi-2022_792002',
+							'_self'
+						)
+					}>
+					See full screen
+				</Button>
 			</div>
 		</section>
 	);
