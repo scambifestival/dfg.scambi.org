@@ -19,7 +19,7 @@ const festivalDropdown = [
 ];
 
 const supportDropdown = [
-	{ title: 'Donate', href: 'https://www.paypal.com/paypalme/apsoltre' },
+	{ title: 'Donate', href: 'https://liberapay.com/scambi' },
 	{ title: 'Volunteer', href: 'contact' },
 	// { title: 'Join Team', href: 'careers' },
 ];
