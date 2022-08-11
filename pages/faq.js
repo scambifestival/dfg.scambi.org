@@ -1,9 +1,6 @@
-import Flex from '../components/flex';
 import Image from 'next/image';
 import Accordion from '../components/accordion';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-
-import { data } from '../assets/data';
 
 export default function FAQ() {
 	return (
@@ -14,7 +11,7 @@ export default function FAQ() {
 			</div>
 			<div className='mx-auto w-full'>
 				<div className='flex justify-center mx-1 iPhoneSE:mx-3 sm:mx-6 lg:mx-0'>
-					<Accordion content={data} />
+					<Accordion />
 				</div>
 			</div>
 		</section>
