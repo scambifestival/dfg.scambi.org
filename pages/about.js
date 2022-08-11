@@ -51,6 +51,7 @@ export default function About() {
 						height="400px"
 						alt=""
 					/>
+
 					<div className="lg:w-1/2 md:mt-12 md:w-1/2 md:ml-12 py-20 GalaxyFold:pt-0">
 						<div className="">
 							<h3>
@@ -437,10 +438,8 @@ export default function About() {
 						Sanremo and many other special people.
 					</p>
 					<div className="flex flex-row justify-center iPhoneSE:flex-col GalaxyFold:flex-col SurfaceDuo:flex-row grid-flow-row:left-0 GalaxyFold:place-items-center">
-						<Button classes="btn-primary GalaxyFold:w-50 iPhoneSE:w-full">
-							Partner with us
-						</Button>
-						<Button classes="ml-2 GalaxyFold:ml-0 GalaxyFold:mt-4 GalaxyFold:w-50 iPhoneSE:w-full SurfaceDuo:mt-0 SurfaceDuo:ml-4">
+						<Button classes="btn-primary">Partner with us</Button>
+						<Button classes="btn-primary-light SurfaceDuo:ml-6 GalaxyFold:mt-6 SurfaceDuo:mt-0">
 							Meet our partners
 						</Button>
 					</div>
