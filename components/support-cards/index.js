@@ -1,6 +1,7 @@
 import Button from "../button";
 import Image from "next/image";
 import Card from "../card";
+import Link from "next/link";
 
 export default function SupportUs() {
 	return (
@@ -18,7 +19,13 @@ export default function SupportUs() {
 							alt=""
 						/>
 					</div>
-					<Button>Volunteer</Button>
+					<Link href='/contact' passHref>
+						<span>
+					<Button classes='bg-white'>
+							Volunteer
+					</Button>
+						</span>
+					</Link>
 				</Card>
 				<Card classes="bg-[#EDBBFF] text-center py-10 space-y-5 GalaxyFold:mt-10 lg:mt-0">
 					<h4>Join us Aug 25 - 28, 2022</h4>
@@ -31,7 +38,9 @@ export default function SupportUs() {
 							alt=""
 						/>
 					</div>
-					<Button>Get Tickets</Button>
+					<Button classes='bg-white' onClick={() => window.open('https://pretix.eu/scambi/2022/', '_blank')}>
+							Get Tickets
+					</Button>
 				</Card>
 				<Card classes="bg-[#AAB4D6] text-center py-10 space-y-5 GalaxyFold:mt-10 lg:mt-0">
 					<h4>Donate Securely</h4>
@@ -46,7 +55,9 @@ export default function SupportUs() {
 							alt=""
 						/>
 					</div>
-					<Button>Donate</Button>
+					<Button classes='bg-white' onClick={() => window.open('https://liberapay.com/scambi', '_blank')}>
+							Donate
+					</Button>
 				</Card>
 			</div>
 		</div>
