@@ -13,6 +13,7 @@ import { ArrowRight } from '../components/icons/arrow';
 import Carousel from '../components/carousel';
 import CountDown from '../components/countdown';
 import { highlights } from '../assets/highlights';
+import Markdown from '../components/markdown';
 
 /* A different way to import image
 import TableTalk from '../public/illustrations/table-talk.png';
@@ -53,11 +54,11 @@ export default function Home() {
 			<Flex classes='mt-16 justify-between mx-auto'>
 				<div className=''>
 					<h2 className='leading-tight lg:leading-normal mx-auto'>
-						{t('paneuretic.heading')}
+						<Markdown content={t('paneurethic.heading')} />
 					</h2>
 					<p className='mx-auto my-5 w-4/5 md:mx-0'>
 						<span className='font-semibold'>Pan - eur - etic:</span>{' '}
-						{t('paneuretic.text')}
+						<Markdown content={t('paneurethic.text')} />
 					</p>
 				</div>
 				<div className='w-full iPhoneSE:w-3/4 sm:w-1/2 md:w-3/4 lg:w-3/5 xl:w-2/5'>
@@ -103,7 +104,9 @@ export default function Home() {
 					<Card
 						key={index}
 						classes='w-5/6 h-fit px-7 py-5 space-y-4 text-left bg-white lg:w-1/4'>
-						<h4 className='font-["Poppins"] font-medium'>{event.title}</h4>
+						<h4 className='font-["Poppins"] font-medium text-center'>
+							<Markdown content={event.title} />
+						</h4>
 						<p>{event.description}</p>
 						<div>
 							<Link href={`/${event.link}`}>
@@ -178,9 +181,10 @@ export default function Home() {
 					<h2 className='leading-tight lg:leading-normal font-medium'>
 						{t('family.heading')}
 					</h2>
-					{family && family.map((el, index) => <p key={index}>{el}</p>)}
+					{family &&
+						family.map((el, index) => <Markdown key={index} content={el} />)}
 					<Link href='/contact'>
-						<Button classes='btn-primary'>{t('button')}</Button>
+						<Button classes='btn-primary'>{t('family.button')}</Button>
 					</Link>
 				</div>
 				<div className='w-3/4 sm:w-3/5 lg:w-1/2'>
@@ -198,7 +202,7 @@ export default function Home() {
 
 			<div className='text-center px-7 py-10 font-normal bg-white sm:px-14 xl:my-36'>
 				<div className='text-2xl sm:leading-relaxed sm:text-3xl lg:leading-loose lg:text-4xl xl:text-5xl xl:leading-loose'>
-					<Trans i18nKey={t('purpose')} />
+					<Markdown content={t('purpose')} />
 				</div>
 			</div>
 
@@ -215,7 +219,7 @@ export default function Home() {
 					<h2 className='leading-tight lg:leading-normal font-medium'>
 						{t('relations.heading', { ns: 'common' })}
 					</h2>
-					<p>{t('relations.text', { ns: 'common' })}</p>
+					<Markdown content={t('relations.text', { ns: 'common' })} />
 					<div className='flex flex-col justify-center items-center space-y-5 sm:flex-row sm:space-x-7 sm:space-y-0 md:justify-start'>
 						<Link href='/contact'>
 							<Button classes='btn-primary'>
