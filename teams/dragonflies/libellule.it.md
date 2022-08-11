@@ -1,5 +1,5 @@
 ---
-name: 'Libellule'
+name: 'Dragonflies'
 duty: 'Social Media'
 image: '/illustrations/aps.png'
 ---
