@@ -7,19 +7,20 @@ import { pinoli } from '../../assets/pinoli';
 import Carousel from '../../components/carousel';
 import SupportUs from '../../components/support-cards';
 import { getPinoli } from '../../lib/pinoli';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
+import Markdown from '../../components/markdown';
 
 export default function Pinoli() {
+	const { t } = useTranslation(['pinoli', 'common']);
+
 	return (
 		<section>
 			<Flex classes='py-20 mx-4 space-y-8 SurfaceDuo:mx-8 sm:mx-12 md:flex-col md:space-y-12 md:mx-auto lg:flex-row lg:space-y-0 lg:space-x-16 lg:mx-auto xl:space-x-56'>
 				<div className='w-fit text-center lg:text-left'>
 					<h1 className='font-semibold'>Pinoli</h1>
-					<p>
-						Pinoli are not just the sweet seeds that make pesto so delicious;
-						when it comes to Scambi, they are events where you can meet new
-						people: book presentations, exhibitions of innovative technological
-						solutions, exchanges of secondhand clothing, and much more.
-					</p>
+					<Markdown content={t('header.desc')} />
+					<Button classes='btn-primary mt-5'>{t('header.button')}</Button>
 				</div>
 				<div className='w-4/5 SurfaceDuo:w-3/5 md:w-2/5 lg:w-3/5 xl:max-w-md'>
 					<Image
@@ -32,11 +33,10 @@ export default function Pinoli() {
 			</Flex>
 
 			<div className='bg-white text-center py-10 px-4 lg:px-16'>
-				<h2>What is a Pinolo?</h2>
-				<p>
-					A Pinolo is a collateral event that comes to life during Scambi
-					festival.
-				</p>
+				<h2>
+					<Markdown content={t('pinolo.heading')} />
+				</h2>
+				<Markdown content={t('pinolo.text')} />
 				<div className='mt-10'>
 					<Carousel slides={pinoli} />
 				</div>
@@ -51,7 +51,9 @@ export default function Pinoli() {
 			<div className='grid grid-cols-1 lg:grid-cols-3 mx-10 lg:mx-20'></div>
 
 			<Flex classes='mx-1 py-32 justify-between items-center iPhoneSE:mx-7 sm:mx-auto md:justify-around md:space-y-0 md:py-40 md:mx-auto md:space-x-12 lg:justify-center lg:space-x-20'>
-				<h2 className='leading-tight text-center md:text-left md:w-fit'>More Info Coming Soon!</h2>
+				<h2 className='leading-tight text-center md:text-left md:w-fit'>
+					More Info Coming Soon!
+				</h2>
 				<div className='w-3/4 iPhoneSE:w-1/2 SurfaceDuo:w-1/3 sm:w-2/5 md:w-fit md:max-w-full lg:max-w-xs'>
 					<Image
 						src='/illustrations/rocket.png'
@@ -67,12 +69,13 @@ export default function Pinoli() {
 	);
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
 	const pinoli = await getPinoli();
 
 	return {
 		props: {
 			pinoli,
+			...(await serverSideTranslations(locale, ['common', 'pinoli'])),
 		},
 	};
 }
