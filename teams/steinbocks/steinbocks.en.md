@@ -1,5 +1,5 @@
 ---
-name: 'Steinbock'
+name: 'Steinbocks'
 duty: 'Artistic Direction'
 image: '/illustrations/aps.png'
 ---
