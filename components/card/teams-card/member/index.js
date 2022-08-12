@@ -1,6 +1,5 @@
 import Card from '../..';
 import Image from 'next/image';
-import ReactMarkdown from 'react-markdown';
 
 export default function MemberCard({ imgSrc, name, role, desc }) {
 	return (
