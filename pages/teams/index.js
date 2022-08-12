@@ -5,29 +5,31 @@ import { TeamCard } from '../../components/card/teams-card';
 import { getAllTeams, getATeam } from '../../lib/teams';
 import matter from 'gray-matter';
 import Card from '../../components/card';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
+import Markdown from '../../components/markdown';
 
 export default function Teams({ teams }) {
+	const { t } = useTranslation(['common', 'about']);
+
 	return (
 		<section>
 			<Flex classes='mx-auto justify-between'>
 				<div className='lg:w-1/2 mr-5'>
-					<h2>Our Teams</h2>
-					<p>We are a group of under 25s coming from every corner of Europe.</p>
-					<p className='my-5'>
-						Our association was born from our wish to value real and deep ties,
-						horizontality and dialogue, curiosity and welcoming of the
-						different. After lots of videocalls, thousand doubts and just as
-						many ideas, our team has become a family. We are proud of our
-						diversity and passion, enthusiastic in sharing inspiration and in
-						continuously proposing new perspectives.{' '}
-					</p>
-					<p>
-						We will be waiting for you in Sanremo, to introduce ourselves
-						properly. In the meanwhile, here is an anticipation of who we are.
-					</p>
+					<h2>{t('team.heading', { ns: 'about' })}</h2>
+					<Markdown
+						className='my-5'
+						content={t('team.desc', { ns: 'about' })}
+					/>
+					<p>{t('team.text', { ns: 'about' })}</p>
 					<Button classes='btn-primary mt-3'>Join our team</Button>
 				</div>
-				<Image src='/illustrations/group.png' alt='' width={600} height={400} />
+				<Image
+					src='https://x.scambi.org/images/staff.webp'
+					alt=''
+					width={600}
+					height={400}
+				/>
 			</Flex>
 			<div className='grid grid-cols-1 lg:px-16 gap-20 lg:grid-cols-3 mb-14'>
 				{teams.map(({ team, frontmatter, content }) =>
@@ -73,6 +75,7 @@ export async function getStaticProps({ locale }) {
 	return {
 		props: {
 			teams,
+			...(await serverSideTranslations(locale, ['common', 'about'])),
 		},
 	};
 }
