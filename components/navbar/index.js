@@ -5,32 +5,34 @@ import Logo from '../icons/logo';
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-
-const aboutUsDropdown = [
-	{ title: 'About Scambi', href: 'about' },
-	// { title: 'Our Story', href: '' },
-	{ title: 'Our Team', href: 'teams' },
-];
-
-const festivalDropdown = [
-	{ title: 'Labs', href: 'labs' },
-	{ title: 'Pinolis', href: 'pinoli' },
-	// {title: 'Film Contest', href:'filmcontest'}
-];
-
-const supportDropdown = [
-	{ title: 'Donate', href: 'https://liberapay.com/scambi' },
-	{ title: 'Volunteer', href: 'contact' },
-	// { title: 'Join Team', href: 'careers' },
-];
+import { useTranslation } from 'next-i18next';
 
 export default function Navbar() {
 	const navbar = useRef(null);
 	const [isOpen, setIsOpen] = useState(false);
 	const router = useRouter();
+	const { t } = useTranslation('common');
+
+	const aboutUsDropdown = [
+		{ title: t('navbar.about.about-scambi'), href: 'about' },
+		// { title: 'Our Story', href: '' },
+		{ title: t('navbar.about.team'), href: 'teams' },
+	];
+
+	const festivalDropdown = [
+		{ title: t('lab'), href: 'labs' },
+		{ title: t('pinoli'), href: 'pinoli' },
+		// {title: 'Film Contest', href:'filmcontest'}
+	];
+
+	const supportDropdown = [
+		{ title: t('donate'), href: 'https://www.paypal.com/paypalme/apsoltre' },
+		{ title: t('volunteer'), href: 'contact' },
+		// { title: 'Join Team', href: 'careers' },
+	];
 
 	const languageDropdown = router.locales.map((locale) => ({
-		title: locale.toUpperCase(),
+		title: locale === 'en' ? '🇬🇧' : '🇮🇹',
 		href: router.asPath,
 		locale: locale,
 	}));
@@ -91,7 +93,7 @@ export default function Navbar() {
 				} w-full space-y-3 flex-col justify-between items-start space-x-0 lg:w-auto lg:flex lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 xl:space-x-16`}>
 				<li role='none'>
 					<Dropdown
-						name='About us'
+						name={t('navbar.about.title')}
 						btnStyle='text-xl font-bold uppercase'
 						dropdownStyle='w-56'
 						content={aboutUsDropdown}
@@ -99,7 +101,7 @@ export default function Navbar() {
 				</li>
 				<li role='none'>
 					<Dropdown
-						name='Festival'
+						name={t('navbar.festival.title')}
 						btnStyle='text-xl font-bold uppercase'
 						dropdownStyle='w-56'
 						content={festivalDropdown}
@@ -107,7 +109,7 @@ export default function Navbar() {
 				</li>
 				<li role='none'>
 					<Dropdown
-						name='Support'
+						name={t('navbar.support.title')}
 						btnStyle='text-xl font-bold uppercase'
 						dropdownStyle='w-56'
 						content={supportDropdown}
@@ -133,7 +135,7 @@ export default function Navbar() {
 					onClick={() =>
 						window.open('https://pretix.eu/scambi/2022/', '_blank')
 					}>
-					Attend
+					{t('attend')}
 				</Button>
 				<Dropdown
 					name={router.locale}
