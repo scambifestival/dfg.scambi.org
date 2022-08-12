@@ -4,7 +4,7 @@ import Button from "../components/button";
 import BlogCard from "./../components/card/blog-card";
 
 export default function Blog() {
-	const [openedTab, setOpenedTab] = useState(2);
+	const [openedTab, setOpenedTab] = useState(1);
 
 	return (
 		<div className="bg-white -mb-12">
@@ -23,14 +23,17 @@ export default function Blog() {
 				/>
 			</div>
 			<div className="pb-36">
-				<div className=" flex justify-around mt-24 mb-24 h-12">
+				<div className=" flex justify-around sm:mt-24 mb-24 h-12">
 					<ul className="flex flex-wrap text-center justify-center">
 						<li
 							onClick={(e) => {
 								e.preventDefault();
 								setOpenedTab(1);
 							}}
-							className="mr-2 hover:border-purple-800 border-b-2 hover:border-b-4 cursor-pointer SurfaceDuo:mr-12 GalaxyFold:mr-2">
+							className={
+								"mr-2  border-b-2 hover:border-b-4 cursor-pointer SurfaceDuo:mr-6 SurfaceDuo:ml-6 GalaxyFold:mr-3 iPhoneSE:mr-4 iPhoneSE:ml-4 " +
+								(openedTab === 1 ? "border-purple-800 border-b-4" : "")
+							}>
 							<p className={openedTab === 1 ? "font-bold" : ""}>All Posts</p>
 						</li>
 						<li
@@ -38,7 +41,10 @@ export default function Blog() {
 								e.preventDefault();
 								setOpenedTab(2);
 							}}
-							className="mr-2 hover:border-purple-800 border-b-2 hover:border-b-4 cursor-pointer SurfaceDuo:mr-12 GalaxyFold:mr-2">
+							className={
+								"mr-2  border-b-2 hover:border-b-4 cursor-pointer SurfaceDuo:mr-6 SurfaceDuo:ml-6 GalaxyFold:mr-2 iPhoneSE:mr-4 iPhoneSE:ml-4 " +
+								(openedTab === 2 ? "border-purple-800 border-b-4" : "")
+							}>
 							<p className={openedTab === 2 ? "font-bold" : ""}>
 								Trade in the room
 							</p>
@@ -48,7 +54,10 @@ export default function Blog() {
 								e.preventDefault();
 								setOpenedTab(3);
 							}}
-							className="mr-2 hover:border-purple-800 border-b-2 hover:border-b-4 cursor-pointer SurfaceDuo:mr-12 GalaxyFold:mr-2">
+							className={
+								"mr-2  border-b-2 cursor-pointer SurfaceDuo:mr-6 SurfaceDuo:ml-6 GalaxyFold:mr-2 iPhoneSE:mr-4 iPhoneSE:ml-4 " +
+								(openedTab === 3 ? "border-purple-800 border-b-4" : "")
+							}>
 							<p className={openedTab === 3 ? "font-bold" : ""}>Postcards</p>
 						</li>
 						<li
@@ -56,7 +65,10 @@ export default function Blog() {
 								e.preventDefault();
 								setOpenedTab(4);
 							}}
-							className="mr-2 hover:border-purple-800 border-b-2 hover:border-b-4 cursor-pointer SurfaceDuo:mr-12 GalaxyFold:mr-2">
+							className={
+								"mr-2  border-b-2 cursor-pointer SurfaceDuo:mr-6 SurfaceDuo:ml-6 GalaxyFold:mr-2 iPhoneSE:mr-4 iPhoneSE:ml-4 " +
+								(openedTab === 4 ? "border-purple-800 border-b-4" : "")
+							}>
 							<p className={openedTab === 4 ? "font-bold" : ""}>Category 3</p>
 						</li>
 						<li
@@ -64,7 +76,10 @@ export default function Blog() {
 								e.preventDefault();
 								setOpenedTab(5);
 							}}
-							className="mr-2 hover:border-purple-800 border-b-2 hover:border-b-4 cursor-pointer SurfaceDuo:mr-12 GalaxyFold:mr-2">
+							className={
+								"mr-2  border-b-2 cursor-pointer SurfaceDuo:mr-6 SurfaceDuo:ml-6 GalaxyFold:mr-2 iPhoneSE:mr-4 iPhoneSE:ml-4 " +
+								(openedTab === 5 ? "border-purple-800 border-b-4" : "")
+							}>
 							<p className={openedTab === 5 ? "font-bold" : ""}>
 								Uncategorized
 							</p>
@@ -74,7 +89,14 @@ export default function Blog() {
 				<div>
 					<div className={openedTab === 1 ? "block" : "hidden"}>
 						<p className="text-center">test1</p>
-						<BlogCard />
+						<div class="flex flex-wrap mx-auto justify-center">
+							<BlogCard />
+							<BlogCard />
+							<BlogCard />
+							<BlogCard />
+							<BlogCard />
+							<BlogCard />
+						</div>
 					</div>
 					<div className={openedTab === 2 ? "block" : "hidden"}>
 						<p className="text-center">test2</p>
@@ -93,7 +115,7 @@ export default function Blog() {
 						<BlogCard />
 					</div>
 					<div className="flex justify-center">
-						<Button classes="btn-primary SurfaceDuo:mr-0 GalaxyFold:mr-2 GalaxyFold:p-4 GalaxyFold:h-14 iPhoneSE:px-12 iPhoneSE:h-auto iPhoneSE:mt-12">
+						<Button classes="btn-primary SurfaceDuo:mr-0 iPhoneSE:px-12 iPhoneSE:h-auto GalaxyFold:mt-12">
 							<a href="">Load more</a>
 						</Button>
 					</div>
