@@ -32,7 +32,7 @@ export default function Navbar() {
 	];
 
 	const languageDropdown = router.locales.map((locale) => ({
-		title: t(`navbar.language-switcher.${locale}`),
+		title: locale === 'en' ? '🇬🇧' : '🇮🇹',
 		href: router.asPath,
 		locale: locale,
 	}));

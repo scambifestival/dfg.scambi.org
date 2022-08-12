@@ -1,5 +1,6 @@
 import { useTranslation } from 'next-i18next';
 import Card from '../card';
+import Markdown from '../markdown';
 
 export default function Manifesto() {
 	const { t } = useTranslation('common');
@@ -16,12 +17,17 @@ export default function Manifesto() {
 								index % 2 === 0 ? 'yellow-pink-gradient' : 'bg-white'
 							}`}
 							key={`manifesto-${index}`}>
-							<h3 className='leading-loose text-center font-["Poppins"] font-semibold text-2xl'>
-								{card.name}
+							<h3>
+								<Markdown
+									className='text-center font-["Poppins"] font-semibold text-2xl mb-3'
+									content={card.name}
+								/>
 							</h3>
-							<p className='leading-relaxed text-center sm:text-left'>
-								{card.text}
-							</p>
+
+							<Markdown
+								className='leading-relaxed text-center sm:text-left'
+								content={card.text}
+							/>
 						</Card>
 					))}
 			</div>
