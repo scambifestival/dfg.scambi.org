@@ -43,12 +43,12 @@ export default function Home() {
 			</div>
 			{/* <div className='relative pb-[50%] lg:pb-[40%] xl:pb-[30%]'>
 					<iframe
-						className='absolute top-0 left-0 w-full h-full'
-						src='https://player.vimeo.com/video/658183199'
-						title='Scambi Festival 2021 Rewind'
-						allow='autoplay; fullscreen'
+						className="absolute top-0 left-0 w-full h-full"
+						src="https://player.vimeo.com/video/658183199"
+						title="Scambi Festival 2021 Rewind"
+						allow="autoplay; fullscreen"
 					/>
-				</div>*/}
+	</div>*/}
 			<CountDown />
 			<Flex classes='mt-16 justify-between mx-auto'>
 				<div className=''>
@@ -124,48 +124,6 @@ export default function Home() {
 				<Carousel slides={highlights} />
 			</div>
 
-			{/*<div className='mt-20 lg:mx-10'>
-				<h1>Scambi 2021 Highlights</h1>
-				<div>
-					<Image src={rec1} className='rounded-2xl shadow-md' alt='' />
-					<Image src={rec2} className='rounded-2xl shadow-md' alt='' />
-				</div>
-				<div className='mt-10 flex justify-center'>
-					<div className='flex flex-col space-y-5 mr-5'>
-						<div className='flex space-x-5 w-full'></div>
-						<Image src={rec3} className='rounded-2xl shadow-md' alt='' />
-					</div>
-					<div className='space-y-5'>
-						<Image src={rec4} className='rounded-2xl shadow-md' alt='' />
-						<Image src={rec5} className='rounded-2xl shadow-md' alt='' />
-					</div>
-					<div className='space-y-5 ml-5'>
-						<Image
-							src={rec6}
-							className='rounded-2xl shadow-md mb-5 w-[330px] h-[290px]'
-							alt=''
-						/>
-						<Image
-							src={rec7}
-							className='rounded-2xl shadow-md w-[330px] h-[208px]'
-							alt=''
-						/>
-					</div>
-					<div className='space-y-5 ml-5'>
-						<Image
-							src={rec8}
-							className='rounded-2xl shadow-md mb-5 w-[202px] h-[186px]'
-							alt=''
-						/>
-						<Image
-							src={rec9}
-							className='rounded-2xl shadow-md w-[202px] h-[311px]'
-							alt=''
-						/>
-					</div>
-				</div>
-				</div>*/}
-
 			<div className='my-24 lg:my-40 space-y-20 lg:space-y-32'>
 				<h2 className='text-center leading-tight font-medium mx-3 sm:w-4/5 sm:mx-auto'>
 					{t('testimonials.title')}
@@ -238,11 +196,21 @@ export default function Home() {
 				</div>
 			</Flex>
 
-			<div className='m-7 sm:m-10 xl:mx-20'>
+			<div className='mx-7 my-20 sm:mx-10 xl:mx-20'>
 				<h2 className='leading-tight font-medium text-center sm:text-left py-5'>
 					Explore Scambi Festival
 				</h2>
 				<Map />
+				<Button
+					classes='font-[500] bg-white mt-6 px-9 py-2'
+					onClick={() =>
+						window.open(
+							'//umap.openstreetmap.fr/en/map/scambi-2022_792002',
+							'_self'
+						)
+					}>
+					See full screen
+				</Button>
 			</div>
 		</section>
 	);
