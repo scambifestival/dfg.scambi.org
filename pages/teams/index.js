@@ -24,7 +24,12 @@ export default function Teams({ teams }) {
 					<p>{t('team.text', { ns: 'about' })}</p>
 					<Button classes='btn-primary mt-3'>Join our team</Button>
 				</div>
-				<Image src='https://x.scambi.org/images/staff.webp' alt='' width={600} height={400} />
+				<Image
+					src='https://x.scambi.org/images/staff.webp'
+					alt=''
+					width={600}
+					height={400}
+				/>
 			</Flex>
 			<div className='grid grid-cols-1 lg:px-16 gap-20 lg:grid-cols-3'>
 				{teams.map(({ team, frontmatter, content }) =>
