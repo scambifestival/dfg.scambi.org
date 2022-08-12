@@ -62,9 +62,9 @@ export async function getStaticProps({ locale }) {
 			data = parse.data;
 			content = parse.content;
 		}
-
+		team = team[locale];
 		return {
-			team,
+			team: team,
 			frontmatter: data,
 			content,
 		};

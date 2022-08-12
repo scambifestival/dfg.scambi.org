@@ -32,7 +32,7 @@ function TeamInfo({ frontmatter, team, members, locale }) {
 						key={member.id}
 						name={getFullName(member['Nome'], member['Cognome'])}
 						role={member['role'].value}
-						imgSrc={getImgSrc(member['profile_pic'])}
+						imgSrc={getImgSrc(member['Nome'], member['Cognome'])}
 						desc={getBio(locale, member)}
 					/>
 				))}
@@ -66,7 +66,7 @@ export default function Team({ frontmatter, team, members }) {
 }
 
 export async function getStaticPaths({ locales }) {
-	const files = getAllTeams();
+	const files = getAllTeams(true);
 	const paths = i18n(files, locales);
 	return {
 		paths,
@@ -84,7 +84,7 @@ export async function getStaticProps({ params: id, locale }) {
 		const parse = matter(team);
 		data = parse.data;
 		content = parse.content;
-		members = await getTeamMembers(id.id);
+		members = await getTeamMembers(id.id, locale);
 		console.log(members);
 	}
 
