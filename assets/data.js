@@ -24,7 +24,7 @@ export const manifestoCards = [
 			"Collective experience based on creativity, dialogue and sharing, which blossoms once a year on the squares of La Pigna in order to explore together the various connotations of the current edition's theme.",
 	},
 	{
-		title: 'Paneuretic',
+		title: 'paneurethic',
 		description:
 			'Neologism deriving from the Greek pan (all), eurisko (discover) and ethos (living), because we wish to combine diverse realities that would never meet in their original contexts, while celebrating and respecting our differences, discovering and developing inspiring ideas.',
 	},
