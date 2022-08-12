@@ -2,31 +2,31 @@
 	"faq": [
 		{
 			"question": "Quando e dove sarà la prossima edizione di Scambi Festival?",
-			"answer": "Scambi Festival 2022 si terrà nel quartiere della Pigna, a Sanremo, dal 25 al 28 agosto 2022. Il tema sarà: squilibrio."
+			"answer": "Scambi Festival 2022 si terrà nel quartiere della Pigna, a Sanremo, dal 25 al 28 agosto 2022. Il tema sarà “squilibrio”."
 		},
 		{
 			"question": "So già di non riuscire ad essere a Sanremo dal 25 al 28 agosto 2022. Potrò seguire gli incontri in streaming?",
-			"answer": "Purtroppo, no. L’incontro virtuale è la negazione della filosofia di ciò che intendiamo realizzare. La fisicità è la chiave dello scambio umano e della crescita reciproca."
+			"answer": "Purtroppo, no. L’incontro virtuale è la negazione della filosofia di ciò che intendiamo realizzare. La fisicità è la chiave dello scambio umano e della crescita reciproca che intendiamo perseguire."
 		},
 		{
 			"question": "Non vedo l’ora di esserci! Posso ricevere ospitalità?",
-			"answer": "È ancora presto per poter dare una risposta certa. Stiamo pensando a delle soluzioni low-cost per permettere di partecipare a più persone possibile"
+			"answer": "Fra staff e ospiti, abbiamo trovato una sistemazione <i lang='en'>low-cost</i> a 50 persone. Purtroppo, le nostre limitatissime risorse, nonché limitatissimi spazi e offerte sul territorio, non ci permettono di essere d’aiuto. Se sei proprio disperatə, prova a scriverci un’email a staff@scambi.org"
 		},
 		{
-			"question": "Quanto costa il biglietto?",
-			"answer": "Nulla. Scambi intende essere accessibile a tutti, letteralmente: non ci sono limiti di età, né barriere architettoniché, né, naturalmente, costi obbligatori."
+			"question": "Quanto costa partecipare?",
+			"answer": "Nulla. Scambi intende essere accessibile a tutti, letteralmente: non ci sono costi obbligatori."
 		},
 		{
 			"question": "Vorrei dare una mano. Come posso fare?",
-			"answer": "Siamo sempre molto felici di accogliere nuovi volontari! In questa pagina trovi tutte le informazioni che ti potrebbero servire."
+			"answer": "Siamo sempre molto felici di accogliere nuovз volontariз! In [questa pagina](/unisciti) trovi tutte le informazioni che ti potrebbero servire."
 		},
 		{
 			"question": "Come faccio a non perdermi gli aggiornamenti sulle vostre iniziative?",
-			"answer": "Ci sono vari modi: puoi iscriverti alla nostra newsletter, seguire le nostre pagine social, o contattarci direttamente."
+			"answer": "Ci sono vari modi: puoi [iscriverti alla nostra newsletter](https://buttondown.email/scambi 'Scambi di parole'), seguire [le nostre pagine social](https://instagram.com/scambifestival 'Scambi Festival su Instagram'), o <a href='mailto:staff@scambi.org' target='_blank' title='Invia un’email a staff@scambi.org'>contattarci direttamente</a>."
 		},
 		{
 			"question": "Ho una domanda, ma non è fra queste!",
-			"answer": "Non rimarrai senza risposta. Commenta qui sotto, scrivici un’email, oppure mandaci un messaggio sui social media."
+			"answer": "Non rimarrai senza risposta. <a href='mailto:staff@scambi.org' target='_blank' title='Invia un’email a staff@scambi.org'>Scrivici un’email, oppure mandaci un messaggio sui social media</a>."
 		}
 	]
 }

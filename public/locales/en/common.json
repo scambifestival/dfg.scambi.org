@@ -1,18 +1,81 @@
 {
+	"lab": "labs",
+	"pinoli": "Pinoli",
+	"donate": "donate",
+	"volunteer": "volunteer",
+	"attend": "Attend",
+	"privacy-policy": "Privacy Policy",
+	"navbar": {
+		"about": {
+			"title": "About us",
+			"about-scambi": "About Scambi",
+			"team": "our staff"
+		},
+		"festival": {
+			"title": "The Festival"
+		},
+		"support": {
+			"title": "Support"
+		},
+		"language-switcher": {
+			"en": "🇬🇧",
+			"it": "🇮🇹"
+		}
+	},
 	"subscribe": {
 		"button": "Subscribe",
-		"input": "Enter your email"
+		"input": "Enter your email address",
+		"title": "Subscribe to our Newsletter!",
+		"subtitle": "<cite>Scambi di Parole</cite>, our newsletter",
+		"join": "By subscribing, you can keep up with all the news concerning <cite>Scambi</cite> and deepening your knowledge of the topics addressed during the festival through exclusive interviews and thoughts concerning the world we live in."
 	},
-	"activities": [
+	"footer": {
+		"ready": "What are you waiting for to join us?",
+		"about": "About",
+		"team": "Staff",
+		"manifesto": "Manifesto",
+		"accessibility": "Accessibility",
+		"join": "Join our family"
+	},
+	"relations": {
+		"heading": "Our Relations",
+		"text": "Alone we would not have been able to make the magic of Scambi come true. <br /> What makes our festival unique are the relationships and the bonds with local and international organizations, the public administration of Sanremo and many other special people.",
+		"partner-button": "Partner with us",
+		"meet-button": "Who are our partners"
+	},
+	"manifesto": [
 		{
-			"title": "Workshops",
-			"description": "Collective experiences led by specialists who will accompany us through a variety of fields with the objective of discovering new things and people in an original way, in order to develop new bonds and values.",
-			"link": ""
+			"name": "<cite lang='it'>La Pigna</cite>, the roots",
+			"text": "<cite lang='it'>La Pigna</cite> is the iconic and vibrant historic center of Sanremo welcomes us during the festival, we are committed to give it a new birth through a joint and collective cutural effort."
 		},
 		{
-			"title": "Mini Events",
-			"description": "Mini-events that come to life in La Pigna, including the reading of Poesie a Colazione, the secondhand clothing exchange Da Capo, innovative solutions for the storage of virtual data and much more.",
-			"link": ""
+			"name": "Accessibility, the trunk",
+			"text": "In a society echoing with <u>you must</u>, we say <u>just be</u>: we work hard to make sure that every festival activity available and accessible to as many people as possible, regardless of their age, political position, religious belief or phisical and cognitive condition."
+		},
+		{
+			"name": "The Labs, the branches",
+			"text": "Strictly involving and open, Labs are conceived to establish special relations among the ones who attend them. Experts in many different fields host the Labs guiding the participants through experiences aimes ad broadening your perspective with challenging experiments and ideas."
+		},
+		{
+			"name": "<cite>Paneurethic</cite>, the offspring",
+			"text": "<cite>Paneurethic</cite> is a neologism we created so synthetize the deriving from the Greek pan (all), eurisko (discover) and ethos (living), because we wish to combine diverse realities that would never meet in their original contexts, while celebrating and respecting our differences, discovering and developing inspiring ideas."
+		}
+	],
+	"support": [
+		{
+			"name": "Volunteer with us",
+			"text": "Join the crew in helping to make Scambi come true!",
+			"button": "Volunteer"
+		},
+		{
+			"name": "Attend",
+			"text": "Celebrate with us this year, every activity is completely open and **free**.",
+			"button": "Book your spot"
+		},
+		{
+			"name": "Donate",
+			"text": "To be honest: we are penniless. Doing cool stuff, for free and for all, implies taking up quite a heavy bill. We would be super happy and grateful if you could help make it lighter.",
+			"button": "Donate"
 		}
 	]
 }
