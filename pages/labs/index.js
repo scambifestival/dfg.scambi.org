@@ -38,7 +38,7 @@ export default function Labs({ labs }) {
 			</Flex>
 			<Flex classes='mx-auto items-center justify-between mt-12'>
 				<Image
-					src='/illustrations/table-talk.png'
+					src='https://x.scambi.org/illustrations/tabletalk.webp'
 					width={436}
 					height={425}
 					alt=''

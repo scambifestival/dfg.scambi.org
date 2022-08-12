@@ -16,7 +16,7 @@ export default function SupportUs() {
 					<p>{cards[0].text}</p>
 					<div>
 						<Image
-							src='/illustrations/support1.png'
+							src='https://x.scambi.org/illustrations/hand.webp'
 							width={32}
 							height={88}
 							alt=''
@@ -33,7 +33,7 @@ export default function SupportUs() {
 					<p>{card[1].text}</p>
 					<div>
 						<Image
-							src='/illustrations/support2.png'
+							src='https://x.scambi.org/illustrations/hands.webp'
 							width={32}
 							height={88}
 							alt=''
@@ -52,7 +52,7 @@ export default function SupportUs() {
 					<p>{card[2].text}</p>
 					<div>
 						<Image
-							src='/illustrations/support3.png'
+							src='https://x.scambi.org/illustrations/heartish.webp'
 							width={32}
 							height={88}
 							alt=''

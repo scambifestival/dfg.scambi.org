@@ -24,7 +24,7 @@ export default function Pinoli() {
 				</div>
 				<div className='w-4/5 SurfaceDuo:w-3/5 md:w-2/5 lg:w-3/5 xl:max-w-md'>
 					<Image
-						src='/illustrations/pinoli.png'
+						src='https://x.scambi.org/illustrations/pinoli.webp'
 						alt='Two hand-drawn blue bowls full of seeds with a hand-drawn purplish acorn behind it'
 						width={738}
 						height={682}

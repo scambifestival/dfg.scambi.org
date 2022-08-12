@@ -1,12 +1,12 @@
-import rec1 from './rec1.png';
-import rec2 from './rec2.png';
-import rec3 from './rec3.png';
-import rec4 from './rec4.png';
-import rec5 from './rec5.png';
-import rec6 from './rec6.png';
-import rec7 from './rec7.png';
-import rec8 from './rec8.png';
-import rec9 from './rec9.png';
+import rec1 from 'https://x.scambi.org/images/dances.jpg';
+import rec2 from 'https://x.scambi.org/images/leo_jump.jpg';
+import rec3 from 'https://x.scambi.org/images/2021_dissolvenze.webp';
+import rec4 from 'https://x.scambi.org/images/sala_lettura.jpg';
+import rec5 from 'https://x.scambi.org/images/drawing.jpg';
+import rec6 from 'https://x.scambi.org/images/cern_team.webp';
+import rec7 from 'https://x.scambi.org/images/no_war_game.webp';
+import rec8 from 'https://x.scambi.org/images/scambi_presenta_santa_brigida.webp';
+import rec9 from 'https://x.scambi.org/images/2021_drawing_cards.webp';
 
 export const highlights = [
 	rec1,
