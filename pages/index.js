@@ -58,12 +58,12 @@ export default function Home() {
 					</h2>
 					<div className='mx-auto my-5 w-4/5 md:mx-0'>
 						<span className='font-semibold'>Pan - eur - etic:</span>{' '}
-						<Markdown content={t('paneurethic.text')} />
+						{t('paneuretic.text')}
 					</div>
 				</div>
 				<div className='w-full iPhoneSE:w-3/4 sm:w-1/2 md:w-3/4 lg:w-3/5 xl:w-2/5'>
 					<Image
-						src='/illustrations/table-talk.png'
+						src='https://x.scambi.org/illustrations/tabletalk.webp'
 						alt='Illustration of 3 people sitting around a table talking'
 						width={808}
 						height={800}
@@ -91,7 +91,7 @@ export default function Home() {
 				</div>
 				<div className='w-full iPhoneSE:w-1/2 md:w-3/4 lg:w-3/5 xl:w-2/5'>
 					<Image
-						src='/illustrations/program.png'
+						src='https://x.scambi.org/illustrations/program.webp'
 						alt='Illustration of woman with curly hair in yellow sleeveless top, brownish bottoms, and sandals reading a program while resting on a bundle of blue roots'
 						width={918}
 						height={1026}
@@ -104,9 +104,7 @@ export default function Home() {
 					<Card
 						key={index}
 						classes='w-5/6 h-fit px-7 py-5 space-y-4 text-left bg-white lg:w-1/4'>
-						<h4 className='font-["Poppins"] font-medium text-center'>
-							<Markdown content={event.title} />
-						</h4>
+						<h4 className='font-["Poppins"] font-medium'>{event.title}</h4>
 						<p>{event.description}</p>
 						<div>
 							<Link href={`/${event.link}`}>
@@ -126,48 +124,6 @@ export default function Home() {
 				</h2>
 				<Carousel slides={highlights} />
 			</div>
-
-			{/*<div className='mt-20 lg:mx-10'>
-				<h1>Scambi 2021 Highlights</h1>
-				<div>
-					<Image src={rec1} className='rounded-2xl shadow-md' alt='' />
-					<Image src={rec2} className='rounded-2xl shadow-md' alt='' />
-				</div>
-				<div className='mt-10 flex justify-center'>
-					<div className='flex flex-col space-y-5 mr-5'>
-						<div className='flex space-x-5 w-full'></div>
-						<Image src={rec3} className='rounded-2xl shadow-md' alt='' />
-					</div>
-					<div className='space-y-5'>
-						<Image src={rec4} className='rounded-2xl shadow-md' alt='' />
-						<Image src={rec5} className='rounded-2xl shadow-md' alt='' />
-					</div>
-					<div className='space-y-5 ml-5'>
-						<Image
-							src={rec6}
-							className='rounded-2xl shadow-md mb-5 w-[330px] h-[290px]'
-							alt=''
-						/>
-						<Image
-							src={rec7}
-							className='rounded-2xl shadow-md w-[330px] h-[208px]'
-							alt=''
-						/>
-					</div>
-					<div className='space-y-5 ml-5'>
-						<Image
-							src={rec8}
-							className='rounded-2xl shadow-md mb-5 w-[202px] h-[186px]'
-							alt=''
-						/>
-						<Image
-							src={rec9}
-							className='rounded-2xl shadow-md w-[202px] h-[311px]'
-							alt=''
-						/>
-					</div>
-				</div>
-				</div>*/}
 
 			<div className='my-24 lg:my-40 space-y-20 lg:space-y-32'>
 				<h2 className='text-center leading-tight font-medium mx-3 sm:w-4/5 sm:mx-auto'>
@@ -189,7 +145,7 @@ export default function Home() {
 				</div>
 				<div className='w-3/4 sm:w-3/5 lg:w-1/2'>
 					<Image
-						src={highlights[4]}
+						src='https://x.scambi.org/images/staff.webp'
 						alt='Five volunteers pose for group photo outside during the festival'
 						layout='responsive'
 						width={475}
@@ -233,7 +189,7 @@ export default function Home() {
 				</div>
 				<div className='w-3/5 sm:w-1/2'>
 					<Image
-						src='/illustrations/sponsors.png'
+						src='https://x.scambi.org/images/fun.webp'
 						alt='Illustration of three individuals holding hands, moving in a circle'
 						layout='responsive'
 						width={654}

@@ -7,7 +7,7 @@ export default function FAQ() {
 		<section>
 			<div className='flex flex-col items-center lg:flex-row mx-auto justify-between'>
 				<h2 className='text-center lg:px-16'>Frequently Asked Questions</h2>
-				<Image src='/faq.png' alt='' width={660} height={500} />
+				<Image src='https://x.scambi.org/images/faq.webp' alt='' width={660} height={500} />
 			</div>
 			<div className='mx-auto w-full'>
 				<div className='flex justify-center mx-1 iPhoneSE:mx-3 sm:mx-6 lg:mx-0'>
