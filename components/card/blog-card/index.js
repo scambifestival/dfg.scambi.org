@@ -2,7 +2,7 @@ import Card from "..";
 
 export default function blogCard() {
 	return (
-		<Card classes="bg-white w-60 m-6">
+		<Card classes="bg-white w-96 m-12">
 			<img
 				src="/illustrations/workshop-explanation.png"
 				alt=""
