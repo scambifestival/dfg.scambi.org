@@ -31,7 +31,7 @@ export default function Teams({ teams }) {
 					height={400}
 				/>
 			</Flex>
-			<div className='grid grid-cols-1 lg:px-16 gap-20 lg:grid-cols-3'>
+			<div className='grid grid-cols-1 lg:px-16 gap-20 lg:grid-cols-3 mb-14'>
 				{teams.map(({ team, frontmatter, content }) =>
 					frontmatter ? (
 						<TeamCard
@@ -64,9 +64,9 @@ export async function getStaticProps({ locale }) {
 			data = parse.data;
 			content = parse.content;
 		}
-
+		team = team[locale];
 		return {
-			team,
+			team: team,
 			frontmatter: data,
 			content,
 		};
