@@ -1,6 +1,79 @@
 {
+	"lab": "Lab",
+	"pinoli": "Pinoli",
+	"donate": "Dona",
+	"volunteer": "Unisciti",
+	"attend": "Partecipa",
+	"tickets": "Prenota",
+	"privacy-policy": "Privacy Policy",
+	"navbar": {
+		"about": {
+			"title": "Chi siamo",
+			"about-scambi": "Cos’è Scambi",
+			"team": "Lo staff"
+		},
+		"festival": {
+			"title": "Festival"
+		},
+		"support": {
+			"title": "Aiuto"
+		},
+		"language-switcher": {
+			"en": "🇬🇧",
+			"it": "🇮🇹"
+		}
+	},
 	"subscribe": {
 		"button": "Iscriviti",
-		"input": "Il tuo indirizzo email"
-	}
+		"input": "Digita il tuo indirizzo email",
+		"title": "Iscriviti alla newsletter!",
+		"subtitle": "<cite>Scambi di Parole</cite>, la nostra newsletter",
+		"join": "Leggendo la newsletter potrai rimanere aggiornatə su tutte le attività di Scambi, nonché esplorare più a fondo le tematiche trattate, con approfondimenti tematici, interviste esclusive e nostre riflessioni su quello che accade intorno a noi."
+	},
+	"footer": {
+		"ready": "Che aspetti a unirti?",
+		"about": "Che cavolo è?",
+		"team": "Staff",
+		"manifesto": "Manifesto",
+		"accessibility": "Accessibilità",
+		"join": "Sali a bordo!"
+	},
+	"relations": {
+		"heading": "Relazioni",
+		"text": "Da solз non saremmo in grado di dar vita alla magia di Scambi.<br>Ciò che rende unico il nostro festival sono anche le speciali relazioni e i profondi legami con realtà locali ed internazionali, la pubblica amministrazione e molte altre persone speciali.",
+		"partner-button": "Collabora con noi",
+		"meet-button": "Le nostre relazioni"
+	},
+	"manifesto": [
+		{
+			"name": "La Pigna, le radici",
+			"text": "<cite>Scambi</cite> affonda le proprie radici nella Pigna, <u>il magico centro storico di Sanremo</u>. Perfetta allegoria dei valori alla base dei nostri intenti, la Pigna è **uno scrigno colmo** di carrugi in cui si respira una bellezza rovinata e resiliente."
+		},
+		{
+			"name": "Accessibilità, il tronco",
+			"text": "Valorizziamo le diversità e intendiamo donare a tuttɜ la possibilità di sentirsi accoltɜ nel nostro mondo. Per noi Accessibilità significa credere e lavorare per la realizzazione di un mondo più giusto, che possa abbracciare tuttɜ, al di là e <u>*attraverso* le differenze</u>."
+		},
+		{
+			"name": "Laboratori, i rami",
+			"text": "Rigorosamente coinvolgenti e orizzontali, i Lab intendono creare relazioni fra chi li vive. Personalità perite nelle più diverse discipline propongono esperienze che aiutino ad allargare i propri orizzonti sperimentando con idee e cose."
+		},
+		{
+			"name": "Paneuretico, il frutto",
+			"text": "È paneuretico ciò che spinge a scoprire cose nuove, a rivolgersi ai più diversi ambiti, in modi originali. Questa ricerca non è priva di indirizzo, ciò che è paneuretico segue un’etica basata su valori vitali da costruire e condividere."
+		}
+	],
+	"support": [
+		{
+			"name": "Candidati come volontario",
+			"text": "Diventa parte della squadra durante il festival, aiutandoci dietro le quinte"
+		},
+		{
+			"name": "Partecipa al Festival",
+			"text": "Prendi parte a questa esplosione di pensieri e azioni per costruire un domani più equo. Vieni a Scambi, la partecipazione è gratuita!"
+		},
+		{
+			"name": "Sostienici",
+			"text": "Non esageriamo nel dire che siamo proprio squattrinati. Fare cose belle, gratis, per tuttз comporta un onere economico che saremmo felici se ci aiutassi ad alleggerire!"
+		}
+	]
 }

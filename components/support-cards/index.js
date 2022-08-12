@@ -13,7 +13,7 @@ export default function SupportUs() {
 					<p>Join us in the festivities and help from the inside!</p>
 					<div>
 						<Image
-							src="/illustrations/support1.png"
+							src="https://x.scambi.org/illustrations/hand.webp"
 							width={32}
 							height={88}
 							alt=""
@@ -32,7 +32,7 @@ export default function SupportUs() {
 					<p>Celebrate with us this year, tickets are free of charge.</p>
 					<div>
 						<Image
-							src="/illustrations/support2.png"
+							src="https://x.scambi.org/illustrations/hands.webp"
 							width={32}
 							height={88}
 							alt=""
@@ -49,7 +49,7 @@ export default function SupportUs() {
 					</p>
 					<div>
 						<Image
-							src="/illustrations/support3.png"
+							src="https://x.scambi.org/illustrations/heartish.webp"
 							width={32}
 							height={88}
 							alt=""
