@@ -4,12 +4,13 @@ import Button from '../../components/button';
 import BlogCard from '../../components/card/blog-card';
 import { getABlog, getAllBlogs, getBlogFile } from '../../lib/blogs';
 import matter from 'gray-matter';
+import Image from 'next/image';
 
-export default function Blog({ blogs }) {
+export default function Blogs({ blogs }) {
 	const [openedTab, setOpenedTab] = useState(1);
 
 	return (
-		<div className='bg-white -mb-12'>
+		<section className='bg-white -mb-12'>
 			<div className='relative w-screen -mt-48'>
 				<div className='w-full h-96 flex justify-center'>
 					<h2 className='z-20 text-white text-center mt-36 font-bold md:w-1/3 sm:w-1/2 SurfaceDuo:w-1/3 sm:mt-44'>
@@ -17,7 +18,7 @@ export default function Blog({ blogs }) {
 					</h2>
 				</div>
 
-				<img
+				<Image
 					src='/illustrations/workshop-explanation.png'
 					alt=''
 					layout='fill'
@@ -25,7 +26,7 @@ export default function Blog({ blogs }) {
 				/>
 			</div>
 			<div className='pb-36'>
-				<div className=' flex justify-around sm:mt-24 mb-24 h-12'>
+				{/*<div className=' flex justify-around sm:mt-24 mb-24 h-12'>
 					<ul className='flex flex-wrap text-center justify-center'>
 						<li
 							onClick={(e) => {
@@ -87,34 +88,12 @@ export default function Blog({ blogs }) {
 							</p>
 						</li>
 					</ul>
-				</div>
+						</div>*/}
 				<div>
-					<div className={openedTab === 1 ? 'block' : 'hidden'}>
-						<p className='text-center'>test1</p>
-						<div className='flex flex-wrap mx-auto justify-center'>
-							<BlogCard />
-							<BlogCard />
-							<BlogCard />
-							<BlogCard />
-							<BlogCard />
-							<BlogCard />
-						</div>
-					</div>
-					<div className={openedTab === 2 ? 'block' : 'hidden'}>
-						<p className='text-center'>test2</p>
-						<BlogCard />
-					</div>
-					<div className={openedTab === 3 ? 'block' : 'hidden'}>
-						<p className='text-center'>test3</p>
-						<BlogCard />
-					</div>
-					<div className={openedTab === 4 ? 'block' : 'hidden'}>
-						<p className='text-center'>test4</p>
-						<BlogCard />
-					</div>
-					<div className={openedTab === 5 ? 'block' : 'hidden'}>
-						<p className='text-center'>test5</p>
-						<BlogCard />
+					<div className='flex flex-wrap mx-auto justify-center'>
+						{blogs.map(({ frontmatter }) => (
+							<BlogCard key={frontmatter.title} blog={frontmatter} />
+						))}
 					</div>
 					<div className='flex justify-center'>
 						<Button classes='btn-primary SurfaceDuo:mr-0 iPhoneSE:px-12 iPhoneSE:h-auto GalaxyFold:mt-12'>
@@ -126,7 +105,7 @@ export default function Blog({ blogs }) {
 					<Subscribe />
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }
 
@@ -135,16 +114,13 @@ export async function getStaticProps({ locale }) {
 	const blogs = files.map((blog) => {
 		const readFile = getBlogFile(blog);
 		let data = null;
-		let content = null;
 		if (readFile) {
 			const parse = matter(readFile);
 			data = parse.data;
-			content = parse.content;
 		}
 
 		return {
 			frontmatter: data,
-			content,
 		};
 	});
 

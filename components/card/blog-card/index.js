@@ -1,31 +1,36 @@
-import Card from "..";
+import Card from '..';
+import Image from 'next/image';
 
-export default function blogCard() {
+export default function BlogCard({ blog }) {
 	return (
-		<Card classes="bg-white w-96 m-12">
-			<img
-				src="/illustrations/workshop-explanation.png"
-				alt=""
-				layout="fill"
-				className="rounded-t-2xl w-full h-56"
+		<Card classes='bg-white w-96 m-12'>
+			<Image
+				src={blog.image}
+				alt=''
+				layout='fill'
+				className='rounded-t-2xl w-full h-56'
 			/>
 
-			<div className="flex justify-between mt-6 pb-6 px-6">
+			<div className='flex justify-between mt-6 pb-6 px-6'>
 				<p>
-					By <span>Authour</span>
+					By <span>{blog.author}</span>
 				</p>
-				<p>Date</p>
+				<p>{blog.date}</p>
 			</div>
-			<div className="text-left px-6 w-full h-42">
-				<h5 className="pb-4 text-2xl">Disequilibrium in cinema</h5>
-				<p>
-					Disequilibrium. The word that will serve as a common thread in (the
-					world of) this year's
-				</p>
-				<div className="py-6">
-					<p className="bg-yellow-300 w-fit px-2 py-1 rounded-md">
-						Category or tags
-					</p>
+
+			<div className='text-left px-6 w-full'>
+				<h4 className='pb-4'>{blog.title}</h4>
+				<div className='mb-2'>
+					{blog.categories.map((el) => (
+						<p key={el} className='bg-yellow-300 w-fit px-2 py-1 rounded-md'>
+							{el}
+						</p>
+					))}
+				</div>
+				<div>
+					{blog.tags.map((el) => (
+						<p key={el}>#{el}</p>
+					))}
 				</div>
 			</div>
 		</Card>
