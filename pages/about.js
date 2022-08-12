@@ -5,25 +5,27 @@ import Manifesto from '../components/manifesto';
 import Subscribe from '../components/subscribe';
 import SupportUs from '../components/support-cards';
 import useMediaQuery from '../lib/hooks/media-query';
+
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation, Trans } from 'next-i18next';
+import Markdown from '../components/markdown';
 
 export default function About() {
 	const isSmall = useMediaQuery('(max-width: 430px)');
 	const isXSmall = useMediaQuery('(max-width: 400px)');
 	const isGalaxyS8 = useMediaQuery('(max-width: 360px)');
 	const isGalaxyFold = useMediaQuery('(max-width: 280px)');
-	const { t } = useTranslation(['about', 'common']);
+	const { t, ready } = useTranslation(['about', 'common']);
 
 	return (
 		<section className='mt-32'>
 			<Flex classes='mx-auto my-10 GalaxyFold:p-6 md:flex-col lg:flex-row GalaxyFold:mb-20'>
 				<div className='xl:w-1/2 md:w-auto w-full'>
 					<h2 className='lg:mt-16 text-left'>{t('about.heading')}</h2>
-					<p className='text-left'>{t('about.desc')}</p>
+					<Markdown content={t('about.desc')} />
 
 					<div className='my-5 text-left'>
-						<Trans i18nKey={t('about.text')} />
+						<Markdown content={t('about.text')} />
 					</div>
 					<Button classes='btn-primary GalaxyFold:mb-12 uppercase'>
 						<a href='https://pretix.eu/scambi/2022/'>
@@ -50,11 +52,13 @@ export default function About() {
 					/>
 					<div className='lg:w-1/2 md:mt-12 md:w-1/2 md:ml-12 py-20 GalaxyFold:pt-0'>
 						<div className=''>
-							<h3>{t('purpose.heading')}</h3>
+							<h3>
+								<Markdown content={t('purpose.heading')} />
+							</h3>
 							<p className='my-5'>{t('purpose.text')}</p>
 							<p className='mb-5'>{t('purpose.last')}</p>
 						</div>
-						<Button classes='btn-primary'>{t('button')}</Button>
+						<Button classes='btn-primary'>{t('purpose.button')}</Button>
 					</div>
 				</Flex>
 			</div>
@@ -352,7 +356,7 @@ export default function About() {
 			</div>
 			<div className='relative h-screen w-screen'>
 				<div className='w-full h-full flex justify-center items-center'>
-					<h2 className='z-20 uppercase text-white text-center font-bold md:w-1/3 sm:w-1/2 SurfaceDuo:w-1/3'>
+					<h2 className='z-20 uppercase text-white text-center font-bold md:w-1/2 sm:w-1/2 SurfaceDuo:w-1/3'>
 						{t('belief')}
 					</h2>
 				</div>
@@ -368,8 +372,8 @@ export default function About() {
 			<Flex classes='mx-auto pb-0'>
 				<div className='lg:w-1/2 md:w-2/3 pl-6 pr-6'>
 					<h2 className=''>{t('team.heading')}</h2>
-					<p className='mb-6'>{t('team.desc')}</p>
-					<p className=''>{t('team.text')}</p>
+					<Markdown className='mb-6' content={t('team.desc')} />
+					<Markdown content={t('team.text')} />
 				</div>
 				<div className='lg:ml-14 md:ml-14 pl-6 pr-6 mt-0'>
 					<Image
@@ -388,9 +392,10 @@ export default function About() {
 					<h2 className='text-center'>
 						{t('relations.heading', { ns: 'common' })}
 					</h2>
-					<p className='mx-auto md:mx-0 w-full 2xl:w-4/5 text-left'>
-						{t('relations.text', { ns: 'common' })}
-					</p>
+					<Markdown
+						className='mx-auto md:mx-0 w-full 2xl:w-4/5 text-left'
+						content={t('relations.text', { ns: 'common' })}
+					/>
 					<div className='flex flex-row justify-center iPhoneSE:flex-col GalaxyFold:flex-col SurfaceDuo:flex-row grid-flow-row:left-0 GalaxyFold:place-items-center'>
 						<Button classes='btn-primary GalaxyFold:w-50 iPhoneSE:w-full'>
 							{t('relations.partner-button', { ns: 'common' })}

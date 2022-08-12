@@ -1,15 +1,16 @@
 {
-	"lab": "labs",
+	"lab": "Labs",
 	"pinoli": "Pinoli",
 	"donate": "donate",
 	"volunteer": "volunteer",
 	"attend": "Attend",
 	"privacy-policy": "Privacy Policy",
+	"tickets": "Get Tickets",
 	"navbar": {
 		"about": {
 			"title": "About us",
 			"about-scambi": "About Scambi",
-			"team": "our staff"
+			"team": "Our staff"
 		},
 		"festival": {
 			"title": "The Festival"
@@ -32,35 +33,35 @@
 	"footer": {
 		"ready": "What are you waiting for to join us?",
 		"about": "About",
-		"team": "Staff",
 		"manifesto": "Manifesto",
 		"accessibility": "Accessibility",
 		"join": "Join our family"
 	},
 	"relations": {
 		"heading": "Our Relations",
-		"text": "Alone we would not have been able to make the magic of Scambi come true. <br /> What makes our festival unique are the relationships and the bonds with local and international organizations, the public administration of Sanremo and many other special people.",
+		"text": "Alone we would not have been able to make the magic of Scambi come true.<br />What makes our festival unique are the relationships and the bonds with local and international organizations, the public administration of Sanremo and many other special people.",
 		"partner-button": "Partner with us",
 		"meet-button": "Who are our partners"
 	},
 	"manifesto": [
 		{
-			"name": "<cite lang='it'>La Pigna</cite>, the roots",
+			"name": "<cite lang='it'>La Pigna</cite>, <span color='#69088D'>the roots</span>",
 			"text": "<cite lang='it'>La Pigna</cite> is the iconic and vibrant historic center of Sanremo welcomes us during the festival, we are committed to give it a new birth through a joint and collective cutural effort."
 		},
 		{
-			"name": "Accessibility, the trunk",
+			"name": "Accessibility, <span color='#69088D'>the trunk</span>",
 			"text": "In a society echoing with <u>you must</u>, we say <u>just be</u>: we work hard to make sure that every festival activity available and accessible to as many people as possible, regardless of their age, political position, religious belief or phisical and cognitive condition."
 		},
 		{
-			"name": "The Labs, the branches",
+			"name": "The Labs, <span color='#69088D'>the branches</span>",
 			"text": "Strictly involving and open, Labs are conceived to establish special relations among the ones who attend them. Experts in many different fields host the Labs guiding the participants through experiences aimes ad broadening your perspective with challenging experiments and ideas."
 		},
 		{
-			"name": "<cite>Paneurethic</cite>, the offspring",
+			"name": "<cite>Paneurethic</cite>, <span color='#69088D'>the offspring</span>",
 			"text": "<cite>Paneurethic</cite> is a neologism we created so synthetize the deriving from the Greek pan (all), eurisko (discover) and ethos (living), because we wish to combine diverse realities that would never meet in their original contexts, while celebrating and respecting our differences, discovering and developing inspiring ideas."
 		}
 	],
+	"support-title": "Support Us Today",
 	"support": [
 		{
 			"name": "Volunteer with us",

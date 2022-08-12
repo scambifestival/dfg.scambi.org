@@ -33,7 +33,6 @@
 	"footer": {
 		"ready": "Che aspetti a unirti?",
 		"about": "Che cavolo è?",
-		"team": "Staff",
 		"manifesto": "Manifesto",
 		"accessibility": "Accessibilità",
 		"join": "Sali a bordo!"
@@ -46,22 +45,23 @@
 	},
 	"manifesto": [
 		{
-			"name": "La Pigna, le radici",
+			"name": "La Pigna, <span color='#69088D'>le radici</span>",
 			"text": "<cite>Scambi</cite> affonda le proprie radici nella Pigna, <u>il magico centro storico di Sanremo</u>. Perfetta allegoria dei valori alla base dei nostri intenti, la Pigna è **uno scrigno colmo** di carrugi in cui si respira una bellezza rovinata e resiliente."
 		},
 		{
-			"name": "Accessibilità, il tronco",
+			"name": "Accessibilità, <span color='#69088D'>il tronco</span>",
 			"text": "Valorizziamo le diversità e intendiamo donare a tuttɜ la possibilità di sentirsi accoltɜ nel nostro mondo. Per noi Accessibilità significa credere e lavorare per la realizzazione di un mondo più giusto, che possa abbracciare tuttɜ, al di là e <u>*attraverso* le differenze</u>."
 		},
 		{
-			"name": "Laboratori, i rami",
+			"name": "Laboratori, <span color='#69088D'>i rami</span>",
 			"text": "Rigorosamente coinvolgenti e orizzontali, i Lab intendono creare relazioni fra chi li vive. Personalità perite nelle più diverse discipline propongono esperienze che aiutino ad allargare i propri orizzonti sperimentando con idee e cose."
 		},
 		{
-			"name": "Paneuretico, il frutto",
+			"name": "Paneuretico, <span color='#69088D'>il frutto</span>",
 			"text": "È paneuretico ciò che spinge a scoprire cose nuove, a rivolgersi ai più diversi ambiti, in modi originali. Questa ricerca non è priva di indirizzo, ciò che è paneuretico segue un’etica basata su valori vitali da costruire e condividere."
 		}
 	],
+	"support-title": "Come aiutarci?",
 	"support": [
 		{
 			"name": "Candidati come volontario",

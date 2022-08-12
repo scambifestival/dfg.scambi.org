@@ -6,7 +6,7 @@
 	},
 	"edition": {
 		"heading": "2022 Edition",
-		"text": "Scambi Festival 2022 will take place from 25<sup>th</sup> to 28<sup>th</sup> of August in the historic center of <em lang='it'>La Pigna</em> (<em lang='it'>Sanremo</em>), we chose ***Disequilibrium*** as its theme."
+		"text": "Scambi Festival 2022 will take place from 25<sup>th</sup> to 28<sup>th</sup> of August in the most ancient neighborhood of <em lang='it'>Sanremo</em>: **<em lang='it'>La Pigna</em>**, we chose ***Disequilibrium*** as its theme."
 	},
 	"paneurethic": {
 		"heading": "What does *Paneurethic* mean?",
@@ -15,7 +15,7 @@
 	"family": {
 		"heading": "The Scambi Family",
 		"text": [
-			"We are a group of under 25s coming from every corner of Europe.",
+			"We are a group of under 25s coming from every corner of the world.",
 
 			"Our association was born from our wish to value **real** and **deep ties**, horizontality and dialogue, curiosity and welcoming of diversity. After lots of videocalls, thousand doubts and just as many ideas, <u>our staff has become a family</u>. We are proud of our etherogeneity and passion, we are enthusiastic in sharing inspiration and in continuously proposing new perspectives.",
 
@@ -23,7 +23,7 @@
 		],
 		"button": "Volunteer with us"
 	},
-	"purpose": "“Our purpose is to recover the value of meaningful **communication** and conscious **meeting**, often forgotten or hidden behind a two-dimentional screen. <u>Scambi is a multi-dimensional universe</u>, where distant worlds have the possibility to interact with each other.”",
+	"purpose": "Our purpose is to recover the value of meaningful **communication** and conscious **meeting**, often forgotten or hidden behind a two-dimentional screen. <u>Scambi is a multi-dimensional universe</u>, where distant worlds have the possibility to interact with each other.",
 	"activities": [
 		{
 			"title": "Labs",
@@ -31,8 +31,8 @@
 			"link": "Labs"
 		},
 		{
-			"title": "Pinoli",
-			"description": "Pinoli are events where you can meet new people: book presentations, exhibitions of innovative technological solutions, exchanges of secondhand clothing, and much more.",
+			"title": "<em lang='it'>Pinoli</em>",
+			"description": "<em lang='it'>Pinoli</em> are events where you can meet new people: book presentations, exhibitions of innovative technological solutions, exchanges of secondhand clothing, and much more.",
 			"link": "Pinoli"
 		},
 		{
@@ -42,7 +42,7 @@
 		}
 	],
 	"testimonials": {
-		"title": "An experience people love to talk about",
+		"title": "What drives the members of our staff",
 		"data": [
 			{
 				"name": "Anna",

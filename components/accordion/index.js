@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useTranslation } from 'next-i18next';
 import { useState } from 'react';
 import { ChevronRight } from '../icons/chevron';
+import Markdown from '../markdown';
 
 export default function Accordion() {
 	const { t } = useTranslation('faq');
@@ -47,12 +48,12 @@ function Answer({ answer }) {
 			initial={{ height: 0, opacity: 0 }}
 			animate={{ height: 'auto', opacity: 1 }}
 			exit={{ height: 0, opacity: 0 }}>
-			<motion.p
+			<motion.div
 				variants={{ collapsed: { scale: 0.8 }, open: { scale: 1 } }}
 				transition={{ duration: 0.3 }}
 				className='p-3 rounded-b-2xl border-x-2 border-b-2 border-primary bg-white'>
-				{answer}
-			</motion.p>
+				<Markdown content={answer} />
+			</motion.div>
 		</motion.div>
 	);
 }
