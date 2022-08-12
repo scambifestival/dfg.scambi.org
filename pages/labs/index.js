@@ -27,12 +27,14 @@ export default function Labs({ labs }) {
 						{t('tickets', { ns: 'common' })}
 					</Button>
 				</div>
-				<div className='mt-10 ml-10'>
+				<div className='mt-10 min-w-full SurfaceDuo:w-4/5 SurfaceDuo:min-w-[10%] md:w-2/3 xl:w-1/2'>
 					<Image
 						src='https://picsum.photos/640/412'
 						width={640}
 						height={412}
+						layout='responsive'
 						alt=''
+						className='rounded-xl'
 					/>
 				</div>
 			</Flex>
