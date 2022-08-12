@@ -183,7 +183,7 @@ export default function Footer() {
 									</Link>
 								</li>
 								<li className="mt-2">
-									<Link href="https://www.paypal.com/paypalme/apsoltre">
+									<Link href="https://liberapay.com/scambi">
 										<a>Donate</a>
 									</Link>
 								</li>
@@ -223,8 +223,8 @@ export default function Footer() {
 				</div>
 			</div>
 
-			<div className="flex flex-row GalaxyFold:flex-col justify-between px-16 pb-10 items-center SurfaceDuo:flex-row">
-				<p className="">Privacy Policy</p>
+			<div className="flex flex-row GalaxyFold:flex-col-reverse justify-between px-16 pb-10 items-center SurfaceDuo:flex-row">
+				<p className="GalaxyFold:mt-6 SurfaceDuo:mt-0">2022&copy;Scambi</p>
 				<div className="flex GalaxyFold:space-x-3 space-x-5 items-center">
 					<Link href="https://twitter.com/scambifestival">
 						<a>
