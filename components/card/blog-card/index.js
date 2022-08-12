@@ -1,12 +1,14 @@
 import Card from "..";
+import Image from "next/image";
 
 export default function blogCard() {
 	return (
 		<Card classes="bg-white w-96 m-12">
-			<img
+			<Image
 				src="/illustrations/workshop-explanation.png"
 				alt=""
-				layout="fill"
+				width={660}
+				height={500}
 				className="rounded-t-2xl w-full h-56"
 			/>
 
