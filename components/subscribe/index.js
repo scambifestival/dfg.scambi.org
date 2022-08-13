@@ -2,8 +2,6 @@ import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
 
 import { subscribe } from '../../lib/communications';
-
-import SubscribeImg from 'https://x.scambi.org/illustrations/press.webp';
 import Button from '../button';
 import { useState } from 'react';
 import Markdown from '../markdown';
@@ -23,8 +21,10 @@ export default function Subscribe() {
 	return (
 		<div className='flex rounded-[32px] bg-primary text-white mx-16 drop-shadow-2xl md:flex-row GalaxyFold:flex-col GalaxyFold:w-64 GalaxyS8:w-80 iPhoneSE:w-full'>
 			<Image
-				src={SubscribeImg}
+				src='https://x.scambi.org/illustrations/press.webp'
 				alt='Subscribe illustration'
+				height={413}
+				width={500}
 				className='hidden lg:block lg:rounded-l-[32px] md:rounded-tr-[0px] GalaxyFold:rounded-t-[32px] md:rounded-l-[32px] object-fill'
 			/>
 			<div className='flex flex-col items-center justify-center lg:pr-10 p-6 GalaxyFold:p-12'>

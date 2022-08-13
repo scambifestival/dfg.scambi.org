@@ -12,7 +12,6 @@ import Map from '../components/map';
 import { ArrowRight } from '../components/icons/arrow';
 import Carousel from '../components/carousel';
 import CountDown from '../components/countdown';
-import { highlights } from '../assets/highlights';
 import Markdown from '../components/markdown';
 
 /* A different way to import image
@@ -122,7 +121,7 @@ export default function Home() {
 				<h2 className='mb-10 font-medium leading-tight'>
 					Scambi 2021 Highlights
 				</h2>
-				<Carousel slides={highlights} />
+				{/*<Carousel slides={highlights} />*/}
 			</div>
 
 			<div className='my-24 lg:my-40 space-y-20 lg:space-y-32'>
@@ -147,10 +146,8 @@ export default function Home() {
 					<Image
 						src='https://x.scambi.org/images/staff.webp'
 						alt='Five volunteers pose for group photo outside during the festival'
-						layout='responsive'
-						width={475}
-						objectFit='cover'
-						objectPosition='right'
+						height={492}
+						width={645}
 						className='rounded-2xl'
 					/>
 				</div>
@@ -192,8 +189,9 @@ export default function Home() {
 						src='https://x.scambi.org/images/fun.webp'
 						alt='Illustration of three individuals holding hands, moving in a circle'
 						layout='responsive'
-						width={654}
+						width={800}
 						height={689}
+						className='rounded-2xl'
 					/>
 				</div>
 			</Flex>

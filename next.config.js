@@ -9,8 +9,12 @@ const nextConfig = {
 		domains: [
 			'picsum.photos',
 			'images.tommi.space',
-			'nuvola.scambi.org',
 			'x.scambi.org',
+			'www.adelphi.it',
+			'upload.wikimedia.org',
+			'www.eyefilm.nl',
+			'miro.medium.com',
+			'pbs.twimg.com',
 		],
 	},
 	webpack: (config, { isServer }) => {

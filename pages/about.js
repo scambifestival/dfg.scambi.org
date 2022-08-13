@@ -377,7 +377,7 @@ export default function About() {
 				</div>
 				<div className='lg:ml-14 md:ml-14 pl-6 pr-6 mt-0'>
 					<Image
-						src='/illustrations/https://x.scambi.org/images/staff.webp'
+						src='https://x.scambi.org/images/staff.webp'
 						width={635}
 						height={450}
 						alt=''
