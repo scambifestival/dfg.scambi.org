@@ -117,6 +117,7 @@ export async function getStaticProps({ locale }) {
 		if (readFile) {
 			const parse = matter(readFile);
 			data = parse.data;
+			data.date = new Date(data.date).toLocaleDateString();
 		}
 
 		return {
