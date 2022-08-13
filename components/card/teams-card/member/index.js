@@ -1,6 +1,5 @@
 import Card from '../..';
 import Image from 'next/image';
-import ReactMarkdown from 'react-markdown';
 
 export default function MemberCard({ imgSrc, name, role, desc }) {
 	return (
@@ -9,7 +8,7 @@ export default function MemberCard({ imgSrc, name, role, desc }) {
 			<h3>{name}</h3>
 			<p className='uppercase'>{role}</p>
 			{/*eslint-disable-next-line react/no-children-prop*/}
-			<ReactMarkdown children={desc} />
+			<p>{desc}</p>
 		</Card>
 	);
 }

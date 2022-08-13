@@ -4,6 +4,7 @@ import { useTranslation } from 'next-i18next';
 import { subscribe } from '../../lib/communications';
 import Button from '../button';
 import { useState } from 'react';
+import Markdown from '../markdown';
 
 export default function Subscribe() {
 	const { t } = useTranslation('common');
@@ -28,12 +29,9 @@ export default function Subscribe() {
 			/>
 			<div className='flex flex-col items-center justify-center lg:pr-10 p-6 GalaxyFold:p-12'>
 				<div className='lg:ml-10 GalaxyFold:p-2'>
-					<p className='uppercase'>exchanges of letters, our newsletter</p>
+					<Markdown className='uppercase' content={t('subscribe.subtitle')} />
 					<h2>Scambi Epistolari</h2>
-					<p className='mb-5'>
-						Join the conversation - sign up now to receive updates on Scambi
-						activities.
-					</p>
+					<p className='mb-5 w-[500px]'>{t('subscribe.join')}</p>
 					<form>
 						<input
 							type='email'
