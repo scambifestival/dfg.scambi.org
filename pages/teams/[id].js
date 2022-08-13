@@ -85,7 +85,6 @@ export async function getStaticProps({ params: id, locale }) {
 		data = parse.data;
 		content = parse.content;
 		members = await getTeamMembers(id.id, locale);
-		console.log(members);
 	}
 
 	return {

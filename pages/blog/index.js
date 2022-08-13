@@ -2,11 +2,11 @@ import Subscribe from '../../components/subscribe';
 import React, { useState } from 'react';
 import Button from '../../components/button';
 import BlogCard from '../../components/card/blog-card';
-import { getABlog, getAllBlogs, getBlogFile } from '../../lib/blogs';
+import { getAPost, getAllPosts, sortByDate } from '../../lib/blog';
 import matter from 'gray-matter';
 import Image from 'next/image';
 
-export default function Blogs({ blogs }) {
+export default function Blog({ posts }) {
 	const [openedTab, setOpenedTab] = useState(1);
 
 	return (
@@ -91,8 +91,12 @@ export default function Blogs({ blogs }) {
 						</div>*/}
 				<div>
 					<div className='flex flex-wrap mx-auto justify-center'>
-						{blogs.map(({ frontmatter }) => (
-							<BlogCard key={frontmatter.title} blog={frontmatter} />
+						{posts.map(({ frontmatter, path }) => (
+							<BlogCard
+								key={frontmatter.title}
+								post={frontmatter}
+								path={path}
+							/>
 						))}
 					</div>
 					<div className='flex justify-center'>
@@ -109,25 +113,29 @@ export default function Blogs({ blogs }) {
 	);
 }
 
-export async function getStaticProps({ locale }) {
-	const files = getAllBlogs();
-	const blogs = files.map((blog) => {
-		const readFile = getBlogFile(blog);
+export async function getStaticProps() {
+	const files = getAllPosts();
+	let posts = files.map((post) => {
+		const readFile = getAPost(post);
 		let data = null;
 		if (readFile) {
 			const parse = matter(readFile);
 			data = parse.data;
 			data.date = new Date(data.date).toLocaleDateString();
 		}
+		post = post.replace('.md', '');
 
 		return {
+			path: post,
 			frontmatter: data,
 		};
 	});
 
+	posts.sort(sortByDate);
+
 	return {
 		props: {
-			blogs: blogs,
+			posts: posts,
 		},
 	};
 }
