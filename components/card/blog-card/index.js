@@ -5,7 +5,10 @@ import { getDate } from '../../../lib/blog';
 
 export default function BlogCard({ post, path }) {
 	return (
-		<Link href={`blog/${path}`} locale={'lang' in post ? post.lang : ''}>
+		<Link
+			href={`blog/${path}`}
+			as={path}
+			locale={'lang' in post ? post.lang : ''}>
 			<a>
 				<Card classes='bg-white w-96 m-12 drop-shadow-2xl'>
 					<Image
