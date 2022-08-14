@@ -20,21 +20,21 @@ export default function About() {
 
 	return (
 		<section className='mt-32'>
-			<Flex classes='mx-auto my-10 GalaxyFold:p-6 md:flex-col lg:flex-row GalaxyFold:mb-20'>
-				<div className='xl:w-1/2 md:w-auto w-full'>
-					<h2 className='lg:mt-16 text-left'>{t('about.heading')}</h2>
+			<Flex classes='mx-auto my-10 px-6 iPhoneXR:px-10 GalaxyFold:mb-20 md:flex-col md:px-0 lg:flex-row'>
+				<div className='text-left w-full md:w-auto lg:w-3/5'>
+					<h2 className='leading-snug lg:mt-16'>{t('about.heading')}</h2>
 					<Markdown content={t('about.desc')} />
 
-					<div className='my-5 text-left'>
+					<div className='my-5'>
 						<Markdown content={t('about.text')} />
 					</div>
-					<Button classes='btn-primary GalaxyFold:mb-12 uppercase'>
+					<Button classes='btn-primary uppercase'>
 						<a href='https://pretix.eu/scambi/2022/'>
 							{t('attend', { ns: 'common' })}
 						</a>
 					</Button>
 				</div>
-				<div className='w-full md:w-1/2 lg:w-1/2 md:pt-24 lg:pt-56 xl:pt-60 xl:w-1/2 2xl:mt-60'>
+				<div className='w-full sm:w-4/6 md:w-5/6 lg:w-1/2 lg:pl-10 xl:w-2/5'>
 					<Image
 						src='https://x.scambi.org/images/inaugurazione.webp'
 						width={705}
@@ -46,26 +46,26 @@ export default function About() {
 				</div>
 			</Flex>
 			<div className='bg-white py-10'>
-				<Flex classes='mx-auto justify-between items-center GalaxyFold:p-6'>
-					<div className='bg-[#AAB4D6] rounded-[32px] h-fit overflow-clip'>
+				<Flex classes='w-full mx-auto justify-evenly items-center GalaxyFold:px-6 space-x-20 space-y-0'>
+					<div className='bg-[#7D8E9E] rounded-2xl w-full iPhoneSE:w-8/12 sm:w-3/5 lg:w-1/3'>
 						<Image
 							src='https://x.scambi.org/illustrations/paneuretico.webp'
-							className='rounded-[32px]'
+							className='rounded-2xl'
 							width={400}
 							height={400}
-							objectFit='contain'
+							layout='responsive'
 							alt=''
 						/>
 					</div>
-					<div className='lg:w-1/2 md:mt-12 md:w-1/2 md:ml-12 py-20 GalaxyFold:pt-0'>
-						<div className=''>
-							<h3>
-								<Markdown content={t('purpose.heading')} />
-							</h3>
-							<p className='my-5'>{t('purpose.text')}</p>
-							<p className='mb-5'>{t('purpose.last')}</p>
-						</div>
-						<Button classes='btn-primary'>{t('purpose.button')}</Button>
+					<div className='flex flex-col justify-center md:w-1/2 h-full'>
+						<h3>
+							<Markdown content={t('purpose.heading')} />
+						</h3>
+						<p className='my-5'>{t('purpose.text')}</p>
+						<p className='mb-5'>{t('purpose.last')}</p>
+						<span>
+							<Button classes='btn-primary'>{t('purpose.button')}</Button>
+						</span>
 					</div>
 				</Flex>
 			</div>
