@@ -1,4 +1,3 @@
-import { gallery } from '../../assets/gallery';
 import Flex from '../../components/flex';
 import LabCard from '../../components/card/lab-card';
 
@@ -54,9 +53,9 @@ export default function Labs({ labs }) {
 				<div className='mb-10 text-center font-semibold'>
 					<h2>{t('gallery')}</h2>
 				</div>
-				<div>
+				{/*<div>
 					<Carousel slides={gallery} />
-				</div>
+				</div>*/}
 			</div>
 			{/*<Flex classes='mx-auto'>
 				<h1>More Info Coming Soon!</h1>
