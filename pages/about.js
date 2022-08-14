@@ -1,6 +1,7 @@
 import Flex from '../components/flex';
 import Button from '../components/button';
 import Image from 'next/image';
+import Link from 'next/link';
 import Manifesto from '../components/manifesto';
 import Subscribe from '../components/subscribe';
 import SupportUs from '../components/support-cards';
@@ -33,23 +34,29 @@ export default function About() {
 						</a>
 					</Button>
 				</div>
-				<Image
-					src='https://x.scambi.org/images/inaugurazione.webp'
-					width={705}
-					height={353}
-					alt=''
-					className='xl:w-1/2 md:w-1/2 lg:w-1/2 md:pt-24 lg:pt-56 xl-pt-60 2xl:mt-60 rounded-[32px]'
-				/>
+				<div className='w-full md:w-1/2 lg:w-1/2 md:pt-24 lg:pt-56 xl:pt-60 xl:w-1/2 2xl:mt-60'>
+					<Image
+						src='https://x.scambi.org/images/inaugurazione.webp'
+						width={705}
+						height={470}
+						layout='responsive'
+						alt=''
+						className='rounded-xl'
+					/>
+				</div>
 			</Flex>
 			<div className='bg-white py-10'>
 				<Flex classes='mx-auto justify-between items-center GalaxyFold:p-6'>
-					<Image
-						src='/illustrations/workshop-explanation.png'
-						className='rounded-[32px]'
-						width='400px'
-						height='400px'
-						alt=''
-					/>
+					<div className='bg-[#AAB4D6] rounded-[32px] h-fit overflow-clip'>
+						<Image
+							src='https://x.scambi.org/illustrations/paneuretico.webp'
+							className='rounded-[32px]'
+							width={400}
+							height={400}
+							objectFit='contain'
+							alt=''
+						/>
+					</div>
 					<div className='lg:w-1/2 md:mt-12 md:w-1/2 md:ml-12 py-20 GalaxyFold:pt-0'>
 						<div className=''>
 							<h3>
@@ -71,23 +78,23 @@ export default function About() {
 								isGalaxyFold
 									? 260
 									: isGalaxyS8
-									? 280
-									: isSmall
-									? 330
-									: isXSmall
-									? 310
-									: 420
+										? 280
+										: isSmall
+											? 330
+											: isXSmall
+												? 310
+												: 420
 							}
 							height={
 								isGalaxyFold
 									? 260
 									: isGalaxyS8
-									? 280
-									: isSmall
-									? 330
-									: isXSmall
-									? 310
-									: 420
+										? 280
+										: isSmall
+											? 330
+											: isXSmall
+												? 310
+												: 420
 							}
 							viewBox='0 0 534 369'
 							fill='none'
@@ -354,63 +361,66 @@ export default function About() {
 					</div>
 				</div>
 			</div>
-			<div className='relative h-screen w-screen'>
-				<div className='w-full h-full flex justify-center items-center'>
-					<h2 className='z-20 uppercase text-white text-center font-bold md:w-1/2 sm:w-1/2 SurfaceDuo:w-1/3'>
-						{t('belief')}
-					</h2>
-				</div>
-				<div className='h-screen w-screen overlay absolute top-0 z-10'></div>
+			<div className='w-screen h-screen relative overflow-hidden'>
 				<Image
 					src='https://images.tommi.space/plugins/download_by_size/action.php?id=28833&part=e&size=large'
 					alt=''
 					layout='fill'
-					className='object-cover'
+					objectFit='cover'
+					className='brightness-75'
 				/>
+				<h2 className='absolute uppercase text-white text-center font-bold w-full h-full px-7 grid content-center justify-center text-[40px] iPhoneSE:text-[50px] sm:text-[64px] xl:text-[72px] xl:px-56'>
+					{t('belief')}
+				</h2>
 			</div>
 			<Manifesto />
-			<Flex classes='mx-auto pb-0'>
-				<div className='lg:w-1/2 md:w-2/3 pl-6 pr-6'>
+			<Flex classes='mx-auto justify-center pb-0'>
+				<div className='lg:w-1/2 md:w-2/3 pr-6'>
 					<h2 className=''>{t('team.heading')}</h2>
 					<Markdown className='mb-6' content={t('team.desc')} />
 					<Markdown content={t('team.text')} />
 				</div>
-				<div className='lg:ml-14 md:ml-14 pl-6 pr-6 mt-0'>
+				<div className='w-full px-5 iPhoneXR:w-4/5 sm:w-3/4 md:w-3/5 lg:w-1/2 xl:w-2/5 md:pr-0 mt-0'>
 					<Image
 						src='https://x.scambi.org/images/staff.webp'
-						width={635}
+						width={675}
 						height={450}
+						layout='responsive'
 						alt=''
+						className='rounded-xl'
 					/>
 				</div>
 			</Flex>
 
 			<Flex
-				classes='px-1 mx-auto my-10 md:space-x-reverse GalaxyFold:p-6 GalaxyFold:mt-0 GalaxyFold:pt-0'
+				classes='my-1 mx-4 space-y-10 sm:mx-10 md:mx-auto md:my-20 lg:space-x-reverse lg:space-x-10 xl:space-x-reverse xl:space-x-40'
 				reverse={true}>
-				<div className='my-20 mx-auto space-y-12'>
-					<h2 className='text-center'>
+				<div className='w-full flex flex-col text-center space-y-8 md:text-left'>
+					<h2 className='leading-tight lg:leading-normal font-medium'>
 						{t('relations.heading', { ns: 'common' })}
 					</h2>
-					<Markdown
-						className='mx-auto md:mx-0 w-full 2xl:w-4/5 text-left'
-						content={t('relations.text', { ns: 'common' })}
-					/>
-					<div className='flex flex-row justify-center iPhoneSE:flex-col GalaxyFold:flex-col SurfaceDuo:flex-row grid-flow-row:left-0 GalaxyFold:place-items-center'>
-						<Button classes='btn-primary GalaxyFold:w-50 iPhoneSE:w-full'>
-							{t('relations.partner-button', { ns: 'common' })}
-						</Button>
-						<Button classes='ml-2 GalaxyFold:ml-0 GalaxyFold:mt-4 GalaxyFold:w-50 iPhoneSE:w-full SurfaceDuo:mt-0 SurfaceDuo:ml-4'>
+					<Markdown content={t('relations.text', { ns: 'common' })} />
+					<div className='flex flex-col justify-center items-center space-y-5 sm:flex-row sm:space-x-7 sm:space-y-0 md:justify-start'>
+						<Link href='/contact'>
+							<Button classes='btn-primary'>
+								{t('relations.partner-button', { ns: 'common' })}
+							</Button>
+						</Link>
+						<Button classes='btn-primary-light'>
 							{t('relations.meet-button', { ns: 'common' })}
 						</Button>
 					</div>
 				</div>
-				<Image
-					src='https://x.scambi.org/images/fun.webp'
-					alt=''
-					width={654}
-					height={689}
-				/>
+				<div className='px-3 w-full iPhoneXR:w-5/6 sm:w-4/5 md:pl-0 md:pr-10'>
+					<Image
+						src='https://x.scambi.org/images/fun.webp'
+						alt='Illustration of three individuals holding hands, moving in a circle'
+						layout='responsive'
+						width={900}
+						height={600}
+						className='rounded-2xl'
+					/>
+				</div>
 			</Flex>
 
 			<div className='bg-white flex justify-center py-10'>
