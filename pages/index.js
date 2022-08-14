@@ -29,10 +29,10 @@ export default function Home() {
 		'https://x.scambi.org/images/2021_drawing_cards.webp',
 		'https://x.scambi.org/archive_images/DSCF7509.jpg',
 		'https://x.scambi.org/archive_images/ballioccitani2.jpg',
-		'https://x.scambi.org/images/2021_cern_staff.jpg',
 		'https://x.scambi.org/archive_images/XYZ00217.jpg',
 		'https://x.scambi.org/images/2021_dissolvenze.webp',
 		'https://x.scambi.org/archive_images/DSCF7455.jpg',
+		'https://images.tommi.space/plugins/download_by_size/action.php?id=22587&part=e&download&size=small',
 		'https://x.scambi.org/archive_images/XYZ00236.jpg'
 	];
 
