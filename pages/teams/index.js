@@ -14,7 +14,7 @@ export default function Teams({ teams }) {
 
 	return (
 		<section>
-			<Flex classes='mx-auto justify-between'>
+			<Flex classes='mx-auto justify-between md:flex-col lg:flex-row'>
 				<div className='lg:w-1/2 mr-5'>
 					<h2>{t('team.heading', { ns: 'about' })}</h2>
 					<Markdown
@@ -24,12 +24,16 @@ export default function Teams({ teams }) {
 					<p>{t('team.text', { ns: 'about' })}</p>
 					<Button classes='btn-primary mt-3'>Join our team</Button>
 				</div>
-				<Image
-					src='https://x.scambi.org/images/staff.webp'
-					alt=''
-					width={600}
-					height={400}
-				/>
+				<div className='w-full px-5 iPhoneXR:w-4/5 sm:w-3/4 md:w-3/5 lg:w-1/2 xl:w-2/5 md:pr-0 mt-0'>
+					<Image
+						src='https://x.scambi.org/images/staff.webp'
+						width={675}
+						height={450}
+						layout='responsive'
+						alt=''
+						className='rounded-xl'
+					/>
+				</div>
 			</Flex>
 			<div className='grid grid-cols-1 lg:px-16 gap-20 lg:grid-cols-3 mb-14'>
 				{teams.map(({ team, frontmatter, content }) =>
