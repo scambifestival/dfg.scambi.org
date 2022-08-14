@@ -33,7 +33,7 @@ export default function Home() {
 		'https://x.scambi.org/images/2021_dissolvenze.webp',
 		'https://x.scambi.org/archive_images/DSCF7455.jpg',
 		'https://images.tommi.space/plugins/download_by_size/action.php?id=22587&part=e&download&size=small',
-		'https://x.scambi.org/archive_images/XYZ00236.jpg'
+		'https://x.scambi.org/archive_images/XYZ00236.jpg',
 	];
 
 	const eventCards = t('activities', { returnObjects: true });
@@ -173,7 +173,7 @@ export default function Home() {
 			<Manifesto />
 
 			<div className='bg-white flex justify-center py-10'>
-				{/* <Subscribe /> */}
+				<Subscribe />
 			</div>
 
 			<Flex
