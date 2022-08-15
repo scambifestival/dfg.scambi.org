@@ -24,6 +24,17 @@ import { Trans, useTranslation } from 'next-i18next';
 
 export default function Home() {
 	const { t } = useTranslation(['home', 'common']);
+	const highlights = [
+		'https://x.scambi.org/archive_images/DSCF7431.jpg',
+		'https://x.scambi.org/images/2021_drawing_cards.webp',
+		'https://x.scambi.org/archive_images/DSCF7509.jpg',
+		'https://x.scambi.org/archive_images/ballioccitani2.jpg',
+		'https://x.scambi.org/archive_images/XYZ00217.jpg',
+		'https://x.scambi.org/images/2021_dissolvenze.webp',
+		'https://x.scambi.org/archive_images/DSCF7455.jpg',
+		'https://images.tommi.space/plugins/download_by_size/action.php?id=22587&part=e&download&size=small',
+		'https://x.scambi.org/archive_images/XYZ00236.jpg',
+	];
 
 	const eventCards = t('activities', { returnObjects: true });
 	const family = t('family.text', { returnObjects: true });
@@ -60,7 +71,7 @@ export default function Home() {
 						{t('paneuretic.text')}
 					</div>
 				</div>
-				<div className='w-full iPhoneSE:w-3/4 sm:w-1/2 md:w-3/4 lg:w-3/5 xl:w-2/5'>
+				<div className='w-4/5 iPhoneSE:w-3/4 iPhoneXR:w-3/5 sm:w-1/2 md:w-2/3 lg:w-1/2 xl:w-1/4'>
 					<Image
 						src='https://x.scambi.org/illustrations/tabletalk.webp'
 						alt='Illustration of 3 people sitting around a table talking'
@@ -88,7 +99,7 @@ export default function Home() {
 					</p>
 					<Button classes='btn-primary'>View the 2022 Program</Button>
 				</div>
-				<div className='w-full iPhoneSE:w-1/2 md:w-3/4 lg:w-3/5 xl:w-2/5'>
+				<div className='w-full iPhoneSE:w-3/5 md:w-3/4 lg:w-3/5 xl:w-1/3'>
 					<Image
 						src='https://x.scambi.org/illustrations/program.webp'
 						alt='Illustration of woman with curly hair in yellow sleeveless top, brownish bottoms, and sandals reading a program while resting on a bundle of blue roots'
@@ -121,7 +132,7 @@ export default function Home() {
 				<h2 className='mb-10 font-medium leading-tight'>
 					Scambi 2021 Highlights
 				</h2>
-				{/*<Carousel slides={highlights} />*/}
+				<Carousel slides={highlights} />
 			</div>
 
 			<div className='my-24 lg:my-40 space-y-20 lg:space-y-32'>
@@ -166,7 +177,7 @@ export default function Home() {
 			</div>
 
 			<Flex
-				classes='my-1 mx-4 space-y-10 sm:mx-10 md:my-20 lg:mx-auto md:space-x-reverse md:space-x-16 xl:space-x-reverse xl:space-x-40'
+				classes='my-1 mx-4 space-y-10 sm:mx-10 md:mx-auto md:my-20 lg:space-x-reverse lg:space-x-10 xl:space-x-reverse xl:space-x-40'
 				reverse={true}>
 				<div className='w-full flex flex-col text-center space-y-8 md:text-left'>
 					<h2 className='leading-tight lg:leading-normal font-medium'>
@@ -184,13 +195,13 @@ export default function Home() {
 						</Button>
 					</div>
 				</div>
-				<div className='w-3/5 sm:w-1/2'>
+				<div className='px-3 w-full iPhoneXR:w-5/6 sm:w-4/5 md:pl-0 md:pr-10'>
 					<Image
 						src='https://x.scambi.org/images/fun.webp'
 						alt='Illustration of three individuals holding hands, moving in a circle'
 						layout='responsive'
-						width={800}
-						height={689}
+						width={900}
+						height={600}
 						className='rounded-2xl'
 					/>
 				</div>

@@ -29,6 +29,7 @@ export default function Carousel({ slides }) {
 							alt=''
 							layout='responsive'
 							width={475}
+							height={300}
 							objectFit='cover'
 							objectPosition='center'
 							className='rounded-2xl'
