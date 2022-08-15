@@ -125,7 +125,6 @@ export default function Lab({ lab }) {
 
 export async function getStaticPaths({ locales }) {
 	const labs = await getAllLabs();
-	console.log(process.env.BASEROW);
 	const paths = labs
 		.map((lab) =>
 			locales.map((locale) => ({
