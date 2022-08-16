@@ -113,7 +113,7 @@ export default function Home() {
 						classes='w-5/6 h-fit px-7 py-5 space-y-4 text-left bg-white lg:w-1/4'>
 						<Link href={`/${event.link}`}>
 							<a>
-								<h4 className='font-["Poppins"] font-medium'>
+								<h4 className='font-["Poppins"] font-medium mb-3'>
 									<Markdown content={event.title} />
 								</h4>
 								<Markdown content={event.description} />
