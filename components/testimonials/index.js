@@ -15,9 +15,9 @@ export default function Testimonials() {
 					<Card
 						classes={`${
 							index === 1 ? 'lg:top-24' : ''
-						} relative max-w-[80%] p-10 bg-white text-left lg:max-w-[25%] xl:max-w-[20%]`}
+						} relative max-w-[80%] h-fit px-5 py-7 bg-white text-left iPhoneXR:p-10 lg:max-w-[25%] xl:max-w-[20%]`}
 						key={`testimonial-${index}`}>
-						<div className='absolute -top-10 -right-[10%] z-10 w-24 sm:w-32 sm:-top-14 lg:-top-20 lg:-right-[20%]'>
+						<div className='absolute -top-10 -right-[10%] z-10 w-24 sm:w-32 sm:-top-14 lg:-top-20 lg:-right-[14%]'>
 							<Image
 								alt=''
 								src={testimonial.image}
