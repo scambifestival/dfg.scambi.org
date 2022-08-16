@@ -137,30 +137,32 @@ export default function Home() {
 				<Testimonials />
 			</div>
 
-			<Flex classes='mx-auto my-10 space-y-4 text-center md:flex-col lg:flex-row lg:space-x-10 lg:text-left'>
-				<div className='mx-4 space-y-7 lg:w-3/5'>
-					<h2 className='leading-tight lg:leading-normal font-medium'>
+			<div className='flex flex-col md:flex-row justify-around items-center w-full mx-auto pb-14 px-5 iPhoneXR:px-7 sm:px-12 md:px-16 md:space-x-8 xl:px-0 xl:space-x-10 xl:max-w-[90%]'>
+				<div className='text-center md:text-left md:max-w-[55%] my-5 md:my-0 space-y-5 sm:space-y-7'>
+					<h2 className='leading-tight font-medium text-[55px] lg:text-[64px]'>
 						{t('family.heading')}
 					</h2>
 					{family &&
-						family.map((el, index) => <Markdown key={index} content={el} />)}
+						family.map((el, index) => <Markdown className='text-[14px] sm:text-[15px] lg:text-[16px]' key={index} content={el} />)}
 					<Link href='/contact'>
+						<div>
 						<Button classes='btn-primary'>{t('family.button')}</Button>
+						</div>
 					</Link>
 				</div>
-				<div className='w-3/4 sm:w-3/5 lg:w-1/2'>
+				<div className='w-full max-w-[550px]'>
 					<Image
 						src='https://x.scambi.org/images/staff.webp'
 						alt='Five volunteers pose for group photo outside during the festival'
-						height={492}
+						height={430}
 						width={645}
 						className='rounded-2xl'
 					/>
 				</div>
-			</Flex>
+			</div>
 
-			<div className='text-center px-7 py-10 font-normal bg-white sm:px-14 xl:my-36'>
-				<div className='text-2xl sm:leading-relaxed sm:text-3xl lg:leading-loose lg:text-4xl xl:text-5xl xl:leading-loose'>
+			<div className='text-center px-7 py-10 font-normal bg-white sm:px-14 lg:py-16 xl:my-32 xl:px-20'>
+				<div className='mx-auto xl:max-w-[88%] text-xl iPhoneSE:text-2xl SurfaceDuo:leading-normal SurfaceDuo:text-3xl md:leading-relaxed lg:leading-relaxed lg:text-4xl xl:leading-loose'>
 					<Markdown content={t('purpose')} />
 				</div>
 			</div>
