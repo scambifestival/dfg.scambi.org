@@ -42,15 +42,12 @@ export default function BlogCard({ post, path }) {
 							))}
 						</div>
 
-						<div className="pb-5 flex space-x-2">
-							{post.tags?.slice(0, 2).map((el) => (
-								<span key={el} className="text-gray-400  text-left pb-4">
+						<div className="flex flex-wrap pb-2">
+							{post.tags?.map((el) => (
+								<span key={el} className="text-gray-400">
 									#{el}
 								</span>
 							))}
-							{post.tags?.length > 2 ? (
-								<span className="text-gray-400  text-left pb-4">...</span>
-							) : null}
 						</div>
 					</div>
 				</Card>
