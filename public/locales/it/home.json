@@ -28,17 +28,17 @@
 		{
 			"title": "I Lab",
 			"description": "I Lab sono “gruppi di lavoro” che si ripetono nel corso del festival. Sono guidati da un ospite e i partecipanti sono chiamati a fare esperienze paneuretiche. Attraverso il percorso laboratoriale che più ti si addice, puoi approcciare il tema da più prospettive, per conoscere meglio te stessə, coloro che partecipano con te e il mondo intorno a voi.",
-			"link": "Lab"
+			"link": "lab"
 		},
 		{
 			"title": "I Pinoli",
 			"description": "I Pinoli sono piccoli stand che spuntano in giro per la Pigna durante il festival. Sono posti in cui si mangia, si beve, si scoprono realtà, o semplicemente dove ci si ferma a chiacchierare.",
-			"link": "Pinoli"
+			"link": "pinoli"
 		},
 		{
 			"title": "<cite>Dissolvenze</cite>",
 			"description": "La nostra sezione dedicata al cinema, nonché il nostro concorso per cortometraggi, che invita a interpretare il tema di ciascuna edizione in forma audiovisiva.",
-			"link": "Dissolvenze"
+			"link": "dissolvenze"
 		}
 	],
 	"testimonials": {
