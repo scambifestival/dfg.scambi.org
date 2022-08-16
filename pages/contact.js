@@ -1,6 +1,7 @@
 import Button from '../components/button';
 import Link from 'next/link';
 import { useState } from 'react';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 export default function Contact() {
 	const [name, setName] = useState();
@@ -145,4 +146,12 @@ export default function Contact() {
 			</div>
 		</section>
 	);
+}
+
+export async function getStaticProps({ locale }) {
+	return {
+		props: {
+			...(await serverSideTranslations(locale, 'faq')),
+		},
+	};
 }
