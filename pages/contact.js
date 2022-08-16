@@ -1,11 +1,17 @@
 import Button from '../components/button';
 import Link from 'next/link';
+import { useState } from 'react';
+import Markdown from '../components/markdown';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 
 export default function Contact() {
 	const [name, setName] = useState();
 	const [email, setEmail] = useState();
 	const [subject, setSubject] = useState();
 	const [message, setMessage] = useState();
+
+	const { t } = useTranslation(['contact', 'common']);
 
 	const handleChange = (e) => {
 		e.preventDefault();
@@ -26,7 +32,9 @@ export default function Contact() {
 
 	return (
 		<section className='my-40 text-center'>
-			<h1>Contact Us</h1>
+			<h1>
+				<Markdown content={t('title')} />
+			</h1>
 			<div className='mt-5 mx-auto'>
 				<h3>
 					Contact us with any general questions and we will try to get back to
@@ -144,4 +152,12 @@ export default function Contact() {
 			</div>
 		</section>
 	);
+}
+
+export async function getStaticProps({ locale }) {
+	return {
+		props: {
+			...(await serverSideTranslations(locale, ['common', 'contact'])),
+		},
+	};
 }

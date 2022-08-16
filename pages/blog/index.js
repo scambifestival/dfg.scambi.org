@@ -5,6 +5,7 @@ import BlogCard from '../../components/card/blog-card';
 import { getABlog, getAllBlogs, getBlogFile } from '../../lib/blogs';
 import matter from 'gray-matter';
 import Image from 'next/image';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 export default function Blogs({ blogs }) {
 	const [openedTab, setOpenedTab] = useState(1);
@@ -128,6 +129,7 @@ export async function getStaticProps({ locale }) {
 	return {
 		props: {
 			blogs: blogs,
+			...(await serverSideTranslations(locale, ['common'])),
 		},
 	};
 }

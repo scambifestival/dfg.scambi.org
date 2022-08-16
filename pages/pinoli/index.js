@@ -3,7 +3,6 @@ import Flex from '../../components/flex';
 import Map from '../../components/map';
 import Button from '../../components/button';
 import Card from '../../components/card';
-import { pinoli } from '../../assets/pinoli';
 import Carousel from '../../components/carousel';
 import SupportUs from '../../components/support-cards';
 import { getPinoli } from '../../lib/pinoli';
@@ -13,6 +12,17 @@ import Markdown from '../../components/markdown';
 
 export default function Pinoli() {
 	const { t } = useTranslation(['pinoli', 'common']);
+	const pinoli = [
+		'https://images.tommi.space/plugins/download_by_size/action.php?id=23324&part=e&download&size=small',
+		'https://images.tommi.space/plugins/download_by_size/action.php?id=23669&part=e&download&size=small',
+		'https://images.tommi.space/plugins/download_by_size/action.php?id=23645&part=e&download&size=small',
+		'https://images.tommi.space/plugins/download_by_size/action.php?id=23241&part=e&download&size=small',
+		'https://images.tommi.space/plugins/download_by_size/action.php?id=23256&part=e&download&size=small',
+		'https://images.tommi.space/plugins/download_by_size/action.php?id=23322&part=e&download&size=small',
+		'https://x.scambi.org/archive_images/IMG_8291.jpg',
+		'https://x.scambi.org/archive_images/IMG_8300.jpg',
+		'https://x.scambi.org/archive_images/IMG_8296.jpg'
+	];
 
 	return (
 		<section>
@@ -25,7 +35,7 @@ export default function Pinoli() {
 				<div className='w-4/5 SurfaceDuo:w-3/5 md:w-2/5 lg:w-3/5 xl:max-w-md'>
 					<Image
 						src='https://x.scambi.org/illustrations/pinoli.webp'
-						alt='Two hand-drawn blue bowls full of seeds with a hand-drawn purplish acorn behind it'
+						alt='Two hand-drawn orange bowls full of seeds with a hand-drawn purplish acorn behind it'
 						width={738}
 						height={682}
 					/>

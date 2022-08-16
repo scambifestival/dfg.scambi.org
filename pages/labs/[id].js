@@ -3,6 +3,7 @@ import Flex from '../../components/flex';
 import LabCard from '../../components/card/lab-card';
 import { getALab, getAllLabs, getDescription } from '../../lib/labs';
 import { useRouter } from 'next/router';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 export default function Lab({ lab }) {
 	const router = useRouter();
@@ -24,7 +25,9 @@ export default function Lab({ lab }) {
 
 			<Flex classes='px-5 justify-between iPhoneXR:px-10 sm:mx-auto text-center md:text-left md:flex-col xl:flex-row xl:px-0'>
 				<div className='xl:w-3/5'>
-					<h1 className='mb-10 leading-tight text-[5.4rem] iPhoneXR:text-[102px]'>Human Thread Lab</h1>
+					<h1 className='mb-10 leading-tight text-[5.4rem] iPhoneXR:text-[102px]'>
+						Human Thread Lab
+					</h1>
 				</div>
 
 				{/* <Image
@@ -50,7 +53,7 @@ export default function Lab({ lab }) {
 									y='0'
 									width='282'
 									height='258'
-				/>
+								/>
 							</pattern>
 						</defs>
 						<path
@@ -90,7 +93,7 @@ export default function Lab({ lab }) {
 									y='0'
 									width='282'
 									height='258'
-				/>
+								/>
 							</pattern>
 						</defs>
 						<path
@@ -123,12 +126,11 @@ export default function Lab({ lab }) {
 
 export async function getStaticPaths({ locales }) {
 	const labs = await getAllLabs();
-
 	const paths = labs
 		.map((lab) =>
 			locales.map((locale) => ({
 				params: {
-					id: `${lab.id}`,
+					id: `${lab.title.toLowerCase()}`,
 				},
 				locale,
 			}))
@@ -141,11 +143,12 @@ export async function getStaticPaths({ locales }) {
 	};
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params, locale }) {
 	const lab = await getALab(params.id);
 	return {
 		props: {
 			lab,
+			...(await serverSideTranslations(locale, ['common'])),
 		},
 	};
 }

@@ -29,13 +29,13 @@ export default function SupportUs() {
 					</Link>
 				</Card>
 				<Card classes='bg-[#EDBBFF] text-center px-5 py-10 space-y-5 GalaxyFold:mt-10 lg:mt-0'>
-					<h4>{card[1].name}</h4>
-					<p>{card[1].text}</p>
+					<h4>{cards[1].name}</h4>
+					<p>{cards[1].text}</p>
 					<div>
 						<Image
 							src='https://x.scambi.org/illustrations/hands.webp'
-							width={32}
-							height={88}
+							width={64}
+							height={80}
 							alt=''
 						/>
 					</div>
@@ -48,13 +48,13 @@ export default function SupportUs() {
 					</Button>
 				</Card>
 				<Card classes='bg-[#AAB4D6] text-center px-5 py-10 space-y-5 GalaxyFold:mt-10 lg:mt-0'>
-					<h4>{card[2].name}</h4>
-					<p>{card[2].text}</p>
+					<h4>{cards[2].name}</h4>
+					<p>{cards[2].text}</p>
 					<div>
 						<Image
 							src='https://x.scambi.org/illustrations/heartish.webp'
-							width={32}
-							height={88}
+							width={42}
+							height={80}
 							alt=''
 						/>
 					</div>
