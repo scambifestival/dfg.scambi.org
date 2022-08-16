@@ -18,12 +18,11 @@ export default function Carousel({ slides }) {
 			className='overflow-hidden cursor-grab bg-white rounded-md px-5 SurfaceDuo:px-10 py-10 md:w-full'>
 			<motion.div
 				drag='x'
-				dragConstraints={{ right: 0, left: (width * -1.015)}}
+				dragConstraints={{ right: 0, left: width * -1.015 }}
 				className={`grid justify-start items-center space-x-5`}
-				style={{gridTemplateColumns: `repeat(${slides.length},1fr)`}}
-				>
+				style={{ gridTemplateColumns: `repeat(${slides.length},1fr)` }}>
 				{slides.map((slide, index) => (
-					<div key={index} className='inline-block w-[200px] SurfaceDuo:w-[400px]'>
+					<motion.div key={index} className='w-[200px] SurfaceDuo:w-[400px]'>
 						<Image
 							src={slide}
 							alt=''
@@ -32,9 +31,10 @@ export default function Carousel({ slides }) {
 							height={300}
 							objectFit='cover'
 							objectPosition='center'
-							className='rounded-2xl'
+							draggable='false'
+							className='rounded-2xl w-[475px] h-[300px] pointer-events-none'
 						/>
-					</div>
+					</motion.div>
 				))}
 			</motion.div>
 		</motion.div>
