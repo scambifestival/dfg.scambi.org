@@ -106,26 +106,6 @@ export default function Home() {
 				</div>
 			</div>
 
-			<Flex classes='mt-16 justify-between mx-auto'>
-				<div className=''>
-					<h2 className='leading-tight lg:leading-normal mx-auto'>
-						<Markdown content={t('paneurethic.heading')} />
-					</h2>
-					<div className='mx-auto my-5 w-4/5 md:mx-0'>
-						<span className='font-semibold'>Pan - eur - etic:</span>{' '}
-						<Markdown content={t('paneurethic.text')} />
-					</div>
-				</div>
-				<div className='w-4/5 iPhoneSE:w-3/4 iPhoneXR:w-3/5 sm:w-1/2 md:w-2/3'>
-					<Image
-						src='https://x.scambi.org/illustrations/tabletalk.webp'
-						alt='Illustration of 3 people sitting around a table talking'
-						width={808}
-						height={800}
-					/>
-				</div>
-			</Flex>
-
 			<div className='flex flex-col items-center justify-center space-y-7 mt-16 lg:flex-row lg:items-start lg:space-x-14 lg:space-y-0'>
 				{eventCards.map((event, index) => (
 					<Card
