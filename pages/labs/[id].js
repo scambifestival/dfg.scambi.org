@@ -3,6 +3,7 @@ import Flex from '../../components/flex';
 import LabCard from '../../components/card/lab-card';
 import { getALab, getAllLabs, getDescription } from '../../lib/labs';
 import { useRouter } from 'next/router';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 export default function Lab({ lab }) {
 	const router = useRouter();
@@ -142,11 +143,12 @@ export async function getStaticPaths({ locales }) {
 	};
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params, locale }) {
 	const lab = await getALab(params.id);
 	return {
 		props: {
 			lab,
+			...(await serverSideTranslations(locale, ['common'])),
 		},
 	};
 }

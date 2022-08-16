@@ -61,25 +61,6 @@ export default function Home() {
 					/>
 	</div>*/}
 			<CountDown />
-			<Flex classes='mt-16 justify-between mx-auto'>
-				<div className=''>
-					<h2 className='leading-tight lg:leading-normal mx-auto'>
-						<Markdown content={t('paneurethic.heading')} />
-					</h2>
-					<div className='mx-auto my-5 w-4/5 md:mx-0'>
-						<span className='font-semibold'>Pan - eur - etic:</span>{' '}
-						{t('paneuretic.text')}
-					</div>
-				</div>
-				<div className='w-4/5 iPhoneSE:w-3/4 iPhoneXR:w-3/5 sm:w-1/2 md:w-2/3 lg:w-1/2 xl:w-1/4'>
-					<Image
-						src='https://x.scambi.org/illustrations/tabletalk.webp'
-						alt='Illustration of 3 people sitting around a table talking'
-						width={808}
-						height={800}
-					/>
-				</div>
-			</Flex>
 
 			<Flex
 				classes='mt-10 mb-32 mx-7 py-0 justify-between text-center sm:mx-16 md:mx-auto md:mt-20 md:text-left md:space-x-reverse md:space-x-20 lg:space-x-reverse lg:space-x-28 2xl:mt-10 2xl:w-9/12'
@@ -88,15 +69,15 @@ export default function Home() {
 					<h2 className='leading-tight font-medium text-[3.5rem] iPhoneSE:text-[64px]'>
 						{t('edition.heading')}
 					</h2>
-					<Trans i18nKey={t('edition.text')} />
-					<p>
+					<Markdown content={t('edition.text')} />
+					{/*<p>
 						Not sure where to start? Check out our{' '}
 						<Link href='/faq'>
 							<a className='font-medium text-primary'>
 								Frequently Asked Questions {'>'}
 							</a>
 						</Link>
-					</p>
+</p>*/}
 					<Button classes='btn-primary'>View the 2022 Program</Button>
 				</div>
 				<div className='w-full iPhoneSE:w-3/5 md:w-3/4 lg:w-3/5 xl:w-1/3'>
@@ -109,21 +90,39 @@ export default function Home() {
 				</div>
 			</Flex>
 
+			<Flex classes='mt-16 justify-between mx-auto'>
+				<div className=''>
+					<h2 className='leading-tight lg:leading-normal mx-auto'>
+						<Markdown content={t('paneurethic.heading')} />
+					</h2>
+					<div className='mx-auto my-5 w-4/5 md:mx-0'>
+						<span className='font-semibold'>Pan - eur - etic:</span>{' '}
+						<Markdown content={t('paneurethic.text')} />
+					</div>
+				</div>
+				<div className='w-4/5 iPhoneSE:w-3/4 iPhoneXR:w-3/5 sm:w-1/2 md:w-2/3'>
+					<Image
+						src='https://x.scambi.org/illustrations/tabletalk.webp'
+						alt='Illustration of 3 people sitting around a table talking'
+						width={808}
+						height={800}
+					/>
+				</div>
+			</Flex>
+
 			<div className='flex flex-col items-center justify-center space-y-7 mt-16 lg:flex-row lg:items-start lg:space-x-14 lg:space-y-0'>
 				{eventCards.map((event, index) => (
 					<Card
 						key={index}
 						classes='w-5/6 h-fit px-7 py-5 space-y-4 text-left bg-white lg:w-1/4'>
-						<h4 className='font-["Poppins"] font-medium'>{event.title}</h4>
-						<p>{event.description}</p>
-						<div>
-							<Link href={`/${event.link}`}>
-								<a className='flex items-center space-x-2 text-primary'>
-									<p>Read more</p>
-									<ArrowRight />
-								</a>
-							</Link>
-						</div>
+						<Link href={`/${event.link}`}>
+							<a>
+								<h4 className='font-["Poppins"] font-medium'>
+									<Markdown content={event.title} />
+								</h4>
+								<Markdown content={event.description} />
+							</a>
+						</Link>
 					</Card>
 				))}
 			</div>
