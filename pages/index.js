@@ -43,7 +43,7 @@ export default function Home() {
 		<section>
 			<div className='w-10/12 mx-auto mt-48 mb-10 text-left flex flex-col justify-between xl:items-center  xl:flex-row'>
 				<div>
-					<h1 className='leading-none'>{t('header.heading')}</h1>
+					<h1 className='leading-none font-medium text-[80px] sm:text-[102px]'>{t('header.heading')}</h1>
 					<h3>{t('header.text')}</h3>
 				</div>
 				<p className='font-semibold'>
