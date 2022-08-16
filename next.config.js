@@ -27,6 +27,14 @@ const nextConfig = {
 
 		return config;
 	},
+	async rewrites() {
+		return [
+			{
+				source: '/:id',
+				destination: '/blog/:id',
+			},
+		];
+	},
 };
 
 module.exports = nextConfig;
