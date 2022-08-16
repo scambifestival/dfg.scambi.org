@@ -19,30 +19,33 @@ export default function Subscribe() {
 		subscribe(email);
 	};
 	return (
-		<div className='flex rounded-[32px] bg-primary text-white mx-16 drop-shadow-2xl md:flex-row GalaxyFold:flex-col GalaxyFold:w-64 GalaxyS8:w-80 iPhoneSE:w-full'>
+		<div className='flex rounded-3xl bg-primary text-white drop-shadow-2xl GalaxyFold:flex-col GalaxyFold:w-11/12 md:flex-row xl:max-w-[1300px]'>
+			<div className='bg-[#8E5EB4] rounded-t-3xl md:rounded-tr-[0px] md:rounded-l-3xl relative h-[200px] md:w-full md:h-auto'>
 			<Image
 				src='https://x.scambi.org/illustrations/press.webp'
 				alt='Subscribe illustration'
 				height={413}
 				width={500}
-				className='hidden lg:block lg:rounded-l-[32px] md:rounded-tr-[0px] GalaxyFold:rounded-t-[32px] md:rounded-l-[32px] object-fill'
+				layout='fill'
+				objectFit='cover'
+				objectPosition='left'
+				className='rounded-t-3xl md:rounded-tr-[0px] md:rounded-l-3xl'
 			/>
-			<div className='flex flex-col items-center justify-center lg:pr-10 p-6 GalaxyFold:p-12'>
-				<div className='lg:ml-10 GalaxyFold:p-2'>
-					<Markdown className='uppercase' content={t('subscribe.subtitle')} />
-					<h2>Scambi Epistolari</h2>
-					<p className='mb-5 w-[500px]'>{t('subscribe.join')}</p>
-					<form>
-						<input
-							type='email'
-							placeholder={t('subscribe.input')}
-							className='rounded-md lg:w-[300px] lg:mr-5 peer mr-2 text-black'
-						/>
-						<Button classes='bg-primary-yellow peer-invalid:disabled text-black GalaxyFold:mt-2'>
-							{t('subscribe.button')}
-						</Button>
-					</form>
-				</div>
+			</div>
+			<div className='p-4 mb-3 space-y-3 GalaxyS8:p-6 md:my-5 lg:ml-10'>
+				<Markdown className='uppercase text-[13px] lg:text-[16px]' content={t('subscribe.subtitle')} />
+				<h2 className='leading-tight font-medium text-[44px] lg:text-[64px]'>Scambi Epistolari</h2>
+				<p className='w-full text-[14px] lg:text-[16px]'>{t('subscribe.join')}</p>
+				<form className='space-y-5'>
+					<input
+						type='email'
+						placeholder={t('subscribe.input')}
+						className='rounded-md peer text-black mr-2 iPhoneXR:min-w-[275px] lg:mr-3'
+					/>
+					<Button classes='bg-primary-yellow peer-invalid:disabled text-black'>
+						{t('subscribe.button')}
+					</Button>
+				</form>
 			</div>
 		</div>
 	);

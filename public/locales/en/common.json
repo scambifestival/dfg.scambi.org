@@ -25,7 +25,7 @@
 	},
 	"subscribe": {
 		"button": "Subscribe",
-		"input": "Enter your email address",
+		"input": "Email address",
 		"title": "Subscribe to our Newsletter!",
 		"subtitle": "<cite>Scambi di Parole</cite>, our newsletter",
 		"join": "By subscribing, you can keep up with all the news concerning <cite>Scambi</cite> and deepening your knowledge of the topics addressed during the festival through exclusive interviews and thoughts concerning the world we live in."

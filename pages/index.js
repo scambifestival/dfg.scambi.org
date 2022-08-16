@@ -172,7 +172,7 @@ export default function Home() {
 
 			<Manifesto />
 
-			<div className='bg-white flex justify-center py-10'>
+			<div className='bg-white flex justify-center py-10 lg:py-16'>
 				<Subscribe />
 			</div>
 
