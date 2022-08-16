@@ -61,17 +61,17 @@ export default function Home() {
 					/>
 	</div>*/}
 			<CountDown />
-			<Flex classes='mt-16 justify-between mx-auto'>
-				<div className=''>
-					<h2 className='leading-tight lg:leading-normal mx-auto'>
+			<div className='flex flex-col md:flex-row justify-around items-center w-full mx-auto mt-20 px-10 iPhoneXR:px-7 sm:px-12 md:px-16 md:space-x-9 xl:px-24 xl:space-x-0 xl:max-w-[90%]'>
+				<div className='text-center md:text-left md:max-w-[60%]'>
+					<h2 className='font-medium leading-tight text-[55px] lg:text-[64px]'>
 						<Markdown content={t('paneurethic.heading')} />
 					</h2>
-					<div className='mx-auto my-5 w-4/5 md:mx-0'>
+					<div className='mx-auto my-5 md:mx-0'>
 						<span className='font-semibold'>Pan - eur - etic:</span>{' '}
 						{t('paneuretic.text')}
 					</div>
 				</div>
-				<div className='w-4/5 iPhoneSE:w-3/4 iPhoneXR:w-3/5 sm:w-1/2 md:w-2/3 lg:w-1/2 xl:w-1/4'>
+				<div className='w-full max-w-[380px]'>
 					<Image
 						src='https://x.scambi.org/illustrations/tabletalk.webp'
 						alt='Illustration of 3 people sitting around a table talking'
@@ -79,13 +79,11 @@ export default function Home() {
 						height={800}
 					/>
 				</div>
-			</Flex>
+			</div>
 
-			<Flex
-				classes='mt-10 mb-32 mx-7 py-0 justify-between text-center sm:mx-16 md:mx-auto md:mt-20 md:text-left md:space-x-reverse md:space-x-20 lg:space-x-reverse lg:space-x-28 2xl:mt-10 2xl:w-9/12'
-				reverse={true}>
-				<div className='space-y-3 sm:space-y-6 md:w-full'>
-					<h2 className='leading-tight font-medium text-[3.5rem] iPhoneSE:text-[64px]'>
+			<div className='flex flex-col md:flex-row-reverse justify-around items-center w-full mx-auto mt-14 mb-40 px-7 sm:px-12 md:px-16 md:space-x-reverse md:space-x-9 xl:px-24 xl:md:space-x-reverse xl:space-x-0 xl:max-w-[90%]'>
+				<div className='text-center md:text-left md:max-w-[55%] my-5 md:my-0 space-y-5 sm:space-y-7'>
+					<h2 className='font-medium leading-tight text-[55px] lg:text-[64px]'>
 						{t('edition.heading')}
 					</h2>
 					<Trans i18nKey={t('edition.text')} />
@@ -99,7 +97,7 @@ export default function Home() {
 					</p>
 					<Button classes='btn-primary'>View the 2022 Program</Button>
 				</div>
-				<div className='w-full iPhoneSE:w-3/5 md:w-3/4 lg:w-3/5 xl:w-1/3'>
+				<div className='w-full max-w-[380px]'>
 					<Image
 						src='https://x.scambi.org/illustrations/program.webp'
 						alt='Illustration of woman with curly hair in yellow sleeveless top, brownish bottoms, and sandals reading a program while resting on a bundle of blue roots'
@@ -107,7 +105,7 @@ export default function Home() {
 						height={1026}
 					/>
 				</div>
-			</Flex>
+			</div>
 
 			<div className='flex flex-col items-center justify-center space-y-7 mt-16 lg:flex-row lg:items-start lg:space-x-14 lg:space-y-0'>
 				{eventCards.map((event, index) => (
