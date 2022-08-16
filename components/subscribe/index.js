@@ -21,16 +21,14 @@ export default function Subscribe() {
 	return (
 		<div className='flex rounded-3xl bg-primary text-white drop-shadow-2xl GalaxyFold:flex-col GalaxyFold:w-11/12 md:flex-row xl:max-w-[1300px]'>
 			<div className='bg-[#8E5EB4] rounded-t-3xl md:rounded-tr-[0px] md:rounded-l-3xl relative h-[200px] md:w-full md:h-auto'>
-			<Image
-				src='https://x.scambi.org/illustrations/press.webp'
-				alt='Subscribe illustration'
-				height={413}
-				width={500}
-				layout='fill'
-				objectFit='cover'
-				objectPosition='left'
-				className='rounded-t-3xl md:rounded-tr-[0px] md:rounded-l-3xl'
-			/>
+				<Image
+					src='https://x.scambi.org/illustrations/press.webp'
+					alt='Subscribe illustration'
+					layout='fill'
+					objectFit='cover'
+					objectPosition='left'
+					className='rounded-t-3xl md:rounded-tr-[0px] md:rounded-l-3xl'
+				/>
 			</div>
 			<div className='p-4 mb-3 space-y-3 GalaxyS8:p-6 md:my-5 lg:ml-10'>
 				<Markdown className='uppercase text-[13px] lg:text-[16px]' content={t('subscribe.subtitle')} />
