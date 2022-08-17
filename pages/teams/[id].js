@@ -14,6 +14,7 @@ import ReactMarkdown from 'react-markdown';
 import matter from 'gray-matter';
 import Flex from '../../components/flex';
 import { useRouter } from 'next/router';
+import { serverSideTranslations } from 'next-i18next';
 
 function TeamInfo({ frontmatter, team, members, locale }) {
 	return (
@@ -92,6 +93,7 @@ export async function getStaticProps({ params: id, locale }) {
 			frontmatter: data,
 			team: content,
 			members,
+			...(await serverSideTranslations(locale, ['common'])),
 		},
 	};
 }
