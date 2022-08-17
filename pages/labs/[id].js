@@ -1,33 +1,51 @@
 import Image from 'next/image';
 import Flex from '../../components/flex';
-import LabCard from '../../components/card/lab-card';
-import { getALab, getAllLabs, getDescription } from '../../lib/labs';
+import {
+	getALab,
+	getAllLabs,
+	getDescription,
+	getHostBio,
+	getLanguage,
+} from '../../lib/labs';
 import { useRouter } from 'next/router';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Time from '../../components/time';
 
-export default function Lab({ lab }) {
+export default function Lab({ lab, hosts }) {
 	const router = useRouter();
 	const locale = router.locale;
 
 	return (
-		<section className='bg-white -mt-48'>
-			<div className='relative w-full h-[500px] min-h-full'>
-				<Image
-					src='https://picsum.photos/2000/1000'
-					layout='fill'
-					width={2000}
-					height={1000}
-					objectFit='cover'
-					objectPosition='center'
-					alt=''
-				/>
-			</div>
-
-			<Flex classes='px-5 justify-between iPhoneXR:px-10 sm:mx-auto text-center md:text-left md:flex-col xl:flex-row xl:px-0'>
-				<div className='xl:w-3/5'>
-					<h1 className='mb-10 leading-tight text-[5.4rem] iPhoneXR:text-[102px]'>
-						Human Thread Lab
+		<section className='mt-48'>
+			<div className='w-full mx-auto px-5 flex flex-col justify-between space-y-7 iPhoneXR:px-10 text-center md:text-left xl:flex-row xl:px-28'>
+				<div className='w-full xl:w-3/5'>
+					<h1 className='leading-tight font-medium break-words text-[54px] sm:text-[64px] lg:text-[102px]'>
+						{lab.title}
 					</h1>
+					<div className='flex space-x-2 mb-5'>
+						{lab.lang.map(({ id, value }) => (
+							<p key={id} className='rounded-full p-2 bg-primary-yellow'>
+								{getLanguage(value, locale)}
+							</p>
+						))}
+					</div>
+					<p className='text-[14px] md:text-[16px]'>{locale === 'en' ? lab['eng_description'] : lab.description}</p>
+				</div>
+				<div className='flex flex-col justify-center space-y-3 sm:flex-row sm:space-y-0 sm:space-x-14 xl:flex-col xl:space-x-0 xl:space-y-10'>
+					<div>
+						<h3 className='font-medium text-[48px] md:text-[52px]'>Where?</h3>
+						{lab.location.map(({ id, value }) => (
+							<p key={id}>{value}</p>
+						))}
+					</div>
+					<div>
+						<h3 className='font-medium text-[48px] md:text-[52px]'>When?</h3>
+						{/*<Flex classes='space-x-2'>
+							{lab.days.map(day => {
+								<Time key={day.id} date={`8/${day.value}`} time={}
+							})}
+						</Flex>*/}
+					</div>
 				</div>
 
 				{/* <Image
@@ -36,7 +54,7 @@ export default function Lab({ lab }) {
 					width={387}
 					height={427}
 				/> */}
-				<div className='mb-5 mx-auto w-full min-w-0 iPhoneXR:w-2/3 sm:w-1/2 lg:order-last lg:mb-0 lg:w-1/3 xl:mr-0'>
+				{/*<div className='mb-5 mx-auto w-full min-w-0 iPhoneXR:w-2/3 sm:w-1/2 lg:order-last lg:mb-0 lg:w-1/3 xl:mr-0'>
 					<svg
 						viewBox='0 0 282 258'
 						fill='none'
@@ -63,11 +81,21 @@ export default function Lab({ lab }) {
 							fill='url(#img)'
 						/>
 					</svg>
-				</div>
-			</Flex>
-			<Flex classes='mt-10 px-5 justify-between bg-white iPhoneXR:px-10 sm:mx-auto md:flex-col lg:flex-row lg:px-0 lg:py-20'>
+			</div>*/}
+			</div>
+			<Flex classes='my-10 px-5 justify-between iPhoneXR:px-10 sm:mx-auto md:flex-col lg:flex-row lg:px-0 lg:py-20'>
 				<div className='text-center sm:text-left lg:w-1/2'>
-					<h2>Meet the Lab Host</h2>
+					<h2 className='leading-tight font-medium  text-[54px] md:text-[64px]'>Meet the Lab Host</h2>
+					{hosts.map((host) => (
+						<div key={host.id}>
+							<h4>
+								{host['Ente']
+									? host['Ente']
+									: host['Nome'] + ' ' + host['Cognome']}
+							</h4>
+							<p>{host.bio}</p>
+						</div>
+					))}
 				</div>
 				{/* <Image
 					src='https://picsum.photos/400'
@@ -76,7 +104,7 @@ export default function Lab({ lab }) {
 					height={427}
 				/> */}
 
-				<div className='mb-5 mx-auto w-full min-w-0 iPhoneXR:w-2/3 sm:w-1/2 lg:order-last lg:mb-0 lg:w-2/5 xl:w-1/3 lg:mr-0'>
+				{/*<div className='mb-5 mx-auto w-full min-w-0 iPhoneXR:w-2/3 sm:w-1/2 lg:order-last lg:mb-0 lg:w-2/5 xl:w-1/3 lg:mr-0'>
 					<svg
 						viewBox='0 0 282 258'
 						fill='none'
@@ -103,7 +131,7 @@ export default function Lab({ lab }) {
 							fill='url(#img)'
 						/>
 					</svg>
-				</div>
+			</div>*/}
 			</Flex>
 			{/* <div id='similar-lab' className='py-10 px-5 iPhoneXR:px-10 md:px-5 lg:px-10'>
 				<h2 className='text-center mb-10 lg:text-left font-semibold leading-tight'>Similar Labs</h2>
@@ -130,7 +158,7 @@ export async function getStaticPaths({ locales }) {
 		.map((lab) =>
 			locales.map((locale) => ({
 				params: {
-					id: `${lab.title.toLowerCase()}`,
+					id: `${lab.id}`,
 				},
 				locale,
 			}))
@@ -145,9 +173,11 @@ export async function getStaticPaths({ locales }) {
 
 export async function getStaticProps({ params, locale }) {
 	const lab = await getALab(params.id);
+	const hosts = await getHostBio(lab.host);
 	return {
 		props: {
 			lab,
+			hosts,
 			...(await serverSideTranslations(locale, ['common'])),
 		},
 	};
