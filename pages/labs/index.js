@@ -73,8 +73,8 @@ export default function Labs({ labs }) {
 						return (
 							<LabCard
 								key={lab.id}
-								id={lab.id}
 								title={lab.title}
+								link={lab.id}
 								description={getDescription(locale, lab)}
 								lang={lab.lang}
 							/>
