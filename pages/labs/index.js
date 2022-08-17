@@ -18,46 +18,48 @@ export default function Labs({ labs }) {
 
 	return (
 		<section>
-			<Flex classes='items-center mx-auto'>
-				<div className='text-left'>
+			<div className='w-full mx-auto flex flex-col md:flex-row flex-nowrap justify-around items-center px-5 space-y-5 md:px-10 md:space-y-0 md:space-x-9 lg:px-16 xl:max-w-[90%]'>
+				<div className='text-center md:text-left md:max-w-[60%]'>
 					<h2 className='font-semibold mb-3'>Labs</h2>
 					<p className='italic mb-10'>{t('header.heading')}</p>
-					<Markdown className='lg:w-[600px] mb-5' content={t('header.desc')} />
+					<Markdown className='mb-5' content={t('header.desc')} />
 					<Button classes='btn-primary'>
 						{t('tickets', { ns: 'common' })}
 					</Button>
 				</div>
-				<div className='mt-10 min-w-full SurfaceDuo:w-4/5 SurfaceDuo:min-w-[10%] md:w-2/3 xl:w-1/2'>
+				<div className='w-full max-w-[475px] lg:max-w-[540px]'>
 					<Image
 						src='https://picsum.photos/640/412'
 						width={640}
 						height={412}
-						layout='responsive'
+						// layout='responsive'
 						alt=''
 						className='rounded-xl'
 					/>
 				</div>
-			</Flex>
-			<Flex classes='mx-auto items-center justify-between mt-12'>
+			</div>
+			<div className='w-full mx-auto flex flex-col-reverse md:flex-row justify-center items-center my-12 px-5 space-y-reverse space-y-7 md:space-y-0 md:px-10 md:space-x-24 md:my-24'>
+				<div className='w-full max-w-[350px] lg:max-w-[450px]'>
 				<Image
 					src='https://x.scambi.org/illustrations/tabletalk.webp'
 					width={436}
 					height={425}
 					alt=''
 				/>
-				<div className='text-left lg:w-[500px]'>
-					<h2 className='font-semibold mb-10'>{t('labs-def.heading')}</h2>
-					<p>{t('labs-def.text')}</p>
 				</div>
-			</Flex>
-			<div className='mt-20 w-full p-2 lg:px-16'>
+				<div className='w-full space-y-5 text-center md:text-left lg:max-w-[30%]'>
+					<h2 className='leading-tight font-semibold'>{t('labs-def.heading')}</h2>
+					<p className='w-full'>{t('labs-def.text')}</p>
+				</div>
+			</div>
+			{/* <div className='mt-20 w-full p-2 lg:px-16'>
 				<div className='mb-10 text-center font-semibold'>
 					<h2>{t('gallery')}</h2>
 				</div>
-				{/*<div>
+				<div>
 					<Carousel slides={gallery} />
-				</div>*/}
 			</div>
+			</div> */}
 			{/*<Flex classes='mx-auto'>
 				<h1>More Info Coming Soon!</h1>
 				<Image
