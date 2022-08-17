@@ -2,6 +2,7 @@ import Flex from '../../components/flex';
 import LabCard from '../../components/card/lab-card';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import Carousel from '../../components/carousel';
 import { getAllLabs, getDescription } from '../../lib/labs';
 import { useRouter } from 'next/router';
@@ -71,13 +72,11 @@ export default function Labs({ labs }) {
 				<div className='flex flex-col space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-5 lg:gap-y-10'>
 					{labs.map((lab) => {
 						return (
-							<LabCard
-								key={lab.id}
-								title={lab.title}
-								link={lab.id}
-								description={getDescription(locale, lab)}
-								lang={lab.lang}
-							/>
+							<Link key={lab.id} href={`/labs/${lab.id}`}>
+								<a>
+									<LabCard title={lab.title} location={lab.location[0]} />
+								</a>
+							</Link>
 						);
 					})}
 				</div>
