@@ -14,7 +14,7 @@ import ReactMarkdown from 'react-markdown';
 import matter from 'gray-matter';
 import Flex from '../../components/flex';
 import { useRouter } from 'next/router';
-import { serverSideTranslations } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 function TeamInfo({ frontmatter, team, members, locale }) {
 	return (
