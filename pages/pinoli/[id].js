@@ -1,89 +1,84 @@
 import Image from 'next/image';
 import Flex from '../../components/flex';
-import LabCard from '../../components/card/lab-card';
+import { getHostBio, getPinoli, getPinolo } from '../../lib/pinoli';
+import { getLanguage } from '../../lib/i18n';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useRouter } from 'next/router';
 
-export default function Pinolo() {
+export default function Pinolo({ pinolo }) {
+	const router = useRouter();
+	console.log(router.pathname);
+	const locale = router.locale;
+
 	return (
-		<section className='bg-white'>
-			<div className='w-full'>
-				<Image src='https://picsum.photos/1000/500' layout='fill' alt='' />
-			</div>
-
-			<Flex classes='pt-[700px] mx-auto text-left justify-between'>
+		<section className='mt-48'>
+			<Flex classes='mx-auto text-left justify-between'>
 				<div className='lg:w-1/2'>
-					<h1 className='mb-10'>Lorem Ipsum</h1>
-					<p className='font-semibold mb-5'>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in
-						mollis nunc sed. Et molestie ac feugiat sed lectus.{' '}
-					</p>
+					<h1 className='mb-10'>{pinolo.title}</h1>
+					<div className='flex space-x-2 mb-5'>
+						{pinolo.lang.map(({ id, value }) => (
+							<p key={id} className='rounded-full p-2 bg-primary-yellow'>
+								{getLanguage(value, locale)}
+							</p>
+						))}
+					</div>
 					<p>
-						Libero volutpat sed cras ornare. Nulla facilisi nullam vehicula
-						ipsum a arcu cursus vitae. Magna fringilla urna porttitor rhoncus
-						dolor purus non enim. Porta nibh venenatis cras sed felis eget
-						velit. Felis bibendum ut tristique et. Integer malesuada nunc vel
-						risus commodo. Amet risus nullam eget felis eget nunc. Eget sit amet
-						tellus cras. Proin libero nunc consequat interdum varius sit amet
-						mattis vulputate. Sed tempus urna et pharetra pharetra massa. Eu mi
-						bibendum neque egestas congue quisque egestas diam in. Pharetra sit
-						amet aliquam id diam maecenas ultricies mi. Egestas erat imperdiet
-						sed euismod nisi porta lorem mollis aliquam. Aenean euismod
-						elementum nisi quis eleifend quam adipiscing vitae proin. Eu
-						tincidunt tortor aliquam nulla facilisi. Vitae purus faucibus ornare
-						suspendisse sed nisi lacus sed. Eu turpis egestas pretium aenean
-						pharetra magna. Blandit aliquam etiam erat velit scelerisque in
-						dictum non. Proin fermentum leo vel orci porta non. Massa vitae
-						tortor condimentum lacinia quis vel eros donec.
+						{locale === 'en' ? pinolo['eng_description'] : pinolo.description}
 					</p>
 				</div>
-
-				<Image
-					src='https://picsum.photos/400'
-					alt=''
-					width={387}
-					height={427}
-				/>
+				<div className='flex flex-col justify-center space-y-3 sm:flex-row sm:space-y-0 sm:space-x-14 xl:flex-col xl:space-x-0 xl:space-y-10'>
+					<div>
+						<h3 className='font-medium text-[48px] md:text-[52px]'>Where?</h3>
+						{pinolo.location.map(({ id, value }) => (
+							<p key={id}>{value}</p>
+						))}
+					</div>
+					<div>
+						<h3 className='font-medium text-[48px] md:text-[52px]'>When?</h3>
+						{/*<Flex classes='space-x-2'>
+							{lab.days.map(day => {
+								<Time key={day.id} date={`8/${day.value}`} time={}
+							})}
+						</Flex>*/}
+					</div>
+				</div>
 			</Flex>
 			<Flex classes='mt-10 mx-auto justify-between bg-white'>
 				<div className='text-left lg:w-1/2'>
-					<h2 className=''>Meet the Lab Host</h2>
-					<p className='font-semibold mt-3 mb-5'>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in
-						mollis nunc sed. Et molestie ac feugiat sed lectus.{' '}
-					</p>
-					<p>
-						Libero volutpat sed cras ornare. Nulla facilisi nullam vehicula
-						ipsum a arcu cursus vitae. Magna fringilla urna porttitor rhoncus
-						dolor purus non enim. Porta nibh venenatis cras sed felis eget
-						velit. Felis bibendum ut tristique et. Integer malesuada nunc vel
-						risus commodo. Amet risus nullam eget felis eget nunc. Eget sit amet
-						tellus cras. Proin libero nunc consequat interdum varius sit amet
-						mattis vulputate.{' '}
-					</p>
+					<h2 className=''>Meet the Pinolo Host</h2>
 				</div>
-				<Image
-					src='https://picsum.photos/400'
-					alt=''
-					width={387}
-					height={427}
-				/>
 			</Flex>
-			<div id='similar-lab' className='px-2 lg:px-10 py-28 mt-10'>
-				<h3 className='mb-10 text-left'>Similar Labs</h3>
-				{/*<div className='grid grid-cols-1 gap-y-5 lg:grid-cols-2 lg:gap-x-5 xl:gap-x-5'>
-					<LabCard
-						title='Lorem Ipsum'
-						description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-					/>
-					<LabCard
-						title='Lorem Ipsum'
-						description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-					/>
-	</div>*/}
-			</div>
 		</section>
 	);
+}
+
+export async function getStaticPaths({ locales }) {
+	const pinoli = await getPinoli();
+	const paths = pinoli
+		.map((pinolo) =>
+			locales.map((locale) => ({
+				params: {
+					id: `${pinolo.id}`,
+				},
+				locale,
+			}))
+		)
+		.flat();
+	console.log(paths);
+	return {
+		paths,
+		fallback: false,
+	};
+}
+
+export async function getStaticProps({ params, locale }) {
+	const pinolo = await getPinolo(params.id);
+	//const hosts = await getHostBio(pinolo.host);
+
+	return {
+		props: {
+			pinolo,
+			...(await serverSideTranslations(locale, ['common'])),
+		},
+	};
 }
