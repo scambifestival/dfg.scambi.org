@@ -23,7 +23,10 @@ export default function Labs({ labs }) {
 					<h2 className='font-semibold mb-3'>Labs</h2>
 					<p className='italic mb-10'>{t('header.heading')}</p>
 					<Markdown className='mb-5' content={t('header.desc')} />
-					<Button classes='btn-primary'>
+					<Button
+						classes='btn-primary'
+						onClick={() => window.open('https://pretix.eu/scambi/2022/', '_blank')}
+					>
 						{t('tickets', { ns: 'common' })}
 					</Button>
 				</div>
