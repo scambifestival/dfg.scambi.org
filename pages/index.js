@@ -61,25 +61,7 @@ export default function Home() {
 					/>
 	</div>*/}
 			<CountDown />
-			<div className='flex flex-col md:flex-row justify-around items-center w-full mx-auto mt-20 px-10 iPhoneXR:px-7 sm:px-12 md:px-16 md:space-x-9 xl:px-24 xl:space-x-0 xl:max-w-[90%]'>
-				<div className='text-center md:text-left md:max-w-[60%]'>
-					<h2 className='font-medium leading-tight text-[55px] lg:text-[64px]'>
-						<Markdown content={t('paneurethic.heading')} />
-					</h2>
-					<div className='mx-auto my-5 md:mx-0'>
-						<span className='font-semibold'>Pan - eur - etic:</span>{' '}
-						{t('paneuretic.text')}
-					</div>
-				</div>
-				<div className='w-full max-w-[380px]'>
-					<Image
-						src='https://x.scambi.org/illustrations/tabletalk.webp'
-						alt='Illustration of 3 people sitting around a table talking'
-						width={808}
-						height={800}
-					/>
-				</div>
-			</div>
+
 			<div className='flex flex-col md:flex-row-reverse justify-around items-center w-full mx-auto mt-14 mb-40 px-7 sm:px-12 md:px-16 md:space-x-reverse md:space-x-9 xl:px-24 xl:md:space-x-reverse xl:space-x-0 xl:max-w-[90%]'>
 				<div className='text-center md:text-left md:max-w-[55%] my-5 md:my-0 space-y-5 sm:space-y-7'>
 					<h2 className='font-medium leading-tight text-[55px] lg:text-[64px]'>
@@ -102,6 +84,26 @@ export default function Home() {
 						alt='Illustration of woman with curly hair in yellow sleeveless top, brownish bottoms, and sandals reading a program while resting on a bundle of blue roots'
 						width={918}
 						height={1026}
+					/>
+				</div>
+			</div>
+
+			<div className='flex flex-col md:flex-row justify-around items-center w-full mx-auto mt-20 px-10 iPhoneXR:px-7 sm:px-12 md:px-16 md:space-x-9 xl:px-24 xl:space-x-0 xl:max-w-[90%]'>
+				<div className='text-center md:text-left md:max-w-[60%]'>
+					<h2 className='font-medium leading-tight text-[55px] lg:text-[64px]'>
+						<Markdown content={t('paneuretic.heading')} />
+					</h2>
+					<div className='mx-auto my-5 md:mx-0'>
+						{/* <span className='font-semibold'>Pan - eur - etic:</span>{' '} */}
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					</div>
+				</div>
+				<div className='w-full max-w-[380px]'>
+					<Image
+						src='https://x.scambi.org/illustrations/tabletalk.webp'
+						alt='Illustration of 3 people sitting around a table talking'
+						width={808}
+						height={800}
 					/>
 				</div>
 			</div>
