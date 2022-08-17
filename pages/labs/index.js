@@ -43,12 +43,12 @@ export default function Labs({ labs }) {
 			</div>
 			<div className='w-full mx-auto flex flex-col-reverse md:flex-row justify-center items-center my-12 px-5 space-y-reverse space-y-7 md:space-y-0 md:px-10 md:space-x-24 md:my-24'>
 				<div className='w-full max-w-[350px] lg:max-w-[450px]'>
-				<Image
-					src='https://x.scambi.org/illustrations/tabletalk.webp'
-					width={436}
-					height={425}
-					alt=''
-				/>
+					<Image
+						src='https://x.scambi.org/illustrations/tabletalk.webp'
+						width={436}
+						height={425}
+						alt=''
+					/>
 				</div>
 				<div className='w-full space-y-5 text-center md:text-left lg:max-w-[30%]'>
 					<h2 className='leading-tight font-semibold'>{t('labs-def.heading')}</h2>
@@ -61,7 +61,7 @@ export default function Labs({ labs }) {
 				</div>
 				<div>
 					<Carousel slides={gallery} />
-			</div>
+				</div>
 			</div> */}
 			{/*<Flex classes='mx-auto'>
 				<h1>More Info Coming Soon!</h1>
@@ -72,9 +72,9 @@ export default function Labs({ labs }) {
 					height={500}
 				/>
 	</Flex>*/}
-			<div className='mt-20 mx-auto px-5 lg:px-16 lg:pb-28'>
+			<div className='my-20 mx-auto px-5 lg:px-16 lg:pb-28'>
 				<h2 className='font-semibold mb-10 text-center leading-tight'>{t('upcoming')}</h2>
-				<div className='mx-auto flex flex-col space-y-6 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-5 lg:gap-y-10 xl:gap-x-10 xl:max-w-[90%]'>
+				<div className='mx-auto flex flex-col space-y-6 md:space-y-0 md:grid md:items-stretch md:grid-cols-2 md:gap-x-5 md:gap-y-10 xl:gap-x-10 xl:max-w-[90%]'>
 					{labs.map((lab) => {
 						return (
 							<Link key={lab.id} href={`/labs/${lab.id}`}>
