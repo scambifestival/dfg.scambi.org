@@ -130,6 +130,11 @@ export default function Home() {
 					Scambi 2021 Highlights
 				</h2>
 				<Carousel slides={highlights} />
+				<Button
+					classes='bg-white mt-6'
+					onClick={() => window.open('https://images.tommi.space/index?/category/scambi-2021', '_blank')}>
+					See the full gallery
+				</Button>
 			</div>
 
 			<div className='my-24 lg:my-40 space-y-20 lg:space-y-32'>
@@ -182,18 +187,19 @@ export default function Home() {
 					</h2>
 					<Markdown content={t('relations.text', { ns: 'common' })} />
 					<div className='flex flex-col justify-center items-stretch space-y-5 sm:flex-row sm:space-x-7 sm:space-y-0 md:justify-start'>
-						<Link href='/contact'>
-							<div>
-							<Button classes='btn-primary'>
+						<Button
+							classes='btn-primary'
+							onClick={() => window.open('mailto:staff@scambi.org', '_self')}
+						>
 								{t('relations.partner-button', { ns: 'common' })}
 							</Button>
-							</div>
-						</Link>
+						<Link href='/relations'>
 						<div>
 						<Button classes='btn-primary-light'>
 							{t('relations.meet-button', { ns: 'common' })}
 						</Button>
 					</div>
+						</Link>
 				</div>
 				</div>
 				<div className='w-full max-w-[475px] md:max-w-[575px]'>
