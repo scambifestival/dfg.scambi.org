@@ -9,7 +9,7 @@ export default function Post({ data, content, posts }) {
 	return (
 		<div>
 			<div className="bg-purple-900 text-center w-screen flex z-0 GalaxyFold:-mt-60 GalaxyFold:h-96 SurfaceDuo:-mt-48">
-				<div className="text-center m-auto text-white z-1 font-bold SurfaceDuo:mt-52 w-fit GalaxyFold:mt-60">
+				<div className="text-center m-auto text-white z-1 font-bold SurfaceDuo:mt-44 w-fit GalaxyFold:mt-56">
 					<h3 className="SurfaceDuo:text-6xl">{data.title}</h3>
 				</div>
 			</div>
