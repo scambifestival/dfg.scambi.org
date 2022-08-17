@@ -6,11 +6,11 @@ import { getDate } from "../../../lib/blog";
 export default function BlogCard({ post, path }) {
 	return (
 		<Link
-			href={`blog/${path}`}
-			as={path}
+			href="/blog/[id]"
+			as={`/blog/${path}`}
 			locale={"lang" in post ? post.lang : ""}>
 			<a>
-				<Card classes="bg-white iPhoneXR:w-96 SurfaceDuo:m-12 drop-shadow-2xl GalaxyS8:w-80 GalaxyFold:mb-12 GalaxyFold:w-66 md:w-80">
+				<Card classes="bg-white iPhoneXR:w-90 SurfaceDuo:m-12 drop-shadow-2xl GalaxyS8:w-80 GalaxyFold:mb-12 GalaxyFold:w-66 md:w-80">
 					<Image
 						src={post.image}
 						alt=""
@@ -29,13 +29,13 @@ export default function BlogCard({ post, path }) {
 
 					<div className="text-left px-6 w-full">
 						<h4 className="pb-4">{post.title}</h4>
-						<div className="pb-5 flex space-x-2">
+						<div className="pb-2 flex space-x-2">
 							{post.categories.map((el) => (
 								<p
 									key={el}
 									className={
 										(category_colors[el] || default_category_color) +
-										" w-fit px-2 py-1 rounded-md"
+										" w-fit px-2 pt-1 rounded-md"
 									}>
 									{el}
 								</p>
