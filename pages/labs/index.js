@@ -69,9 +69,9 @@ export default function Labs({ labs }) {
 					height={500}
 				/>
 	</Flex>*/}
-			<div className='mt-20 mx-auto p-2 lg:px-16 lg:pb-28'>
-				<h2 className='font-semibold mb-10 text-center'>{t('upcoming')}</h2>
-				<div className='flex flex-col space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-5 lg:gap-y-10'>
+			<div className='mt-20 mx-auto px-5 lg:px-16 lg:pb-28'>
+				<h2 className='font-semibold mb-10 text-center leading-tight'>{t('upcoming')}</h2>
+				<div className='mx-auto flex flex-col space-y-6 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-5 lg:gap-y-10 xl:gap-x-10 xl:max-w-[90%]'>
 					{labs.map((lab) => {
 						return (
 							<Link key={lab.id} href={`/labs/${lab.id}`}>
