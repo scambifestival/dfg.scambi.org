@@ -88,9 +88,9 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className='flex flex-col md:flex-row justify-around items-center w-full mx-auto mt-20 px-10 iPhoneXR:px-7 sm:px-12 md:px-16 md:space-x-9 xl:px-24 xl:space-x-0 xl:max-w-[90%]'>
-				<div className='text-center md:text-left md:max-w-[60%]'>
-					<h2 className='font-medium leading-tight text-[55px] lg:text-[64px]'>
+			<div className='flex flex-col md:flex-row justify-around items-center w-full mx-auto my-10 px-2 GalaxyS8:px-7 iPhoneXR:px-7 sm:px-12 md:px-16 md:space-x-9 xl:px-24 xl:space-x-0 xl:max-w-[90%]'>
+				<div className='text-center md:text-left w-full md:max-w-[60%]'>
+					<h2 className='font-medium leading-tight text-[54px] lg:text-[64px]'>
 						<Markdown content={t('paneuretic.heading')} />
 					</h2>
 					<div className='mx-auto my-5 md:mx-0'>
