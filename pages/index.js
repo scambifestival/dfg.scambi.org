@@ -175,26 +175,28 @@ export default function Home() {
 				<Subscribe />
 			</div>
 
-			<Flex
-				classes='my-1 mx-4 space-y-10 sm:mx-10 md:mx-auto md:my-20 lg:space-x-reverse lg:space-x-10 xl:space-x-reverse xl:space-x-40'
-				reverse={true}>
-				<div className='w-full flex flex-col text-center space-y-8 md:text-left'>
+			<div className='flex flex-col md:flex-row-reverse justify-around items-center w-full mx-auto my-20 px-7 sm:px-12 md:px-10 md:space-x-reverse md:space-x-10 xl:space-x-reverse xl:space-x-32 xl:max-w-[85%]'>
+				<div className=' mb-10 text-center md:text-left md:max-w-[55%] space-y-5 sm:space-y-7'>
 					<h2 className='leading-tight lg:leading-normal font-medium'>
 						{t('relations.heading', { ns: 'common' })}
 					</h2>
 					<Markdown content={t('relations.text', { ns: 'common' })} />
-					<div className='flex flex-col justify-center items-center space-y-5 sm:flex-row sm:space-x-7 sm:space-y-0 md:justify-start'>
+					<div className='flex flex-col justify-center items-stretch space-y-5 sm:flex-row sm:space-x-7 sm:space-y-0 md:justify-start'>
 						<Link href='/contact'>
+							<div>
 							<Button classes='btn-primary'>
 								{t('relations.partner-button', { ns: 'common' })}
 							</Button>
+							</div>
 						</Link>
+						<div>
 						<Button classes='btn-primary-light'>
 							{t('relations.meet-button', { ns: 'common' })}
 						</Button>
 					</div>
 				</div>
-				<div className='px-3 w-full iPhoneXR:w-5/6 sm:w-4/5 md:pl-0 md:pr-10'>
+				</div>
+				<div className='w-full max-w-[475px] md:max-w-[575px]'>
 					<Image
 						src='https://x.scambi.org/images/fun.webp'
 						alt='Illustration of three individuals holding hands, moving in a circle'
@@ -204,10 +206,10 @@ export default function Home() {
 						className='rounded-2xl'
 					/>
 				</div>
-			</Flex>
+			</div>
 
 			<div className='mx-7 my-20 sm:mx-10 xl:mx-20'>
-				<h2 className='leading-tight font-medium text-center sm:text-left py-5'>
+				<h2 className='py-5 leading-tight font-medium text-center sm:text-left text-[55px] sm:text-[64px]'>
 					Explore Scambi Festival
 				</h2>
 				<Map />
