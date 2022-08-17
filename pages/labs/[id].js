@@ -17,9 +17,9 @@ export default function Lab({ lab, hosts }) {
 
 	return (
 		<section className='mt-48'>
-			<Flex classes='px-5 justify-between iPhoneXR:px-10 sm:mx-auto text-center md:text-left md:flex-col xl:flex-row xl:px-0'>
-				<div className='xl:w-3/5'>
-					<h1 className='leading-tight text-[5.4rem] iPhoneXR:text-[102px]'>
+			<div className='w-full mx-auto px-5 flex flex-col justify-between space-y-7 iPhoneXR:px-10 text-center md:text-left xl:flex-row xl:px-28'>
+				<div className='w-full xl:w-3/5'>
+					<h1 className='leading-tight font-medium break-words text-[54px] sm:text-[64px] lg:text-[102px]'>
 						{lab.title}
 					</h1>
 					<div className='flex space-x-2 mb-5'>
@@ -29,17 +29,17 @@ export default function Lab({ lab, hosts }) {
 							</p>
 						))}
 					</div>
-					<p>{locale === 'en' ? lab['eng_description'] : lab.description}</p>
+					<p className='text-[14px] md:text-[16px]'>{locale === 'en' ? lab['eng_description'] : lab.description}</p>
 				</div>
-				<div className='space-y-3'>
+				<div className='flex flex-col justify-center space-y-3 sm:flex-row sm:space-y-0 sm:space-x-14 xl:flex-col xl:space-x-0 xl:space-y-10'>
 					<div>
-						<h3>Where?</h3>
+						<h3 className='font-medium text-[48px] md:text-[52px]'>Where?</h3>
 						{lab.location.map(({ id, value }) => (
 							<p key={id}>{value}</p>
 						))}
 					</div>
 					<div>
-						<h3>When?</h3>
+						<h3 className='font-medium text-[48px] md:text-[52px]'>When?</h3>
 						{/*<Flex classes='space-x-2'>
 							{lab.days.map(day => {
 								<Time key={day.id} date={`8/${day.value}`} time={}
@@ -82,10 +82,10 @@ export default function Lab({ lab, hosts }) {
 						/>
 					</svg>
 			</div>*/}
-			</Flex>
-			<Flex classes='mt-10 px-5 justify-between iPhoneXR:px-10 sm:mx-auto md:flex-col lg:flex-row lg:px-0 lg:py-20'>
+			</div>
+			<Flex classes='my-10 px-5 justify-between iPhoneXR:px-10 sm:mx-auto md:flex-col lg:flex-row lg:px-0 lg:py-20'>
 				<div className='text-center sm:text-left lg:w-1/2'>
-					<h2>Meet the Lab Host</h2>
+					<h2 className='leading-tight font-medium  text-[54px] md:text-[64px]'>Meet the Lab Host</h2>
 					{hosts.map((host) => (
 						<div key={host.id}>
 							<h4>
