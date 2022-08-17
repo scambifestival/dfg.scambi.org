@@ -164,7 +164,7 @@ export default function Home() {
 			</div>
 
 			<div className='text-center px-7 py-10 font-normal bg-white sm:px-14 lg:py-16 xl:my-32 xl:px-20'>
-				<div className='mx-auto xl:max-w-[88%] text-xl iPhoneSE:text-2xl SurfaceDuo:leading-normal SurfaceDuo:text-3xl md:leading-relaxed lg:leading-relaxed lg:text-4xl xl:leading-loose'>
+				<div className='mx-auto xl:max-w-[88%] text-[22px] iPhoneSE:text-2xl SurfaceDuo:leading-normal SurfaceDuo:text-3xl md:leading-relaxed lg:leading-relaxed lg:text-4xl xl:leading-loose'>
 					<Markdown content={t('purpose')} />
 				</div>
 			</div>
