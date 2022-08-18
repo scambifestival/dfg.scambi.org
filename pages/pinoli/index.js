@@ -1,18 +1,18 @@
 import Image from 'next/image';
 import Flex from '../../components/flex';
-import Map from '../../components/map';
 import Button from '../../components/button';
-import Card from '../../components/card';
+import LabCard from '../../components/card/lab-card';
 import Carousel from '../../components/carousel';
 import SupportUs from '../../components/support-cards';
 import { getPinoli } from '../../lib/pinoli';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import Markdown from '../../components/markdown';
+import Link from 'next/link';
 
-export default function Pinoli() {
+export default function Pinoli({ pinoli }) {
 	const { t } = useTranslation(['pinoli', 'common']);
-	const pinoli = [
+	const pinoliImg = [
 		'https://images.tommi.space/plugins/download_by_size/action.php?id=23324&part=e&download&size=small',
 		'https://images.tommi.space/plugins/download_by_size/action.php?id=23669&part=e&download&size=small',
 		'https://images.tommi.space/plugins/download_by_size/action.php?id=23645&part=e&download&size=small',
@@ -21,7 +21,7 @@ export default function Pinoli() {
 		'https://images.tommi.space/plugins/download_by_size/action.php?id=23322&part=e&download&size=small',
 		'https://x.scambi.org/archive_images/IMG_8291.jpg',
 		'https://x.scambi.org/archive_images/IMG_8300.jpg',
-		'https://x.scambi.org/archive_images/IMG_8296.jpg'
+		'https://x.scambi.org/archive_images/IMG_8296.jpg',
 	];
 
 	return (
@@ -48,7 +48,7 @@ export default function Pinoli() {
 				</h2>
 				<Markdown content={t('pinolo.text')} />
 				<div className='mt-10'>
-					<Carousel slides={pinoli} />
+					<Carousel slides={pinoliImg} />
 				</div>
 			</div>
 
@@ -58,21 +58,20 @@ export default function Pinoli() {
 				<Map />
   </div>*/}
 
-			<div className='grid grid-cols-1 lg:grid-cols-3 mx-10 lg:mx-20'></div>
-
-			<Flex classes='mx-1 py-32 justify-between items-center iPhoneSE:mx-7 sm:mx-auto md:justify-around md:space-y-0 md:py-40 md:mx-auto md:space-x-12 lg:justify-center lg:space-x-20'>
-				<h2 className='leading-tight text-center md:text-left md:w-fit'>
-					More Info Coming Soon!
-				</h2>
-				<div className='w-3/4 iPhoneSE:w-1/2 SurfaceDuo:w-1/3 sm:w-2/5 md:w-fit md:max-w-full lg:max-w-xs'>
-					<Image
-						src='/illustrations/rocket.png'
-						alt=''
-						width={382}
-						height={500}
-					/>
+			<div className='mt-20 mx-auto p-2 lg:px-16 lg:pb-28'>
+				<h2 className='font-semibold mb-10 text-center'>{t('upcoming')}</h2>
+				<div className='flex flex-col space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-5 lg:gap-y-10'>
+					{pinoli.map((pinolo) => {
+						return (
+							<Link key={pinolo.id} href={`/pinoli/${pinolo.id}`}>
+								<a>
+									<LabCard title={pinolo.title} location={pinolo.location[0]} />
+								</a>
+							</Link>
+						);
+					})}
 				</div>
-			</Flex>
+			</div>
 
 			<SupportUs />
 		</section>
