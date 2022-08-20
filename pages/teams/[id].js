@@ -27,7 +27,7 @@ function TeamInfo({ frontmatter, team, members, locale }) {
 					<Button classes='btn-primary mt-5'>Join the team</Button>
 				</div>
 			</Flex>
-			<div className='grid grid-cols-1 lg:grid-cols-3 gap-5 lg:px-16 mb-20'>
+			<div className='px-3 grid grid-cols-1 gap-7 iPhoneSE:px-5 SurfaceDuo:px-10 md:grid-cols-2 md:px-16 lg:grid-cols-3 mb-20'>
 				{members.map((member) => (
 					<MemberCard
 						key={member.id}
