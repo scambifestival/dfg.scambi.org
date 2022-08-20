@@ -19,15 +19,15 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 function TeamInfo({ frontmatter, team, members, locale }) {
 	return (
 		<section className='mt-40'>
-			<Flex classes='mx-auto mb-20'>
-				<div>
-					<h2>{frontmatter.name}</h2>
+			<Flex classes='mx-auto mb-20 px-5 SurfaceDuo:px-10'>
+				<div className='w-full lg:max-w-[60%]'>
+					<h1 className='font-medium text-[55px] sm:text-[64px]'>{frontmatter.name}</h1>
 					{/*eslint-disable-next-line react/no-children-prop*/}
 					<ReactMarkdown children={team} />
 					<Button classes='btn-primary mt-5'>Join the team</Button>
 				</div>
 			</Flex>
-			<div className='grid grid-cols-1 lg:grid-cols-3 gap-5 lg:px-16 mb-20'>
+			<div className='px-3 grid grid-cols-1 gap-7 iPhoneSE:px-5 SurfaceDuo:px-10 md:grid-cols-2 md:px-16 lg:grid-cols-3 mb-20'>
 				{members.map((member) => (
 					<MemberCard
 						key={member.id}

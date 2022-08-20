@@ -6,7 +6,7 @@ import ReactMarkdown from 'react-markdown';
 
 export default function TeamCard({ imgSrc, teamName, duty, desc, path }) {
 	return (
-		<Card classes='bg-white text-center p-5'>
+		<Card classes='bg-white text-center px-5 py-7'>
 			<Image src={imgSrc} alt={teamName} width={200} height={200} />
 			<h3>{teamName}</h3>
 			<p className='font-semibold my-3'>{duty}</p>

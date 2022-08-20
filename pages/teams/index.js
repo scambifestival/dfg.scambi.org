@@ -14,9 +14,9 @@ export default function Teams({ teams }) {
 
 	return (
 		<section>
-			<Flex classes='mx-auto justify-between md:flex-col lg:flex-row'>
-				<div className='lg:w-1/2 mr-5'>
-					<h2>{t('team.heading', { ns: 'about' })}</h2>
+			<div className='w-full mx-auto my-10 px-3 flex flex-col justify-around items-center space-y-5 lg:flex-row lg:px-16 lg:space-y-0 lg:space-x-7 xl:max-w-[85%] xl:my-20'>
+				<div className='text-center lg:text-left lg:max-w-[60%]'>
+					<h2 className='font-medium'>{t('team.heading', { ns: 'about' })}</h2>
 					<Markdown
 						className='my-5'
 						content={t('team.desc', { ns: 'about' })}
@@ -24,7 +24,7 @@ export default function Teams({ teams }) {
 					<p>{t('team.text', { ns: 'about' })}</p>
 					<Button classes='btn-primary mt-3'>Join our team</Button>
 				</div>
-				<div className='w-full px-5 iPhoneXR:w-4/5 sm:w-3/4 md:w-3/5 lg:w-1/2 xl:w-2/5 md:pr-0 mt-0'>
+				<div className='w-full max-w-[500px]'>
 					<Image
 						src='https://x.scambi.org/images/staff.webp'
 						width={675}
@@ -34,8 +34,8 @@ export default function Teams({ teams }) {
 						className='rounded-xl'
 					/>
 				</div>
-			</Flex>
-			<div className='grid grid-cols-1 lg:px-16 gap-20 lg:grid-cols-3 mb-14'>
+			</div>
+			<div className='px-3 iPhoneXR:px-7 grid grid-cols-1 gap-10 md:grid-cols-2 lg:px-16 lg:grid-cols-3 mb-20'>
 				{teams.map(({ team, frontmatter, content }) =>
 					frontmatter ? (
 						<TeamCard
