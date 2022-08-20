@@ -35,7 +35,7 @@ export default function Teams({ teams }) {
 					/>
 				</div>
 			</div>
-			<div className='grid grid-cols-1 lg:px-16 gap-20 lg:grid-cols-3 mb-14'>
+			<div className='px-3 iPhoneXR:px-7 grid grid-cols-1 gap-10 md:grid-cols-2 lg:px-16 lg:grid-cols-3 mb-20'>
 				{teams.map(({ team, frontmatter, content }) =>
 					frontmatter ? (
 						<TeamCard
