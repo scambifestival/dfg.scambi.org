@@ -95,7 +95,7 @@ export default function Home() {
 					</h2>
 					<div className='mx-auto my-5 md:mx-0'>
 						<span className='font-semibold'>Pan - eur - etic:</span>{' '}
-						<Markdown content={t('paneurethic.text')} />
+						<Markdown content={t('paneuretic.text')} />
 					</div>
 				</div>
 				<div className='w-full max-w-[380px]'>
