@@ -43,7 +43,7 @@ export default function Home() {
 		<section>
 			<div className='w-10/12 mx-auto mt-48 mb-10 text-left flex flex-col justify-between xl:items-center  xl:flex-row'>
 				<div>
-					<h1 className='leading-none'>{t('header.heading')}</h1>
+					<h1 className='leading-none font-medium text-[80px] sm:text-[102px]'>{t('header.heading')}</h1>
 					<h3>{t('header.text')}</h3>
 				</div>
 				<p className='font-semibold'>
@@ -62,11 +62,9 @@ export default function Home() {
 	</div>*/}
 			<CountDown />
 
-			<Flex
-				classes='mt-10 mb-32 mx-7 py-0 justify-between text-center sm:mx-16 md:mx-auto md:mt-20 md:text-left md:space-x-reverse md:space-x-20 lg:space-x-reverse lg:space-x-28 2xl:mt-10 2xl:w-9/12'
-				reverse={true}>
-				<div className='space-y-3 sm:space-y-6 md:w-full'>
-					<h2 className='leading-tight font-medium text-[3.5rem] iPhoneSE:text-[64px]'>
+			<div className='flex flex-col md:flex-row-reverse justify-around items-center w-full mx-auto mt-14 mb-40 px-7 sm:px-12 md:px-16 md:space-x-reverse md:space-x-9 xl:px-24 xl:md:space-x-reverse xl:space-x-0 xl:max-w-[90%]'>
+				<div className='text-center md:text-left md:max-w-[55%] my-5 md:my-0 space-y-5 sm:space-y-7'>
+					<h2 className='font-medium leading-tight text-[55px] lg:text-[64px]'>
 						{t('edition.heading')}
 					</h2>
 					<Markdown content={t('edition.text')} />
@@ -80,7 +78,7 @@ export default function Home() {
 </p>*/}
 					<Button classes='btn-primary'>View the 2022 Program</Button>
 				</div>
-				<div className='w-full iPhoneSE:w-3/5 md:w-3/4 lg:w-3/5 xl:w-1/3'>
+				<div className='w-full max-w-[380px]'>
 					<Image
 						src='https://x.scambi.org/illustrations/program.webp'
 						alt='Illustration of woman with curly hair in yellow sleeveless top, brownish bottoms, and sandals reading a program while resting on a bundle of blue roots'
@@ -88,19 +86,19 @@ export default function Home() {
 						height={1026}
 					/>
 				</div>
-			</Flex>
+			</div>
 
-			<Flex classes='mt-16 justify-between mx-auto'>
-				<div className=''>
-					<h2 className='leading-tight lg:leading-normal mx-auto'>
-						<Markdown content={t('paneurethic.heading')} />
+			<div className='flex flex-col md:flex-row justify-around items-center w-full mx-auto my-10 px-2 GalaxyS8:px-7 iPhoneXR:px-7 sm:px-12 md:px-16 md:space-x-9 xl:px-24 xl:space-x-0 xl:max-w-[90%]'>
+				<div className='text-center md:text-left w-full md:max-w-[60%]'>
+					<h2 className='font-medium leading-tight text-[54px] lg:text-[64px]'>
+						<Markdown content={t('paneuretic.heading')} />
 					</h2>
-					<div className='mx-auto my-5 w-4/5 md:mx-0'>
+					<div className='mx-auto my-5 md:mx-0'>
 						<span className='font-semibold'>Pan - eur - etic:</span>{' '}
-						<Markdown content={t('paneurethic.text')} />
+						<Markdown content={t('paneuretic.text')} />
 					</div>
 				</div>
-				<div className='w-4/5 iPhoneSE:w-3/4 iPhoneXR:w-3/5 sm:w-1/2 md:w-2/3'>
+				<div className='w-full max-w-[380px]'>
 					<Image
 						src='https://x.scambi.org/illustrations/tabletalk.webp'
 						alt='Illustration of 3 people sitting around a table talking'
@@ -108,7 +106,7 @@ export default function Home() {
 						height={800}
 					/>
 				</div>
-			</Flex>
+			</div>
 
 			<div className='flex flex-col items-center justify-center space-y-7 mt-16 lg:flex-row lg:items-start lg:space-x-14 lg:space-y-0'>
 				{eventCards.map((event, index) => (
@@ -117,7 +115,7 @@ export default function Home() {
 						classes='w-5/6 h-fit px-7 py-5 space-y-4 text-left bg-white lg:w-1/4'>
 						<Link href={`/${event.link}`}>
 							<a>
-								<h4 className='font-["Poppins"] font-medium'>
+								<h4 className='font-["Poppins"] font-medium mb-3'>
 									<Markdown content={event.title} />
 								</h4>
 								<Markdown content={event.description} />
@@ -132,6 +130,11 @@ export default function Home() {
 					Scambi 2021 Highlights
 				</h2>
 				<Carousel slides={highlights} />
+				<Button
+					classes='bg-white mt-6'
+					onClick={() => window.open('https://images.tommi.space/index?/category/scambi-2021', '_blank')}>
+					See the full gallery
+				</Button>
 			</div>
 
 			<div className='my-24 lg:my-40 space-y-20 lg:space-y-32'>
@@ -141,60 +144,65 @@ export default function Home() {
 				<Testimonials />
 			</div>
 
-			<Flex classes='mx-auto my-10 space-y-4 text-center md:flex-col lg:flex-row lg:space-x-10 lg:text-left'>
-				<div className='mx-4 space-y-7 lg:w-3/5'>
-					<h2 className='leading-tight lg:leading-normal font-medium'>
+			<div className='flex flex-col md:flex-row justify-around items-center w-full mx-auto pb-14 px-5 iPhoneXR:px-7 sm:px-12 md:px-16 md:space-x-8 xl:px-0 xl:space-x-10 xl:max-w-[90%]'>
+				<div className='text-center md:text-left md:max-w-[55%] my-5 md:my-0 space-y-5 sm:space-y-7'>
+					<h2 className='leading-tight font-medium text-[55px] lg:text-[64px]'>
 						{t('family.heading')}
 					</h2>
 					{family &&
-						family.map((el, index) => <Markdown key={index} content={el} />)}
+						family.map((el, index) => <Markdown className='text-[14px] sm:text-[15px] lg:text-[16px]' key={index} content={el} />)}
 					<Link href='/contact'>
+						<div>
 						<Button classes='btn-primary'>{t('family.button')}</Button>
+						</div>
 					</Link>
 				</div>
-				<div className='w-3/4 sm:w-3/5 lg:w-1/2'>
+				<div className='w-full max-w-[550px]'>
 					<Image
 						src='https://x.scambi.org/images/staff.webp'
 						alt='Five volunteers pose for group photo outside during the festival'
-						height={492}
+						height={430}
 						width={645}
 						className='rounded-2xl'
 					/>
 				</div>
-			</Flex>
+			</div>
 
-			<div className='text-center px-7 py-10 font-normal bg-white sm:px-14 xl:my-36'>
-				<div className='text-2xl sm:leading-relaxed sm:text-3xl lg:leading-loose lg:text-4xl xl:text-5xl xl:leading-loose'>
+			<div className='text-center px-7 py-10 font-normal bg-white sm:px-14 lg:py-16 xl:my-32 xl:px-20'>
+				<div className='mx-auto xl:max-w-[88%] text-[22px] iPhoneSE:text-2xl SurfaceDuo:leading-normal SurfaceDuo:text-3xl md:leading-relaxed lg:leading-relaxed lg:text-4xl xl:leading-loose'>
 					<Markdown content={t('purpose')} />
 				</div>
 			</div>
 
 			<Manifesto />
 
-			<div className='bg-white flex justify-center py-10'>
+			<div className='bg-white flex justify-center py-10 lg:py-16'>
 				<Subscribe />
 			</div>
 
-			<Flex
-				classes='my-1 mx-4 space-y-10 sm:mx-10 md:mx-auto md:my-20 lg:space-x-reverse lg:space-x-10 xl:space-x-reverse xl:space-x-40'
-				reverse={true}>
-				<div className='w-full flex flex-col text-center space-y-8 md:text-left'>
+			<div className='flex flex-col md:flex-row-reverse justify-around items-center w-full mx-auto my-20 px-7 sm:px-12 md:px-10 md:space-x-reverse md:space-x-10 xl:space-x-reverse xl:space-x-32 xl:max-w-[85%]'>
+				<div className=' mb-10 text-center md:text-left md:max-w-[55%] space-y-5 sm:space-y-7'>
 					<h2 className='leading-tight lg:leading-normal font-medium'>
 						{t('relations.heading', { ns: 'common' })}
 					</h2>
 					<Markdown content={t('relations.text', { ns: 'common' })} />
-					<div className='flex flex-col justify-center items-center space-y-5 sm:flex-row sm:space-x-7 sm:space-y-0 md:justify-start'>
-						<Link href='/contact'>
-							<Button classes='btn-primary'>
+					<div className='flex flex-col justify-center items-stretch space-y-5 sm:flex-row sm:space-x-7 sm:space-y-0 md:justify-start'>
+						<Button
+							classes='btn-primary'
+							onClick={() => window.open('mailto:staff@scambi.org', '_self')}
+						>
 								{t('relations.partner-button', { ns: 'common' })}
 							</Button>
-						</Link>
+						<Link href='/relations'>
+						<div>
 						<Button classes='btn-primary-light'>
 							{t('relations.meet-button', { ns: 'common' })}
 						</Button>
 					</div>
+						</Link>
 				</div>
-				<div className='px-3 w-full iPhoneXR:w-5/6 sm:w-4/5 md:pl-0 md:pr-10'>
+				</div>
+				<div className='w-full max-w-[475px] md:max-w-[575px]'>
 					<Image
 						src='https://x.scambi.org/images/fun.webp'
 						alt='Illustration of three individuals holding hands, moving in a circle'
@@ -204,10 +212,10 @@ export default function Home() {
 						className='rounded-2xl'
 					/>
 				</div>
-			</Flex>
+			</div>
 
 			<div className='mx-7 my-20 sm:mx-10 xl:mx-20'>
-				<h2 className='leading-tight font-medium text-center sm:text-left py-5'>
+				<h2 className='py-5 leading-tight font-medium text-center sm:text-left text-[55px] sm:text-[64px]'>
 					Explore Scambi Festival
 				</h2>
 				<Map />

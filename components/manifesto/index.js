@@ -8,7 +8,7 @@ export default function Manifesto() {
 
 	return (
 		<div className='my-20 mx-auto space-y-12'>
-			<h2 className='leading-tight text-center font-medium'>Our Manifesto</h2>
+			<h2 className='leading-tight text-center font-medium text-[55px] lg:text-[64px]'>Our Manifesto</h2>
 			<div className='flex flex-wrap justify-center items-stretch mx-5 space-y-6 sm:mx-16 md:mx-5 md:space-y-0'>
 				{manifestoCards &&
 					manifestoCards.map((card, index) => (
@@ -25,7 +25,7 @@ export default function Manifesto() {
 							</h3>
 
 							<Markdown
-								className='leading-relaxed text-center sm:text-left'
+								className='leading-relaxed text-[15px] sm:text-[16px] text-center sm:text-left'
 								content={card.text}
 							/>
 						</Card>

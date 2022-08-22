@@ -38,25 +38,26 @@ export default function CountDown() {
 	if (!remainingTime) return <div style={{ height: "300px" }}></div>;
 
 	return (
-		<motion.div className="text-center mt-16 mb-2">
+		<motion.div className="text-center mt-16 mb-2 px-2 iPhoneSE:px-5">
 			{remainingTime.days >= 0 ? (
 				<div className="flex  flex-col">
-					<h2>Counting down to Festival</h2>
+					<h2 className="leading-tight font-medium">Counting down to Festival</h2>
 					<div className="flex items-center justify-center mb-12">
 						<motion.div
-							initial={{ y: 200 }}
-							whileInView={{
-								y: 20,
-								transition: {
-									type: "spring",
-									bounce: 0.5,
-									duration: 1.5
-								}
-							}}
-							className="flex flex-col w-36 bg-white rounded-lg h-24 shadow-2xl mr-2">
-							<h2>{remainingTime.days}</h2>
-							<p> Days </p>
-						</motion.div>
+								initial={{ y: 200 }}
+								whileInView={{
+									y: 20,
+									transition: {
+										type: "spring",
+										bounce: 0.5,
+										duration: 1.5
+									}
+								}}
+								viewport={{ once: true }}
+								className="flex flex-col w-36 bg-white rounded-lg h-24 shadow-2xl mr-2">
+								<h2>{remainingTime.days}</h2>
+								<p> Days </p>
+							</motion.div>
 						<motion.div
 							initial={{ y: 200 }}
 							whileInView={{
@@ -68,6 +69,7 @@ export default function CountDown() {
 									delay: 0.1
 								}
 							}}
+							viewport={{ once: true }}
 							className="flex flex-col w-36 bg-white rounded-lg h-24 shadow-2xl mr-2">
 							<h2>{remainingTime.hours}</h2>
 							<p> Hours </p>
@@ -83,6 +85,7 @@ export default function CountDown() {
 									delay: 0.2
 								}
 							}}
+							viewport={{ once: true }}
 							className="flex flex-col w-36 bg-white rounded-lg h-24 shadow-2xl mr-2">
 							<h2>{remainingTime.minutes}</h2>
 							<p> Minutes </p>
@@ -98,6 +101,7 @@ export default function CountDown() {
 									delay: 0.3
 								}
 							}}
+							viewport={{ once: true }}
 							className="flex flex-col w-36 bg-white rounded-lg h-24 shadow-2xl mr-0">
 							<h2>{remainingTime.seconds}</h2>
 							<p> Seconds </p>
